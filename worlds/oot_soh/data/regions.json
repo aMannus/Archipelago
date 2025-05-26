@@ -1,0 +1,3949 @@
+{
+  "Invalid Region": {
+    "exits": []
+  },
+  "Root": {
+    "exits": [
+      "Root Exits"
+    ]
+  },
+  "Root Exits": {
+    "exits": [
+      "Child Spawn",
+      "Adult Spawn",
+      "Minuet of Forest Warp",
+      "Bolero of Fire Warp",
+      "Serenade of Water Warp",
+      "Nocturne of Shadow Warp",
+      "Requiem of Spirit Warp",
+      "Prelude of Light Warp"
+    ]
+  },
+  "Child Spawn": {
+    "exits": [
+      "KF Link's House"
+    ]
+  },
+  "Adult Spawn": {
+    "exits": [
+      "Temple of Time"
+    ]
+  },
+  "Minuet of Forest Warp": {
+    "exits": [
+      "Sacred Forest Meadow"
+    ]
+  },
+  "Bolero of Fire Warp": {
+    "exits": [
+      "DMC Central Local"
+    ]
+  },
+  "Serenade of Water Warp": {
+    "exits": [
+      "Lake Hylia"
+    ]
+  },
+  "Requiem of Spirit Warp": {
+    "exits": [
+      "Desert Colossus"
+    ]
+  },
+  "Nocturne of Shadow Warp": {
+    "exits": [
+      "Graveyard Warp Pad Region"
+    ]
+  },
+  "Prelude of Light Warp": {
+    "exits": [
+      "Temple of Time"
+    ]
+  },
+  "Kokiri Forest": {
+    "exits": [
+      "KF Link's House",
+      "KF Mido's House",
+      "KF Saria's House",
+      "KF House of Twins",
+      "KF Know It All House",
+      "KF Kokiri Shop",
+      "KF Outside Deku Tree",
+      "Lost Woods",
+      "LW Bridge From Forest",
+      "KF Storms Grotto"
+    ]
+  },
+  "KF Link's House": {
+    "exits": [
+      "Kokiri Forest"
+    ]
+  },
+  "KF Mido's House": {
+    "exits": [
+      "Kokiri Forest"
+    ]
+  },
+  "KF Saria's House": {
+    "exits": [
+      "Kokiri Forest"
+    ]
+  },
+  "KF House of Twins": {
+    "exits": [
+      "Kokiri Forest"
+    ]
+  },
+  "KF Know It All House": {
+    "exits": [
+      "Kokiri Forest"
+    ]
+  },
+  "KF Kokiri Shop": {
+    "exits": [
+      "Kokiri Forest"
+    ]
+  },
+  "KF Outside Deku Tree": {
+    "exits": [
+      "Deku Tree Entryway",
+      "Kokiri Forest"
+    ]
+  },
+  "KF Storms Grotto": {
+    "exits": [
+      "Kokiri Forest"
+    ]
+  },
+  "Lost Woods": {
+    "exits": [
+      "LW Forest Exit",
+      "GC Woods Warp",
+      "LW Bridge",
+      "Zora River",
+      "LW Beyond Mido",
+      "LW Near Shortcuts Grotto"
+    ]
+  },
+  "LW Bridge From Forest": {
+    "exits": [
+      "LW Bridge"
+    ]
+  },
+  "LW Bridge": {
+    "exits": [
+      "Kokiri Forest",
+      "Hyrule Field",
+      "Lost Woods"
+    ]
+  },
+  "LW Forest Exit": {
+    "exits": [
+      "Kokiri Forest"
+    ]
+  },
+  "LW Beyond Mido": {
+    "exits": [
+      "LW Forest Exit",
+      "Lost Woods",
+      "SFM Entryway",
+      "Deku Theater",
+      "LW Scrubs Grotto"
+    ]
+  },
+  "LW Near Shortcuts Grotto": {
+    "exits": [
+      "Lost Woods"
+    ]
+  },
+  "Deku Theater": {
+    "exits": [
+      "LW Beyond Mido"
+    ]
+  },
+  "LW Scrubs Grotto": {
+    "exits": [
+      "LW Beyond Mido"
+    ]
+  },
+  "SFM Entryway": {
+    "exits": [
+      "LW Beyond Mido",
+      "Sacred Forest Meadow",
+      "SFM Wolfos Grotto"
+    ]
+  },
+  "Sacred Forest Meadow": {
+    "exits": [
+      "SFM Entryway",
+      "Forest Temple Entryway",
+      "SFM Fairy Grotto",
+      "SFM Storms Grotto"
+    ]
+  },
+  "SFM Wolfos Grotto": {
+    "exits": [
+      "SFM Entryway"
+    ]
+  },
+  "SFM Fairy Grotto": {
+    "exits": [
+      "Sacred Forest Meadow"
+    ]
+  },
+  "SFM Storms Grotto": {
+    "exits": [
+      "Sacred Forest Meadow"
+    ]
+  },
+  "Hyrule Field": {
+    "exits": [
+      "LW Bridge",
+      "Lake Hylia",
+      "Gerudo Valley",
+      "Market Entrance",
+      "Kakariko Village",
+      "ZR Front",
+      "Lon Lon Ranch",
+      "HF Southeast Grotto",
+      "HF Open Grotto",
+      "HF Inside Fence Grotto",
+      "HF Cow Grotto",
+      "HF Near Market Grotto",
+      "HF Fairy Grotto",
+      "HF Near Kak Grotto",
+      "HF Tektite Grotto"
+    ]
+  },
+  "HF Southeast Grotto": {
+    "exits": [
+      "Hyrule Field"
+    ]
+  },
+  "HF Open Grotto": {
+    "exits": [
+      "Hyrule Field"
+    ]
+  },
+  "HF Inside Fence Grotto": {
+    "exits": [
+      "Hyrule Field"
+    ]
+  },
+  "HF Cow Grotto": {
+    "exits": [
+      "Hyrule Field",
+      "HF Cow Grotto Behind Webs"
+    ]
+  },
+  "HF Cow Grotto Behind Webs": {
+    "exits": [
+      "HF Cow Grotto"
+    ]
+  },
+  "HF Near Market Grotto": {
+    "exits": [
+      "Hyrule Field"
+    ]
+  },
+  "HF Fairy Grotto": {
+    "exits": [
+      "Hyrule Field"
+    ]
+  },
+  "HF Near Kak Grotto": {
+    "exits": [
+      "Hyrule Field"
+    ]
+  },
+  "HF Tektite Grotto": {
+    "exits": [
+      "Hyrule Field"
+    ]
+  },
+  "Lake Hylia": {
+    "exits": [
+      "Hyrule Field",
+      "Zoras Domain",
+      "LH Owl Flight",
+      "LH Fishing Island",
+      "LH Lab",
+      "Water Temple Entryway",
+      "LH Grotto"
+    ]
+  },
+  "LH Fishing Island": {
+    "exits": [
+      "Lake Hylia",
+      "LH Fishing Hole"
+    ]
+  },
+  "LH Owl Flight": {
+    "exits": [
+      "Hyrule Field"
+    ]
+  },
+  "LH Lab": {
+    "exits": [
+      "Lake Hylia"
+    ]
+  },
+  "LH Fishing Hole": {
+    "exits": [
+      "LH Fishing Island"
+    ]
+  },
+  "LH Grotto": {
+    "exits": [
+      "Lake Hylia"
+    ]
+  },
+  "Gerudo Valley": {
+    "exits": [
+      "Hyrule Field",
+      "GV Upper Stream",
+      "GV Crate Ledge",
+      "GV Grotto Ledge",
+      "GV Fortress Side",
+      "GV Lower Stream"
+    ]
+  },
+  "GV Upper Stream": {
+    "exits": [
+      "GV Lower Stream"
+    ]
+  },
+  "GV Lower Stream": {
+    "exits": [
+      "Lake Hylia"
+    ]
+  },
+  "GV Grotto Ledge": {
+    "exits": [
+      "GV Upper Stream",
+      "GV Lower Stream",
+      "GV Octorok Grotto",
+      "GV Crate Ledge"
+    ]
+  },
+  "GV Crate Ledge": {
+    "exits": [
+      "GV Upper Stream",
+      "GV Lower Stream"
+    ]
+  },
+  "GV Octorok Grotto": {
+    "exits": [
+      "GV Grotto Ledge"
+    ]
+  },
+  "GV Fortress Side": {
+    "exits": [
+      "Gerudo Fortress",
+      "GV Upper Stream",
+      "Gerudo Valley",
+      "GV Carpenter Tent",
+      "GV Storms Grotto",
+      "GV Crate Ledge"
+    ]
+  },
+  "GV Carpenter Tent": {
+    "exits": [
+      "GV Fortress Side"
+    ]
+  },
+  "GV Storms Grotto": {
+    "exits": [
+      "GV Fortress Side"
+    ]
+  },
+  "Gerudo Fortress": {
+    "exits": [
+      "GV Fortress Side",
+      "GF Outside Gate",
+      "Gerudo Training Ground Entryway",
+      "GF Storms Grotto"
+    ]
+  },
+  "GF Outside Gate": {
+    "exits": [
+      "Gerudo Fortress",
+      "Wasteland Near Fortress"
+    ]
+  },
+  "GF Storms Grotto": {
+    "exits": [
+      "Gerudo Fortress"
+    ]
+  },
+  "Wasteland Near Fortress": {
+    "exits": [
+      "GF Outside Gate",
+      "Haunted Wasteland"
+    ]
+  },
+  "Haunted Wasteland": {
+    "exits": [
+      "Wasteland Near Colossus",
+      "Wasteland Near Fortress"
+    ]
+  },
+  "Wasteland Near Colossus": {
+    "exits": [
+      "Desert Colossus",
+      "Haunted Wasteland"
+    ]
+  },
+  "Desert Colossus": {
+    "exits": [
+      "Desert Colossus Oasis",
+      "Colossus Great Fairy Fountain",
+      "Spirit Temple Entryway",
+      "Wasteland Near Colossus",
+      "Colossus Grotto"
+    ]
+  },
+  "Desert Colossus Oasis": {
+    "exits": [
+      "Desert Colossus"
+    ]
+  },
+  "Desert Colossus From Spirit Entryway": {
+    "exits": [
+      "Desert Colossus"
+    ]
+  },
+  "Colossus Great Fairy Fountain": {
+    "exits": [
+      "Desert Colossus"
+    ]
+  },
+  "Colossus Grotto": {
+    "exits": [
+      "Desert Colossus"
+    ]
+  },
+  "Market Entrance": {
+    "exits": [
+      "Hyrule Field",
+      "Market",
+      "Market Guard House"
+    ]
+  },
+  "Market": {
+    "exits": [
+      "Market Entrance",
+      "ToT Entrance",
+      "Castle Grounds",
+      "Market Bazaar",
+      "Market Mask Shop",
+      "Market Shooting Gallery",
+      "Market Bombchu Bowling",
+      "Market Treasure Chest Game",
+      "Market Potion Shop",
+      "Market Back Alley"
+    ]
+  },
+  "Market Guard House": {
+    "exits": [
+      "Market Entrance"
+    ]
+  },
+  "Market Bazaar": {
+    "exits": [
+      "Market"
+    ]
+  },
+  "Market Mask Shop": {
+    "exits": [
+      "Market"
+    ]
+  },
+  "Market Shooting Gallery": {
+    "exits": [
+      "Market"
+    ]
+  },
+  "Market Bombchu Bowling": {
+    "exits": [
+      "Market"
+    ]
+  },
+  "Market Treasure Chest Game": {
+    "exits": [
+      "Market"
+    ]
+  },
+  "Market Potion Shop": {
+    "exits": [
+      "Market"
+    ]
+  },
+  "Market Back Alley": {
+    "exits": [
+      "Market",
+      "Market Bombchu Shop",
+      "Market Dog Lady House",
+      "Market Man in Green House"
+    ]
+  },
+  "Market Bombchu Shop": {
+    "exits": [
+      "Market Back Alley"
+    ]
+  },
+  "Market Dog Lady House": {
+    "exits": [
+      "Market Back Alley"
+    ]
+  },
+  "Market Man in Green House": {
+    "exits": [
+      "Market Back Alley"
+    ]
+  },
+  "ToT Entrance": {
+    "exits": [
+      "Market",
+      "Temple of Time"
+    ]
+  },
+  "Temple of Time": {
+    "exits": [
+      "ToT Entrance",
+      "Beyond Door of Time"
+    ]
+  },
+  "Beyond Door of Time": {
+    "exits": [
+      "Temple of Time"
+    ]
+  },
+  "Castle Grounds": {
+    "exits": [
+      "Market",
+      "Hyrule Castle Grounds",
+      "Ganon's Castle Grounds"
+    ]
+  },
+  "Castle Grounds From Ganon's Castle": {
+    "exits": [
+      "Hyrule Castle Grounds",
+      "Ganon's Castle Ledge"
+    ]
+  },
+  "Hyrule Castle Grounds": {
+    "exits": [
+      "Castle Grounds",
+      "HC Garden",
+      "HC Great Fairy Fountain",
+      "HC Storms Grotto"
+    ]
+  },
+  "HC Garden": {
+    "exits": [
+      "Hyrule Castle Grounds"
+    ]
+  },
+  "HC Great Fairy Fountain": {
+    "exits": [
+      "Castle Grounds"
+    ]
+  },
+  "HC Storms Grotto": {
+    "exits": [
+      "Castle Grounds",
+      "HC Storms Grotto Behind Walls"
+    ]
+  },
+  "HC Storms Grotto Behind Walls": {
+    "exits": [
+      "HC Storms Grotto"
+    ]
+  },
+  "Ganon's Castle Grounds": {
+    "exits": [
+      "Castle Grounds",
+      "OGC Great Fairy Fountain",
+      "Ganon's Castle Ledge"
+    ]
+  },
+  "OGC Great Fairy Fountain": {
+    "exits": [
+      "Castle Grounds"
+    ]
+  },
+  "Ganon's Castle Ledge": {
+    "exits": [
+      "Ganon's Castle Grounds",
+      "Ganon's Castle Entryway"
+    ]
+  },
+  "Kakariko Village": {
+    "exits": [
+      "Hyrule Field",
+      "Kak Carpenter Boss House",
+      "Kak House of Skulltula",
+      "Kak Impas House",
+      "Kak Windmill",
+      "Kak Bazaar",
+      "Kak Shooting Gallery",
+      "Kak Behind Gate",
+      "Kak Potion Shop Front",
+      "Kak Redead Grotto",
+      "Kak Impas Ledge",
+      "Kak Watchtower",
+      "Kak Rooftop",
+      "Kak Impas Rooftop",
+      "The Graveyard",
+      "Kak Behind Gate",
+      "Kak Backyard"
+    ]
+  },
+  "Kak Carpenter Boss House": {
+    "exits": [
+      "Kakariko Village"
+    ]
+  },
+  "Kak House of Skulltula": {
+    "exits": [
+      "Kakariko Village"
+    ]
+  },
+  "Kak Impas House": {
+    "exits": [
+      "Kakariko Village"
+    ]
+  },
+  "Kak Impas Ledge": {
+    "exits": [
+      "Kak Impas House Back",
+      "Kakariko Village"
+    ]
+  },
+  "Kak Impas House Back": {
+    "exits": [
+      "Kak Impas Ledge"
+    ]
+  },
+  "Kak Windmill": {
+    "exits": [
+      "Kakariko Village"
+    ]
+  },
+  "Kak Bazaar": {
+    "exits": [
+      "Kakariko Village"
+    ]
+  },
+  "Kak Shooting Gallery": {
+    "exits": [
+      "Kakariko Village"
+    ]
+  },
+  "Kak Potion Shop Front": {
+    "exits": [
+      "Kakariko Village",
+      "Kak Potion Shop Back"
+    ]
+  },
+  "Kak Potion Shop Back": {
+    "exits": [
+      "Kak Backyard",
+      "Kak Potion Shop Front"
+    ]
+  },
+  "Kak Watchtower": {
+    "exits": [
+      "Kakariko Village",
+      "Kak Rooftop"
+    ]
+  },
+  "Kak Rooftop": {
+    "exits": [
+      "Kak Backyard",
+      "Kakariko Village"
+    ]
+  },
+  "Kak Impas Rooftop": {
+    "exits": [
+      "Kak Impas Ledge",
+      "Kakariko Village"
+    ]
+  },
+  "Kak Behind Gate": {
+    "exits": [
+      "Kakariko Village",
+      "Bottom of the Well Entryway"
+    ]
+  },
+  "Kak Backyard": {
+    "exits": [
+      "Kakariko Village",
+      "Kak Open Grotto",
+      "Kak Granny's Potion Shop",
+      "Kak Potion Shop Back"
+    ]
+  },
+  "Kak Granny's Potion Shop": {
+    "exits": [
+      "Kak Backyard"
+    ]
+  },
+  "Kak Redead Grotto": {
+    "exits": [
+      "Kakariko Village"
+    ]
+  },
+  "Kak Open Grotto": {
+    "exits": [
+      "Kak Backyard"
+    ]
+  },
+  "The Graveyard": {
+    "exits": [
+      "Graveyard Shield Grave",
+      "Graveyard Composers Grave",
+      "Graveyard Heart Piece Grave",
+      "Graveyard Dampes Grave",
+      "Graveyard Dampes House",
+      "Kakariko Village",
+      "Graveyard Warp Pad Region"
+    ]
+  },
+  "Graveyard Dampes Grave": {
+    "exits": [
+      "The Graveyard",
+      "Kak Windmill"
+    ]
+  },
+  "Graveyard Dampes House": {
+    "exits": [
+      "The Graveyard"
+    ]
+  },
+  "Graveyard Shield Grave": {
+    "exits": [
+      "The Graveyard",
+      "Graveyard Shield Grave Back"
+    ]
+  },
+  "Graveyard Shield Grave Back": {
+    "exits": [
+      "Graveyard Shield Grave"
+    ]
+  },
+  "Graveyard Composers Grave": {
+    "exits": [
+      "The Graveyard"
+    ]
+  },
+  "Graveyard Heart Piece Grave": {
+    "exits": [
+      "The Graveyard"
+    ]
+  },
+  "Graveyard Warp Pad Region": {
+    "exits": [
+      "The Graveyard",
+      "Shadow Temple Entryway"
+    ]
+  },
+  "Death Mountain": {
+    "exits": [
+      "Kak Behind Gate",
+      "Goron City",
+      "Death Mountain Summit",
+      "Dodongos Cavern Entryway",
+      "DMT Storms Grotto"
+    ]
+  },
+  "Death Mountain Summit": {
+    "exits": [
+      "Death Mountain",
+      "DMC Upper Local",
+      "DMT Owl Flight",
+      "DMT Cow Grotto",
+      "DMT Great Fairy Fountain"
+    ]
+  },
+  "DMT Owl Flight": {
+    "exits": [
+      "Kak Impas Rooftop"
+    ]
+  },
+  "DMT Great Fairy Fountain": {
+    "exits": [
+      "Death Mountain Summit"
+    ]
+  },
+  "DMT Cow Grotto": {
+    "exits": [
+      "Death Mountain Summit"
+    ]
+  },
+  "DMT Storms Grotto": {
+    "exits": [
+      "Death Mountain"
+    ]
+  },
+  "Goron City": {
+    "exits": [
+      "Death Mountain",
+      "GC Medigoron",
+      "GC Woods Warp",
+      "GC Shop",
+      "GC Darunias Chamber",
+      "GC Grotto Platform"
+    ]
+  },
+  "GC Medigoron": {
+    "exits": [
+      "Goron City"
+    ]
+  },
+  "GC Woods Warp": {
+    "exits": [
+      "Goron City",
+      "Lost Woods"
+    ]
+  },
+  "GC Darunias Chamber": {
+    "exits": [
+      "Goron City",
+      "DMC Lower Local"
+    ]
+  },
+  "GC Grotto Platform": {
+    "exits": [
+      "GC Grotto",
+      "Goron City"
+    ]
+  },
+  "GC Shop": {
+    "exits": [
+      "Goron City"
+    ]
+  },
+  "GC Grotto": {
+    "exits": [
+      "GC Grotto Platform"
+    ]
+  },
+  "DMC Upper Local": {
+    "exits": [
+      "DMC Upper Nearby",
+      "DMC Ladder Region Nearby",
+      "DMC Central Nearby",
+      "DMC Lower Nearby",
+      "DMC Distant Platform"
+    ]
+  },
+  "DMC Central Local": {
+    "exits": [
+      "DMC Central Nearby",
+      "DMC Lower Nearby",
+      "DMC Upper Nearby",
+      "Fire Temple Entryway",
+      "DMC Distant Platform"
+    ]
+  },
+  "DMC Lower Local": {
+    "exits": [
+      "DMC Lower Nearby",
+      "DMC Ladder Region Nearby",
+      "DMC Central Nearby",
+      "DMC Central Local"
+    ]
+  },
+  "DMC Lower Nearby": {
+    "exits": [
+      "DMC Lower Local",
+      "GC Darunias Chamber",
+      "DMC Great Fairy Fountain",
+      "DMC Hammer Grotto"
+    ]
+  },
+  "DMC Upper Nearby": {
+    "exits": [
+      "DMC Upper Local",
+      "Death Mountain Summit",
+      "DMC Upper Grotto"
+    ]
+  },
+  "DMC Central Nearby": {
+    "exits": [
+      "DMC Central Local"
+    ]
+  },
+  "DMC Ladder Region Nearby": {
+    "exits": [
+      "DMC Upper Nearby",
+      "DMC Lower Nearby"
+    ]
+  },
+  "DMC Upper Grotto": {
+    "exits": [
+      "DMC Upper Local"
+    ]
+  },
+  "DMC Hammer Grotto": {
+    "exits": [
+      "DMC Lower Local"
+    ]
+  },
+  "DMC Great Fairy Fountain": {
+    "exits": [
+      "DMC Lower Local"
+    ]
+  },
+  "DMC Distant Platform": {
+    "exits": [
+      "DMC Central Local"
+    ]
+  },
+  "ZR Front": {
+    "exits": [
+      "Zora River",
+      "Hyrule Field"
+    ]
+  },
+  "Zora River": {
+    "exits": [
+      "ZR Front",
+      "ZR Open Grotto",
+      "ZR Fairy Grotto",
+      "Lost Woods",
+      "ZR Storms Grotto",
+      "ZR Behind Waterfall"
+    ]
+  },
+  "ZR Behind Waterfall": {
+    "exits": [
+      "Zora River",
+      "Zoras Domain"
+    ]
+  },
+  "ZR Open Grotto": {
+    "exits": [
+      "Zora River"
+    ]
+  },
+  "ZR Fairy Grotto": {
+    "exits": [
+      "Zora River"
+    ]
+  },
+  "ZR Storms Grotto": {
+    "exits": [
+      "Zora River"
+    ]
+  },
+  "Zoras Domain": {
+    "exits": [
+      "ZR Behind Waterfall",
+      "Lake Hylia",
+      "ZD Behind King Zora",
+      "ZD Shop",
+      "Zoras Domain Island"
+    ]
+  },
+  "Zoras Domain Island": {
+    "exits": [
+      "Zoras Domain",
+      "ZD Storms Grotto"
+    ]
+  },
+  "ZD Behind King Zora": {
+    "exits": [
+      "Zoras Domain",
+      "Zoras Fountain"
+    ]
+  },
+  "ZD Shop": {
+    "exits": [
+      "Zoras Domain"
+    ]
+  },
+  "ZD Storms Grotto": {
+    "exits": [
+      "Zoras Domain Island"
+    ]
+  },
+  "Zoras Fountain": {
+    "exits": [
+      "ZD Behind King Zora",
+      "ZF Icebergs",
+      "ZF Lakebed",
+      "ZF Hidden Cave",
+      "ZF Rock",
+      "Jabu Jabus Belly Entryway",
+      "ZF Great Fairy Fountain"
+    ]
+  },
+  "ZF Icebergs": {
+    "exits": [
+      "Zoras Fountain",
+      "ZF Lakebed",
+      "ZF Ledge"
+    ]
+  },
+  "ZF Lakebed": {
+    "exits": [
+      "Zoras Fountain"
+    ]
+  },
+  "ZF Ledge": {
+    "exits": [
+      "Zoras Fountain",
+      "ZF Icebergs",
+      "ZF Lakebed",
+      "Ice Cavern Entryway"
+    ]
+  },
+  "ZF Hidden Cave": {
+    "exits": [
+      "ZF Hidden Ledge"
+    ]
+  },
+  "ZF Hidden Ledge": {
+    "exits": [
+      "Zoras Fountain",
+      "ZF Hidden Cave"
+    ]
+  },
+  "ZF Rock": {
+    "exits": [
+      "Zoras Fountain"
+    ]
+  },
+  "ZF Great Fairy Fountain": {
+    "exits": [
+      "Zoras Fountain"
+    ]
+  },
+  "Lon Lon Ranch": {
+    "exits": [
+      "Hyrule Field",
+      "LLR Talons House",
+      "LLR Stables",
+      "LLR Tower",
+      "LLR Grotto"
+    ]
+  },
+  "LLR Talons House": {
+    "exits": [
+      "Lon Lon Ranch"
+    ]
+  },
+  "LLR Stables": {
+    "exits": [
+      "Lon Lon Ranch"
+    ]
+  },
+  "LLR Tower": {
+    "exits": [
+      "Lon Lon Ranch"
+    ]
+  },
+  "LLR Grotto": {
+    "exits": [
+      "Lon Lon Ranch"
+    ]
+  },
+  "Deku Tree Entryway": {
+    "exits": [
+      "Deku Tree Lobby",
+      "Deku Tree MQ 1F",
+      "KF Outside Deku Tree"
+    ]
+  },
+  "Dodongos Cavern Entryway": {
+    "exits": [
+      "Dodongos Cavern Beginning",
+      "Dodongos Cavern MQ Beginning",
+      "Death Mountain"
+    ]
+  },
+  "Jabu Jabus Belly Entryway": {
+    "exits": [
+      "Jabu Jabus Belly Beginning",
+      "Jabu Jabus Belly MQ Beginning",
+      "Zoras Fountain"
+    ]
+  },
+  "Forest Temple Entryway": {
+    "exits": [
+      "Forest Temple First Room",
+      "Forest Temple MQ Lobby",
+      "Sacred Forest Meadow"
+    ]
+  },
+  "Fire Temple Entryway": {
+    "exits": [
+      "Fire Temple First Room",
+      "Fire Temple MQ First Room Lower",
+      "DMC Central Local"
+    ]
+  },
+  "Water Temple Entryway": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple MQ 3F Central",
+      "Lake Hylia"
+    ]
+  },
+  "Spirit Temple Entryway": {
+    "exits": [
+      "Spirit Temple Lobby",
+      "Spirit Temple MQ Lobby",
+      "Desert Colossus From Spirit Entryway"
+    ]
+  },
+  "Shadow Temple Entryway": {
+    "exits": [
+      "Shadow Temple Beginning",
+      "Shadow Temple MQ Beginning",
+      "Graveyard Warp Pad Region"
+    ]
+  },
+  "Bottom of the Well Entryway": {
+    "exits": [
+      "Bottom of the Well Perimeter",
+      "Bottom of the Well MQ Perimeter",
+      "Kak Behind Gate"
+    ]
+  },
+  "Ice Cavern Entryway": {
+    "exits": [
+      "Ice Cavern Beginning",
+      "Ice Cavern MQ Beginning",
+      "ZF Ledge"
+    ]
+  },
+  "Gerudo Training Ground Entryway": {
+    "exits": [
+      "Gerudo Training Ground Lobby",
+      "Gerudo Training Ground MQ Lobby",
+      "Gerudo Fortress"
+    ]
+  },
+  "Ganon's Castle Entryway": {
+    "exits": [
+      "Ganon's Castle Lobby",
+      "Ganon's Castle MQ Lobby",
+      "Castle Grounds From Ganon's Castle"
+    ]
+  },
+  "Deku Tree Lobby": {
+    "exits": [
+      "Deku Tree Entryway",
+      "Deku Tree 2F Middle Room",
+      "Deku Tree Compass Room",
+      "Deku Tree Basement Lower",
+      "Deku Tree Outside Boss Room",
+      "Deku Tree Boss Entryway"
+    ]
+  },
+  "Deku Tree 2F Middle Room": {
+    "exits": [
+      "Deku Tree Lobby",
+      "Deku Tree Slingshot Room"
+    ]
+  },
+  "Deku Tree Slingshot Room": {
+    "exits": [
+      "Deku Tree 2F Middle Room"
+    ]
+  },
+  "Deku Tree Compass Room": {
+    "exits": [
+      "Deku Tree Lobby",
+      "Deku Tree Boss Entryway"
+    ]
+  },
+  "Deku Tree Basement Lower": {
+    "exits": [
+      "Deku Tree Lobby",
+      "Deku Tree Basement Scrub Room",
+      "Deku Tree Basement Upper",
+      "Deku Tree Outside Boss Room"
+    ]
+  },
+  "Deku Tree Basement Scrub Room": {
+    "exits": [
+      "Deku Tree Basement Lower",
+      "Deku Tree Basement Water Room Front"
+    ]
+  },
+  "Deku Tree Basement Water Room Front": {
+    "exits": [
+      "Deku Tree Basement Scrub Room",
+      "Deku Tree Basement Water Room Back"
+    ]
+  },
+  "Deku Tree Basement Water Room Back": {
+    "exits": [
+      "Deku Tree Basement Water Room Front",
+      "Deku Tree Basement Torch Room"
+    ]
+  },
+  "Deku Tree Basement Torch Room": {
+    "exits": [
+      "Deku Tree Basement Water Room Back",
+      "Deku Tree Basement Back Lobby"
+    ]
+  },
+  "Deku Tree Basement Back Lobby": {
+    "exits": [
+      "Deku Tree Basement Torch Room",
+      "Deku Tree Basement Back Room",
+      "Deku Tree Basement Upper"
+    ]
+  },
+  "Deku Tree Basement Back Room": {
+    "exits": [
+      "Deku Tree Basement Back Lobby"
+    ]
+  },
+  "Deku Tree Basement Upper": {
+    "exits": [
+      "Deku Tree Basement Lower",
+      "Deku Tree Basement Back Lobby",
+      "Deku Tree Outside Boss Room"
+    ]
+  },
+  "Deku Tree Outside Boss Room": {
+    "exits": [
+      "Deku Tree Basement Upper",
+      "Deku Tree Boss Entryway"
+    ]
+  },
+  "Deku Tree MQ 1F": {
+    "exits": [
+      "Deku Tree Entryway",
+      "Deku Tree MQ 2F",
+      "Deku Tree MQ Basement"
+    ]
+  },
+  "Deku Tree MQ 2F": {
+    "exits": [
+      "Deku Tree MQ 1F",
+      "Deku Tree MQ 3F",
+      "Deku Tree MQ Eye Target Room"
+    ]
+  },
+  "Deku Tree MQ 3F": {
+    "exits": [
+      "Deku Tree MQ 2F",
+      "Deku Tree MQ Eye Target Room",
+      "Deku Tree MQ Basement"
+    ]
+  },
+  "Deku Tree MQ Eye Target Room": {
+    "exits": [
+      "Deku Tree MQ Compass Room",
+      "Deku Tree MQ 2F"
+    ]
+  },
+  "Deku Tree MQ Compass Room": {
+    "exits": [
+      "Deku Tree MQ Eye Target Room",
+      "Deku Tree MQ Past Boulder Vines"
+    ]
+  },
+  "Deku Tree MQ Past Boulder Vines": {
+    "exits": [
+      "Deku Tree MQ Compass Room"
+    ]
+  },
+  "Deku Tree MQ Basement": {
+    "exits": [
+      "Deku Tree MQ 1F",
+      "Deku Tree MQ Southeast Room",
+      "Deku Tree MQ Basement Water Room Front",
+      "Deku Tree MQ Basement Ledge"
+    ]
+  },
+  "Deku Tree MQ Southeast Room": {
+    "exits": [
+      "Deku Tree MQ Basement Water Room Front",
+      "Deku Tree MQ Basement"
+    ]
+  },
+  "Deku Tree MQ Basement Water Room Front": {
+    "exits": [
+      "Deku Tree MQ Basement Water Room Back",
+      "Deku Tree MQ Southeast Room"
+    ]
+  },
+  "Deku Tree MQ Basement Water Room Back": {
+    "exits": [
+      "Deku Tree MQ Basement Southwest Room",
+      "Deku Tree MQ Basement Water Room Front"
+    ]
+  },
+  "Deku Tree MQ Basement Southwest Room": {
+    "exits": [
+      "Deku Tree MQ Basement Grave Room",
+      "Deku Tree MQ Basement Water Room Back"
+    ]
+  },
+  "Deku Tree MQ Basement Grave Room": {
+    "exits": [
+      "Deku Tree MQ Basement Ledge",
+      "Deku Tree MQ Basement Southwest Room",
+      "Deku Tree MQ Basement Back Room"
+    ]
+  },
+  "Deku Tree MQ Basement Back Room": {
+    "exits": [
+      "Deku Tree MQ Basement Grave Room"
+    ]
+  },
+  "Deku Tree MQ Basement Ledge": {
+    "exits": [
+      "Deku Tree MQ Basement Grave Room",
+      "Deku Tree MQ Basement",
+      "Deku Tree MQ Outside Boss Room"
+    ]
+  },
+  "Deku Tree MQ Outside Boss Room": {
+    "exits": [
+      "Deku Tree MQ Basement Ledge",
+      "Deku Tree Boss Entryway"
+    ]
+  },
+  "Deku Tree Boss Entryway": {
+    "exits": [
+      "Deku Tree Outside Boss Room",
+      "Deku Tree MQ Outside Boss Room",
+      "Deku Tree Boss Room"
+    ]
+  },
+  "Deku Tree Boss Room": {
+    "exits": [
+      "Deku Tree Boss Entryway",
+      "KF Outside Deku Tree"
+    ]
+  },
+  "Dodongos Cavern Beginning": {
+    "exits": [
+      "Dodongos Cavern Entryway",
+      "Dodongos Cavern Lobby"
+    ]
+  },
+  "Dodongos Cavern Lobby": {
+    "exits": [
+      "Dodongos Cavern Beginning",
+      "Dodongos Cavern Lobby Switch",
+      "Dodongos Cavern SE Corridor",
+      "Dodongos Cavern Stairs Lower",
+      "Dodongos Cavern Far Bridge",
+      "Dodongos Cavern Boss Region",
+      "Dodongos Cavern Boss Entryway"
+    ]
+  },
+  "Dodongos Cavern Lobby Switch": {
+    "exits": [
+      "Dodongos Cavern Lobby",
+      "Dodongos Cavern Dodongo Room"
+    ]
+  },
+  "Dodongos Cavern SE Corridor": {
+    "exits": [
+      "Dodongos Cavern Lobby",
+      "Dodongos Cavern SE Room",
+      "Dodongos Cavern Near Lower Lizalfos"
+    ]
+  },
+  "Dodongos Cavern SE Room": {
+    "exits": [
+      "Dodongos Cavern SE Corridor"
+    ]
+  },
+  "Dodongos Cavern Near Lower Lizalfos": {
+    "exits": [
+      "Dodongos Cavern SE Corridor",
+      "Dodongos Cavern Lower Lizalfos"
+    ]
+  },
+  "Dodongos Cavern Lower Lizalfos": {
+    "exits": [
+      "Dodongos Cavern Near Lower Lizalfos",
+      "Dodongos Cavern Dodongo Room"
+    ]
+  },
+  "Dodongos Cavern Dodongo Room": {
+    "exits": [
+      "Dodongos Cavern Lobby Switch",
+      "Dodongos Cavern Lower Lizalfos",
+      "Dodongos Cavern Near Dodongo Room"
+    ]
+  },
+  "Dodongos Cavern Near Dodongo Room": {
+    "exits": [
+      "Dodongos Cavern Dodongo Room"
+    ]
+  },
+  "Dodongos Cavern Stairs Lower": {
+    "exits": [
+      "Dodongos Cavern Lobby",
+      "Dodongos Cavern Stairs Upper",
+      "Dodongos Cavern Compass Room"
+    ]
+  },
+  "Dodongos Cavern Stairs Upper": {
+    "exits": [
+      "Dodongos Cavern Stairs Lower",
+      "Dodongos Cavern Armos Room"
+    ]
+  },
+  "Dodongos Cavern Compass Room": {
+    "exits": [
+      "Dodongos Cavern Stairs Lower"
+    ]
+  },
+  "Dodongos Cavern Armos Room": {
+    "exits": [
+      "Dodongos Cavern Stairs Upper",
+      "Dodongos Cavern Bomb Room Lower"
+    ]
+  },
+  "Dodongos Cavern Bomb Room Lower": {
+    "exits": [
+      "Dodongos Cavern Armos Room",
+      "Dodongos Cavern 2F Side Room",
+      "Dodongos Cavern First Slingshot Room",
+      "Dodongos Cavern Bomb Room Upper"
+    ]
+  },
+  "Dodongos Cavern 2F Side Room": {
+    "exits": [
+      "Dodongos Cavern Bomb Room Lower"
+    ]
+  },
+  "Dodongos Cavern First Slingshot Room": {
+    "exits": [
+      "Dodongos Cavern Bomb Room Lower",
+      "Dodongos Cavern Upper Lizalfos"
+    ]
+  },
+  "Dodongos Cavern Upper Lizalfos": {
+    "exits": [
+      "Dodongos Cavern Lower Lizalfos",
+      "Dodongos Cavern First Slingshot Room",
+      "Dodongos Cavern Second Slingshot Room"
+    ]
+  },
+  "Dodongos Cavern Second Slingshot Room": {
+    "exits": [
+      "Dodongos Cavern Upper Lizalfos",
+      "Dodongos Cavern Bomb Room Upper"
+    ]
+  },
+  "Dodongos Cavern Bomb Room Upper": {
+    "exits": [
+      "Dodongos Cavern Bomb Room Lower",
+      "Dodongos Cavern Second Slingshot Room",
+      "Dodongos Cavern Far Bridge"
+    ]
+  },
+  "Dodongos Cavern Far Bridge": {
+    "exits": [
+      "Dodongos Cavern Lobby",
+      "Dodongos Cavern Bomb Room Upper"
+    ]
+  },
+  "Dodongos Cavern Boss Region": {
+    "exits": [
+      "Dodongos Cavern Lobby",
+      "Dodongos Cavern Back Room",
+      "Dodongos Cavern Boss Entryway"
+    ]
+  },
+  "Dodongos Cavern Back Room": {
+    "exits": [
+      "Dodongos Cavern Boss Region"
+    ]
+  },
+  "Dodongos Cavern MQ Beginning": {
+    "exits": [
+      "Dodongos Cavern Entryway",
+      "Dodongos Cavern MQ Lobby"
+    ]
+  },
+  "Dodongos Cavern MQ Lobby": {
+    "exits": [
+      "Dodongos Cavern MQ Gossip Stone",
+      "Dodongos Cavern MQ Mouth Side Bridge",
+      "Dodongos Cavern MQ Stairs Lower",
+      "Dodongos Cavern MQ Lower Right Side",
+      "Dodongos Cavern MQ Poes Room",
+      "Dodongos Cavern MQ Behind Mouth"
+    ]
+  },
+  "Dodongos Cavern MQ Gossip Stone": {
+    "exits": [
+      "Dodongos Cavern MQ Lobby"
+    ]
+  },
+  "Dodongos Cavern MQ Mouth Side Bridge": {
+    "exits": [
+      "Dodongos Cavern MQ Lobby",
+      "Dodongos Cavern MQ Torch Puzzle Upper",
+      "Dodongos Cavern MQ Poes Room"
+    ]
+  },
+  "Dodongos Cavern MQ Stairs Past Mud Wall": {
+    "exits": [
+      "Dodongos Cavern MQ Stairs Upper",
+      "Dodongos Cavern MQ Stairs Lower"
+    ]
+  },
+  "Dodongos Cavern MQ Stairs Lower": {
+    "exits": [
+      "Dodongos Cavern MQ Lobby",
+      "Dodongos Cavern MQ Stairs Upper",
+      "Dodongos Cavern MQ Stairs Past Mud Wall"
+    ]
+  },
+  "Dodongos Cavern MQ Stairs Upper": {
+    "exits": [
+      "Dodongos Cavern MQ Stairs Lower",
+      "Dodongos Cavern MQ Past Big Skulltulas"
+    ]
+  },
+  "Dodongos Cavern MQ Past Big Skulltulas": {
+    "exits": [
+      "Dodongos Cavern MQ Stairs Upper",
+      "Dodongos Cavern MQ Stairs Lower",
+      "Dodongos Cavern MQ Dodongo Room"
+    ]
+  },
+  "Dodongos Cavern MQ Dodongo Room": {
+    "exits": [
+      "Dodongos Cavern MQ Past Big Skulltulas",
+      "Dodongos Cavern MQ Torch Puzzle Lower"
+    ]
+  },
+  "Dodongos Cavern MQ Torch Puzzle Lower": {
+    "exits": [
+      "Dodongos Cavern MQ Torch Puzzle Lower",
+      "Dodongos Cavern MQ Before Upper Lizalfos"
+    ]
+  },
+  "Dodongos Cavern MQ Larvae Room": {
+    "exits": [
+      "Dodongos Cavern MQ Torch Puzzle Lower"
+    ]
+  },
+  "Dodongos Cavern MQ Before Upper Lizalfos": {
+    "exits": [
+      "Dodongos Cavern MQ Before Upper Lizalfos",
+      "Dodongos Cavern MQ Torch Puzzle Upper"
+    ]
+  },
+  "Dodongos Cavern MQ Torch Puzzle Upper": {
+    "exits": [
+      "Dodongos Cavern MQ Mouth Side Bridge",
+      "Dodongos Cavern MQ Torch Puzzle Lower",
+      "Dodongos Cavern MQ Before Upper Lizalfos"
+    ]
+  },
+  "Dodongos Cavern MQ Lower Right Side": {
+    "exits": [
+      "Dodongos Cavern MQ Lobby",
+      "Dodongos Cavern MQ Lower Lizalfos"
+    ]
+  },
+  "Dodongos Cavern MQ Lower Lizalfos": {
+    "exits": [
+      "Dodongos Cavern MQ Lower Right Side",
+      "Dodongos Cavern MQ Poes Room"
+    ]
+  },
+  "Dodongos Cavern MQ Poes Room": {
+    "exits": [
+      "Dodongos Cavern MQ Lobby",
+      "Dodongos Cavern MQ Lower Lizalfos",
+      "Dodongos Cavern Mad Scrub Room"
+    ]
+  },
+  "Dodongos Cavern Mad Scrub Room": {
+    "exits": [
+      "Dodongos Cavern MQ Poes Room"
+    ]
+  },
+  "Dodongos Cavern MQ Behind Mouth": {
+    "exits": [
+      "Dodongos Cavern MQ Lobby",
+      "Dodongos Cavern MQ Back Behind Fire",
+      "Dodongos Cavern MQ BossArea"
+    ]
+  },
+  "Dodongos Cavern MQ Back Behind Fire": {
+    "exits": [
+      "Dodongos Cavern MQ Behind Mouth",
+      "Dodongos Cavern MQ BossArea"
+    ]
+  },
+  "Dodongos Cavern MQ BossArea": {
+    "exits": [
+      "Dodongos Cavern MQ Back Behind Fire",
+      "Dodongos Cavern Boss Entryway"
+    ]
+  },
+  "Dodongos Cavern Boss Entryway": {
+    "exits": [
+      "Dodongos Cavern Boss Region",
+      "Dodongos Cavern MQ Behind Mouth",
+      "Dodongos Cavern Boss Room"
+    ]
+  },
+  "Dodongos Cavern Boss Room": {
+    "exits": [
+      "Dodongos Cavern Boss Entryway",
+      "Death Mountain"
+    ]
+  },
+  "Jabu Jabus Belly Beginning": {
+    "exits": [
+      "Jabu Jabus Belly Entryway",
+      "Jabu Jabus Belly Main"
+    ]
+  },
+  "Jabu Jabus Belly Main": {
+    "exits": [
+      "Jabu Jabus Belly Beginning",
+      "Jabu Jabus Belly B1 North",
+      "Jabu Jabus Belly Compass Room",
+      "Jabu Jabus Belly Blue Tentacle",
+      "Jabu Jabus Belly Green Tentacle",
+      "Jabu Jabus Belly Bigocto Room",
+      "Jabu Jabus Belly Near Boss Room"
+    ]
+  },
+  "Jabu Jabus Belly B1 North": {
+    "exits": [
+      "Jabu Jabus Belly Main",
+      "Jabu Jabus Belly Water Switch Room Ledge",
+      "Jabu Jabus Belly Water Switch Room South"
+    ]
+  },
+  "Jabu Jabus Belly Water Switch Room South": {
+    "exits": [
+      "Jabu Jabus Belly B1 North",
+      "Jabu Jabus Belly Water Switch Room Ledge",
+      "Jabu Jabus Belly Main"
+    ]
+  },
+  "Jabu Jabus Belly Water Switch Room Ledge": {
+    "exits": [
+      "Jabu Jabus Belly B1 North",
+      "Jabu Jabus Belly Water Switch Room South"
+    ]
+  },
+  "Jabu Jabus Belly Compass Room": {
+    "exits": [
+      "Jabu Jabus Belly Main"
+    ]
+  },
+  "Jabu Jabus Belly Blue Tentacle": {
+    "exits": [
+      "Jabu Jabus Belly Main"
+    ]
+  },
+  "Jabu Jabus Belly Green Tentacle": {
+    "exits": [
+      "Jabu Jabus Belly Main"
+    ]
+  },
+  "Jabu Jabus Belly Bigocto Room": {
+    "exits": [
+      "Jabu Jabus Belly B1 North",
+      "Jabu Jabus Belly Above Bigocto"
+    ]
+  },
+  "Jabu Jabus Belly Above Bigocto": {
+    "exits": [
+      "Jabu Jabus Belly Lift Upper"
+    ]
+  },
+  "Jabu Jabus Belly Lift Upper": {
+    "exits": [
+      "Jabu Jabus Belly Main"
+    ]
+  },
+  "Jabu Jabus Belly Near Boss Room": {
+    "exits": [
+      "Jabu Jabus Belly Main",
+      "Jabu Jabus Belly Boss Entryway"
+    ]
+  },
+  "Jabu Jabus Belly MQ Beginning": {
+    "exits": [
+      "Jabu Jabus Belly Entryway",
+      "Jabu Jabus Belly MQ Lift Room"
+    ]
+  },
+  "Jabu Jabus Belly MQ Lift Room": {
+    "exits": [
+      "Jabu Jabus Belly MQ Beginning",
+      "Jabu Jabus Belly MQ Underwater Alcove",
+      "Jabu Jabus Belly MQ Holes Room",
+      "Jabu Jabus Belly MQ Lift Room East Ledge"
+    ]
+  },
+  "Jabu Jabus Belly MQ Lift Room East Ledge": {
+    "exits": [
+      "Jabu Jabus Belly MQ Lift Room",
+      "Jabu Jabus Belly MQ Boss Region"
+    ]
+  },
+  "Jabu Jabus Belly MQ Underwater Alcove": {
+    "exits": [
+      "Jabu Jabus Belly MQ Lift Room"
+    ]
+  },
+  "Jabu Jabus Belly MQ Holes Room": {
+    "exits": [
+      "Jabu Jabus Belly MQ Lift Room",
+      "Jabu Jabus Belly MQ Water Switch Room",
+      "Jabu Jabus Belly MQ Forked Corridor",
+      "Jabu Jabus Belly MQ Invisible Keese Room",
+      "Jabu Jabus Belly MQ Past Octo"
+    ]
+  },
+  "Jabu Jabus Belly MQ Water Switch Room": {
+    "exits": [
+      "Jabu Jabus Belly MQ Beginning",
+      "Jabu Jabus Belly MQ Holes Room"
+    ]
+  },
+  "Jabu Jabus Belly MQ Forked Corridor": {
+    "exits": [
+      "Jabu Jabus Belly MQ Holes Room",
+      "Jabu Jabus Belly MQ West Forked Rooms"
+    ]
+  },
+  "Jabu Jabus Belly MQ West Forked Rooms": {
+    "exits": [
+      "Jabu Jabus Belly MQ Forked Corridor"
+    ]
+  },
+  "Jabu Jabus Belly MQ Invisible Keese Room": {
+    "exits": [
+      "Jabu Jabus Belly MQ Holes Room"
+    ]
+  },
+  "Jabu Jabus Belly MQ Past Octo": {
+    "exits": [
+      "Jabu Jabus Belly MQ Lift Room",
+      "Jabu Jabus Belly MQ Holes Room"
+    ]
+  },
+  "Jabu Jabus Belly MQ Boss Region": {
+    "exits": [
+      "Jabu Jabus Belly MQ Lift Room East Ledge",
+      "Jabu Jabus Belly Boss Entryway"
+    ]
+  },
+  "Jabu Jabus Belly Boss Entryway": {
+    "exits": [
+      "Jabu Jabus Belly Near Boss Room",
+      "Jabu Jabus Belly MQ Boss Region",
+      "Jabu Jabus Belly Boss Room"
+    ]
+  },
+  "Jabu Jabus Belly Boss Room": {
+    "exits": [
+      "Jabu Jabus Belly Boss Entryway",
+      "Zoras Fountain"
+    ]
+  },
+  "Forest Temple First Room": {
+    "exits": [
+      "Forest Temple Entryway",
+      "Forest Temple South Corridor"
+    ]
+  },
+  "Forest Temple South Corridor": {
+    "exits": [
+      "Forest Temple First Room",
+      "Forest Temple Lobby"
+    ]
+  },
+  "Forest Temple Lobby": {
+    "exits": [
+      "Forest Temple South Corridor",
+      "Forest Temple North Corridor",
+      "Forest Temple NW Outdoors Lower",
+      "Forest Temple NE Outdoors Lower",
+      "Forest Temple West Corridor",
+      "Forest Temple East Corridor",
+      "Forest Temple Boss Region",
+      "Forest Temple Boss Entryway"
+    ]
+  },
+  "Forest Temple North Corridor": {
+    "exits": [
+      "Forest Temple Lobby",
+      "Forest Temple Lower Stalfos"
+    ]
+  },
+  "Forest Temple Lower Stalfos": {
+    "exits": [
+      "Forest Temple North Corridor"
+    ]
+  },
+  "Forest Temple NW Outdoors Lower": {
+    "exits": [
+      "Forest Temple Lobby",
+      "Forest Temple NW Outdoors Upper",
+      "Forest Temple Map Room",
+      "Forest Temple Sewer",
+      "Forest Temple Boss Entryway"
+    ]
+  },
+  "Forest Temple NW Outdoors Upper": {
+    "exits": [
+      "Forest Temple NW Outdoors Lower",
+      "Forest Temple Below Boss Key Chest",
+      "Forest Temple Floormaster Room",
+      "Forest Temple Block Push Room"
+    ]
+  },
+  "Forest Temple NE Outdoors Lower": {
+    "exits": [
+      "Forest Temple Lobby",
+      "Forest Temple NE Outdoors Upper",
+      "Forest Temple Sewer",
+      "Forest Temple Falling Room"
+    ]
+  },
+  "Forest Temple NE Outdoors Upper": {
+    "exits": [
+      "Forest Temple NE Outdoors Lower",
+      "Forest Temple Map Room",
+      "Forest Temple Falling Room"
+    ]
+  },
+  "Forest Temple Map Room": {
+    "exits": [
+      "Forest Temple NW Outdoors Lower",
+      "Forest Temple NE Outdoors Upper"
+    ]
+  },
+  "Forest Temple Sewer": {
+    "exits": [
+      "Forest Temple NW Outdoors Lower",
+      "Forest Temple NE Outdoors Lower"
+    ]
+  },
+  "Forest Temple Below Boss Key Chest": {
+    "exits": [
+      "Forest Temple NW Outdoors Upper"
+    ]
+  },
+  "Forest Temple Floormaster Room": {
+    "exits": [
+      "Forest Temple NW Outdoors Upper"
+    ]
+  },
+  "Forest Temple West Corridor": {
+    "exits": [
+      "Forest Temple Lobby",
+      "Forest Temple Block Push Room"
+    ]
+  },
+  "Forest Temple Block Push Room": {
+    "exits": [
+      "Forest Temple West Corridor",
+      "Forest Temple NW Outdoors Upper",
+      "Forest Temple NW Corridor Twisted",
+      "Forest Temple NW Corridor Straightened"
+    ]
+  },
+  "Forest Temple NW Corridor Twisted": {
+    "exits": [
+      "Forest Temple Block Push Room",
+      "Forest Temple Red Poe Room"
+    ]
+  },
+  "Forest Temple NW Corridor Straightened": {
+    "exits": [
+      "Forest Temple Below Boss Key Chest",
+      "Forest Temple Block Push Room"
+    ]
+  },
+  "Forest Temple Red Poe Room": {
+    "exits": [
+      "Forest Temple NW Corridor Twisted",
+      "Forest Temple Upper Stalfos"
+    ]
+  },
+  "Forest Temple Upper Stalfos": {
+    "exits": [
+      "Forest Temple Red Poe Room",
+      "Forest Temple Blue Poe Room"
+    ]
+  },
+  "Forest Temple Blue Poe Room": {
+    "exits": [
+      "Forest Temple Upper Stalfos",
+      "Forest Temple NE Corridor Straightened"
+    ]
+  },
+  "Forest Temple NE Corridor Straightened": {
+    "exits": [
+      "Forest Temple Blue Poe Room",
+      "Forest Temple Frozen Eye Room"
+    ]
+  },
+  "Forest Temple NE Corridor Twisted": {
+    "exits": [
+      "Forest Temple Frozen Eye Room",
+      "Forest Temple Falling Room"
+    ]
+  },
+  "Forest Temple Frozen Eye Room": {
+    "exits": [
+      "Forest Temple NE Corridor Straightened",
+      "Forest Temple NE Corridor Twisted"
+    ]
+  },
+  "Forest Temple Falling Room": {
+    "exits": [
+      "Forest Temple NE Outdoors Lower",
+      "Forest Temple Green Poe Room"
+    ]
+  },
+  "Forest Temple Green Poe Room": {
+    "exits": [
+      "Forest Temple Falling Room",
+      "Forest Temple East Corridor"
+    ]
+  },
+  "Forest Temple East Corridor": {
+    "exits": [
+      "Forest Temple Lobby",
+      "Forest Temple Green Poe Room"
+    ]
+  },
+  "Forest Temple Boss Region": {
+    "exits": [
+      "Forest Temple Lobby",
+      "Forest Temple Boss Entryway"
+    ]
+  },
+  "Forest Temple MQ Lobby": {
+    "exits": [
+      "Forest Temple Entryway",
+      "Forest Temple MQ Central Region"
+    ]
+  },
+  "Forest Temple MQ Central Region": {
+    "exits": [
+      "Forest Temple MQ Wolfos Room",
+      "Forest Temple MQ NW Outdoors",
+      "Forest Temple MQ NE Outdoors",
+      "Forest Temple MQ Lower Block Puzzle",
+      "Forest Temple MQ Basement"
+    ]
+  },
+  "Forest Temple MQ Wolfos Room": {
+    "exits": [
+      "Forest Temple MQ Central Region"
+    ]
+  },
+  "Forest Temple MQ Lower Block Puzzle": {
+    "exits": [
+      "Forest Temple MQ Central Region",
+      "Forest Temple MQ Middle Block Puzzle",
+      "Forest Temple MQ After Block Puzzle",
+      "Forest Temple MQ Outdoor Ledge"
+    ]
+  },
+  "Forest Temple MQ Middle Block Puzzle": {
+    "exits": [
+      "Forest Temple MQ Lower Block Puzzle",
+      "Forest Temple MQ After Block Puzzle",
+      "Forest Temple MQ Outdoor Ledge"
+    ]
+  },
+  "Forest Temple MQ After Block Puzzle": {
+    "exits": [
+      "Forest Temple MQ Straight Hallway",
+      "Forest Temple MQ Joelle room",
+      "Forest Temple MQ NW Outdoors"
+    ]
+  },
+  "Forest Temple MQ Straight Hallway": {
+    "exits": [
+      "Forest Temple MQ Floormaster Room"
+    ]
+  },
+  "Forest Temple MQ Floormaster Room": {
+    "exits": [
+      "Forest Temple MQ Outdoor Ledge"
+    ]
+  },
+  "Forest Temple MQ Outdoor Ledge": {
+    "exits": [
+      "Forest Temple MQ NW Outdoors"
+    ]
+  },
+  "Forest Temple MQ NW Outdoors": {
+    "exits": [
+      "Forest Temple MQ NE Outdoors",
+      "Forest Temple MQ Outdoors Top Ledges"
+    ]
+  },
+  "Forest Temple MQ NE Outdoors": {
+    "exits": [
+      "Forest Temple MQ NW Outdoors",
+      "Forest Temple MQ Outdoors Top Ledges",
+      "Forest Temple MQ NE Outdoors Ledge"
+    ]
+  },
+  "Forest Temple MQ Outdoors Top Ledges": {
+    "exits": [
+      "Forest Temple MQ NW Outdoors",
+      "Forest Temple MQ NE Outdoors",
+      "Forest Temple MQ NE Outdoors Ledge"
+    ]
+  },
+  "Forest Temple MQ NE Outdoors Ledge": {
+    "exits": [
+      "Forest Temple MQ NE Outdoors",
+      "Forest Temple MQ Falling Room"
+    ]
+  },
+  "Forest Temple MQ Joelle room": {
+    "exits": [
+      "Forest Temple MQ After Block Puzzle",
+      "Forest Temple MQ 3 Stalfos Room"
+    ]
+  },
+  "Forest Temple MQ 3 Stalfos Room": {
+    "exits": [
+      "Forest Temple MQ Joelle room",
+      "Forest Temple MQ Beth Room"
+    ]
+  },
+  "Forest Temple MQ Beth Room": {
+    "exits": [
+      "Forest Temple MQ Falling Room",
+      "Forest Temple MQ Torch Shot Room",
+      "Forest Temple MQ 3 Stalfos Room"
+    ]
+  },
+  "Forest Temple MQ Torch Shot Room": {
+    "exits": [
+      "Forest Temple MQ Falling Room",
+      "Forest Temple MQ Beth Room"
+    ]
+  },
+  "Forest Temple MQ Falling Room": {
+    "exits": [
+      "Forest Temple MQ NE Outdoors Ledge",
+      "Forest Temple MQ Amy Room"
+    ]
+  },
+  "Forest Temple MQ Amy Room": {
+    "exits": [
+      "Forest Temple MQ Central Region",
+      "Forest Temple MQ Falling Room"
+    ]
+  },
+  "Forest Temple MQ Basement": {
+    "exits": [
+      "Forest Temple MQ Central Region",
+      "Forest Temple MQ Basement Pot Room",
+      "Forest Temple MQ Boss Region"
+    ]
+  },
+  "Forest Temple MQ Basement Pot Room": {
+    "exits": [
+      "Forest Temple MQ Basement"
+    ]
+  },
+  "Forest Temple MQ Boss Region": {
+    "exits": [
+      "Forest Temple MQ Basement",
+      "Forest Temple Boss Entryway"
+    ]
+  },
+  "Forest Temple Boss Entryway": {
+    "exits": [
+      "Forest Temple Boss Region",
+      "Forest Temple MQ Boss Region",
+      "Forest Temple Boss Room"
+    ]
+  },
+  "Forest Temple Boss Room": {
+    "exits": [
+      "Forest Temple Boss Entryway",
+      "Sacred Forest Meadow"
+    ]
+  },
+  "Fire Temple First Room": {
+    "exits": [
+      "Fire Temple Entryway",
+      "Fire Temple Near Boss Room",
+      "Fire Temple Loop Enemies",
+      "Fire Temple Loop Exit",
+      "Fire Temple Big Lava Room"
+    ]
+  },
+  "Fire Temple Near Boss Room": {
+    "exits": [
+      "Fire Temple First Room",
+      "Fire Temple Boss Entryway"
+    ]
+  },
+  "Fire Temple Loop Enemies": {
+    "exits": [
+      "Fire Temple First Room",
+      "Fire Temple Loop Tiles"
+    ]
+  },
+  "Fire Temple Loop Tiles": {
+    "exits": [
+      "Fire Temple Loop Enemies",
+      "Fire Temple Loop Flare Dancer"
+    ]
+  },
+  "Fire Temple Loop Flare Dancer": {
+    "exits": [
+      "Fire Temple Loop Tiles",
+      "Fire Temple Loop Hammer Switch"
+    ]
+  },
+  "Fire Temple Loop Hammer Switch": {
+    "exits": [
+      "Fire Temple Loop Flare Dancer",
+      "Fire Temple Loop Goron Room"
+    ]
+  },
+  "Fire Temple Loop Goron Room": {
+    "exits": [
+      "Fire Temple Loop Hammer Switch",
+      "Fire Temple Loop Exit"
+    ]
+  },
+  "Fire Temple Loop Exit": {
+    "exits": [
+      "Fire Temple First Room",
+      "Fire Temple Loop Goron Room"
+    ]
+  },
+  "Fire Temple Big Lava Room": {
+    "exits": [
+      "Fire Temple First Room",
+      "Fire Temple Big Lava Room North Goron",
+      "Fire Temple Big Lava Room North Tiles",
+      "Fire Temple Big Lava Room South Goron",
+      "Fire Temple Fire Pillar Room"
+    ]
+  },
+  "Fire Temple Big Lava Room North Goron": {
+    "exits": [
+      "Fire Temple Big Lava Room"
+    ]
+  },
+  "Fire Temple Big Lava Room North Tiles": {
+    "exits": [
+      "Fire Temple Big Lava Room"
+    ]
+  },
+  "Fire Temple Big Lava Room South Goron": {
+    "exits": [
+      "Fire Temple Big Lava Room"
+    ]
+  },
+  "Fire Temple Fire Pillar Room": {
+    "exits": [
+      "Fire Temple Big Lava Room",
+      "Fire Temple Shortcut Room"
+    ]
+  },
+  "Fire Temple Shortcut Room": {
+    "exits": [
+      "Fire Temple Fire Pillar Room",
+      "Fire Temple Shortcut Climb",
+      "Fire Temple Boulder Maze Lower"
+    ]
+  },
+  "Fire Temple Shortcut Climb": {
+    "exits": [
+      "Fire Temple Shortcut Room",
+      "Fire Temple Boulder Maze Upper"
+    ]
+  },
+  "Fire Temple Boulder Maze Lower": {
+    "exits": [
+      "Fire Temple Shortcut Room",
+      "Fire Temple Boulder Maze Lower Side Room",
+      "Fire Temple East Central Room",
+      "Fire Temple Boulder Maze Upper"
+    ]
+  },
+  "Fire Temple Boulder Maze Lower Side Room": {
+    "exits": [
+      "Fire Temple Boulder Maze Lower"
+    ]
+  },
+  "Fire Temple East Central Room": {
+    "exits": [
+      "Fire Temple Big Lava Room",
+      "Fire Temple Boulder Maze Lower",
+      "Fire Temple Fire Wall Chase",
+      "Fire Temple Map Region"
+    ]
+  },
+  "Fire Temple Fire Wall Chase": {
+    "exits": [
+      "Fire Temple East Central Room",
+      "Fire Temple Map Region",
+      "Fire Temple Boulder Maze Upper",
+      "Fire Temple Corridor"
+    ]
+  },
+  "Fire Temple Map Region": {
+    "exits": [
+      "Fire Temple East Central Room"
+    ]
+  },
+  "Fire Temple Boulder Maze Upper": {
+    "exits": [
+      "Fire Temple Shortcut Climb",
+      "Fire Temple Boulder Maze Lower",
+      "Fire Temple Fire Wall Chase",
+      "Fire Temple Scarecrow Room"
+    ]
+  },
+  "Fire Temple Scarecrow Room": {
+    "exits": [
+      "Fire Temple Boulder Maze Upper",
+      "Fire Temple East Peak"
+    ]
+  },
+  "Fire Temple East Peak": {
+    "exits": [
+      "Fire Temple Scarecrow Room",
+      "Fire Temple East Central Room"
+    ]
+  },
+  "Fire Temple Corridor": {
+    "exits": [
+      "Fire Temple Fire Wall Chase",
+      "Fire Temple Fire Maze Room"
+    ]
+  },
+  "Fire Temple Fire Maze Room": {
+    "exits": [
+      "Fire Temple Corridor",
+      "Fire Temple Fire Maze Upper",
+      "Fire Temple Fire Maze Side Room",
+      "Fire Temple West Central Lower",
+      "Fire Temple Late Fire Maze"
+    ]
+  },
+  "Fire Temple Fire Maze Upper": {
+    "exits": [
+      "Fire Temple Near Boss Room",
+      "Fire Temple Fire Maze Room",
+      "Fire Temple West Central Upper"
+    ]
+  },
+  "Fire Temple Fire Maze Side Room": {
+    "exits": [
+      "Fire Temple Fire Maze Room"
+    ]
+  },
+  "Fire Temple West Central Lower": {
+    "exits": [
+      "Fire Temple Fire Maze Room",
+      "Fire Temple West Central Upper",
+      "Fire Temple Late Fire Maze"
+    ]
+  },
+  "Fire Temple West Central Upper": {
+    "exits": [
+      "Fire Temple Boss Entryway",
+      "Fire Temple Fire Maze Upper",
+      "Fire Temple West Central Lower"
+    ]
+  },
+  "Fire Temple Late Fire Maze": {
+    "exits": [
+      "Fire Temple Fire Maze Room",
+      "Fire Temple West Central Lower",
+      "Fire Temple Upper Flare Dancer"
+    ]
+  },
+  "Fire Temple Upper Flare Dancer": {
+    "exits": [
+      "Fire Temple Late Fire Maze",
+      "Fire Temple West Climb"
+    ]
+  },
+  "Fire Temple West Climb": {
+    "exits": [
+      "Fire Temple Upper Flare Dancer",
+      "Fire Temple West Peak"
+    ]
+  },
+  "Fire Temple West Peak": {
+    "exits": [
+      "Fire Temple West Central Upper",
+      "Fire Temple West Climb",
+      "Fire Temple Hammer Return Path"
+    ]
+  },
+  "Fire Temple Hammer Return Path": {
+    "exits": [
+      "Fire Temple Above Fire Maze"
+    ]
+  },
+  "Fire Temple Above Fire Maze": {
+    "exits": [
+      "Fire Temple Hammer Return Path",
+      "Fire Temple Fire Maze Upper"
+    ]
+  },
+  "Fire Temple MQ First Room Lower": {
+    "exits": [
+      "Fire Temple Entryway",
+      "Fire Temple MQ Map Room South",
+      "Fire Temple MQ First Room Upper",
+      "Fire Temple MQ Stalfos Room"
+    ]
+  },
+  "Fire Temple MQ First Room Upper": {
+    "exits": [
+      "Fire Temple MQ First Room Lower",
+      "Fire Temple MQ Near Boss Room",
+      "Fire Temple MQ Big Lava Room"
+    ]
+  },
+  "Fire Temple MQ Map Room South": {
+    "exits": [
+      "Fire Temple MQ First Room Lower",
+      "Fire Temple MQ Map Room Cage"
+    ]
+  },
+  "Fire Temple MQ Stalfos Room": {
+    "exits": [
+      "Fire Temple MQ First Room Lower",
+      "Fire Temple MQ Iron Knuckle Room"
+    ]
+  },
+  "Fire Temple MQ Iron Knuckle Room": {
+    "exits": [
+      "Fire Temple MQ Stalfos Room",
+      "Fire Temple MQ Lower Flare Dancer"
+    ]
+  },
+  "Fire Temple MQ Lower Flare Dancer": {
+    "exits": [
+      "Fire Temple MQ Iron Knuckle Room",
+      "Fire Temple MQ Map Room North"
+    ]
+  },
+  "Fire Temple MQ Map Room North": {
+    "exits": [
+      "Fire Temple MQ Lower Flare Dancer",
+      "Fire Temple MQ Map Room Cage"
+    ]
+  },
+  "Fire Temple MQ Map Room Cage": {
+    "exits": [
+      "Fire Temple MQ Map Room North",
+      "Fire Temple MQ Map Room South"
+    ]
+  },
+  "Fire Temple MQ Near Boss Room": {
+    "exits": [
+      "Fire Temple MQ First Room Upper",
+      "Fire Temple MQ Near Boss Room North",
+      "Fire Temple Boss Entryway"
+    ]
+  },
+  "Fire Temple MQ Near Boss Room North": {
+    "exits": [
+      "Fire Temple Near Boss Room"
+    ]
+  },
+  "Fire Temple MQ Big Lava Room": {
+    "exits": [
+      "Fire Temple MQ First Room Upper",
+      "Fire Temple MQ Elevator Room",
+      "Fire Temple MQ Torch Firewall Room"
+    ]
+  },
+  "Fire Temple MQ Torch Firewall Room": {
+    "exits": [
+      "Fire Temple MQ Big Lava Room"
+    ]
+  },
+  "Fire Temple MQ Elevator Room": {
+    "exits": [
+      "Fire Temple MQ Big Lava Room",
+      "Fire Temple MQ Big Torch Room"
+    ]
+  },
+  "Fire Temple MQ Big Torch Room": {
+    "exits": [
+      "Fire Temple MQ Lower Maze",
+      "Fire Temple MQ Elevator Room",
+      "Fire Temple MQ Maze Shortcut Cage"
+    ]
+  },
+  "Fire Temple MQ Lower Maze": {
+    "exits": [
+      "Fire Temple MQ Big Torch Room",
+      "Fire Temple MQ Lower Maze Crate Cage",
+      "Fire Temple MQ Upper Maze"
+    ]
+  },
+  "Fire Temple MQ Lower Maze Crate Cage": {
+    "exits": [
+      "Fire Temple MQ Lower Maze",
+      "Fire Temple MQ Upper Maze"
+    ]
+  },
+  "Fire Temple MQ Upper Maze": {
+    "exits": [
+      "Fire Temple MQ Lower Maze",
+      "Fire Temple MQ Upper Maze Box Cage",
+      "Fire Temple MQ Maze Shortcut",
+      "Fire Temple MQ Burning Block Climb",
+      "Fire Temple MQ High Torch Room"
+    ]
+  },
+  "Fire Temple MQ Upper Maze Box Cage": {
+    "exits": [
+      "Fire Temple MQ Upper Maze"
+    ]
+  },
+  "Fire Temple MQ Maze Shortcut": {
+    "exits": [
+      "Fire Temple MQ Upper Maze",
+      "Fire Temple MQ Maze Shortcut Cage"
+    ]
+  },
+  "Fire Temple MQ Maze Shortcut Cage": {
+    "exits": [
+      "Fire Temple MQ Maze Shortcut",
+      "Fire Temple MQ Big Torch Room"
+    ]
+  },
+  "Fire Temple MQ Burning Block Climb": {
+    "exits": [
+      "Fire Temple MQ Upper Maze",
+      "Fire Temple MQ Narrow Path Room"
+    ]
+  },
+  "Fire Temple MQ Narrow Path Room": {
+    "exits": [
+      "Fire Temple MQ Lower Maze",
+      "Fire Temple MQ Big Lava Room"
+    ]
+  },
+  "Fire Temple MQ High Torch Room": {
+    "exits": [
+      "Fire Temple MQ Upper Maze",
+      "Fire Temple MQ Narrow Path Room",
+      "Fire Temple MQ South Fire Maze"
+    ]
+  },
+  "Fire Temple MQ South Fire Maze": {
+    "exits": [
+      "Fire Temple MQ Near Boss Room",
+      "Fire Temple MQ High Torch Room",
+      "Fire Temple MQ Fire Maze Platforms",
+      "Fire Temple MQ North Fire Maze",
+      "Fire Temple MQ West Fire Maze"
+    ]
+  },
+  "Fire Temple MQ Fire Maze Platforms": {
+    "exits": [
+      "Fire Temple MQ South Fire Maze",
+      "Fire Temple MQ North Fire Maze"
+    ]
+  },
+  "Fire Temple MQ North Fire Maze": {
+    "exits": [
+      "Fire Temple MQ Fire Maze Past Wall",
+      "Fire Temple MQ Scarecrow Room"
+    ]
+  },
+  "Fire Temple MQ West Fire Maze": {
+    "exits": [
+      "Fire Temple MQ Fire Maze Past Wall",
+      "Fire Temple MQ North Fire Maze"
+    ]
+  },
+  "Fire Temple MQ Fire Maze Past Wall": {
+    "exits": [
+      "Fire Temple MQ North Fire Maze"
+    ]
+  },
+  "Fire Temple MQ Scarecrow Room": {
+    "exits": [
+      "Fire Temple MQ North Fire Maze",
+      "Fire Temple MQ Collapsed Stairs"
+    ]
+  },
+  "Fire Temple MQ Collapsed Stairs": {
+    "exits": [
+      "Fire Temple MQ Fire Maze Platforms",
+      "Fire Temple MQ Scarecrow Room"
+    ]
+  },
+  "Fire Temple Boss Entryway": {
+    "exits": [
+      "Fire Temple Near Boss Room",
+      "Fire Temple MQ Near Boss Room",
+      "Fire Temple Boss Room"
+    ]
+  },
+  "Fire Temple Boss Room": {
+    "exits": [
+      "Fire Temple Boss Entryway",
+      "DMC Central Local"
+    ]
+  },
+  "Water Temple Lobby": {
+    "exits": [
+      "Water Temple Entryway",
+      "Water Temple East Lower",
+      "Water Temple North Lower",
+      "Water Temple South Lower",
+      "Water Temple West Lower",
+      "Water Temple Central Pillar Lower",
+      "Water Temple Central Pillar Upper",
+      "Water Temple East Middle",
+      "Water Temple West Middle",
+      "Water Temple High Water",
+      "Water Temple Block Corridor",
+      "Water Temple Falling Platform Room",
+      "Water Temple Pre Boss Room"
+    ]
+  },
+  "Water Temple East Lower": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple Map Room",
+      "Water Temple Cracked Wall",
+      "Water Temple Torch Room"
+    ]
+  },
+  "Water Temple Map Room": {
+    "exits": [
+      "Water Temple East Lower"
+    ]
+  },
+  "Water Temple Cracked Wall": {
+    "exits": [
+      "Water Temple East Lower"
+    ]
+  },
+  "Water Temple Torch Room": {
+    "exits": [
+      "Water Temple East Lower"
+    ]
+  },
+  "Water Temple North Lower": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple Boulders Lower"
+    ]
+  },
+  "Water Temple Boulders Lower": {
+    "exits": [
+      "Water Temple North Lower",
+      "Water Temple Block Room",
+      "Water Temple Boulders Upper"
+    ]
+  },
+  "Water Temple Block Room": {
+    "exits": [
+      "Water Temple Boulders Lower",
+      "Water Temple Jets Room"
+    ]
+  },
+  "Water Temple Jets Room": {
+    "exits": [
+      "Water Temple Block Room",
+      "Water Temple Boulders Upper"
+    ]
+  },
+  "Water Temple Boulders Upper": {
+    "exits": [
+      "Water Temple Boulders Lower",
+      "Water Temple Jets Room",
+      "Water Temple Boss Key Room"
+    ]
+  },
+  "Water Temple Boss Key Room": {
+    "exits": [
+      "Water Temple Boulders Upper"
+    ]
+  },
+  "Water Temple South Lower": {
+    "exits": [
+      "Water Temple Lobby"
+    ]
+  },
+  "Water Temple West Lower": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple Dragon Room"
+    ]
+  },
+  "Water Temple Dragon Room": {
+    "exits": [
+      "Water Temple West Lower"
+    ]
+  },
+  "Water Temple Central Pillar Lower": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple Central Pillar Upper",
+      "Water Temple Central Pillar Basement"
+    ]
+  },
+  "Water Temple Central Pillar Upper": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple Central Pillar Lower"
+    ]
+  },
+  "Water Temple Central Pillar Basement": {
+    "exits": [
+      "Water Temple Central Pillar Lower"
+    ]
+  },
+  "Water Temple East Middle": {
+    "exits": [
+      "Water Temple Lobby"
+    ]
+  },
+  "Water Temple West Middle": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple High Water"
+    ]
+  },
+  "Water Temple High Water": {
+    "exits": [
+      "Water Temple Lobby"
+    ]
+  },
+  "Water Temple Block Corridor": {
+    "exits": [
+      "Water Temple Lobby"
+    ]
+  },
+  "Water Temple Falling Platform Room": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple Dragon Pillars Room"
+    ]
+  },
+  "Water Temple Dragon Pillars Room": {
+    "exits": [
+      "Water Temple Falling Platform Room",
+      "Water Temple Dark Link Room"
+    ]
+  },
+  "Water Temple Dark Link Room": {
+    "exits": [
+      "Water Temple Dragon Pillars Room",
+      "Water Temple Longshot Room"
+    ]
+  },
+  "Water Temple Longshot Room": {
+    "exits": [
+      "Water Temple Dark Link Room",
+      "Water Temple River"
+    ]
+  },
+  "Water Temple River": {
+    "exits": [
+      "Water Temple Dragon Room"
+    ]
+  },
+  "Water Temple Pre Boss Room": {
+    "exits": [
+      "Water Temple Lobby",
+      "Water Temple Boss Entryway"
+    ]
+  },
+  "Water Temple MQ 3F South Ledge": {
+    "exits": [
+      "Water Temple Entryway",
+      "Water Temple MQ Main",
+      "Water Temple MQ 3F Central",
+      "Water Temple MQ 2F Central"
+    ]
+  },
+  "Water Temple MQ Main": {
+    "exits": [
+      "Water Temple MQ 3F North Ledge",
+      "Water Temple Boss Entryway"
+    ]
+  },
+  "Water Temple MQ 3F Central": {
+    "exits": [
+      "Water Temple MQ Main",
+      "Water Temple MQ 3F South Ledge",
+      "Water Temple MQ 2F Central",
+      "Water Temple MQ Central Pillar High",
+      "Water Temple MQ 3F North Ledge",
+      "Water Temple MQ High Emblem",
+      "Water Temple Waterfall",
+      "Water Temple MQ Lizalfos Hallway"
+    ]
+  },
+  "Water Temple MQ 2F Central": {
+    "exits": [
+      "Water Temple MQ Main",
+      "Water Temple MQ 3F Central",
+      "Water Temple MQ Central Pillar 2F",
+      "Water Temple MQ Storage Room",
+      "Water Temple MQ Behind Blue Switch 2F",
+      "Water Temple MQ Lizalfos Hallway"
+    ]
+  },
+  "Water Temple MQ High Emblem": {
+    "exits": [
+      "Water Temple MQ 3F Central",
+      "Water Temple MQ Main"
+    ]
+  },
+  "Water Temple MQ 3F North Ledge": {
+    "exits": [
+      "Water Temple MQ Main",
+      "Water Temple MQ 3F Central",
+      "Water Temple MQ Main"
+    ]
+  },
+  "Water Temple MQ East Tower": {
+    "exits": [
+      "Water Temple MQ East Tower 1F Room"
+    ]
+  },
+  "Water Temple MQ East Tower 1F Room": {
+    "exits": [
+      "Water Temple MQ East Tower"
+    ]
+  },
+  "Water Temple MQ Central Pillar 1F": {
+    "exits": [
+      "Water Temple MQ Central Pillar High",
+      "Water Temple MQ Central Pillar 2F",
+      "Water Temple MQ Central Pillar B1"
+    ]
+  },
+  "Water Temple MQ Central Pillar 2F": {
+    "exits": [
+      "Water Temple MQ Central Pillar High",
+      "Water Temple MQ Central Pillar B1"
+    ]
+  },
+  "Water Temple MQ Central Pillar High": {
+    "exits": [
+      "Water Temple MQ Central Pillar B1"
+    ]
+  },
+  "Water Temple MQ Central Pillar B1": {
+    "exits": [
+      "Water Temple MQ Main",
+      "Water Temple MQ Central Pillar B1 Final"
+    ]
+  },
+  "Water Temple MQ Central Pillar B1 Final": {
+    "exits": []
+  },
+  "Water Temple MQ Behind Blue Switch 2F": {
+    "exits": [
+      "Water Temple MQ Behind Blue Switch 2F",
+      "Water Temple MQ High Emblem"
+    ]
+  },
+  "Water Temple MQ Storage Room": {
+    "exits": [
+      "Water Temple MQ Main"
+    ]
+  },
+  "Water Temple MQ Lizalfos Hallway": {
+    "exits": [
+      "Water Temple MQ Lizalfos Cage"
+    ]
+  },
+  "Water Temple MQ Lizalfos Cage": {
+    "exits": []
+  },
+  "Water Temple Waterfall": {
+    "exits": [
+      "Water Temple MQ 3F Central",
+      "Water Temple MQ Stalfos Pit",
+      "Water Temple MQ Stalfos Pit Pots",
+      "Water Temple MQ Stalfos Pit Upper"
+    ]
+  },
+  "Water Temple MQ Stalfos Pit": {
+    "exits": [
+      "Water Temple Waterfall",
+      "Water Temple MQ Stalfos Pit Pots",
+      "Water Temple MQ Stalfos Pit Upper"
+    ]
+  },
+  "Water Temple MQ Stalfos Pit Pots": {
+    "exits": [
+      "Water Temple Waterfall",
+      "Water Temple MQ Stalfos Pit",
+      "Water Temple MQ Stalfos Pit Upper"
+    ]
+  },
+  "Water Temple MQ Stalfos Pit Upper": {
+    "exits": [
+      "Water Temple MQ Stalfos Pit",
+      "Water Temple MQ Stalfos Pit Pots",
+      "Water Temple MQ After Dark Link"
+    ]
+  },
+  "Water Temple MQ After Dark Link": {
+    "exits": [
+      "Water Temple MQ Stalfos Pit Upper",
+      "Water Temple MQ River Skull"
+    ]
+  },
+  "Water Temple MQ River Skull": {
+    "exits": [
+      "Water Temple MQ River Pots"
+    ]
+  },
+  "Water Temple MQ River Pots": {
+    "exits": [
+      "Water Temple MQ River Skull",
+      "Water Temple MQ Dragon Room Tunnel",
+      "Water Temple MQ Dragon Room Alcove",
+      "Water Temple MQ Dragon Room Door"
+    ]
+  },
+  "Water Temple MQ Dragon Room Door": {
+    "exits": [
+      "Water Temple MQ River Pots",
+      "Water Temple MQ Dragon Room Tunnel",
+      "Water Temple MQ Dragon Room Alcove",
+      "Water Temple MQ Boss Key Room Switch"
+    ]
+  },
+  "Water Temple MQ Dragon Room Tunnel": {
+    "exits": [
+      "Water Temple MQ River Pots",
+      "Water Temple MQ Dragon Room Alcove",
+      "Water Temple MQ Dragon Room Door"
+    ]
+  },
+  "Water Temple MQ Dragon Room Alcove": {
+    "exits": [
+      "Water Temple MQ Dragon Room Tunnel",
+      "Water Temple MQ Dragon Room Door"
+    ]
+  },
+  "Water Temple MQ Boss Key Room Switch": {
+    "exits": [
+      "Water Temple MQ Dragon Room Door",
+      "Water Temple MQ Boss Key Room Pit",
+      "Water Temple MQ Boss Key Room Chest"
+    ]
+  },
+  "Water Temple MQ Boss Key Room Pit": {
+    "exits": [
+      "Water Temple MQ Boss Key Room Switch"
+    ]
+  },
+  "Water Temple MQ Boss Key Room Chest": {
+    "exits": [
+      "Water Temple MQ Boss Key Room Switch",
+      "Water Temple MQ Boss Key Room Pit",
+      "Water Temple MQ B1 Gate Switch"
+    ]
+  },
+  "Water Temple MQ B1 Gate Switch": {
+    "exits": [
+      "Water Temple MQ Main",
+      "Water Temple MQ Boss Key Room Chest"
+    ]
+  },
+  "Water Temple MQ Triangle Torch Room": {
+    "exits": [
+      "Water Temple MQ Main",
+      "Water Temple MQ Triangle Torch Cage"
+    ]
+  },
+  "Water Temple MQ Triangle Torch Cage": {
+    "exits": []
+  },
+  "Water Temple MQ Crates Whirlpools Room": {
+    "exits": [
+      "Water Temple MQ Main",
+      "Water Temple MQ Single Stalfos Room",
+      "Water Temple MQ 4 Torch Room",
+      "Water Temple MQ Basement Gated Areas"
+    ]
+  },
+  "Water Temple MQ Single Stalfos Room": {
+    "exits": [
+      "Water Temple MQ Crates Whirlpools Room"
+    ]
+  },
+  "Water Temple MQ 4 Torch Room": {
+    "exits": [
+      "Water Temple MQ Crates Whirlpools Room",
+      "Water Temple MQ Dodongo Room"
+    ]
+  },
+  "Water Temple MQ Dodongo Room": {
+    "exits": [
+      "Water Temple MQ 4 Torch Room",
+      "Water Temple MQ Basement Gated Areas"
+    ]
+  },
+  "Water Temple MQ Basement Gated Areas": {
+    "exits": [
+      "Water Temple MQ Dodongo Room"
+    ]
+  },
+  "Water Temple Boss Entryway": {
+    "exits": [
+      "Water Temple Pre Boss Room",
+      "Water Temple MQ Main",
+      "Water Temple Boss Room"
+    ]
+  },
+  "Water Temple Boss Room": {
+    "exits": [
+      "Water Temple Boss Entryway",
+      "Lake Hylia"
+    ]
+  },
+  "Spirit Temple Lobby": {
+    "exits": [
+      "Spirit Temple Entryway",
+      "Child Spirit Temple",
+      "Early Adult Spirit Temple"
+    ]
+  },
+  "Child Spirit Temple": {
+    "exits": [
+      "Child Spirit Temple Climb"
+    ]
+  },
+  "Child Spirit Temple Climb": {
+    "exits": [
+      "Spirit Temple Central Chamber"
+    ]
+  },
+  "Early Adult Spirit Temple": {
+    "exits": [
+      "Spirit Temple Central Chamber"
+    ]
+  },
+  "Spirit Temple Central Chamber": {
+    "exits": [
+      "Spirit Temple Outdoor Hands",
+      "Spirit Temple Beyond Central Locked Door",
+      "Child Spirit Temple Climb",
+      "Spirit Temple Inside Statue Head"
+    ]
+  },
+  "Spirit Temple Outdoor Hands": {
+    "exits": [
+      "Desert Colossus"
+    ]
+  },
+  "Spirit Temple Beyond Central Locked Door": {
+    "exits": [
+      "Spirit Temple Beyond Final Locked Door"
+    ]
+  },
+  "Spirit Temple Beyond Final Locked Door": {
+    "exits": [
+      "Spirit Temple Inside Statue Head"
+    ]
+  },
+  "Spirit Temple Inside Statue Head": {
+    "exits": [
+      "Spirit Temple Central Chamber",
+      "Spirit Temple Boss Entryway"
+    ]
+  },
+  "Spirit Temple MQ Lobby": {
+    "exits": [
+      "Spirit Temple Entryway",
+      "Spirit Temple MQ 1F West",
+      "Spirit Temple MQ Block Room South"
+    ]
+  },
+  "Spirit Temple MQ 1F West": {
+    "exits": [
+      "Spirit Temple MQ 1F Gibdo Room South",
+      "Spirit Temple MQ Map Room South",
+      "Spirit Temple MQ West 1F Rusted Switch"
+    ]
+  },
+  "Spirit Temple MQ Gibdo Room North": {
+    "exits": []
+  },
+  "Spirit Temple MQ 1F Gibdo Room South": {
+    "exits": [
+      "Spirit Temple MQ 1F West",
+      "Spirit Temple MQ Gibdo Room North",
+      "Spirit Temple Turntable Room"
+    ]
+  },
+  "Spirit Temple Turntable Room": {
+    "exits": [
+      "Spirit Temple MQ Gibdo Room North",
+      "Spirit Temple MQ Map Room North"
+    ]
+  },
+  "Spirit Temple MQ Map Room North": {
+    "exits": [
+      "Spirit Temple MQ Map Room South"
+    ]
+  },
+  "Spirit Temple MQ Map Room South": {
+    "exits": [
+      "Spirit Temple MQ Map Room North",
+      "Spirit Temple MQ 1F West"
+    ]
+  },
+  "Spirit Temple MQ West 1F Rusted Switch": {
+    "exits": [
+      "Spirit Temple MQ 1F West",
+      "Spirit Temple MQ Under Like Like"
+    ]
+  },
+  "Spirit Temple MQ Under Like Like": {
+    "exits": [
+      "Spirit Temple MQ West 1F Rusted Switch",
+      "Spirit Temple MQ Broken Wall Room"
+    ]
+  },
+  "Spirit Temple MQ Broken Wall Room": {
+    "exits": [
+      "Spirit Temple MQ Under Like Like",
+      "Spirit Temple MQ Statue Room"
+    ]
+  },
+  "Spirit Temple MQ Statue Room": {
+    "exits": [
+      "Spirit Temple MQ Broken Wall Room",
+      "Spirit Temple MQ Block Room North",
+      "Spirit Temple MQ Sun Block Room",
+      "Spirit Temple MQ Statue Room East"
+    ]
+  },
+  "Spirit Temple MQ Sun Block Room": {
+    "exits": [
+      "Spirit Temple MQ Statue Room",
+      "Spirit Temple MQ East Iron Knuckle"
+    ]
+  },
+  "Spirit Temple MQ East Iron Knuckle": {
+    "exits": [
+      "Spirit Temple MQ East Stairs to Hand",
+      "Spirit Temple MQ Mirror Shield Hand"
+    ]
+  },
+  "Spirit Temple MQ Silver Gauntlets Hand": {
+    "exits": [
+      "Spirit Temple MQ East Iron Knuckle",
+      "Desert Colossus"
+    ]
+  },
+  "Spirit Temple MQ Block Room South": {
+    "exits": [
+      "Spirit Temple MQ Lobby",
+      "Spirit Temple MQ Block Room North"
+    ]
+  },
+  "Spirit Temple MQ Block Room North": {
+    "exits": [
+      "Spirit Temple MQ Statue Room"
+    ]
+  },
+  "Spirit Temple MQ Statue Room East": {
+    "exits": [
+      "Spirit Temple MQ Statue Room",
+      "Spirit Temple MQ Silver Gauntlets Hand",
+      "Spirit Temple MQ Four Beamos Room",
+      "Spirit Temple MQ Three Suns Room 2F"
+    ]
+  },
+  "Spirit Temple MQ Three Suns Room 2F": {
+    "exits": [
+      "Spirit Temple MQ Statue Room East",
+      "Spirit Temple MQ Three Suns Room 1F"
+    ]
+  },
+  "Spirit Temple MQ Three Suns Room 1F": {
+    "exits": [
+      "Spirit Temple MQ Three Suns Room 2F",
+      "Spirit Temple MQ 1F East"
+    ]
+  },
+  "Spirit Temple MQ 1F East": {
+    "exits": [
+      "Spirit Temple MQ Lobby",
+      "Spirit Temple MQ Three Suns Room 1F",
+      "Spirit Temple MQ Leever Room",
+      "Spirit Temple MQ Symphony Room"
+    ]
+  },
+  "Spirit Temple MQ Leever Room": {
+    "exits": [
+      "Spirit Temple MQ 1F East"
+    ]
+  },
+  "Spirit Temple MQ Symphony Room": {
+    "exits": [
+      "Spirit Temple MQ 1F East",
+      "Spirit Temple MQ After Symphony Room"
+    ]
+  },
+  "Spirit Temple MQ After Symphony Room": {
+    "exits": [
+      "Spirit Temple MQ Symphony Room"
+    ]
+  },
+  "Spirit Temple MQ Four Beamos Room": {
+    "exits": [
+      "Spirit Temple MQ Statue Room East",
+      "Spirit Temple MQ SoT Sun Room",
+      "Spirit Temple MQ Big Wall"
+    ]
+  },
+  "Spirit Temple MQ SoT Sun Room": {
+    "exits": [
+      "Spirit Temple MQ Four Beamos Room",
+      "Spirit Temple MQ East Stairs to Hand",
+      "Spirit Temple MQ 3F Gibdo Room"
+    ]
+  },
+  "Spirit Temple MQ East Stairs to Hand": {
+    "exits": [
+      "Spirit Temple MQ SoT Sun Room",
+      "Spirit Temple MQ East Iron Knuckle"
+    ]
+  },
+  "Spirit Temple MQ Mirror Shield Hand": {
+    "exits": [
+      "Spirit Temple MQ Silver Gauntlets Hand",
+      "Spirit Temple MQ East Iron Knuckle",
+      "Desert Colossus"
+    ]
+  },
+  "Spirit Temple MQ 3F Gibdo Room": {
+    "exits": [
+      "Spirit Temple MQ SoT Sun Room"
+    ]
+  },
+  "Spirit Temple MQ Big Wall": {
+    "exits": [
+      "Spirit Temple MQ Four Beamos Room",
+      "Spirit Temple MQ 4F Central"
+    ]
+  },
+  "Spirit Temple MQ 4F Central": {
+    "exits": [
+      "Spirit Temple MQ Big Wall",
+      "Spirit Temple MQ Nine Chairs Room",
+      "Spirit Temple MQ Big Mirror Room"
+    ]
+  },
+  "Spirit Temple MQ Nine Chairs Room": {
+    "exits": [
+      "Spirit Temple MQ 4F Central"
+    ]
+  },
+  "Spirit Temple MQ Big Mirror Room": {
+    "exits": [
+      "Spirit Temple MQ 4F Central",
+      "Spirit Temple MQ Big Mirror Cave"
+    ]
+  },
+  "Spirit Temple MQ Big Mirror Cave": {
+    "exits": [
+      "Spirit Temple MQ Inside Statue Head",
+      "Spirit Temple MQ Statue Room"
+    ]
+  },
+  "Spirit Temple MQ Inside Statue Head": {
+    "exits": [
+      "Spirit Temple MQ Lobby",
+      "Spirit Temple Boss Entryway"
+    ]
+  },
+  "Spirit Temple Boss Entryway": {
+    "exits": [
+      "Spirit Temple Inside Statue Head",
+      "Spirit Temple MQ Inside Statue Head",
+      "Spirit Temple Boss Room"
+    ]
+  },
+  "Spirit Temple Boss Room": {
+    "exits": [
+      "Spirit Temple Boss Entryway",
+      "Desert Colossus"
+    ]
+  },
+  "Shadow Temple Beginning": {
+    "exits": [
+      "Shadow Temple Entryway",
+      "Shadow Temple First Beamos"
+    ]
+  },
+  "Shadow Temple First Beamos": {
+    "exits": [
+      "Shadow Temple Huge Pit",
+      "Shadow Temple Beyond Boat"
+    ]
+  },
+  "Shadow Temple Huge Pit": {
+    "exits": [
+      "Shadow Temple Wind Tunnel"
+    ]
+  },
+  "Shadow Temple Wind Tunnel": {
+    "exits": [
+      "Shadow Temple Beyond Boat"
+    ]
+  },
+  "Shadow Temple Beyond Boat": {
+    "exits": [
+      "Shadow Temple Boss Entryway"
+    ]
+  },
+  "Shadow Temple MQ Beginning": {
+    "exits": [
+      "Shadow Temple Entryway",
+      "Shadow Temple MQ Spinner Room"
+    ]
+  },
+  "Shadow Temple MQ Spinner Room": {
+    "exits": [
+      "Shadow Temple Entryway",
+      "Shadow Temple MQ First Beamos",
+      "Shadow Temple MQ Dead Hand Region"
+    ]
+  },
+  "Shadow Temple MQ Dead Hand Region": {
+    "exits": [
+      "Shadow Temple MQ Spinner Room"
+    ]
+  },
+  "Shadow Temple MQ First Beamos": {
+    "exits": [
+      "Shadow Temple MQ Upper Huge Pit",
+      "Shadow Temple MQ B2 Spinning Blade Room"
+    ]
+  },
+  "Shadow Temple MQ B2 Spinning Blade Room": {
+    "exits": [
+      "Shadow Temple MQ First Beamos",
+      "Shadow Temple MQ Shortcut Path"
+    ]
+  },
+  "Shadow Temple MQ Shortcut Path": {
+    "exits": [
+      "Shadow Temple MQ B2 Spinning Blade Room",
+      "Shadow Temple MQ Dock"
+    ]
+  },
+  "Shadow Temple MQ B2 to B3 Corridor": {
+    "exits": [
+      "Shadow Temple MQ First Beamos",
+      "Shadow Temple MQ Upper Huge Pit"
+    ]
+  },
+  "Shadow Temple MQ Upper Huge Pit": {
+    "exits": [
+      "Shadow Temple MQ Lower Huge Pit",
+      "Shadow Temple MQ Invisible Blades Room"
+    ]
+  },
+  "Shadow Temple MQ Invisible Blades Room": {
+    "exits": [
+      "Shadow Temple MQ Upper Huge Pit"
+    ]
+  },
+  "Shadow Temple MQ Lower Huge Pit": {
+    "exits": [
+      "Shadow Temple MQ Stone Umbrella Room",
+      "Shadow Temple MQ Floor Spikes Room"
+    ]
+  },
+  "Shadow Temple MQ Stone Umbrella Room": {
+    "exits": [
+      "Shadow Temple MQ Lower Huge Pit",
+      "Shadow Temple MQ Upper Stone Umbrella"
+    ]
+  },
+  "Shadow Temple MQ Upper Stone Umbrella": {
+    "exits": [
+      "Shadow Temple MQ Stone Umbrella Room"
+    ]
+  },
+  "Shadow Temple MQ Floor Spikes Room": {
+    "exits": [
+      "Shadow Temple MQ Stalfos Room",
+      "Shadow Temple MQ Wind Tunnel"
+    ]
+  },
+  "Shadow Temple MQ Stalfos Room": {
+    "exits": [
+      "Shadow Temple MQ Floor Spikes Room"
+    ]
+  },
+  "Shadow Temple MQ Wind Tunnel": {
+    "exits": [
+      "Shadow Temple MQ Floor Spikes Room",
+      "Shadow Temple MQ Wind Hint Room",
+      "Shadow Temple MQ B4 Gibdo Room"
+    ]
+  },
+  "Shadow Temple MQ Wind Hint Room": {
+    "exits": [
+      "Shadow Temple MQ Wind Tunnel"
+    ]
+  },
+  "Shadow Temple MQ B4 Gibdo Room": {
+    "exits": [
+      "Shadow Temple MQ Wind Tunnel",
+      "Shadow Temple MQ Dock"
+    ]
+  },
+  "Shadow Temple MQ Dock": {
+    "exits": [
+      "Shadow Temple MQ Shortcut Path",
+      "Shadow Temple MQ B4 Gibdo Room",
+      "Shadow Temple MQ Beyond Boat"
+    ]
+  },
+  "Shadow Temple MQ Beyond Boat": {
+    "exits": [
+      "Shadow Temple MQ Across Chasm"
+    ]
+  },
+  "Shadow Temple MQ Across Chasm": {
+    "exits": [
+      "Shadow Temple MQ Beyond Boat",
+      "Shadow Temple MQ Invisible Maze",
+      "Shadow Temple MQ Boss Door"
+    ]
+  },
+  "Shadow Temple MQ Boss Door": {
+    "exits": [
+      "Shadow Temple MQ Across Chasm",
+      "Shadow Temple Boss Entryway"
+    ]
+  },
+  "Shadow Temple MQ Invisible Maze": {
+    "exits": [
+      "Shadow Temple MQ Beyond Boat",
+      "Shadow Temple MQ Spike Walls Room"
+    ]
+  },
+  "Shadow Temple MQ Spike Walls Room": {
+    "exits": [
+      "Shadow Temple MQ Invisible Maze"
+    ]
+  },
+  "Shadow Temple Boss Entryway": {
+    "exits": [
+      "Shadow Temple Beyond Boat",
+      "Shadow Temple MQ Beyond Boat",
+      "Shadow Temple Boss Room"
+    ]
+  },
+  "Shadow Temple Boss Room": {
+    "exits": [
+      "Shadow Temple Boss Entryway",
+      "Graveyard Warp Pad Region"
+    ]
+  },
+  "Bottom of the Well Perimeter": {
+    "exits": [
+      "Bottom of the Well Entryway",
+      "Bottom of the Well Behind Fake Walls",
+      "Bottom of the Well Southwest Room",
+      "Bottom of the Well Keese-Beamos Room",
+      "Bottom of the Well Coffin Room",
+      "Bottom of the Well Dead Hand Room",
+      "Bottom of the Well Basement"
+    ]
+  },
+  "Bottom of the Well Behind Fake Walls": {
+    "exits": [
+      "Bottom of the Well Perimeter",
+      "Bottom of the Well Inner Rooms",
+      "Bottom of the Well Basement",
+      "Bottom of the Well Basement Platform"
+    ]
+  },
+  "Bottom of the Well Southwest Room": {
+    "exits": [
+      "Bottom of the Well Perimeter"
+    ]
+  },
+  "Bottom of the Well Keese-Beamos Room": {
+    "exits": [
+      "Bottom of the Well Perimeter",
+      "Bottom of the Well Like-Like Cage",
+      "Bottom of the Well Basement Useful Bomb Flowers"
+    ]
+  },
+  "Bottom of the Well Like-Like Cage": {
+    "exits": [
+      "Bottom of the Well Keese-Beamos Room"
+    ]
+  },
+  "Bottom of the Well Inner Rooms": {
+    "exits": [
+      "Bottom of the Well Behind Fake Walls"
+    ]
+  },
+  "Bottom of the Well Coffin Room": {
+    "exits": [
+      "Bottom of the Well Perimeter"
+    ]
+  },
+  "Bottom of the Well Dead Hand Room": {
+    "exits": [
+      "Bottom of the Well Perimeter"
+    ]
+  },
+  "Bottom of the Well Basement": {
+    "exits": [
+      "Bottom of the Well Southwest Room",
+      "Bottom of the Well Basement Useful Bomb Flowers"
+    ]
+  },
+  "Bottom of the Well Basement Useful Bomb Flowers": {
+    "exits": [
+      "Bottom of the Well Basement"
+    ]
+  },
+  "Bottom of the Well Basement Platform": {
+    "exits": [
+      "Bottom of the Well Basement"
+    ]
+  },
+  "Bottom of the Well MQ Perimeter": {
+    "exits": [
+      "Bottom of the Well Entryway",
+      "Bottom of the Well MQ West Room Switch",
+      "Bottom of the Well MQ Coffin Room",
+      "Bottom of the Well MQ Locked Cage",
+      "Bottom of the Well MQ Dead Hand Room",
+      "Bottom of the Well MQ Middle",
+      "Bottom of the Well MQ Basement"
+    ]
+  },
+  "Bottom of the Well MQ West Room Switch": {
+    "exits": [
+      "Bottom of the Well MQ Perimeter",
+      "Bottom of the Well MQ Middle",
+      "Bottom of the Well MQ Basement"
+    ]
+  },
+  "Bottom of the Well MQ Coffin Room": {
+    "exits": [
+      "Bottom of the Well MQ Perimeter"
+    ]
+  },
+  "Bottom of the Well MQ Locked Cage": {
+    "exits": [
+      "Bottom of the Well MQ Perimeter"
+    ]
+  },
+  "Bottom of the Well MQ Dead Hand Room": {
+    "exits": [
+      "Bottom of the Well MQ Perimeter"
+    ]
+  },
+  "Bottom of the Well MQ Middle": {
+    "exits": [
+      "Bottom of the Well MQ Basement Switch Platform",
+      "Bottom of the Well MQ Basement"
+    ]
+  },
+  "Bottom of the Well MQ Basement": {
+    "exits": [
+      "Bottom of the Well MQ Perimeter"
+    ]
+  },
+  "Bottom of the Well MQ Basement Switch Platform": {
+    "exits": [
+      "Bottom of the Well MQ Basement"
+    ]
+  },
+  "Ice Cavern Beginning": {
+    "exits": [
+      "Ice Cavern Entryway",
+      "Ice Cavern"
+    ]
+  },
+  "Ice Cavern": {
+    "exits": []
+  },
+  "Ice Cavern MQ Beginning": {
+    "exits": [
+      "Ice Cavern Entryway",
+      "Ice Cavern MQ Hub"
+    ]
+  },
+  "Ice Cavern MQ Hub": {
+    "exits": [
+      "Ice Cavern Beginning",
+      "Ice Cavern MQ Map Room",
+      "Ice Cavern MQ Compass Room",
+      "Ice Cavern MQ Scarecrow Room"
+    ]
+  },
+  "Ice Cavern MQ Map Room": {
+    "exits": []
+  },
+  "Ice Cavern MQ Scarecrow Room": {
+    "exits": [
+      "Ice Cavern MQ Hub",
+      "Ice Cavern MQ West Corridor"
+    ]
+  },
+  "Ice Cavern MQ Stalfos Room": {
+    "exits": [
+      "Ice Cavern MQ West Corridor",
+      "Ice Cavern MQ Beginning"
+    ]
+  },
+  "Ice Cavern MQ West Corridor": {
+    "exits": [
+      "Ice Cavern MQ Scarecrow Room",
+      "Ice Cavern MQ Stalfos Room"
+    ]
+  },
+  "Ice Cavern MQ Compass Room": {
+    "exits": []
+  },
+  "Gerudo Training Ground Lobby": {
+    "exits": [
+      "Gerudo Training Ground Entryway",
+      "Gerudo Training Ground Heavy Block Room",
+      "Gerudo Training Ground Lava Room",
+      "Gerudo Training Ground Central Maze"
+    ]
+  },
+  "Gerudo Training Ground Central Maze": {
+    "exits": [
+      "Gerudo Training Ground Central Maze Right"
+    ]
+  },
+  "Gerudo Training Ground Central Maze Right": {
+    "exits": [
+      "Gerudo Training Ground Hammer Room",
+      "Gerudo Training Ground Lava Room"
+    ]
+  },
+  "Gerudo Training Ground Lava Room": {
+    "exits": [
+      "Gerudo Training Ground Central Maze Right",
+      "Gerudo Training Ground Hammer Room"
+    ]
+  },
+  "Gerudo Training Ground Hammer Room": {
+    "exits": [
+      "Gerudo Training Ground Eye Statue Lower",
+      "Gerudo Training Ground Lava Room"
+    ]
+  },
+  "Gerudo Training Ground Eye Statue Lower": {
+    "exits": [
+      "Gerudo Training Ground Hammer Room"
+    ]
+  },
+  "Gerudo Training Ground Eye Statue Upper": {
+    "exits": [
+      "Gerudo Training Ground Eye Statue Lower"
+    ]
+  },
+  "Gerudo Training Ground Heavy Block Room": {
+    "exits": [
+      "Gerudo Training Ground Eye Statue Upper",
+      "Gerudo Training Ground Like Like Room"
+    ]
+  },
+  "Gerudo Training Ground Like Like Room": {
+    "exits": []
+  },
+  "Gerudo Training Ground MQ Lobby": {
+    "exits": [
+      "Gerudo Training Ground Entryway",
+      "Gerudo Training Ground MQ Maze Hidden Room",
+      "Gerudo Training Ground MQ Maze First Lock",
+      "Gerudo Training Ground MQ Sand Room",
+      "Gerudo Training Ground MQ Dinolfos Room"
+    ]
+  },
+  "Gerudo Training Ground MQ Maze Hidden Room": {
+    "exits": [
+      "Gerudo Training Ground MQ Lobby"
+    ]
+  },
+  "Gerudo Training Ground MQ Maze First Lock": {
+    "exits": [
+      "Gerudo Training Ground MQ Lobby",
+      "Gerudo Training Ground MQ Center"
+    ]
+  },
+  "Gerudo Training Ground MQ Center": {
+    "exits": [
+      "Gerudo Training Ground MQ Maze First Lock"
+    ]
+  },
+  "Gerudo Training Ground MQ Sand Room": {
+    "exits": [
+      "Gerudo Training Ground MQ Lobby",
+      "Gerudo Training Ground MQ Left Side"
+    ]
+  },
+  "Gerudo Training Ground MQ Left Side": {
+    "exits": [
+      "Gerudo Training Ground MQ Sand Room",
+      "Gerudo Training Ground MQ Stalfos Room"
+    ]
+  },
+  "Gerudo Training Ground MQ Stalfos Room": {
+    "exits": [
+      "Gerudo Training Ground MQ Behind Block",
+      "Gerudo Training Ground MQ Statue Room Ledge"
+    ]
+  },
+  "Gerudo Training Ground MQ Behind Block": {
+    "exits": []
+  },
+  "Gerudo Training Ground MQ Statue Room Ledge": {
+    "exits": [
+      "Gerudo Training Ground MQ Stalfos Room",
+      "Gerudo Training Ground MQ Magenta Fire Room",
+      "Gerudo Training Ground MQ Statue ROom"
+    ]
+  },
+  "Gerudo Training Ground MQ Magenta Fire Room": {
+    "exits": [
+      "Gerudo Training Ground MQ Statue Room Ledge"
+    ]
+  },
+  "Gerudo Training Ground MQ Statue ROom": {
+    "exits": [
+      "Gerudo Training Ground MQ Statue Room Ledge",
+      "Gerudo Training Ground MQ Torch Slug Room"
+    ]
+  },
+  "Gerudo Training Ground MQ Torch Slug Room": {
+    "exits": [
+      "Gerudo Training Ground MQ Statue ROom",
+      "Gerudo Training Ground MQ Switch Ledge"
+    ]
+  },
+  "Gerudo Training Ground MQ Switch Ledge": {
+    "exits": [
+      "Gerudo Training Ground MQ Ledge Side Platforms",
+      "Gerudo Training Ground MQ Platforms Unlit Torch",
+      "Gerudo Training Ground MQ Maze Right"
+    ]
+  },
+  "Gerudo Training Ground MQ Ledge Side Platforms": {
+    "exits": [
+      "Gerudo Training Ground MQ Furthest Platform"
+    ]
+  },
+  "Gerudo Training Ground MQ Furthest Platform": {
+    "exits": [
+      "Gerudo Training Ground MQ Ledge Side Platforms"
+    ]
+  },
+  "Gerudo Training Ground Torch Side Platforms": {
+    "exits": [
+      "Gerudo Training Ground MQ Ledge Side Platforms",
+      "Gerudo Training Ground MQ Platforms Unlit Torch",
+      "Gerudo Training Ground MQ Maze Right",
+      "Gerudo Training Ground MQ Dinolfos Room"
+    ]
+  },
+  "Gerudo Training Ground MQ Platforms Unlit Torch": {
+    "exits": [
+      "Gerudo Training Ground MQ Underwater",
+      "Gerudo Training Ground MQ Ledge Side Platforms",
+      "Gerudo Training Ground Torch Side Platforms",
+      "Gerudo Training Ground MQ Maze Right"
+    ]
+  },
+  "Gerudo Training Ground MQ Dinolfos Room": {
+    "exits": [
+      "Gerudo Training Ground Torch Side Platforms"
+    ]
+  },
+  "Gerudo Training Ground MQ Underwater": {
+    "exits": [
+      "Gerudo Training Ground MQ Platforms Unlit Torch"
+    ]
+  },
+  "Gerudo Training Ground MQ Maze Right": {
+    "exits": [
+      "Gerudo Training Ground MQ Lobby",
+      "Gerudo Training Ground MQ Ledge Side Platforms",
+      "Gerudo Training Ground MQ Platforms Unlit Torch",
+      "Gerudo Training Ground MQ Ledge Side Platforms",
+      "Gerudo Training Ground MQ Furthest Platform"
+    ]
+  },
+  "Ganon's Castle Lobby": {
+    "exits": [
+      "Ganon's Castle Entryway",
+      "Ganon's Castle Forest Trial",
+      "Ganon's Castle Fire Trial",
+      "Ganon's Castle Water Trial",
+      "Ganon's Castle Shadow Trial",
+      "Ganon's Castle Spirit Trial",
+      "Ganon's Castle Light Trial",
+      "Ganon's Tower Entryway",
+      "Ganon's Castle Deku Scrubs"
+    ]
+  },
+  "Ganon's Castle Deku Scrubs": {
+    "exits": []
+  },
+  "Ganon's Castle Forest Trial": {
+    "exits": []
+  },
+  "Ganon's Castle Fire Trial": {
+    "exits": []
+  },
+  "Ganon's Castle Water Trial": {
+    "exits": []
+  },
+  "Ganon's Castle Shadow Trial": {
+    "exits": []
+  },
+  "Ganon's Castle Spirit Trial": {
+    "exits": []
+  },
+  "Ganon's Castle Light Trial": {
+    "exits": []
+  },
+  "Ganon's Castle MQ Lobby": {
+    "exits": [
+      "Ganon's Castle Entryway",
+      "Ganon's Castle MQ Main"
+    ]
+  },
+  "Ganon's Castle MQ Main": {
+    "exits": [
+      "Ganon's Castle MQ Lobby",
+      "Ganon's Castle MQ Forest Trial Stalfos Room",
+      "Ganon's Castle MQ Fire Trial Main Room",
+      "Ganon's Castle MQ Water Trial Geyser Room",
+      "Ganon's Castle MQ Shadow Trial Starting Ledge",
+      "Ganon's Castle MQ Spirit Trial Chairs Room",
+      "Ganon's Castle MQ Light Trial Dinolfos Room",
+      "Ganon's Tower Entryway",
+      "Ganon's Castle MQ Deku Scrubs"
+    ]
+  },
+  "Ganon's Castle MQ Deku Scrubs": {
+    "exits": [
+      "Ganon's Castle MQ Main"
+    ]
+  },
+  "Ganon's Castle MQ Forest Trial Stalfos Room": {
+    "exits": [
+      "Ganon's Castle MQ Main",
+      "Ganon's Castle MQ Forest Trial Beamos Room"
+    ]
+  },
+  "Ganon's Castle MQ Forest Trial Beamos Room": {
+    "exits": [
+      "Ganon's Castle MQ Forest Trial Stalfos Room",
+      "Ganon's Castle MQ Forest Trial Final Room"
+    ]
+  },
+  "Ganon's Castle MQ Forest Trial Final Room": {
+    "exits": [
+      "Ganon's Castle MQ Forest Trial Beamos Room"
+    ]
+  },
+  "Ganon's Castle MQ Fire Trial Main Room": {
+    "exits": [
+      "Ganon's Castle MQ Main",
+      "Ganon's Castle MQ Fire Trial Final Room"
+    ]
+  },
+  "Ganon's Castle MQ Fire Trial Final Room": {
+    "exits": []
+  },
+  "Ganon's Castle MQ Water Trial Geyser Room": {
+    "exits": [
+      "Ganon's Castle MQ Main",
+      "Ganon's Castle MQ Water Trial Block Room"
+    ]
+  },
+  "Ganon's Castle MQ Water Trial Block Room": {
+    "exits": [
+      "Ganon's Castle MQ Water Trial Geyser Room",
+      "Ganon's Castle MQ Water Trial Final Room"
+    ]
+  },
+  "Ganon's Castle MQ Water Trial Final Room": {
+    "exits": [
+      "Ganon's Castle MQ Water Trial Block Room"
+    ]
+  },
+  "Ganon's Castle MQ Shadow Trial Starting Ledge": {
+    "exits": [
+      "Ganon's Castle MQ Main",
+      "Ganon's Castle MQ Shadow Trial Chest Platform"
+    ]
+  },
+  "Ganon's Castle MQ Shadow Trial Chest Platform": {
+    "exits": [
+      "Ganon's Castle MQ Shadow Trial Starting Ledge",
+      "Ganon's Castle MQ Shadow Trial Moving Platform"
+    ]
+  },
+  "Ganon's Castle MQ Shadow Trial Moving Platform": {
+    "exits": [
+      "Ganon's Castle MQ Shadow Trial Chest Platform",
+      "Ganon's Castle MQ Shadow Trial Beamos Torch"
+    ]
+  },
+  "Ganon's Castle MQ Shadow Trial Beamos Torch": {
+    "exits": [
+      "Ganon's Castle MQ Shadow Trial Moving Platform",
+      "Ganon's Castle MQ Shadow Trial Far Side"
+    ]
+  },
+  "Ganon's Castle MQ Shadow Trial Far Side": {
+    "exits": [
+      "Ganon's Castle MQ Shadow Trial Beamos Torch",
+      "Ganon's Castle MQ Shadow Trial Final Room"
+    ]
+  },
+  "Ganon's Castle MQ Shadow Trial Final Room": {
+    "exits": [
+      "Ganon's Castle MQ Shadow Trial Far Side"
+    ]
+  },
+  "Ganon's Castle MQ Spirit Trial Chairs Room": {
+    "exits": [
+      "Ganon's Castle MQ Main",
+      "Ganon's Castle MQ Spirit Trial Before Switch"
+    ]
+  },
+  "Ganon's Castle MQ Spirit Trial Before Switch": {
+    "exits": [
+      "Ganon's Castle MQ Spirit Trial Chairs Room",
+      "Ganon's Castle MQ Spirit Trial After Switch"
+    ]
+  },
+  "Ganon's Castle MQ Spirit Trial After Switch": {
+    "exits": [
+      "Ganon's Castle MQ Spirit Trial Before Switch",
+      "Ganon's Castle MQ Spirit Trial Final Room"
+    ]
+  },
+  "Ganon's Castle MQ Spirit Trial Final Room": {
+    "exits": [
+      "Ganon's Castle MQ Spirit Trial After Switch"
+    ]
+  },
+  "Ganon's Castle MQ Light Trial Dinolfos Room": {
+    "exits": [
+      "Ganon's Castle MQ Main",
+      "Ganon's Castle MQ Light Trial Triforce Room"
+    ]
+  },
+  "Ganon's Castle MQ Light Trial Triforce Room": {
+    "exits": [
+      "Ganon's Castle MQ Light Trial Dinolfos Room",
+      "Ganon's Castle MQ Light Trial Boulder Room Front"
+    ]
+  },
+  "Ganon's Castle MQ Light Trial Boulder Room Front": {
+    "exits": [
+      "Ganon's Castle MQ Light Trial Triforce Room",
+      "Ganon's Castle MQ Light Trial Boulder Room Back"
+    ]
+  },
+  "Ganon's Castle MQ Light Trial Boulder Room Back": {
+    "exits": [
+      "Ganon's Castle MQ Light Trial Boulder Room Front",
+      "Ganon's Castle MQ Light Trial Final Room"
+    ]
+  },
+  "Ganon's Castle MQ Light Trial Final Room": {
+    "exits": []
+  },
+  "Ganon's Tower Entryway": {
+    "exits": [
+      "Ganon's Castle Lobby",
+      "Ganon's Castle MQ Main",
+      "Ganon's Tower Floor 1"
+    ]
+  },
+  "Ganon's Tower Floor 1": {
+    "exits": [
+      "Ganon's Tower Entryway",
+      "Ganon's Tower Floor 2"
+    ]
+  },
+  "Ganon's Tower Floor 2": {
+    "exits": [
+      "Ganon's Tower Floor 1",
+      "Ganon's Tower Floor 3"
+    ]
+  },
+  "Ganon's Tower Floor 3": {
+    "exits": [
+      "Ganon's Tower Floor 2",
+      "Ganon's Tower Before Ganondorf's Lair"
+    ]
+  },
+  "Ganon's Tower Before Ganondorf's Lair": {
+    "exits": [
+      "Ganon's Tower Floor 3",
+      "Ganondorf's Lair"
+    ]
+  },
+  "Ganondorf's Lair": {
+    "exits": [
+      "Ganon's Castle Escape"
+    ]
+  },
+  "Ganon's Castle Escape": {
+    "exits": [
+      "Ganon's Arena"
+    ]
+  },
+  "Ganon's Arena": {
+    "exits": []
+  }
+}
