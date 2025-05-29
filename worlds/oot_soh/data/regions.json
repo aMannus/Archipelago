@@ -587,7 +587,7 @@
       "Kak Windmill",
       "Kak Bazaar",
       "Kak Shooting Gallery",
-      "Kak Behind Gate",
+      "Kak Well",
       "Kak Potion Shop Front",
       "Kak Redead Grotto",
       "Kak Impas Ledge",
@@ -673,7 +673,7 @@
   "Kak Behind Gate": {
     "exits": [
       "Kakariko Village",
-      "Bottom of the Well Entryway"
+      "Death Mountain"
     ]
   },
   "Kak Backyard": {
@@ -682,6 +682,12 @@
       "Kak Open Grotto",
       "Kak Granny's Potion Shop",
       "Kak Potion Shop Back"
+    ]
+  },
+  "Kak Well": {
+    "exits": [
+      "Kakariko Village",
+      "Bottom of the Well Entryway"
     ]
   },
   "Kak Granny's Potion Shop": {
@@ -1110,7 +1116,7 @@
     "exits": [
       "Bottom of the Well Perimeter",
       "Bottom of the Well MQ Perimeter",
-      "Kak Behind Gate"
+      "Kak Well"
     ]
   },
   "Ice Cavern Entryway": {
@@ -1474,6 +1480,7 @@
   },
   "Dodongos Cavern MQ Lobby": {
     "exits": [
+      "Dodongos Cavern MQ Beginning",
       "Dodongos Cavern MQ Gossip Stone",
       "Dodongos Cavern MQ Mouth Side Bridge",
       "Dodongos Cavern MQ Stairs Lower",
@@ -1528,6 +1535,16 @@
   },
   "Dodongos Cavern MQ Torch Puzzle Lower": {
     "exits": [
+      "Dodongos Cavern MQ Lobby",
+      "Dodongos Cavern MQ Dodongo Room",
+      "Dodongos Cavern MQ Larvae Room",
+      "Dodongos Cavern MQ Big Block Room",
+      "Dodongos Cavern MQ Torch Puzzle Upper",
+      "Dodongos Cavern MQ Before Upper Lizalfos"
+    ]
+  },
+  "Dodongos Cavern MQ Big Block Room": {
+    "exits": [
       "Dodongos Cavern MQ Torch Puzzle Lower",
       "Dodongos Cavern MQ Before Upper Lizalfos"
     ]
@@ -1539,6 +1556,12 @@
   },
   "Dodongos Cavern MQ Before Upper Lizalfos": {
     "exits": [
+      "Dodongos Cavern MQ Big Block Room",
+      "Dodongos Cavern MQ Two Fires Room"
+    ]
+  },
+  "Dodongos Cavern MQ Two Fires Room": {
+    "exits": [
       "Dodongos Cavern MQ Before Upper Lizalfos",
       "Dodongos Cavern MQ Torch Puzzle Upper"
     ]
@@ -1547,7 +1570,7 @@
     "exits": [
       "Dodongos Cavern MQ Mouth Side Bridge",
       "Dodongos Cavern MQ Torch Puzzle Lower",
-      "Dodongos Cavern MQ Before Upper Lizalfos"
+      "Dodongos Cavern MQ Two Fires Room"
     ]
   },
   "Dodongos Cavern MQ Lower Right Side": {
@@ -1974,7 +1997,7 @@
   "Forest Temple MQ After Block Puzzle": {
     "exits": [
       "Forest Temple MQ Straight Hallway",
-      "Forest Temple MQ Joelle room",
+      "Forest Temple MQ Joelle Room",
       "Forest Temple MQ NW Outdoors"
     ]
   },
@@ -2019,7 +2042,7 @@
       "Forest Temple MQ Falling Room"
     ]
   },
-  "Forest Temple MQ Joelle room": {
+  "Forest Temple MQ Joelle Room": {
     "exits": [
       "Forest Temple MQ After Block Puzzle",
       "Forest Temple MQ 3 Stalfos Room"
@@ -2027,7 +2050,7 @@
   },
   "Forest Temple MQ 3 Stalfos Room": {
     "exits": [
-      "Forest Temple MQ Joelle room",
+      "Forest Temple MQ Joelle Room",
       "Forest Temple MQ Beth Room"
     ]
   },
@@ -2476,8 +2499,8 @@
   },
   "Fire Temple MQ North Fire Maze": {
     "exits": [
-      "Fire Temple MQ Fire Maze Past Wall",
-      "Fire Temple MQ Scarecrow Room"
+      "Fire Temple MQ South Fire Maze",
+      "Fire Temple MQ West Fire Maze"
     ]
   },
   "Fire Temple MQ West Fire Maze": {
@@ -2488,12 +2511,18 @@
   },
   "Fire Temple MQ Fire Maze Past Wall": {
     "exits": [
-      "Fire Temple MQ North Fire Maze"
+      "Fire Temple MQ Upper Flare Dancer"
+    ]
+  },
+  "Fire Temple MQ Upper Flare Dancer": {
+    "exits": [
+      "Fire Temple MQ Fire Maze Past Wall",
+      "Fire Temple MQ Scarecrow Room"
     ]
   },
   "Fire Temple MQ Scarecrow Room": {
     "exits": [
-      "Fire Temple MQ North Fire Maze",
+      "Fire Temple MQ Upper Flare Dancer",
       "Fire Temple MQ Collapsed Stairs"
     ]
   },
@@ -2693,8 +2722,16 @@
   },
   "Water Temple MQ Main": {
     "exits": [
-      "Water Temple MQ 3F North Ledge",
-      "Water Temple Boss Entryway"
+      "Water Temple MQ 3F South Ledge",
+      "Water Temple MQ East Tower",
+      "Water Temple MQ 3F Central",
+      "Water Temple MQ 2F Central",
+      "Water Temple MQ Central Pillar 1F",
+      "Water Temple MQ Central Pillar High",
+      "Water Temple MQ Lizalfos Hallway",
+      "Water Temple MQ B1 Gate Switch",
+      "Water Temple MQ Triangle Torch Room",
+      "Water Temple MQ Crates Whirlpools Room"
     ]
   },
   "Water Temple MQ 3F Central": {
@@ -2705,7 +2742,7 @@
       "Water Temple MQ Central Pillar High",
       "Water Temple MQ 3F North Ledge",
       "Water Temple MQ High Emblem",
-      "Water Temple Waterfall",
+      "Water Temple MQ Waterfall",
       "Water Temple MQ Lizalfos Hallway"
     ]
   },
@@ -2729,7 +2766,13 @@
     "exits": [
       "Water Temple MQ Main",
       "Water Temple MQ 3F Central",
-      "Water Temple MQ Main"
+      "Water Temple MQ Boss Door"
+    ]
+  },
+  "Water Temple MQ Boss Door": {
+    "exits": [
+      "Water Temple MQ 3F North Ledge",
+      "Water Temple Boss Entryway"
     ]
   },
   "Water Temple MQ East Tower": {
@@ -2771,6 +2814,12 @@
   },
   "Water Temple MQ Behind Blue Switch 2F": {
     "exits": [
+      "Water Temple MQ Main",
+      "Water Temple MQ Behind Blue Switch 3F"
+    ]
+  },
+  "Water Temple MQ Behind Blue Switch 3F": {
+    "exits": [
       "Water Temple MQ Behind Blue Switch 2F",
       "Water Temple MQ High Emblem"
     ]
@@ -2788,7 +2837,7 @@
   "Water Temple MQ Lizalfos Cage": {
     "exits": []
   },
-  "Water Temple Waterfall": {
+  "Water Temple MQ Waterfall": {
     "exits": [
       "Water Temple MQ 3F Central",
       "Water Temple MQ Stalfos Pit",
@@ -2798,14 +2847,14 @@
   },
   "Water Temple MQ Stalfos Pit": {
     "exits": [
-      "Water Temple Waterfall",
+      "Water Temple MQ Waterfall",
       "Water Temple MQ Stalfos Pit Pots",
       "Water Temple MQ Stalfos Pit Upper"
     ]
   },
   "Water Temple MQ Stalfos Pit Pots": {
     "exits": [
-      "Water Temple Waterfall",
+      "Water Temple MQ Waterfall",
       "Water Temple MQ Stalfos Pit",
       "Water Temple MQ Stalfos Pit Upper"
     ]
@@ -2924,7 +2973,7 @@
   "Water Temple Boss Entryway": {
     "exits": [
       "Water Temple Pre Boss Room",
-      "Water Temple MQ Main",
+      "Water Temple MQ Boss Door",
       "Water Temple Boss Room"
     ]
   },
@@ -2999,19 +3048,19 @@
       "Spirit Temple MQ West 1F Rusted Switch"
     ]
   },
-  "Spirit Temple MQ Gibdo Room North": {
+  "Spirit Temple MQ 1F Gibdo Room North": {
     "exits": []
   },
   "Spirit Temple MQ 1F Gibdo Room South": {
     "exits": [
       "Spirit Temple MQ 1F West",
-      "Spirit Temple MQ Gibdo Room North",
-      "Spirit Temple Turntable Room"
+      "Spirit Temple MQ 1F Gibdo Room North",
+      "Spirit Temple MQ Turntable Room"
     ]
   },
-  "Spirit Temple Turntable Room": {
+  "Spirit Temple MQ Turntable Room": {
     "exits": [
-      "Spirit Temple MQ Gibdo Room North",
+      "Spirit Temple MQ 1F Gibdo Room North",
       "Spirit Temple MQ Map Room North"
     ]
   },
@@ -3055,18 +3104,18 @@
   "Spirit Temple MQ Sun Block Room": {
     "exits": [
       "Spirit Temple MQ Statue Room",
-      "Spirit Temple MQ East Iron Knuckle"
+      "Spirit Temple MQ West Iron Knuckle"
     ]
   },
-  "Spirit Temple MQ East Iron Knuckle": {
+  "Spirit Temple MQ West Iron Knuckle": {
     "exits": [
-      "Spirit Temple MQ East Stairs to Hand",
-      "Spirit Temple MQ Mirror Shield Hand"
+      "Spirit Temple MQ Sun Block Room",
+      "Spirit Temple MQ Silver Gauntlets Hand"
     ]
   },
   "Spirit Temple MQ Silver Gauntlets Hand": {
     "exits": [
-      "Spirit Temple MQ East Iron Knuckle",
+      "Spirit Temple MQ West Iron Knuckle",
       "Desert Colossus"
     ]
   },
@@ -3143,6 +3192,12 @@
     "exits": [
       "Spirit Temple MQ SoT Sun Room",
       "Spirit Temple MQ East Iron Knuckle"
+    ]
+  },
+  "Spirit Temple MQ East Iron Knuckle": {
+    "exits": [
+      "Spirit Temple MQ East Stairs to Hand",
+      "Spirit Temple MQ Mirror Shield Hand"
     ]
   },
   "Spirit Temple MQ Mirror Shield Hand": {
@@ -3514,7 +3569,7 @@
   },
   "Ice Cavern MQ Hub": {
     "exits": [
-      "Ice Cavern Beginning",
+      "Ice Cavern MQ Beginning",
       "Ice Cavern MQ Map Room",
       "Ice Cavern MQ Compass Room",
       "Ice Cavern MQ Scarecrow Room"
@@ -3611,10 +3666,10 @@
   "Gerudo Training Ground MQ Maze First Lock": {
     "exits": [
       "Gerudo Training Ground MQ Lobby",
-      "Gerudo Training Ground MQ Center"
+      "Gerudo Training Ground MQ Maze Center"
     ]
   },
-  "Gerudo Training Ground MQ Center": {
+  "Gerudo Training Ground MQ Maze Center": {
     "exits": [
       "Gerudo Training Ground MQ Maze First Lock"
     ]
