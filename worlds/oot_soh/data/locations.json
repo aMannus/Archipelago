@@ -1,3106 +1,2327 @@
-[
-  {
-    "name": "Link's Pocket",
+{
+  "Link's Pocket": {
     "id": 1
   },
-  {
-    "name": "Queen Gohma",
+  "Queen Gohma": {
     "id": 2
   },
-  {
-    "name": "King Dodongo",
+  "King Dodongo": {
     "id": 3
   },
-  {
-    "name": "Barinade",
+  "Barinade": {
     "id": 4
   },
-  {
-    "name": "Phantom Ganon",
+  "Phantom Ganon": {
     "id": 5
   },
-  {
-    "name": "Volvagia",
+  "Volvagia": {
     "id": 6
   },
-  {
-    "name": "Morpha",
+  "Morpha": {
     "id": 7
   },
-  {
-    "name": "Bongo Bongo",
+  "Bongo Bongo": {
     "id": 8
   },
-  {
-    "name": "Twinrova",
+  "Twinrova": {
     "id": 9
   },
-  {
-    "name": "Ganon",
+  "Ganon": {
     "id": 10
   },
-  {
-    "name": "Gift from Rauru",
+  "Gift from Rauru": {
     "id": 11
   },
-  {
-    "name": "Song from Impa",
+  "Song from Impa": {
     "id": 12
   },
-  {
-    "name": "Song from Malon",
+  "Song from Malon": {
     "id": 13
   },
-  {
-    "name": "Song from Saria",
+  "Song from Saria": {
     "id": 14
   },
-  {
-    "name": "Song from Royal Family's Tomb",
+  "Song from Royal Family's Tomb": {
     "id": 15
   },
-  {
-    "name": "Song from Ocarina of Time",
+  "Song from Ocarina of Time": {
     "id": 16
   },
-  {
-    "name": "Song from Windmill",
+  "Song from Windmill": {
     "id": 17
   },
-  {
-    "name": "Sheik in Forest",
+  "Sheik in Forest": {
     "id": 18
   },
-  {
-    "name": "Sheik in Crater",
+  "Sheik in Crater": {
     "id": 19
   },
-  {
-    "name": "Sheik in Ice Cavern",
+  "Sheik in Ice Cavern": {
     "id": 20
   },
-  {
-    "name": "Sheik at Colossus",
+  "Sheik at Colossus": {
     "id": 21
   },
-  {
-    "name": "Sheik in Kakariko",
+  "Sheik in Kakariko": {
     "id": 22
   },
-  {
-    "name": "Sheik at Temple",
+  "Sheik at Temple": {
     "id": 23
   },
-  {
-    "name": "KF Mido Top Left Chest",
+  "KF Mido Top Left Chest": {
     "id": 24
   },
-  {
-    "name": "KF Mido Top Right Chest",
+  "KF Mido Top Right Chest": {
     "id": 25
   },
-  {
-    "name": "KF Mido Bottom Left Chest",
+  "KF Mido Bottom Left Chest": {
     "id": 26
   },
-  {
-    "name": "KF Mido Bottom Right Chest",
+  "KF Mido Bottom Right Chest": {
     "id": 27
   },
-  {
-    "name": "KF Kokiri Sword Chest",
+  "KF Kokiri Sword Chest": {
     "id": 28
   },
-  {
-    "name": "KF Storms Grotto Chest",
+  "KF Storms Grotto Chest": {
     "id": 29
   },
-  {
-    "name": "KF GS Know It All House",
+  "KF GS Know It All House": {
     "id": 31
   },
-  {
-    "name": "KF GS Bean Patch",
+  "KF GS Bean Patch": {
     "id": 32
   },
-  {
-    "name": "KF GS House of Twins",
+  "KF GS House of Twins": {
     "id": 33
   },
-  {
-    "name": "KF Shop Item 1",
+  "KF Shop Item 1": {
     "id": 34
   },
-  {
-    "name": "KF Shop Item 2",
+  "KF Shop Item 2": {
     "id": 35
   },
-  {
-    "name": "KF Shop Item 3",
+  "KF Shop Item 3": {
     "id": 36
   },
-  {
-    "name": "KF Shop Item 4",
+  "KF Shop Item 4": {
     "id": 37
   },
-  {
-    "name": "KF Shop Item 5",
+  "KF Shop Item 5": {
     "id": 38
   },
-  {
-    "name": "KF Shop Item 6",
+  "KF Shop Item 6": {
     "id": 39
   },
-  {
-    "name": "KF Shop Item 7",
+  "KF Shop Item 7": {
     "id": 40
   },
-  {
-    "name": "KF Shop Item 8",
+  "KF Shop Item 8": {
     "id": 41
   },
-  {
-    "name": "LW Gift From Saria",
+  "LW Gift From Saria": {
     "id": 42
   },
-  {
-    "name": "LW Ocarina Memory Game",
+  "LW Ocarina Memory Game": {
     "id": 43
   },
-  {
-    "name": "LW Target in Woods",
+  "LW Target in Woods": {
     "id": 44
   },
-  {
-    "name": "LW Near Shortcuts Grotto Chest",
+  "LW Near Shortcuts Grotto Chest": {
     "id": 45
   },
-  {
-    "name": "LW Trade Cojiro",
+  "LW Trade Cojiro": {
     "id": 46
   },
-  {
-    "name": "LW Deku Theater Skull Mask",
+  "LW Deku Theater Skull Mask": {
     "id": 47
   },
-  {
-    "name": "LW Deku Theater Mask of Truth",
+  "LW Deku Theater Mask of Truth": {
     "id": 48
   },
-  {
-    "name": "LW Skull Kid",
+  "LW Skull Kid": {
     "id": 49
   },
-  {
-    "name": "LW Trade Odd Potion",
+  "LW Trade Odd Potion": {
     "id": 50
   },
-  {
-    "name": "LW Deku Scrub Near Bridge",
+  "LW Deku Scrub Near Bridge": {
     "id": 51
   },
-  {
-    "name": "LW Deku Scrub Near Deku Theater Left",
+  "LW Deku Scrub Near Deku Theater Left": {
     "id": 52
   },
-  {
-    "name": "LW Deku Scrub Near Deku Theater Right",
+  "LW Deku Scrub Near Deku Theater Right": {
     "id": 53
   },
-  {
-    "name": "LW Deku Scrub Grotto Front",
+  "LW Deku Scrub Grotto Front": {
     "id": 54
   },
-  {
-    "name": "LW Deku Scrub Grotto Rear",
+  "LW Deku Scrub Grotto Rear": {
     "id": 55
   },
-  {
-    "name": "LW GS Bean Patch Near Bridge",
+  "LW GS Bean Patch Near Bridge": {
     "id": 56
   },
-  {
-    "name": "LW GS Bean Patch Near Theater",
+  "LW GS Bean Patch Near Theater": {
     "id": 57
   },
-  {
-    "name": "LW GS Above Theater",
+  "LW GS Above Theater": {
     "id": 58
   },
-  {
-    "name": "SFM Wolfos Grotto Chest",
+  "SFM Wolfos Grotto Chest": {
     "id": 59
   },
-  {
-    "name": "SFM Deku Scrub Grotto Front",
+  "SFM Deku Scrub Grotto Front": {
     "id": 60
   },
-  {
-    "name": "SFM Deku Scrub Grotto Rear",
+  "SFM Deku Scrub Grotto Rear": {
     "id": 61
   },
-  {
-    "name": "SFM GS",
+  "SFM GS": {
     "id": 62
   },
-  {
-    "name": "HF Ocarina of Time Item",
+  "HF Ocarina of Time Item": {
     "id": 63
   },
-  {
-    "name": "HF Near Market Grotto Chest",
+  "HF Near Market Grotto Chest": {
     "id": 64
   },
-  {
-    "name": "HF Tektite Grotto Freestanding PoH",
+  "HF Tektite Grotto Freestanding PoH": {
     "id": 65
   },
-  {
-    "name": "HF Southeast Grotto Chest",
+  "HF Southeast Grotto Chest": {
     "id": 66
   },
-  {
-    "name": "HF Open Grotto Chest",
+  "HF Open Grotto Chest": {
     "id": 67
   },
-  {
-    "name": "HF Deku Scrub Grotto",
+  "HF Deku Scrub Grotto": {
     "id": 68
   },
-  {
-    "name": "HF GS Cow Grotto",
+  "HF GS Cow Grotto": {
     "id": 70
   },
-  {
-    "name": "HF GS Stone Bridge Tree Grotto",
+  "HF GS Stone Bridge Tree Grotto": {
     "id": 71
   },
-  {
-    "name": "Market Shooting Gallery",
+  "Market Shooting Gallery": {
     "id": 72
   },
-  {
-    "name": "Market Bombchu Bowling First Prize",
+  "Market Bombchu Bowling First Prize": {
     "id": 73
   },
-  {
-    "name": "Market Bombchu Bowling Second Prize",
+  "Market Bombchu Bowling Second Prize": {
     "id": 74
   },
-  {
-    "name": "Market Lost Dog",
+  "Market Lost Dog": {
     "id": 75
   },
-  {
-    "name": "Market Treasure Chest Game Reward",
+  "Market Treasure Chest Game Reward": {
     "id": 76
   },
-  {
-    "name": "Market 10 Big Poes",
+  "Market 10 Big Poes": {
     "id": 77
   },
-  {
-    "name": "Market Chest Game First Room Item",
+  "Market Chest Game First Room Item": {
     "id": 78
   },
-  {
-    "name": "Market Chest Game Second Room Item",
+  "Market Chest Game Second Room Item": {
     "id": 79
   },
-  {
-    "name": "Market Chest Game Third Room Item",
+  "Market Chest Game Third Room Item": {
     "id": 80
   },
-  {
-    "name": "Market Chest Game Fourth Room Item",
+  "Market Chest Game Fourth Room Item": {
     "id": 81
   },
-  {
-    "name": "Market Chest Game Fifth Room Item",
+  "Market Chest Game Fifth Room Item": {
     "id": 82
   },
-  {
-    "name": "Market Chest Game First Room Key",
+  "Market Chest Game First Room Key": {
     "id": 83
   },
-  {
-    "name": "Market Chest Game Second Room Key",
+  "Market Chest Game Second Room Key": {
     "id": 84
   },
-  {
-    "name": "Market Chest Game Third Room Key",
+  "Market Chest Game Third Room Key": {
     "id": 85
   },
-  {
-    "name": "Market Chest Game Fourth Room Key",
+  "Market Chest Game Fourth Room Key": {
     "id": 86
   },
-  {
-    "name": "Market Chest Game Fifth Room Key",
+  "Market Chest Game Fifth Room Key": {
     "id": 87
   },
-  {
-    "name": "Market Market GS Guard House",
+  "Market Market GS Guard House": {
     "id": 88
   },
-  {
-    "name": "Market Bazaar Item 1",
+  "Market Bazaar Item 1": {
     "id": 89
   },
-  {
-    "name": "Market Bazaar Item 2",
+  "Market Bazaar Item 2": {
     "id": 90
   },
-  {
-    "name": "Market Bazaar Item 3",
+  "Market Bazaar Item 3": {
     "id": 91
   },
-  {
-    "name": "Market Bazaar Item 4",
+  "Market Bazaar Item 4": {
     "id": 92
   },
-  {
-    "name": "Market Bazaar Item 5",
+  "Market Bazaar Item 5": {
     "id": 93
   },
-  {
-    "name": "Market Bazaar Item 6",
+  "Market Bazaar Item 6": {
     "id": 94
   },
-  {
-    "name": "Market Bazaar Item 7",
+  "Market Bazaar Item 7": {
     "id": 95
   },
-  {
-    "name": "Market Bazaar Item 8",
+  "Market Bazaar Item 8": {
     "id": 96
   },
-  {
-    "name": "Market Potion Shop Item 1",
+  "Market Potion Shop Item 1": {
     "id": 97
   },
-  {
-    "name": "Market Potion Shop Item 2",
+  "Market Potion Shop Item 2": {
     "id": 98
   },
-  {
-    "name": "Market Potion Shop Item 3",
+  "Market Potion Shop Item 3": {
     "id": 99
   },
-  {
-    "name": "Market Potion Shop Item 4",
+  "Market Potion Shop Item 4": {
     "id": 100
   },
-  {
-    "name": "Market Potion Shop Item 5",
+  "Market Potion Shop Item 5": {
     "id": 101
   },
-  {
-    "name": "Market Potion Shop Item 6",
+  "Market Potion Shop Item 6": {
     "id": 102
   },
-  {
-    "name": "Market Potion Shop Item 7",
+  "Market Potion Shop Item 7": {
     "id": 103
   },
-  {
-    "name": "Market Potion Shop Item 8",
+  "Market Potion Shop Item 8": {
     "id": 104
   },
-  {
-    "name": "Market Bombchu Shop Item 1",
+  "Market Bombchu Shop Item 1": {
     "id": 105
   },
-  {
-    "name": "Market Bombchu Shop Item 2",
+  "Market Bombchu Shop Item 2": {
     "id": 106
   },
-  {
-    "name": "Market Bombchu Shop Item 3",
+  "Market Bombchu Shop Item 3": {
     "id": 107
   },
-  {
-    "name": "Market Bombchu Shop Item 4",
+  "Market Bombchu Shop Item 4": {
     "id": 108
   },
-  {
-    "name": "Market Bombchu Shop Item 5",
+  "Market Bombchu Shop Item 5": {
     "id": 109
   },
-  {
-    "name": "Market Bombchu Shop Item 6",
+  "Market Bombchu Shop Item 6": {
     "id": 110
   },
-  {
-    "name": "Market Bombchu Shop Item 7",
+  "Market Bombchu Shop Item 7": {
     "id": 111
   },
-  {
-    "name": "Market Bombchu Shop Item 8",
+  "Market Bombchu Shop Item 8": {
     "id": 112
   },
-  {
-    "name": "Market ToT Light Arrow Cutscene",
+  "Market ToT Light Arrow Cutscene": {
     "id": 113
   },
-  {
-    "name": "Market ToT Master Sword",
+  "Market ToT Master Sword": {
     "id": 114
   },
-  {
-    "name": "HC Malon Egg",
+  "HC Malon Egg": {
     "id": 115
   },
-  {
-    "name": "HC Zeldas Letter",
+  "HC Zeldas Letter": {
     "id": 116
   },
-  {
-    "name": "HC Great Fairy Reward",
+  "HC Great Fairy Reward": {
     "id": 117
   },
-  {
-    "name": "HC GS Tree",
+  "HC GS Tree": {
     "id": 118
   },
-  {
-    "name": "HC GS Storms Grotto",
+  "HC GS Storms Grotto": {
     "id": 119
   },
-  {
-    "name": "LLR Talons Chickens",
+  "LLR Talons Chickens": {
     "id": 120
   },
-  {
-    "name": "LLR Freestanding PoH",
+  "LLR Freestanding PoH": {
     "id": 121
   },
-  {
-    "name": "LLR Deku Scrub Grotto Left",
+  "LLR Deku Scrub Grotto Left": {
     "id": 122
   },
-  {
-    "name": "LLR Deku Scrub Grotto Center",
+  "LLR Deku Scrub Grotto Center": {
     "id": 123
   },
-  {
-    "name": "LLR Deku Scrub Grotto Right",
+  "LLR Deku Scrub Grotto Right": {
     "id": 124
   },
-  {
-    "name": "LLR GS House Window",
+  "LLR GS House Window": {
     "id": 129
   },
-  {
-    "name": "LLR GS Tree",
+  "LLR GS Tree": {
     "id": 130
   },
-  {
-    "name": "LLR GS Rain Shed",
+  "LLR GS Rain Shed": {
     "id": 131
   },
-  {
-    "name": "LLR GS Back Wall",
+  "LLR GS Back Wall": {
     "id": 132
   },
-  {
-    "name": "Kak Anju as Child",
+  "Kak Anju as Child": {
     "id": 133
   },
-  {
-    "name": "Kak Anju as Adult",
+  "Kak Anju as Adult": {
     "id": 134
   },
-  {
-    "name": "Kak Impas House Freestanding PoH",
+  "Kak Impas House Freestanding PoH": {
     "id": 135
   },
-  {
-    "name": "Kak Windmill Freestanding PoH",
+  "Kak Windmill Freestanding PoH": {
     "id": 136
   },
-  {
-    "name": "Kak Man on Roof",
+  "Kak Man on Roof": {
     "id": 137
   },
-  {
-    "name": "Kak Open Grotto Chest",
+  "Kak Open Grotto Chest": {
     "id": 138
   },
-  {
-    "name": "Kak Redead Grotto Chest",
+  "Kak Redead Grotto Chest": {
     "id": 139
   },
-  {
-    "name": "Kak Shooting Gallery Reward",
+  "Kak Shooting Gallery Reward": {
     "id": 140
   },
-  {
-    "name": "Kak Trade Odd Mushroom",
+  "Kak Trade Odd Mushroom": {
     "id": 141
   },
-  {
-    "name": "Kak Granny's Shop",
+  "Kak Granny's Shop": {
     "id": 142
   },
-  {
-    "name": "Kak Trade Pocket Cucco",
+  "Kak Trade Pocket Cucco": {
     "id": 143
   },
-  {
-    "name": "Kak 10 Gold Skulltula Reward",
+  "Kak 10 Gold Skulltula Reward": {
     "id": 144
   },
-  {
-    "name": "Kak 20 Gold Skulltula Reward",
+  "Kak 20 Gold Skulltula Reward": {
     "id": 145
   },
-  {
-    "name": "Kak 30 Gold Skulltula Reward",
+  "Kak 30 Gold Skulltula Reward": {
     "id": 146
   },
-  {
-    "name": "Kak 40 Gold Skulltula Reward",
+  "Kak 40 Gold Skulltula Reward": {
     "id": 147
   },
-  {
-    "name": "Kak 50 Gold Skulltula Reward",
+  "Kak 50 Gold Skulltula Reward": {
     "id": 148
   },
-  {
-    "name": "Kak 100 Gold Skulltula Reward",
+  "Kak 100 Gold Skulltula Reward": {
     "id": 149
   },
-  {
-    "name": "Kak GS Tree",
+  "Kak GS Tree": {
     "id": 151
   },
-  {
-    "name": "Kak GS Guards House",
+  "Kak GS Guards House": {
     "id": 152
   },
-  {
-    "name": "Kak GS Watchtower",
+  "Kak GS Watchtower": {
     "id": 153
   },
-  {
-    "name": "Kak GS Skulltula House",
+  "Kak GS Skulltula House": {
     "id": 154
   },
-  {
-    "name": "Kak GS House Under Construction",
+  "Kak GS House Under Construction": {
     "id": 155
   },
-  {
-    "name": "Kak GS Above Impas House",
+  "Kak GS Above Impas House": {
     "id": 156
   },
-  {
-    "name": "Kak Bazaar Item 1",
+  "Kak Bazaar Item 1": {
     "id": 157
   },
-  {
-    "name": "Kak Bazaar Item 2",
+  "Kak Bazaar Item 2": {
     "id": 158
   },
-  {
-    "name": "Kak Bazaar Item 3",
+  "Kak Bazaar Item 3": {
     "id": 159
   },
-  {
-    "name": "Kak Bazaar Item 4",
+  "Kak Bazaar Item 4": {
     "id": 160
   },
-  {
-    "name": "Kak Bazaar Item 5",
+  "Kak Bazaar Item 5": {
     "id": 161
   },
-  {
-    "name": "Kak Bazaar Item 6",
+  "Kak Bazaar Item 6": {
     "id": 162
   },
-  {
-    "name": "Kak Bazaar Item 7",
+  "Kak Bazaar Item 7": {
     "id": 163
   },
-  {
-    "name": "Kak Bazaar Item 8",
+  "Kak Bazaar Item 8": {
     "id": 164
   },
-  {
-    "name": "Kak Potion Shop Item 1",
+  "Kak Potion Shop Item 1": {
     "id": 165
   },
-  {
-    "name": "Kak Potion Shop Item 2",
+  "Kak Potion Shop Item 2": {
     "id": 166
   },
-  {
-    "name": "Kak Potion Shop Item 3",
+  "Kak Potion Shop Item 3": {
     "id": 167
   },
-  {
-    "name": "Kak Potion Shop Item 4",
+  "Kak Potion Shop Item 4": {
     "id": 168
   },
-  {
-    "name": "Kak Potion Shop Item 5",
+  "Kak Potion Shop Item 5": {
     "id": 169
   },
-  {
-    "name": "Kak Potion Shop Item 6",
+  "Kak Potion Shop Item 6": {
     "id": 170
   },
-  {
-    "name": "Kak Potion Shop Item 7",
+  "Kak Potion Shop Item 7": {
     "id": 171
   },
-  {
-    "name": "Kak Potion Shop Item 8",
+  "Kak Potion Shop Item 8": {
     "id": 172
   },
-  {
-    "name": "Graveyard Shield Grave Chest",
+  "Graveyard Shield Grave Chest": {
     "id": 173
   },
-  {
-    "name": "Graveyard Heart Piece Grave Chest",
+  "Graveyard Heart Piece Grave Chest": {
     "id": 174
   },
-  {
-    "name": "Graveyard Royal Family's Tomb Chest",
+  "Graveyard Royal Family's Tomb Chest": {
     "id": 175
   },
-  {
-    "name": "Graveyard Freestanding PoH",
+  "Graveyard Freestanding PoH": {
     "id": 176
   },
-  {
-    "name": "Graveyard Dampe Gravedigging Tour",
+  "Graveyard Dampe Gravedigging Tour": {
     "id": 177
   },
-  {
-    "name": "Graveyard Hookshot Chest",
+  "Graveyard Hookshot Chest": {
     "id": 178
   },
-  {
-    "name": "Graveyard Dampe Race Freestanding PoH",
+  "Graveyard Dampe Race Freestanding PoH": {
     "id": 179
   },
-  {
-    "name": "Graveyard GS Bean Patch",
+  "Graveyard GS Bean Patch": {
     "id": 180
   },
-  {
-    "name": "Graveyard GS Wall",
+  "Graveyard GS Wall": {
     "id": 181
   },
-  {
-    "name": "DMT Freestanding PoH",
+  "DMT Freestanding PoH": {
     "id": 182
   },
-  {
-    "name": "DMT Chest",
+  "DMT Chest": {
     "id": 183
   },
-  {
-    "name": "DMT Storms Grotto Chest",
+  "DMT Storms Grotto Chest": {
     "id": 184
   },
-  {
-    "name": "DMT Trade Broken Sword",
+  "DMT Trade Broken Sword": {
     "id": 185
   },
-  {
-    "name": "DMT Trade Eyedrops",
+  "DMT Trade Eyedrops": {
     "id": 186
   },
-  {
-    "name": "DMT Trade Claim Check",
+  "DMT Trade Claim Check": {
     "id": 187
   },
-  {
-    "name": "DMT Great Fairy Reward",
+  "DMT Great Fairy Reward": {
     "id": 188
   },
-  {
-    "name": "DMT GS Near Kak",
+  "DMT GS Near Kak": {
     "id": 190
   },
-  {
-    "name": "DMT GS Bean Patch",
+  "DMT GS Bean Patch": {
     "id": 191
   },
-  {
-    "name": "DMT GS Above Dodongos Cavern",
+  "DMT GS Above Dodongos Cavern": {
     "id": 192
   },
-  {
-    "name": "DMT GS Falling Rocks Path",
+  "DMT GS Falling Rocks Path": {
     "id": 193
   },
-  {
-    "name": "GC Darunias Joy",
+  "GC Darunias Joy": {
     "id": 194
   },
-  {
-    "name": "GC Pot Freestanding PoH",
+  "GC Pot Freestanding PoH": {
     "id": 195
   },
-  {
-    "name": "GC Rolling Goron as Child",
+  "GC Rolling Goron as Child": {
     "id": 196
   },
-  {
-    "name": "GC Rolling Goron as Adult",
+  "GC Rolling Goron as Adult": {
     "id": 197
   },
-  {
-    "name": "GC Medigoron",
+  "GC Medigoron": {
     "id": 198
   },
-  {
-    "name": "GC Maze Left Chest",
+  "GC Maze Left Chest": {
     "id": 199
   },
-  {
-    "name": "GC Maze Right Chest",
+  "GC Maze Right Chest": {
     "id": 200
   },
-  {
-    "name": "GC Maze Center Chest",
+  "GC Maze Center Chest": {
     "id": 201
   },
-  {
-    "name": "GC Deku Scrub Grotto Left",
+  "GC Deku Scrub Grotto Left": {
     "id": 202
   },
-  {
-    "name": "GC Deku Scrub Grotto Center",
+  "GC Deku Scrub Grotto Center": {
     "id": 203
   },
-  {
-    "name": "GC Deku Scrub Grotto Right",
+  "GC Deku Scrub Grotto Right": {
     "id": 204
   },
-  {
-    "name": "GC GS Center Platform",
+  "GC GS Center Platform": {
     "id": 205
   },
-  {
-    "name": "GC GS Boulder Maze",
+  "GC GS Boulder Maze": {
     "id": 206
   },
-  {
-    "name": "GC Shop Item 1",
+  "GC Shop Item 1": {
     "id": 207
   },
-  {
-    "name": "GC Shop Item 2",
+  "GC Shop Item 2": {
     "id": 208
   },
-  {
-    "name": "GC Shop Item 3",
+  "GC Shop Item 3": {
     "id": 209
   },
-  {
-    "name": "GC Shop Item 4",
+  "GC Shop Item 4": {
     "id": 210
   },
-  {
-    "name": "GC Shop Item 5",
+  "GC Shop Item 5": {
     "id": 211
   },
-  {
-    "name": "GC Shop Item 6",
+  "GC Shop Item 6": {
     "id": 212
   },
-  {
-    "name": "GC Shop Item 7",
+  "GC Shop Item 7": {
     "id": 213
   },
-  {
-    "name": "GC Shop Item 8",
+  "GC Shop Item 8": {
     "id": 214
   },
-  {
-    "name": "DMC Volcano Freestanding PoH",
+  "DMC Volcano Freestanding PoH": {
     "id": 215
   },
-  {
-    "name": "DMC Wall Freestanding PoH",
+  "DMC Wall Freestanding PoH": {
     "id": 216
   },
-  {
-    "name": "DMC Upper Grotto Chest",
+  "DMC Upper Grotto Chest": {
     "id": 217
   },
-  {
-    "name": "DMC Great Fairy Reward",
+  "DMC Great Fairy Reward": {
     "id": 218
   },
-  {
-    "name": "DMC Deku Scrub",
+  "DMC Deku Scrub": {
     "id": 219
   },
-  {
-    "name": "DMC Deku Scrub Grotto Left",
+  "DMC Deku Scrub Grotto Left": {
     "id": 220
   },
-  {
-    "name": "DMC Deku Scrub Grotto Center",
+  "DMC Deku Scrub Grotto Center": {
     "id": 221
   },
-  {
-    "name": "DMC Deku Scrub Grotto Right",
+  "DMC Deku Scrub Grotto Right": {
     "id": 222
   },
-  {
-    "name": "DMC GS Crate",
+  "DMC GS Crate": {
     "id": 223
   },
-  {
-    "name": "DMC GS Bean Patch",
+  "DMC GS Bean Patch": {
     "id": 224
   },
-  {
-    "name": "ZR Magic Bean Salesman",
+  "ZR Magic Bean Salesman": {
     "id": 225
   },
-  {
-    "name": "ZR Open Grotto Chest",
+  "ZR Open Grotto Chest": {
     "id": 226
   },
-  {
-    "name": "ZR Frogs Zelda's Lullaby",
+  "ZR Frogs Zelda's Lullaby": {
     "id": 227
   },
-  {
-    "name": "ZR Frogs Epona's Song",
+  "ZR Frogs Epona's Song": {
     "id": 228
   },
-  {
-    "name": "ZR Frogs Saria's Song",
+  "ZR Frogs Saria's Song": {
     "id": 229
   },
-  {
-    "name": "ZR Frogs Sun's Song",
+  "ZR Frogs Sun's Song": {
     "id": 230
   },
-  {
-    "name": "ZR Frogs Song of Time",
+  "ZR Frogs Song of Time": {
     "id": 231
   },
-  {
-    "name": "ZR Frogs in the Rain",
+  "ZR Frogs in the Rain": {
     "id": 232
   },
-  {
-    "name": "ZR Frogs Ocarina Game",
+  "ZR Frogs Ocarina Game": {
     "id": 233
   },
-  {
-    "name": "ZR Near Open Grotto Freestanding PoH",
+  "ZR Near Open Grotto Freestanding PoH": {
     "id": 234
   },
-  {
-    "name": "ZR Near Domain Freestanding PoH",
+  "ZR Near Domain Freestanding PoH": {
     "id": 235
   },
-  {
-    "name": "ZR Deku Scrub Grotto Front",
+  "ZR Deku Scrub Grotto Front": {
     "id": 236
   },
-  {
-    "name": "ZR Deku Scrub Grotto Rear",
+  "ZR Deku Scrub Grotto Rear": {
     "id": 237
   },
-  {
-    "name": "ZR GS Tree",
+  "ZR GS Tree": {
     "id": 238
   },
-  {
-    "name": "ZR GS Ladder",
+  "ZR GS Ladder": {
     "id": 239
   },
-  {
-    "name": "ZR GS Near Raised Grottos",
+  "ZR GS Near Raised Grottos": {
     "id": 240
   },
-  {
-    "name": "ZR GS Above Bridge",
+  "ZR GS Above Bridge": {
     "id": 241
   },
-  {
-    "name": "ZD Diving Minigame",
+  "ZD Diving Minigame": {
     "id": 242
   },
-  {
-    "name": "ZD Chest",
+  "ZD Chest": {
     "id": 243
   },
-  {
-    "name": "ZD King Zora Thawed",
+  "ZD King Zora Thawed": {
     "id": 244
   },
-  {
-    "name": "ZD Trade Prescription",
+  "ZD Trade Prescription": {
     "id": 245
   },
-  {
-    "name": "ZD GS Frozen Waterfall",
+  "ZD GS Frozen Waterfall": {
     "id": 246
   },
-  {
-    "name": "ZD Shop Item 1",
+  "ZD Shop Item 1": {
     "id": 247
   },
-  {
-    "name": "ZD Shop Item 2",
+  "ZD Shop Item 2": {
     "id": 248
   },
-  {
-    "name": "ZD Shop Item 3",
+  "ZD Shop Item 3": {
     "id": 249
   },
-  {
-    "name": "ZD Shop Item 4",
+  "ZD Shop Item 4": {
     "id": 250
   },
-  {
-    "name": "ZD Shop Item 5",
+  "ZD Shop Item 5": {
     "id": 251
   },
-  {
-    "name": "ZD Shop Item 6",
+  "ZD Shop Item 6": {
     "id": 252
   },
-  {
-    "name": "ZD Shop Item 7",
+  "ZD Shop Item 7": {
     "id": 253
   },
-  {
-    "name": "ZD Shop Item 8",
+  "ZD Shop Item 8": {
     "id": 254
   },
-  {
-    "name": "ZF Great Fairy Reward",
+  "ZF Great Fairy Reward": {
     "id": 255
   },
-  {
-    "name": "ZF Iceberg Freestanding PoH",
+  "ZF Iceberg Freestanding PoH": {
     "id": 256
   },
-  {
-    "name": "ZF Bottom Freestanding PoH",
+  "ZF Bottom Freestanding PoH": {
     "id": 257
   },
-  {
-    "name": "ZF GS Above The Log",
+  "ZF GS Above The Log": {
     "id": 258
   },
-  {
-    "name": "ZF GS Tree",
+  "ZF GS Tree": {
     "id": 259
   },
-  {
-    "name": "ZF GS Hidden Cave",
+  "ZF GS Hidden Cave": {
     "id": 260
   },
-  {
-    "name": "LH Underwater Item",
+  "LH Underwater Item": {
     "id": 261
   },
-  {
-    "name": "LH Child Fishing",
+  "LH Child Fishing": {
     "id": 262
   },
-  {
-    "name": "LH Adult Fishing",
+  "LH Adult Fishing": {
     "id": 280
   },
-  {
-    "name": "LH Hyrule Loach Reward",
+  "LH Hyrule Loach Reward": {
     "id": 281
   },
-  {
-    "name": "LH Lab Dive",
+  "LH Lab Dive": {
     "id": 298
   },
-  {
-    "name": "LH Lab Trade Eyeball Frog",
+  "LH Lab Trade Eyeball Frog": {
     "id": 299
   },
-  {
-    "name": "LH Freestanding PoH",
+  "LH Freestanding PoH": {
     "id": 300
   },
-  {
-    "name": "LH Sun",
+  "LH Sun": {
     "id": 301
   },
-  {
-    "name": "LH Deku Scrub Grotto Left",
+  "LH Deku Scrub Grotto Left": {
     "id": 302
   },
-  {
-    "name": "LH Deku Scrub Grotto Center",
+  "LH Deku Scrub Grotto Center": {
     "id": 303
   },
-  {
-    "name": "LH Deku Scrub Grotto Right",
+  "LH Deku Scrub Grotto Right": {
     "id": 304
   },
-  {
-    "name": "LH GS Bean Patch",
+  "LH GS Bean Patch": {
     "id": 305
   },
-  {
-    "name": "LH GS Lab Wall",
+  "LH GS Lab Wall": {
     "id": 306
   },
-  {
-    "name": "LH GS Small Island",
+  "LH GS Small Island": {
     "id": 307
   },
-  {
-    "name": "LH GS Lab Crate",
+  "LH GS Lab Crate": {
     "id": 308
   },
-  {
-    "name": "LH GS Tree",
+  "LH GS Tree": {
     "id": 309
   },
-  {
-    "name": "GV Crate Freestanding PoH",
+  "GV Crate Freestanding PoH": {
     "id": 310
   },
-  {
-    "name": "GV Waterfall Freestanding PoH",
+  "GV Waterfall Freestanding PoH": {
     "id": 311
   },
-  {
-    "name": "GV Chest",
+  "GV Chest": {
     "id": 312
   },
-  {
-    "name": "GV Trade Saw",
+  "GV Trade Saw": {
     "id": 313
   },
-  {
-    "name": "GV Deku Scrub Grotto Front",
+  "GV Deku Scrub Grotto Front": {
     "id": 314
   },
-  {
-    "name": "GV Deku Scrub Grotto Rear",
+  "GV Deku Scrub Grotto Rear": {
     "id": 315
   },
-  {
-    "name": "GV GS Small Bridge",
+  "GV GS Small Bridge": {
     "id": 317
   },
-  {
-    "name": "GV GS Bean Patch",
+  "GV GS Bean Patch": {
     "id": 318
   },
-  {
-    "name": "GV GS Behind Tent",
+  "GV GS Behind Tent": {
     "id": 319
   },
-  {
-    "name": "GV GS Pillar",
+  "GV GS Pillar": {
     "id": 320
   },
-  {
-    "name": "GF Chest",
+  "GF Chest": {
     "id": 321
   },
-  {
-    "name": "GF HBA 1000 Points",
+  "GF HBA 1000 Points": {
     "id": 322
   },
-  {
-    "name": "GF HBA 1500 Points",
+  "GF HBA 1500 Points": {
     "id": 323
   },
-  {
-    "name": "GF Gerudo Membership Card",
+  "GF Gerudo Membership Card": {
     "id": 324
   },
-  {
-    "name": "GF North F1 Carpenter",
+  "GF North F1 Carpenter": {
     "id": 325
   },
-  {
-    "name": "GF North F2 Carpenter",
+  "GF North F2 Carpenter": {
     "id": 326
   },
-  {
-    "name": "GF South F1 Carpenter",
+  "GF South F1 Carpenter": {
     "id": 327
   },
-  {
-    "name": "GF South F2 Carpenter",
+  "GF South F2 Carpenter": {
     "id": 328
   },
-  {
-    "name": "GF GS Top Floor",
+  "GF GS Top Floor": {
     "id": 329
   },
-  {
-    "name": "GF GS Archery Range",
+  "GF GS Archery Range": {
     "id": 330
   },
-  {
-    "name": "Wasteland Carpet Salesman",
+  "Wasteland Carpet Salesman": {
     "id": 336
   },
-  {
-    "name": "Wasteland Chest",
+  "Wasteland Chest": {
     "id": 337
   },
-  {
-    "name": "Wasteland GS",
+  "Wasteland GS": {
     "id": 338
   },
-  {
-    "name": "Colossus Great Fairy Reward",
+  "Colossus Great Fairy Reward": {
     "id": 339
   },
-  {
-    "name": "Colossus Freestanding PoH",
+  "Colossus Freestanding PoH": {
     "id": 340
   },
-  {
-    "name": "Colossus Deku Scrub Grotto Front",
+  "Colossus Deku Scrub Grotto Front": {
     "id": 341
   },
-  {
-    "name": "Colossus Deku Scrub Grotto Rear",
+  "Colossus Deku Scrub Grotto Rear": {
     "id": 342
   },
-  {
-    "name": "Colossus GS Bean Patch",
+  "Colossus GS Bean Patch": {
     "id": 343
   },
-  {
-    "name": "Colossus GS Tree",
+  "Colossus GS Tree": {
     "id": 344
   },
-  {
-    "name": "Colossus GS Hill",
+  "Colossus GS Hill": {
     "id": 345
   },
-  {
-    "name": "OGC Great Fairy Reward",
+  "OGC Great Fairy Reward": {
     "id": 346
   },
-  {
-    "name": "HC OGC GS",
+  "HC OGC GS": {
     "id": 347
   },
-  {
-    "name": "Deku Tree Map Chest",
+  "Deku Tree Map Chest": {
     "id": 348
   },
-  {
-    "name": "Deku Tree Slingshot Room Side Chest",
+  "Deku Tree Slingshot Room Side Chest": {
     "id": 349
   },
-  {
-    "name": "Deku Tree Slingshot Chest",
+  "Deku Tree Slingshot Chest": {
     "id": 350
   },
-  {
-    "name": "Deku Tree Compass Chest",
+  "Deku Tree Compass Chest": {
     "id": 351
   },
-  {
-    "name": "Deku Tree Compass Room Side Chest",
+  "Deku Tree Compass Room Side Chest": {
     "id": 352
   },
-  {
-    "name": "Deku Tree Basement Chest",
+  "Deku Tree Basement Chest": {
     "id": 353
   },
-  {
-    "name": "Deku Tree GS Compass Room",
+  "Deku Tree GS Compass Room": {
     "id": 354
   },
-  {
-    "name": "Deku Tree GS Basement Vines",
+  "Deku Tree GS Basement Vines": {
     "id": 355
   },
-  {
-    "name": "Deku Tree GS Basement Gate",
+  "Deku Tree GS Basement Gate": {
     "id": 356
   },
-  {
-    "name": "Deku Tree GS Basement Back Room",
+  "Deku Tree GS Basement Back Room": {
     "id": 357
   },
-  {
-    "name": "Deku Tree MQ Map Chest",
+  "Deku Tree MQ Map Chest": {
     "id": 358
   },
-  {
-    "name": "Deku Tree MQ Slingshot Chest",
+  "Deku Tree MQ Slingshot Chest": {
     "id": 359
   },
-  {
-    "name": "Deku Tree MQ Slingshot Room Back Chest",
+  "Deku Tree MQ Slingshot Room Back Chest": {
     "id": 360
   },
-  {
-    "name": "Deku Tree MQ Compass Chest",
+  "Deku Tree MQ Compass Chest": {
     "id": 361
   },
-  {
-    "name": "Deku Tree MQ Basement Chest",
+  "Deku Tree MQ Basement Chest": {
     "id": 362
   },
-  {
-    "name": "Deku Tree MQ Before Spinning Log Chest",
+  "Deku Tree MQ Before Spinning Log Chest": {
     "id": 363
   },
-  {
-    "name": "Deku Tree MQ After Spinning Log Chest",
+  "Deku Tree MQ After Spinning Log Chest": {
     "id": 364
   },
-  {
-    "name": "Deku Tree MQ Deku Scrub",
+  "Deku Tree MQ Deku Scrub": {
     "id": 365
   },
-  {
-    "name": "Deku Tree MQ GS Lobby",
+  "Deku Tree MQ GS Lobby": {
     "id": 366
   },
-  {
-    "name": "Deku Tree MQ GS Past Boulder Vines",
+  "Deku Tree MQ GS Past Boulder Vines": {
     "id": 367
   },
-  {
-    "name": "Deku Tree MQ GS Basement Graves Room",
+  "Deku Tree MQ GS Basement Graves Room": {
     "id": 368
   },
-  {
-    "name": "Deku Tree MQ GS Basement Back Room",
+  "Deku Tree MQ GS Basement Back Room": {
     "id": 369
   },
-  {
-    "name": "Deku Tree Queen Gohma Heart Container",
+  "Deku Tree Queen Gohma Heart Container": {
     "id": 370
   },
-  {
-    "name": "Dodongos Cavern Map Chest",
+  "Dodongos Cavern Map Chest": {
     "id": 371
   },
-  {
-    "name": "Dodongos Cavern Compass Chest",
+  "Dodongos Cavern Compass Chest": {
     "id": 372
   },
-  {
-    "name": "Dodongos Cavern Bomb Flower Platform Chest",
+  "Dodongos Cavern Bomb Flower Platform Chest": {
     "id": 373
   },
-  {
-    "name": "Dodongos Cavern Bomb Bag Chest",
+  "Dodongos Cavern Bomb Bag Chest": {
     "id": 374
   },
-  {
-    "name": "Dodongos Cavern End Of Bridge Chest",
+  "Dodongos Cavern End Of Bridge Chest": {
     "id": 375
   },
-  {
-    "name": "Dodongos Cavern Deku Scrub Side Room Near Dodongos",
+  "Dodongos Cavern Deku Scrub Side Room Near Dodongos": {
     "id": 376
   },
-  {
-    "name": "Dodongos Cavern Deku Scrub Lobby",
+  "Dodongos Cavern Deku Scrub Lobby": {
     "id": 377
   },
-  {
-    "name": "Dodongos Cavern Deku Scrub Near Bomb Bag Left",
+  "Dodongos Cavern Deku Scrub Near Bomb Bag Left": {
     "id": 378
   },
-  {
-    "name": "Dodongos Cavern Deku Scrub Near Bomb Bag Right",
+  "Dodongos Cavern Deku Scrub Near Bomb Bag Right": {
     "id": 379
   },
-  {
-    "name": "Dodongos Cavern GS Side Room Near Lower Lizalfos",
+  "Dodongos Cavern GS Side Room Near Lower Lizalfos": {
     "id": 380
   },
-  {
-    "name": "Dodongos Cavern GS Scarecrow",
+  "Dodongos Cavern GS Scarecrow": {
     "id": 381
   },
-  {
-    "name": "Dodongos Cavern GS Alcove Above Stairs",
+  "Dodongos Cavern GS Alcove Above Stairs": {
     "id": 382
   },
-  {
-    "name": "Dodongos Cavern GS Vines Above Stairs",
+  "Dodongos Cavern GS Vines Above Stairs": {
     "id": 383
   },
-  {
-    "name": "Dodongos Cavern GS Back Room",
+  "Dodongos Cavern GS Back Room": {
     "id": 384
   },
-  {
-    "name": "Dodongos Cavern MQ Map Chest",
+  "Dodongos Cavern MQ Map Chest": {
     "id": 385
   },
-  {
-    "name": "Dodongos Cavern MQ Bomb Bag Chest",
+  "Dodongos Cavern MQ Bomb Bag Chest": {
     "id": 386
   },
-  {
-    "name": "Dodongos Cavern MQ Torch Puzzle Room Chest",
+  "Dodongos Cavern MQ Torch Puzzle Room Chest": {
     "id": 387
   },
-  {
-    "name": "Dodongos Cavern MQ Larvae Room Chest",
+  "Dodongos Cavern MQ Larvae Room Chest": {
     "id": 388
   },
-  {
-    "name": "Dodongos Cavern MQ Compass Chest",
+  "Dodongos Cavern MQ Compass Chest": {
     "id": 389
   },
-  {
-    "name": "Dodongos Cavern MQ Under Grave Chest",
+  "Dodongos Cavern MQ Under Grave Chest": {
     "id": 390
   },
-  {
-    "name": "Dodongos Cavern MQ Deku Scrub Lobby Front",
+  "Dodongos Cavern MQ Deku Scrub Lobby Front": {
     "id": 391
   },
-  {
-    "name": "Dodongos Cavern MQ Deku Scrub Lobby Rear",
+  "Dodongos Cavern MQ Deku Scrub Lobby Rear": {
     "id": 392
   },
-  {
-    "name": "Dodongos Cavern MQ Deku Scrub Side Room Near Lower Lizalfos",
+  "Dodongos Cavern MQ Deku Scrub Side Room Near Lower Lizalfos": {
     "id": 393
   },
-  {
-    "name": "Dodongos Cavern MQ Deku Scrub Staircase",
+  "Dodongos Cavern MQ Deku Scrub Staircase": {
     "id": 394
   },
-  {
-    "name": "Dodongos Cavern MQ GS Scrub Room",
+  "Dodongos Cavern MQ GS Scrub Room": {
     "id": 395
   },
-  {
-    "name": "Dodongos Cavern MQ GS Larvae Room",
+  "Dodongos Cavern MQ GS Larvae Room": {
     "id": 396
   },
-  {
-    "name": "Dodongos Cavern MQ GS Lizalfos Room",
+  "Dodongos Cavern MQ GS Lizalfos Room": {
     "id": 397
   },
-  {
-    "name": "Dodongos Cavern MQ GS Song of Time Block Room",
+  "Dodongos Cavern MQ GS Song of Time Block Room": {
     "id": 398
   },
-  {
-    "name": "Dodongos Cavern MQ GS Back Room",
+  "Dodongos Cavern MQ GS Back Room": {
     "id": 399
   },
-  {
-    "name": "Dodongos Cavern Boss Room Chest",
+  "Dodongos Cavern Boss Room Chest": {
     "id": 400
   },
-  {
-    "name": "Dodongos Cavern King Dodongo Heart Container",
+  "Dodongos Cavern King Dodongo Heart Container": {
     "id": 401
   },
-  {
-    "name": "Jabu Jabus Belly Boomerang Chest",
+  "Jabu Jabus Belly Boomerang Chest": {
     "id": 402
   },
-  {
-    "name": "Jabu Jabus Belly Map Chest",
+  "Jabu Jabus Belly Map Chest": {
     "id": 403
   },
-  {
-    "name": "Jabu Jabus Belly Compass Chest",
+  "Jabu Jabus Belly Compass Chest": {
     "id": 404
   },
-  {
-    "name": "Jabu Jabus Belly Deku Scrub",
+  "Jabu Jabus Belly Deku Scrub": {
     "id": 405
   },
-  {
-    "name": "Jabu Jabus Belly GS Water Switch Room",
+  "Jabu Jabus Belly GS Water Switch Room": {
     "id": 406
   },
-  {
-    "name": "Jabu Jabus Belly GS Lobby Basement Lower",
+  "Jabu Jabus Belly GS Lobby Basement Lower": {
     "id": 407
   },
-  {
-    "name": "Jabu Jabus Belly GS Lobby Basement Upper",
+  "Jabu Jabus Belly GS Lobby Basement Upper": {
     "id": 408
   },
-  {
-    "name": "Jabu Jabus Belly GS Near Boss",
+  "Jabu Jabus Belly GS Near Boss": {
     "id": 409
   },
-  {
-    "name": "Jabu Jabus Belly MQ Map Chest",
+  "Jabu Jabus Belly MQ Map Chest": {
     "id": 410
   },
-  {
-    "name": "Jabu Jabus Belly MQ First Room Side Chest",
+  "Jabu Jabus Belly MQ First Room Side Chest": {
     "id": 411
   },
-  {
-    "name": "Jabu Jabus Belly MQ Second Room Lower Chest",
+  "Jabu Jabus Belly MQ Second Room Lower Chest": {
     "id": 412
   },
-  {
-    "name": "Jabu Jabus Belly MQ Compass Chest",
+  "Jabu Jabus Belly MQ Compass Chest": {
     "id": 413
   },
-  {
-    "name": "Jabu Jabus Belly MQ Basement Near Switches Chest",
+  "Jabu Jabus Belly MQ Basement Near Switches Chest": {
     "id": 414
   },
-  {
-    "name": "Jabu Jabus Belly MQ Basement Near Vines Chest",
+  "Jabu Jabus Belly MQ Basement Near Vines Chest": {
     "id": 415
   },
-  {
-    "name": "Jabu Jabus Belly MQ Boomerang Room Small Chest",
+  "Jabu Jabus Belly MQ Boomerang Room Small Chest": {
     "id": 416
   },
-  {
-    "name": "Jabu Jabus Belly MQ Boomerang Chest",
+  "Jabu Jabus Belly MQ Boomerang Chest": {
     "id": 417
   },
-  {
-    "name": "Jabu Jabus Belly MQ Falling Like Like Room Chest",
+  "Jabu Jabus Belly MQ Falling Like Like Room Chest": {
     "id": 418
   },
-  {
-    "name": "Jabu Jabus Belly MQ Second Room Upper Chest",
+  "Jabu Jabus Belly MQ Second Room Upper Chest": {
     "id": 419
   },
-  {
-    "name": "Jabu Jabus Belly MQ Near Boss Chest",
+  "Jabu Jabus Belly MQ Near Boss Chest": {
     "id": 420
   },
-  {
-    "name": "Jabu Jabus Belly MQ GS Boomerang Chest Room",
+  "Jabu Jabus Belly MQ GS Boomerang Chest Room": {
     "id": 422
   },
-  {
-    "name": "Jabu Jabus Belly MQ GS Tail Parasan Room",
+  "Jabu Jabus Belly MQ GS Tail Parasan Room": {
     "id": 423
   },
-  {
-    "name": "Jabu Jabus Belly MQ GS Invisible Enemies Room",
+  "Jabu Jabus Belly MQ GS Invisible Enemies Room": {
     "id": 424
   },
-  {
-    "name": "Jabu Jabus Belly MQ GS Near Boss",
+  "Jabu Jabus Belly MQ GS Near Boss": {
     "id": 425
   },
-  {
-    "name": "Jabu Jabus Belly Barinade Heart Container",
+  "Jabu Jabus Belly Barinade Heart Container": {
     "id": 426
   },
-  {
-    "name": "Bottom of the Well Front Left Fake Wall Chest",
+  "Bottom of the Well Front Left Fake Wall Chest": {
     "id": 427
   },
-  {
-    "name": "Bottom of the Well Front Center Bombable Chest",
+  "Bottom of the Well Front Center Bombable Chest": {
     "id": 428
   },
-  {
-    "name": "Bottom of the Well Back Left Bombable Chest",
+  "Bottom of the Well Back Left Bombable Chest": {
     "id": 429
   },
-  {
-    "name": "Bottom of the Well Underwater Left Chest",
+  "Bottom of the Well Underwater Left Chest": {
     "id": 430
   },
-  {
-    "name": "Bottom of the Well Freestanding Key",
+  "Bottom of the Well Freestanding Key": {
     "id": 431
   },
-  {
-    "name": "Bottom of the Well Compass Chest",
+  "Bottom of the Well Compass Chest": {
     "id": 432
   },
-  {
-    "name": "Bottom of the Well Center Skulltula Chest",
+  "Bottom of the Well Center Skulltula Chest": {
     "id": 433
   },
-  {
-    "name": "Bottom of the Well Right Bottom Fake Wall Chest",
+  "Bottom of the Well Right Bottom Fake Wall Chest": {
     "id": 434
   },
-  {
-    "name": "Bottom of the Well Fire Keese Chest",
+  "Bottom of the Well Fire Keese Chest": {
     "id": 435
   },
-  {
-    "name": "Bottom of the Well Like Like Chest",
+  "Bottom of the Well Like Like Chest": {
     "id": 436
   },
-  {
-    "name": "Bottom of the Well Map Chest",
+  "Bottom of the Well Map Chest": {
     "id": 437
   },
-  {
-    "name": "Bottom of the Well Underwater Front Chest",
+  "Bottom of the Well Underwater Front Chest": {
     "id": 438
   },
-  {
-    "name": "Bottom of the Well Invisible Chest",
+  "Bottom of the Well Invisible Chest": {
     "id": 439
   },
-  {
-    "name": "Bottom of the Well Lens of Truth Chest",
+  "Bottom of the Well Lens of Truth Chest": {
     "id": 440
   },
-  {
-    "name": "Bottom of the Well GS West Inner Room",
+  "Bottom of the Well GS West Inner Room": {
     "id": 441
   },
-  {
-    "name": "Bottom of the Well GS East Inner Room",
+  "Bottom of the Well GS East Inner Room": {
     "id": 442
   },
-  {
-    "name": "Bottom of the Well GS Like Like Cage",
+  "Bottom of the Well GS Like Like Cage": {
     "id": 443
   },
-  {
-    "name": "Bottom of the Well MQ Map Chest",
+  "Bottom of the Well MQ Map Chest": {
     "id": 444
   },
-  {
-    "name": "Bottom of the Well MQ East Inner Room Freestanding Key",
+  "Bottom of the Well MQ East Inner Room Freestanding Key": {
     "id": 445
   },
-  {
-    "name": "Bottom of the Well MQ Compass Chest",
+  "Bottom of the Well MQ Compass Chest": {
     "id": 446
   },
-  {
-    "name": "Bottom of the Well MQ Dead Hand Freestanding Key",
+  "Bottom of the Well MQ Dead Hand Freestanding Key": {
     "id": 447
   },
-  {
-    "name": "Bottom of the Well MQ Lens of Truth Chest",
+  "Bottom of the Well MQ Lens of Truth Chest": {
     "id": 448
   },
-  {
-    "name": "Bottom of the Well MQ GS Coffin Room",
+  "Bottom of the Well MQ GS Coffin Room": {
     "id": 449
   },
-  {
-    "name": "Bottom of the Well MQ GS West Inner Room",
+  "Bottom of the Well MQ GS West Inner Room": {
     "id": 450
   },
-  {
-    "name": "Bottom of the Well MQ GS Basement",
+  "Bottom of the Well MQ GS Basement": {
     "id": 451
   },
-  {
-    "name": "Forest Temple First Room Chest",
+  "Forest Temple First Room Chest": {
     "id": 452
   },
-  {
-    "name": "Forest Temple First Stalfos Chest",
+  "Forest Temple First Stalfos Chest": {
     "id": 453
   },
-  {
-    "name": "Forest Temple Raised Island Courtyard Chest",
+  "Forest Temple Raised Island Courtyard Chest": {
     "id": 454
   },
-  {
-    "name": "Forest Temple Map Chest",
+  "Forest Temple Map Chest": {
     "id": 455
   },
-  {
-    "name": "Forest Temple Well Chest",
+  "Forest Temple Well Chest": {
     "id": 456
   },
-  {
-    "name": "Forest Temple Eye Switch Chest",
+  "Forest Temple Eye Switch Chest": {
     "id": 457
   },
-  {
-    "name": "Forest Temple Boss Key Chest",
+  "Forest Temple Boss Key Chest": {
     "id": 458
   },
-  {
-    "name": "Forest Temple Floormaster Chest",
+  "Forest Temple Floormaster Chest": {
     "id": 459
   },
-  {
-    "name": "Forest Temple Red Poe Chest",
+  "Forest Temple Red Poe Chest": {
     "id": 460
   },
-  {
-    "name": "Forest Temple Bow Chest",
+  "Forest Temple Bow Chest": {
     "id": 461
   },
-  {
-    "name": "Forest Temple Blue Poe Chest",
+  "Forest Temple Blue Poe Chest": {
     "id": 462
   },
-  {
-    "name": "Forest Temple Falling Ceiling Room Chest",
+  "Forest Temple Falling Ceiling Room Chest": {
     "id": 463
   },
-  {
-    "name": "Forest Temple Basement Chest",
+  "Forest Temple Basement Chest": {
     "id": 464
   },
-  {
-    "name": "Forest Temple GS First Room",
+  "Forest Temple GS First Room": {
     "id": 465
   },
-  {
-    "name": "Forest Temple GS Lobby",
+  "Forest Temple GS Lobby": {
     "id": 466
   },
-  {
-    "name": "Forest Temple GS Raised Island Courtyard",
+  "Forest Temple GS Raised Island Courtyard": {
     "id": 467
   },
-  {
-    "name": "Forest Temple GS Level Island Courtyard",
+  "Forest Temple GS Level Island Courtyard": {
     "id": 468
   },
-  {
-    "name": "Forest Temple GS Basement",
+  "Forest Temple GS Basement": {
     "id": 469
   },
-  {
-    "name": "Forest Temple MQ First Room Chest",
+  "Forest Temple MQ First Room Chest": {
     "id": 470
   },
-  {
-    "name": "Forest Temple MQ Wolfos Chest",
+  "Forest Temple MQ Wolfos Chest": {
     "id": 471
   },
-  {
-    "name": "Forest Temple MQ Well Chest",
+  "Forest Temple MQ Well Chest": {
     "id": 472
   },
-  {
-    "name": "Forest Temple MQ Raised Island Courtyard Lower Chest",
+  "Forest Temple MQ Raised Island Courtyard Lower Chest": {
     "id": 473
   },
-  {
-    "name": "Forest Temple MQ Raised Island Courtyard Upper Chest",
+  "Forest Temple MQ Raised Island Courtyard Upper Chest": {
     "id": 474
   },
-  {
-    "name": "Forest Temple MQ Boss Key Chest",
+  "Forest Temple MQ Boss Key Chest": {
     "id": 475
   },
-  {
-    "name": "Forest Temple MQ Redead Chest",
+  "Forest Temple MQ Redead Chest": {
     "id": 476
   },
-  {
-    "name": "Forest Temple MQ Map Chest",
+  "Forest Temple MQ Map Chest": {
     "id": 477
   },
-  {
-    "name": "Forest Temple MQ Bow Chest",
+  "Forest Temple MQ Bow Chest": {
     "id": 478
   },
-  {
-    "name": "Forest Temple MQ Compass Chest",
+  "Forest Temple MQ Compass Chest": {
     "id": 479
   },
-  {
-    "name": "Forest Temple MQ Falling Ceiling Room Chest",
+  "Forest Temple MQ Falling Ceiling Room Chest": {
     "id": 480
   },
-  {
-    "name": "Forest Temple MQ Basement Chest",
+  "Forest Temple MQ Basement Chest": {
     "id": 481
   },
-  {
-    "name": "Forest Temple MQ GS First Hallway",
+  "Forest Temple MQ GS First Hallway": {
     "id": 482
   },
-  {
-    "name": "Forest Temple MQ GS Raised Island Courtyard",
+  "Forest Temple MQ GS Raised Island Courtyard": {
     "id": 483
   },
-  {
-    "name": "Forest Temple MQ GS Level Island Courtyard",
+  "Forest Temple MQ GS Level Island Courtyard": {
     "id": 484
   },
-  {
-    "name": "Forest Temple MQ GS Well",
+  "Forest Temple MQ GS Well": {
     "id": 485
   },
-  {
-    "name": "Forest Temple MQ GS Block Push Room",
+  "Forest Temple MQ GS Block Push Room": {
     "id": 486
   },
-  {
-    "name": "Forest Temple Phantom Ganon Heart Container",
+  "Forest Temple Phantom Ganon Heart Container": {
     "id": 487
   },
-  {
-    "name": "Fire Temple Near Boss Chest",
+  "Fire Temple Near Boss Chest": {
     "id": 488
   },
-  {
-    "name": "Fire Temple Flare Dancer Chest",
+  "Fire Temple Flare Dancer Chest": {
     "id": 489
   },
-  {
-    "name": "Fire Temple Boss Key Chest",
+  "Fire Temple Boss Key Chest": {
     "id": 490
   },
-  {
-    "name": "Fire Temple Big Lava Room Lower Open Door Chest",
+  "Fire Temple Big Lava Room Lower Open Door Chest": {
     "id": 491
   },
-  {
-    "name": "Fire Temple Big Lava Room Blocked Door Chest",
+  "Fire Temple Big Lava Room Blocked Door Chest": {
     "id": 492
   },
-  {
-    "name": "Fire Temple Boulder Maze Lower Chest",
+  "Fire Temple Boulder Maze Lower Chest": {
     "id": 493
   },
-  {
-    "name": "Fire Temple Boulder Maze Side Room Chest",
+  "Fire Temple Boulder Maze Side Room Chest": {
     "id": 494
   },
-  {
-    "name": "Fire Temple Map Chest",
+  "Fire Temple Map Chest": {
     "id": 495
   },
-  {
-    "name": "Fire Temple Boulder Maze Shortcut Chest",
+  "Fire Temple Boulder Maze Shortcut Chest": {
     "id": 496
   },
-  {
-    "name": "Fire Temple Boulder Maze Upper Chest",
+  "Fire Temple Boulder Maze Upper Chest": {
     "id": 497
   },
-  {
-    "name": "Fire Temple Scarecrow Chest",
+  "Fire Temple Scarecrow Chest": {
     "id": 498
   },
-  {
-    "name": "Fire Temple Compass Chest",
+  "Fire Temple Compass Chest": {
     "id": 499
   },
-  {
-    "name": "Fire Temple Megaton Hammer Chest",
+  "Fire Temple Megaton Hammer Chest": {
     "id": 500
   },
-  {
-    "name": "Fire Temple Highest Goron Chest",
+  "Fire Temple Highest Goron Chest": {
     "id": 501
   },
-  {
-    "name": "Fire Temple GS Boss Key Loop",
+  "Fire Temple GS Boss Key Loop": {
     "id": 502
   },
-  {
-    "name": "Fire Temple GS Song of Time Room",
+  "Fire Temple GS Song of Time Room": {
     "id": 503
   },
-  {
-    "name": "Fire Temple GS Boulder Maze",
+  "Fire Temple GS Boulder Maze": {
     "id": 504
   },
-  {
-    "name": "Fire Temple GS Scarecrow Climb",
+  "Fire Temple GS Scarecrow Climb": {
     "id": 505
   },
-  {
-    "name": "Fire Temple GS Scarecrow Top",
+  "Fire Temple GS Scarecrow Top": {
     "id": 506
   },
-  {
-    "name": "Fire Temple MQ Map Room Side Chest",
+  "Fire Temple MQ Map Room Side Chest": {
     "id": 507
   },
-  {
-    "name": "Fire Temple MQ Megaton Hammer Chest",
+  "Fire Temple MQ Megaton Hammer Chest": {
     "id": 508
   },
-  {
-    "name": "Fire Temple MQ Map Chest",
+  "Fire Temple MQ Map Chest": {
     "id": 509
   },
-  {
-    "name": "Fire Temple MQ Near Boss Chest",
+  "Fire Temple MQ Near Boss Chest": {
     "id": 510
   },
-  {
-    "name": "Fire Temple MQ Big Lava Room Blocked Door Chest",
+  "Fire Temple MQ Big Lava Room Blocked Door Chest": {
     "id": 511
   },
-  {
-    "name": "Fire Temple MQ Boss Key Chest",
+  "Fire Temple MQ Boss Key Chest": {
     "id": 512
   },
-  {
-    "name": "Fire Temple MQ Lizalfos Maze Side Room Chest",
+  "Fire Temple MQ Lizalfos Maze Side Room Chest": {
     "id": 513
   },
-  {
-    "name": "Fire Temple MQ Compass Chest",
+  "Fire Temple MQ Compass Chest": {
     "id": 514
   },
-  {
-    "name": "Fire Temple MQ Lizalfos Maze Upper Chest",
+  "Fire Temple MQ Lizalfos Maze Upper Chest": {
     "id": 515
   },
-  {
-    "name": "Fire Temple MQ Lizalfos Maze Lower Chest",
+  "Fire Temple MQ Lizalfos Maze Lower Chest": {
     "id": 516
   },
-  {
-    "name": "Fire Temple MQ Freestanding Key",
+  "Fire Temple MQ Freestanding Key": {
     "id": 517
   },
-  {
-    "name": "Fire Temple MQ Chest on Fire",
+  "Fire Temple MQ Chest on Fire": {
     "id": 518
   },
-  {
-    "name": "Fire Temple MQ GS Big Lava Room Open Door",
+  "Fire Temple MQ GS Big Lava Room Open Door": {
     "id": 519
   },
-  {
-    "name": "Fire Temple MQ GS Skull on Fire",
+  "Fire Temple MQ GS Skull on Fire": {
     "id": 520
   },
-  {
-    "name": "Fire Temple MQ GS Fire Wall Maze Center",
+  "Fire Temple MQ GS Fire Wall Maze Center": {
     "id": 521
   },
-  {
-    "name": "Fire Temple MQ GS Fire Wall Maze Side Room",
+  "Fire Temple MQ GS Fire Wall Maze Side Room": {
     "id": 522
   },
-  {
-    "name": "Fire Temple MQ GS Above Fire Wall Maze",
+  "Fire Temple MQ GS Above Fire Wall Maze": {
     "id": 523
   },
-  {
-    "name": "Fire Temple Volvagia Heart Container",
+  "Fire Temple Volvagia Heart Container": {
     "id": 524
   },
-  {
-    "name": "Water Temple Compass Chest",
+  "Water Temple Compass Chest": {
     "id": 525
   },
-  {
-    "name": "Water Temple Map Chest",
+  "Water Temple Map Chest": {
     "id": 526
   },
-  {
-    "name": "Water Temple Cracked Wall Chest",
+  "Water Temple Cracked Wall Chest": {
     "id": 527
   },
-  {
-    "name": "Water Temple Torches Chest",
+  "Water Temple Torches Chest": {
     "id": 528
   },
-  {
-    "name": "Water Temple Boss Key Chest",
+  "Water Temple Boss Key Chest": {
     "id": 529
   },
-  {
-    "name": "Water Temple Central Pillar Chest",
+  "Water Temple Central Pillar Chest": {
     "id": 530
   },
-  {
-    "name": "Water Temple Central Bow Target Chest",
+  "Water Temple Central Bow Target Chest": {
     "id": 531
   },
-  {
-    "name": "Water Temple Longshot Chest",
+  "Water Temple Longshot Chest": {
     "id": 532
   },
-  {
-    "name": "Water Temple River Chest",
+  "Water Temple River Chest": {
     "id": 533
   },
-  {
-    "name": "Water Temple Dragon Chest",
+  "Water Temple Dragon Chest": {
     "id": 534
   },
-  {
-    "name": "Water Temple GS Behind Gate",
+  "Water Temple GS Behind Gate": {
     "id": 535
   },
-  {
-    "name": "Water Temple GS Near Boss Key Chest",
+  "Water Temple GS Near Boss Key Chest": {
     "id": 536
   },
-  {
-    "name": "Water Temple GS Central Pillar",
+  "Water Temple GS Central Pillar": {
     "id": 537
   },
-  {
-    "name": "Water Temple GS Falling Platform Room",
+  "Water Temple GS Falling Platform Room": {
     "id": 538
   },
-  {
-    "name": "Water Temple GS River",
+  "Water Temple GS River": {
     "id": 539
   },
-  {
-    "name": "Water Temple MQ Longshot Chest",
+  "Water Temple MQ Longshot Chest": {
     "id": 540
   },
-  {
-    "name": "Water Temple MQ Map Chest",
+  "Water Temple MQ Map Chest": {
     "id": 541
   },
-  {
-    "name": "Water Temple MQ Compass Chest",
+  "Water Temple MQ Compass Chest": {
     "id": 542
   },
-  {
-    "name": "Water Temple MQ Central Pillar Chest",
+  "Water Temple MQ Central Pillar Chest": {
     "id": 543
   },
-  {
-    "name": "Water Temple MQ Boss Key Chest",
+  "Water Temple MQ Boss Key Chest": {
     "id": 544
   },
-  {
-    "name": "Water Temple MQ Freestanding Key",
+  "Water Temple MQ Freestanding Key": {
     "id": 545
   },
-  {
-    "name": "Water Temple MQ GS Lizalfos Hallway",
+  "Water Temple MQ GS Lizalfos Hallway": {
     "id": 546
   },
-  {
-    "name": "Water Temple MQ GS Before Upper Water Switch",
+  "Water Temple MQ GS Before Upper Water Switch": {
     "id": 547
   },
-  {
-    "name": "Water Temple MQ GS River",
+  "Water Temple MQ GS River": {
     "id": 548
   },
-  {
-    "name": "Water Temple MQ GS Freestanding Key Area",
+  "Water Temple MQ GS Freestanding Key Area": {
     "id": 549
   },
-  {
-    "name": "Water Temple MQ GS Triple Wall Torch",
+  "Water Temple MQ GS Triple Wall Torch": {
     "id": 550
   },
-  {
-    "name": "Water Temple Morpha Heart Container",
+  "Water Temple Morpha Heart Container": {
     "id": 551
   },
-  {
-    "name": "Shadow Temple Map Chest",
+  "Shadow Temple Map Chest": {
     "id": 552
   },
-  {
-    "name": "Shadow Temple Hover Boots Chest",
+  "Shadow Temple Hover Boots Chest": {
     "id": 553
   },
-  {
-    "name": "Shadow Temple Compass Chest",
+  "Shadow Temple Compass Chest": {
     "id": 554
   },
-  {
-    "name": "Shadow Temple Early Silver Rupee Chest",
+  "Shadow Temple Early Silver Rupee Chest": {
     "id": 555
   },
-  {
-    "name": "Shadow Temple Invisible Blades Visible Chest",
+  "Shadow Temple Invisible Blades Visible Chest": {
     "id": 556
   },
-  {
-    "name": "Shadow Temple Invisible Blades Invisible Chest",
+  "Shadow Temple Invisible Blades Invisible Chest": {
     "id": 557
   },
-  {
-    "name": "Shadow Temple Falling Spikes Lower Chest",
+  "Shadow Temple Falling Spikes Lower Chest": {
     "id": 558
   },
-  {
-    "name": "Shadow Temple Falling Spikes Upper Chest",
+  "Shadow Temple Falling Spikes Upper Chest": {
     "id": 559
   },
-  {
-    "name": "Shadow Temple Falling Spikes Switch Chest",
+  "Shadow Temple Falling Spikes Switch Chest": {
     "id": 560
   },
-  {
-    "name": "Shadow Temple Invisible Spikes Chest",
+  "Shadow Temple Invisible Spikes Chest": {
     "id": 561
   },
-  {
-    "name": "Shadow Temple Freestanding Key",
+  "Shadow Temple Freestanding Key": {
     "id": 562
   },
-  {
-    "name": "Shadow Temple Wind Hint Chest",
+  "Shadow Temple Wind Hint Chest": {
     "id": 563
   },
-  {
-    "name": "Shadow Temple After Wind Enemy Chest",
+  "Shadow Temple After Wind Enemy Chest": {
     "id": 564
   },
-  {
-    "name": "Shadow Temple After Wind Hidden Chest",
+  "Shadow Temple After Wind Hidden Chest": {
     "id": 565
   },
-  {
-    "name": "Shadow Temple Spike Walls Left Chest",
+  "Shadow Temple Spike Walls Left Chest": {
     "id": 566
   },
-  {
-    "name": "Shadow Temple Boss Key Chest",
+  "Shadow Temple Boss Key Chest": {
     "id": 567
   },
-  {
-    "name": "Shadow Temple Invisible Floormaster Chest",
+  "Shadow Temple Invisible Floormaster Chest": {
     "id": 568
   },
-  {
-    "name": "Shadow Temple GS Like Like Room",
+  "Shadow Temple GS Like Like Room": {
     "id": 569
   },
-  {
-    "name": "Shadow Temple GS Falling Spikes Room",
+  "Shadow Temple GS Falling Spikes Room": {
     "id": 570
   },
-  {
-    "name": "Shadow Temple GS Single Giant Pot",
+  "Shadow Temple GS Single Giant Pot": {
     "id": 571
   },
-  {
-    "name": "Shadow Temple GS Near Ship",
+  "Shadow Temple GS Near Ship": {
     "id": 572
   },
-  {
-    "name": "Shadow Temple GS Triple Giant Pot",
+  "Shadow Temple GS Triple Giant Pot": {
     "id": 573
   },
-  {
-    "name": "Shadow Temple MQ Early Gibdos Chest",
+  "Shadow Temple MQ Early Gibdos Chest": {
     "id": 574
   },
-  {
-    "name": "Shadow Temple MQ Map Chest",
+  "Shadow Temple MQ Map Chest": {
     "id": 575
   },
-  {
-    "name": "Shadow Temple MQ Near Ship Invisible Chest",
+  "Shadow Temple MQ Near Ship Invisible Chest": {
     "id": 576
   },
-  {
-    "name": "Shadow Temple MQ Compass Chest",
+  "Shadow Temple MQ Compass Chest": {
     "id": 577
   },
-  {
-    "name": "Shadow Temple MQ Hover Boots Chest",
+  "Shadow Temple MQ Hover Boots Chest": {
     "id": 578
   },
-  {
-    "name": "Shadow Temple MQ Invisible Blades Invisible Chest",
+  "Shadow Temple MQ Invisible Blades Invisible Chest": {
     "id": 579
   },
-  {
-    "name": "Shadow Temple MQ Invisible Blades Visible Chest",
+  "Shadow Temple MQ Invisible Blades Visible Chest": {
     "id": 580
   },
-  {
-    "name": "Shadow Temple MQ Beamos Silver Rupees Chest",
+  "Shadow Temple MQ Beamos Silver Rupees Chest": {
     "id": 581
   },
-  {
-    "name": "Shadow Temple MQ Falling Spikes Lower Chest",
+  "Shadow Temple MQ Falling Spikes Lower Chest": {
     "id": 582
   },
-  {
-    "name": "Shadow Temple MQ Falling Spikes Upper Chest",
+  "Shadow Temple MQ Falling Spikes Upper Chest": {
     "id": 583
   },
-  {
-    "name": "Shadow Temple MQ Falling Spikes Switch Chest",
+  "Shadow Temple MQ Falling Spikes Switch Chest": {
     "id": 584
   },
-  {
-    "name": "Shadow Temple MQ Invisible Spikes Chest",
+  "Shadow Temple MQ Invisible Spikes Chest": {
     "id": 585
   },
-  {
-    "name": "Shadow Temple MQ Stalfos Room Chest",
+  "Shadow Temple MQ Stalfos Room Chest": {
     "id": 586
   },
-  {
-    "name": "Shadow Temple MQ Wind Hint Chest",
+  "Shadow Temple MQ Wind Hint Chest": {
     "id": 587
   },
-  {
-    "name": "Shadow Temple MQ After Wind Hidden Chest",
+  "Shadow Temple MQ After Wind Hidden Chest": {
     "id": 588
   },
-  {
-    "name": "Shadow Temple MQ After Wind Enemy Chest",
+  "Shadow Temple MQ After Wind Enemy Chest": {
     "id": 589
   },
-  {
-    "name": "Shadow Temple MQ Boss Key Chest",
+  "Shadow Temple MQ Boss Key Chest": {
     "id": 590
   },
-  {
-    "name": "Shadow Temple MQ Spike Walls Left Chest",
+  "Shadow Temple MQ Spike Walls Left Chest": {
     "id": 591
   },
-  {
-    "name": "Shadow Temple MQ Freestanding Key",
+  "Shadow Temple MQ Freestanding Key": {
     "id": 592
   },
-  {
-    "name": "Shadow Temple MQ Bomb Flower Chest",
+  "Shadow Temple MQ Bomb Flower Chest": {
     "id": 593
   },
-  {
-    "name": "Shadow Temple MQ GS Falling Spikes Room",
+  "Shadow Temple MQ GS Falling Spikes Room": {
     "id": 594
   },
-  {
-    "name": "Shadow Temple MQ GS Wind Hint Room",
+  "Shadow Temple MQ GS Wind Hint Room": {
     "id": 595
   },
-  {
-    "name": "Shadow Temple MQ GS After Wind",
+  "Shadow Temple MQ GS After Wind": {
     "id": 596
   },
-  {
-    "name": "Shadow Temple MQ GS After Ship",
+  "Shadow Temple MQ GS After Ship": {
     "id": 597
   },
-  {
-    "name": "Shadow Temple MQ GS Near Boss",
+  "Shadow Temple MQ GS Near Boss": {
     "id": 598
   },
-  {
-    "name": "Shadow Temple Bongo Bongo Heart Container",
+  "Shadow Temple Bongo Bongo Heart Container": {
     "id": 599
   },
-  {
-    "name": "Spirit Temple Child Bridge Chest",
+  "Spirit Temple Child Bridge Chest": {
     "id": 600
   },
-  {
-    "name": "Spirit Temple Child Early Torches Chest",
+  "Spirit Temple Child Early Torches Chest": {
     "id": 601
   },
-  {
-    "name": "Spirit Temple Child Climb North Chest",
+  "Spirit Temple Child Climb North Chest": {
     "id": 602
   },
-  {
-    "name": "Spirit Temple Child Climb East Chest",
+  "Spirit Temple Child Climb East Chest": {
     "id": 603
   },
-  {
-    "name": "Spirit Temple Map Chest",
+  "Spirit Temple Map Chest": {
     "id": 604
   },
-  {
-    "name": "Spirit Temple Sun Block Room Chest",
+  "Spirit Temple Sun Block Room Chest": {
     "id": 605
   },
-  {
-    "name": "Spirit Temple MQ Entrance Front Left Chest",
+  "Spirit Temple MQ Entrance Front Left Chest": {
     "id": 606
   },
-  {
-    "name": "Spirit Temple MQ Entrance Back Right Chest",
+  "Spirit Temple MQ Entrance Back Right Chest": {
     "id": 607
   },
-  {
-    "name": "Spirit Temple MQ Entrance Front Right Chest",
+  "Spirit Temple MQ Entrance Front Right Chest": {
     "id": 608
   },
-  {
-    "name": "Spirit Temple MQ Entrance Back Left Chest",
+  "Spirit Temple MQ Entrance Back Left Chest": {
     "id": 609
   },
-  {
-    "name": "Spirit Temple MQ Map Chest",
+  "Spirit Temple MQ Map Chest": {
     "id": 610
   },
-  {
-    "name": "Spirit Temple MQ Map Room Enemy Chest",
+  "Spirit Temple MQ Map Room Enemy Chest": {
     "id": 611
   },
-  {
-    "name": "Spirit Temple MQ Child Climb North Chest",
+  "Spirit Temple MQ Child Climb North Chest": {
     "id": 612
   },
-  {
-    "name": "Spirit Temple MQ Child Climb South Chest",
+  "Spirit Temple MQ Child Climb South Chest": {
     "id": 613
   },
-  {
-    "name": "Spirit Temple MQ Compass Chest",
+  "Spirit Temple MQ Compass Chest": {
     "id": 614
   },
-  {
-    "name": "Spirit Temple MQ Silver Block Hallway Chest",
+  "Spirit Temple MQ Silver Block Hallway Chest": {
     "id": 615
   },
-  {
-    "name": "Spirit Temple MQ Sun Block Room Chest",
+  "Spirit Temple MQ Sun Block Room Chest": {
     "id": 616
   },
-  {
-    "name": "Spirit Temple Silver Gauntlets Chest",
+  "Spirit Temple Silver Gauntlets Chest": {
     "id": 617
   },
-  {
-    "name": "Spirit Temple Compass Chest",
+  "Spirit Temple Compass Chest": {
     "id": 618
   },
-  {
-    "name": "Spirit Temple Early Adult Right Chest",
+  "Spirit Temple Early Adult Right Chest": {
     "id": 619
   },
-  {
-    "name": "Spirit Temple First Mirror Left Chest",
+  "Spirit Temple First Mirror Left Chest": {
     "id": 620
   },
-  {
-    "name": "Spirit Temple First Mirror Right Chest",
+  "Spirit Temple First Mirror Right Chest": {
     "id": 621
   },
-  {
-    "name": "Spirit Temple Statue Room Northeast Chest",
+  "Spirit Temple Statue Room Northeast Chest": {
     "id": 622
   },
-  {
-    "name": "Spirit Temple Statue Room Hand Chest",
+  "Spirit Temple Statue Room Hand Chest": {
     "id": 623
   },
-  {
-    "name": "Spirit Temple Near Four Armos Chest",
+  "Spirit Temple Near Four Armos Chest": {
     "id": 624
   },
-  {
-    "name": "Spirit Temple Hallway Right Invisible Chest",
+  "Spirit Temple Hallway Right Invisible Chest": {
     "id": 625
   },
-  {
-    "name": "Spirit Temple Hallway Left Invisible Chest",
+  "Spirit Temple Hallway Left Invisible Chest": {
     "id": 626
   },
-  {
-    "name": "Spirit Temple MQ Child Hammer Switch Chest",
+  "Spirit Temple MQ Child Hammer Switch Chest": {
     "id": 627
   },
-  {
-    "name": "Spirit Temple MQ Statue Room Lullaby Chest",
+  "Spirit Temple MQ Statue Room Lullaby Chest": {
     "id": 628
   },
-  {
-    "name": "Spirit Temple MQ Statue Room Invisible Chest",
+  "Spirit Temple MQ Statue Room Invisible Chest": {
     "id": 629
   },
-  {
-    "name": "Spirit Temple MQ Leever Room Chest",
+  "Spirit Temple MQ Leever Room Chest": {
     "id": 630
   },
-  {
-    "name": "Spirit Temple MQ Symphony Room Chest",
+  "Spirit Temple MQ Symphony Room Chest": {
     "id": 631
   },
-  {
-    "name": "Spirit Temple MQ Beamos Room Chest",
+  "Spirit Temple MQ Beamos Room Chest": {
     "id": 632
   },
-  {
-    "name": "Spirit Temple MQ Chest Switch Chest",
+  "Spirit Temple MQ Chest Switch Chest": {
     "id": 633
   },
-  {
-    "name": "Spirit Temple MQ Boss Key Chest",
+  "Spirit Temple MQ Boss Key Chest": {
     "id": 634
   },
-  {
-    "name": "Spirit Temple Mirror Shield Chest",
+  "Spirit Temple Mirror Shield Chest": {
     "id": 635
   },
-  {
-    "name": "Spirit Temple Boss Key Chest",
+  "Spirit Temple Boss Key Chest": {
     "id": 636
   },
-  {
-    "name": "Spirit Temple Topmost Chest",
+  "Spirit Temple Topmost Chest": {
     "id": 637
   },
-  {
-    "name": "Spirit Temple MQ Mirror Puzzle Invisible Chest",
+  "Spirit Temple MQ Mirror Puzzle Invisible Chest": {
     "id": 638
   },
-  {
-    "name": "Spirit Temple GS Metal Fence",
+  "Spirit Temple GS Metal Fence": {
     "id": 639
   },
-  {
-    "name": "Spirit Temple GS Sun on Floor Room",
+  "Spirit Temple GS Sun on Floor Room": {
     "id": 640
   },
-  {
-    "name": "Spirit Temple GS Hall After Sun Block Room",
+  "Spirit Temple GS Hall After Sun Block Room": {
     "id": 641
   },
-  {
-    "name": "Spirit Temple GS Lobby",
+  "Spirit Temple GS Lobby": {
     "id": 642
   },
-  {
-    "name": "Spirit Temple GS Boulder Room",
+  "Spirit Temple GS Boulder Room": {
     "id": 643
   },
-  {
-    "name": "Spirit Temple MQ GS Sun Block Room",
+  "Spirit Temple MQ GS Sun Block Room": {
     "id": 644
   },
-  {
-    "name": "Spirit Temple MQ GS Leever Room",
+  "Spirit Temple MQ GS Leever Room": {
     "id": 645
   },
-  {
-    "name": "Spirit Temple MQ GS Symphony Room",
+  "Spirit Temple MQ GS Symphony Room": {
     "id": 646
   },
-  {
-    "name": "Spirit Temple MQ GS Nine Thrones Room West",
+  "Spirit Temple MQ GS Nine Thrones Room West": {
     "id": 647
   },
-  {
-    "name": "Spirit Temple MQ GS Nine Thrones Room North",
+  "Spirit Temple MQ GS Nine Thrones Room North": {
     "id": 648
   },
-  {
-    "name": "Spirit Temple Twinrova Heart Container",
+  "Spirit Temple Twinrova Heart Container": {
     "id": 649
   },
-  {
-    "name": "Ice Cavern Map Chest",
+  "Ice Cavern Map Chest": {
     "id": 650
   },
-  {
-    "name": "Ice Cavern Compass Chest",
+  "Ice Cavern Compass Chest": {
     "id": 651
   },
-  {
-    "name": "Ice Cavern Freestanding PoH",
+  "Ice Cavern Freestanding PoH": {
     "id": 652
   },
-  {
-    "name": "Ice Cavern Iron Boots Chest",
+  "Ice Cavern Iron Boots Chest": {
     "id": 653
   },
-  {
-    "name": "Ice Cavern GS Spinning Scythe Room",
+  "Ice Cavern GS Spinning Scythe Room": {
     "id": 654
   },
-  {
-    "name": "Ice Cavern GS Heart Piece Room",
+  "Ice Cavern GS Heart Piece Room": {
     "id": 655
   },
-  {
-    "name": "Ice Cavern GS Push Block Room",
+  "Ice Cavern GS Push Block Room": {
     "id": 656
   },
-  {
-    "name": "Ice Cavern MQ Map Chest",
+  "Ice Cavern MQ Map Chest": {
     "id": 657
   },
-  {
-    "name": "Ice Cavern MQ Compass Chest",
+  "Ice Cavern MQ Compass Chest": {
     "id": 658
   },
-  {
-    "name": "Ice Cavern MQ Freestanding PoH",
+  "Ice Cavern MQ Freestanding PoH": {
     "id": 659
   },
-  {
-    "name": "Ice Cavern MQ Iron Boots Chest",
+  "Ice Cavern MQ Iron Boots Chest": {
     "id": 660
   },
-  {
-    "name": "Ice Cavern MQ GS Red Ice",
+  "Ice Cavern MQ GS Red Ice": {
     "id": 661
   },
-  {
-    "name": "Ice Cavern MQ GS Ice Block",
+  "Ice Cavern MQ GS Ice Block": {
     "id": 662
   },
-  {
-    "name": "Ice Cavern MQ GS Scarecrow",
+  "Ice Cavern MQ GS Scarecrow": {
     "id": 663
   },
-  {
-    "name": "Gerudo Training Ground Lobby Left Chest",
+  "Gerudo Training Ground Lobby Left Chest": {
     "id": 664
   },
-  {
-    "name": "Gerudo Training Ground Lobby Right Chest",
+  "Gerudo Training Ground Lobby Right Chest": {
     "id": 665
   },
-  {
-    "name": "Gerudo Training Ground Stalfos Chest",
+  "Gerudo Training Ground Stalfos Chest": {
     "id": 666
   },
-  {
-    "name": "Gerudo Training Ground Before Heavy Block Chest",
+  "Gerudo Training Ground Before Heavy Block Chest": {
     "id": 667
   },
-  {
-    "name": "Gerudo Training Ground Heavy Block First Chest",
+  "Gerudo Training Ground Heavy Block First Chest": {
     "id": 668
   },
-  {
-    "name": "Gerudo Training Ground Heavy Block Second Chest",
+  "Gerudo Training Ground Heavy Block Second Chest": {
     "id": 669
   },
-  {
-    "name": "Gerudo Training Ground Heavy Block Third Chest",
+  "Gerudo Training Ground Heavy Block Third Chest": {
     "id": 670
   },
-  {
-    "name": "Gerudo Training Ground Heavy Block Fourth Chest",
+  "Gerudo Training Ground Heavy Block Fourth Chest": {
     "id": 671
   },
-  {
-    "name": "Gerudo Training Ground Eye Statue Chest",
+  "Gerudo Training Ground Eye Statue Chest": {
     "id": 672
   },
-  {
-    "name": "Gerudo Training Ground Near Scarecrow Chest",
+  "Gerudo Training Ground Near Scarecrow Chest": {
     "id": 673
   },
-  {
-    "name": "Gerudo Training Ground Hammer Room Clear Chest",
+  "Gerudo Training Ground Hammer Room Clear Chest": {
     "id": 674
   },
-  {
-    "name": "Gerudo Training Ground Hammer Room Switch Chest",
+  "Gerudo Training Ground Hammer Room Switch Chest": {
     "id": 675
   },
-  {
-    "name": "Gerudo Training Ground Freestanding Key",
+  "Gerudo Training Ground Freestanding Key": {
     "id": 676
   },
-  {
-    "name": "Gerudo Training Ground Maze Right Central Chest",
+  "Gerudo Training Ground Maze Right Central Chest": {
     "id": 677
   },
-  {
-    "name": "Gerudo Training Ground Maze Right Side Chest",
+  "Gerudo Training Ground Maze Right Side Chest": {
     "id": 678
   },
-  {
-    "name": "Gerudo Training Ground Underwater Silver Rupee Chest",
+  "Gerudo Training Ground Underwater Silver Rupee Chest": {
     "id": 679
   },
-  {
-    "name": "Gerudo Training Ground Beamos Chest",
+  "Gerudo Training Ground Beamos Chest": {
     "id": 680
   },
-  {
-    "name": "Gerudo Training Ground Hidden Ceiling Chest",
+  "Gerudo Training Ground Hidden Ceiling Chest": {
     "id": 681
   },
-  {
-    "name": "Gerudo Training Ground Maze Path First Chest",
+  "Gerudo Training Ground Maze Path First Chest": {
     "id": 682
   },
-  {
-    "name": "Gerudo Training Ground Maze Path Second Chest",
+  "Gerudo Training Ground Maze Path Second Chest": {
     "id": 683
   },
-  {
-    "name": "Gerudo Training Ground Maze Path Third Chest",
+  "Gerudo Training Ground Maze Path Third Chest": {
     "id": 684
   },
-  {
-    "name": "Gerudo Training Ground Maze Path Final Chest",
+  "Gerudo Training Ground Maze Path Final Chest": {
     "id": 685
   },
-  {
-    "name": "Gerudo Training Ground MQ Lobby Left Chest",
+  "Gerudo Training Ground MQ Lobby Left Chest": {
     "id": 686
   },
-  {
-    "name": "Gerudo Training Ground MQ Lobby Right Chest",
+  "Gerudo Training Ground MQ Lobby Right Chest": {
     "id": 687
   },
-  {
-    "name": "Gerudo Training Ground MQ First Iron Knuckle Chest",
+  "Gerudo Training Ground MQ First Iron Knuckle Chest": {
     "id": 688
   },
-  {
-    "name": "Gerudo Training Ground MQ Before Heavy Block Chest",
+  "Gerudo Training Ground MQ Before Heavy Block Chest": {
     "id": 689
   },
-  {
-    "name": "Gerudo Training Ground MQ Heavy Block Chest",
+  "Gerudo Training Ground MQ Heavy Block Chest": {
     "id": 690
   },
-  {
-    "name": "Gerudo Training Ground MQ Eye Statue Chest",
+  "Gerudo Training Ground MQ Eye Statue Chest": {
     "id": 691
   },
-  {
-    "name": "Gerudo Training Ground MQ Ice Arrows Chest",
+  "Gerudo Training Ground MQ Ice Arrows Chest": {
     "id": 692
   },
-  {
-    "name": "Gerudo Training Ground MQ Second Iron Knuckle Chest",
+  "Gerudo Training Ground MQ Second Iron Knuckle Chest": {
     "id": 693
   },
-  {
-    "name": "Gerudo Training Ground MQ Flame Circle Chest",
+  "Gerudo Training Ground MQ Flame Circle Chest": {
     "id": 694
   },
-  {
-    "name": "Gerudo Training Ground MQ Maze Right Central Chest",
+  "Gerudo Training Ground MQ Maze Right Central Chest": {
     "id": 695
   },
-  {
-    "name": "Gerudo Training Ground MQ Maze Right Side Chest",
+  "Gerudo Training Ground MQ Maze Right Side Chest": {
     "id": 696
   },
-  {
-    "name": "Gerudo Training Ground MQ Underwater Silver Rupee Chest",
+  "Gerudo Training Ground MQ Underwater Silver Rupee Chest": {
     "id": 697
   },
-  {
-    "name": "Gerudo Training Ground MQ Dinolfos Chest",
+  "Gerudo Training Ground MQ Dinolfos Chest": {
     "id": 698
   },
-  {
-    "name": "Gerudo Training Ground MQ Hidden Ceiling Chest",
+  "Gerudo Training Ground MQ Hidden Ceiling Chest": {
     "id": 699
   },
-  {
-    "name": "Gerudo Training Ground MQ Maze Path First Chest",
+  "Gerudo Training Ground MQ Maze Path First Chest": {
     "id": 700
   },
-  {
-    "name": "Gerudo Training Ground MQ Maze Path Third Chest",
+  "Gerudo Training Ground MQ Maze Path Third Chest": {
     "id": 701
   },
-  {
-    "name": "Gerudo Training Ground MQ Maze Path Second Chest",
+  "Gerudo Training Ground MQ Maze Path Second Chest": {
     "id": 702
   },
-  {
-    "name": "Ganon's Castle Forest Trial Chest",
+  "Ganon's Castle Forest Trial Chest": {
     "id": 703
   },
-  {
-    "name": "Ganon's Castle Water Trial Left Chest",
+  "Ganon's Castle Water Trial Left Chest": {
     "id": 704
   },
-  {
-    "name": "Ganon's Castle Water Trial Right Chest",
+  "Ganon's Castle Water Trial Right Chest": {
     "id": 705
   },
-  {
-    "name": "Ganon's Castle Shadow Trial Front Chest",
+  "Ganon's Castle Shadow Trial Front Chest": {
     "id": 706
   },
-  {
-    "name": "Ganon's Castle Shadow Trial Golden Gauntlets Chest",
+  "Ganon's Castle Shadow Trial Golden Gauntlets Chest": {
     "id": 707
   },
-  {
-    "name": "Ganon's Castle Light Trial First Left Chest",
+  "Ganon's Castle Light Trial First Left Chest": {
     "id": 708
   },
-  {
-    "name": "Ganon's Castle Light Trial Second Left Chest",
+  "Ganon's Castle Light Trial Second Left Chest": {
     "id": 709
   },
-  {
-    "name": "Ganon's Castle Light Trial Third Left Chest",
+  "Ganon's Castle Light Trial Third Left Chest": {
     "id": 710
   },
-  {
-    "name": "Ganon's Castle Light Trial First Right Chest",
+  "Ganon's Castle Light Trial First Right Chest": {
     "id": 711
   },
-  {
-    "name": "Ganon's Castle Light Trial Second Right Chest",
+  "Ganon's Castle Light Trial Second Right Chest": {
     "id": 712
   },
-  {
-    "name": "Ganon's Castle Light Trial Third Right Chest",
+  "Ganon's Castle Light Trial Third Right Chest": {
     "id": 713
   },
-  {
-    "name": "Ganon's Castle Light Trial Invisible Enemies Chest",
+  "Ganon's Castle Light Trial Invisible Enemies Chest": {
     "id": 714
   },
-  {
-    "name": "Ganon's Castle Light Trial Lullaby Chest",
+  "Ganon's Castle Light Trial Lullaby Chest": {
     "id": 715
   },
-  {
-    "name": "Ganon's Castle Spirit Trial Crystal Switch Chest",
+  "Ganon's Castle Spirit Trial Crystal Switch Chest": {
     "id": 716
   },
-  {
-    "name": "Ganon's Castle Spirit Trial Invisible Chest",
+  "Ganon's Castle Spirit Trial Invisible Chest": {
     "id": 717
   },
-  {
-    "name": "Ganon's Castle Deku Scrub Left",
+  "Ganon's Castle Deku Scrub Left": {
     "id": 718
   },
-  {
-    "name": "Ganon's Castle Deku Scrub Center-Left",
+  "Ganon's Castle Deku Scrub Center-Left": {
     "id": 719
   },
-  {
-    "name": "Ganon's Castle Deku Scrub Center-Right",
+  "Ganon's Castle Deku Scrub Center-Right": {
     "id": 720
   },
-  {
-    "name": "Ganon's Castle Deku Scrub Right",
+  "Ganon's Castle Deku Scrub Right": {
     "id": 721
   },
-  {
-    "name": "Ganon's Castle MQ Forest Trial Freestanding Key",
+  "Ganon's Castle MQ Forest Trial Freestanding Key": {
     "id": 722
   },
-  {
-    "name": "Ganon's Castle MQ Forest Trial Eye Switch Chest",
+  "Ganon's Castle MQ Forest Trial Eye Switch Chest": {
     "id": 723
   },
-  {
-    "name": "Ganon's Castle MQ Forest Trial Frozen Eye Switch Chest",
+  "Ganon's Castle MQ Forest Trial Frozen Eye Switch Chest": {
     "id": 724
   },
-  {
-    "name": "Ganon's Castle MQ Water Trial Chest",
+  "Ganon's Castle MQ Water Trial Chest": {
     "id": 725
   },
-  {
-    "name": "Ganon's Castle MQ Shadow Trial Bomb Flower Chest",
+  "Ganon's Castle MQ Shadow Trial Bomb Flower Chest": {
     "id": 726
   },
-  {
-    "name": "Ganon's Castle MQ Shadow Trial Eye Switch Chest",
+  "Ganon's Castle MQ Shadow Trial Eye Switch Chest": {
     "id": 727
   },
-  {
-    "name": "Ganon's Castle MQ Light Trial Lullaby Chest",
+  "Ganon's Castle MQ Light Trial Lullaby Chest": {
     "id": 728
   },
-  {
-    "name": "Ganon's Castle MQ Spirit Trial First Chest",
+  "Ganon's Castle MQ Spirit Trial First Chest": {
     "id": 729
   },
-  {
-    "name": "Ganon's Castle MQ Spirit Trial Invisible Chest",
+  "Ganon's Castle MQ Spirit Trial Invisible Chest": {
     "id": 730
   },
-  {
-    "name": "Ganon's Castle MQ Spirit Trial Sun Front Left Chest",
+  "Ganon's Castle MQ Spirit Trial Sun Front Left Chest": {
     "id": 731
   },
-  {
-    "name": "Ganon's Castle MQ Spirit Trial Sun Back Left Chest",
+  "Ganon's Castle MQ Spirit Trial Sun Back Left Chest": {
     "id": 732
   },
-  {
-    "name": "Ganon's Castle MQ Spirit Trial Sun Back Right Chest",
+  "Ganon's Castle MQ Spirit Trial Sun Back Right Chest": {
     "id": 733
   },
-  {
-    "name": "Ganon's Castle MQ Spirit Trial Golden Gauntlets Chest",
+  "Ganon's Castle MQ Spirit Trial Golden Gauntlets Chest": {
     "id": 734
   },
-  {
-    "name": "Ganon's Castle MQ Deku Scrub Left",
+  "Ganon's Castle MQ Deku Scrub Left": {
     "id": 735
   },
-  {
-    "name": "Ganon's Castle MQ Deku Scrub Center-Left",
+  "Ganon's Castle MQ Deku Scrub Center-Left": {
     "id": 736
   },
-  {
-    "name": "Ganon's Castle MQ Deku Scrub Center",
+  "Ganon's Castle MQ Deku Scrub Center": {
     "id": 737
   },
-  {
-    "name": "Ganon's Castle MQ Deku Scrub Center-Right",
+  "Ganon's Castle MQ Deku Scrub Center-Right": {
     "id": 738
   },
-  {
-    "name": "Ganon's Castle MQ Deku Scrub Right",
+  "Ganon's Castle MQ Deku Scrub Right": {
     "id": 739
   },
-  {
-    "name": "Ganon's Castle Tower Boss Key Chest",
+  "Ganon's Castle Tower Boss Key Chest": {
     "id": 740
   },
-  {
-    "name": "KF Deku Tree Left Gossip Stone",
+  "KF Deku Tree Left Gossip Stone": {
     "id": 1537
   },
-  {
-    "name": "KF Deku Tree Right Gossip Stone",
+  "KF Deku Tree Right Gossip Stone": {
     "id": 1538
   },
-  {
-    "name": "KF Gossip Stone",
+  "KF Gossip Stone": {
     "id": 1539
   },
-  {
-    "name": "KF Storms Gossip Stone",
+  "KF Storms Gossip Stone": {
     "id": 1540
   },
-  {
-    "name": "LW Gossip Stone",
+  "LW Gossip Stone": {
     "id": 1541
   },
-  {
-    "name": "LW Near Shortcuts Grotto Gossip Stone",
+  "LW Near Shortcuts Grotto Gossip Stone": {
     "id": 1542
   },
-  {
-    "name": "SFM Maze Lower Gossip Stone",
+  "SFM Maze Lower Gossip Stone": {
     "id": 1543
   },
-  {
-    "name": "SFM Maze Upper Gossip Stone",
+  "SFM Maze Upper Gossip Stone": {
     "id": 1544
   },
-  {
-    "name": "SFM Saria Gossip Stone",
+  "SFM Saria Gossip Stone": {
     "id": 1545
   },
-  {
-    "name": "HF Cow Grotto Gossip Stone",
+  "HF Cow Grotto Gossip Stone": {
     "id": 1546
   },
-  {
-    "name": "HF Near Market Gossip Stone",
+  "HF Near Market Gossip Stone": {
     "id": 1547
   },
-  {
-    "name": "HF Open Grotto Gossip Stone",
+  "HF Open Grotto Gossip Stone": {
     "id": 1548
   },
-  {
-    "name": "HF Southeast Gossip Stone",
+  "HF Southeast Gossip Stone": {
     "id": 1549
   },
-  {
-    "name": "Market ToT Left Center Gossip Stone",
+  "Market ToT Left Center Gossip Stone": {
     "id": 1550
   },
-  {
-    "name": "Market ToT Left Gossip Stone",
+  "Market ToT Left Gossip Stone": {
     "id": 1551
   },
-  {
-    "name": "Market ToT Right Center Gossip Stone",
+  "Market ToT Right Center Gossip Stone": {
     "id": 1552
   },
-  {
-    "name": "Market ToT Right Gossip Stone",
+  "Market ToT Right Gossip Stone": {
     "id": 1553
   },
-  {
-    "name": "HC Malon Gossip Stone",
+  "HC Malon Gossip Stone": {
     "id": 1554
   },
-  {
-    "name": "HC Rock Wall Gossip Stone",
+  "HC Rock Wall Gossip Stone": {
     "id": 1555
   },
-  {
-    "name": "HC Storms Grotto Gossip Stone",
+  "HC Storms Grotto Gossip Stone": {
     "id": 1556
   },
-  {
-    "name": "Kak Open Grotto Gossip Stone",
+  "Kak Open Grotto Gossip Stone": {
     "id": 1557
   },
-  {
-    "name": "Graveyard Gossip Stone",
+  "Graveyard Gossip Stone": {
     "id": 1558
   },
-  {
-    "name": "DMT Gossip Stone",
+  "DMT Gossip Stone": {
     "id": 1559
   },
-  {
-    "name": "DMT Storms Grotto Gossip Stone",
+  "DMT Storms Grotto Gossip Stone": {
     "id": 1560
   },
-  {
-    "name": "GC Maze Gossip Stone",
+  "GC Maze Gossip Stone": {
     "id": 1561
   },
-  {
-    "name": "GC Medigoron Gossip Stone",
+  "GC Medigoron Gossip Stone": {
     "id": 1562
   },
-  {
-    "name": "DMC Gossip Stone",
+  "DMC Gossip Stone": {
     "id": 1563
   },
-  {
-    "name": "DMC Upper Grotto Gossip Stone",
+  "DMC Upper Grotto Gossip Stone": {
     "id": 1564
   },
-  {
-    "name": "ZR Near Domain Gossip Stone",
+  "ZR Near Domain Gossip Stone": {
     "id": 1565
   },
-  {
-    "name": "ZR Near Grottos Gossip Stone",
+  "ZR Near Grottos Gossip Stone": {
     "id": 1566
   },
-  {
-    "name": "ZR Open Grotto Gossip Stone",
+  "ZR Open Grotto Gossip Stone": {
     "id": 1567
   },
-  {
-    "name": "ZD Gossip Stone",
+  "ZD Gossip Stone": {
     "id": 1568
   },
-  {
-    "name": "ZF Jabu Gossip Stone",
+  "ZF Jabu Gossip Stone": {
     "id": 1569
   },
-  {
-    "name": "ZF Fairy Gossip Stone",
+  "ZF Fairy Gossip Stone": {
     "id": 1570
   },
-  {
-    "name": "LH Lab Gossip Stone",
+  "LH Lab Gossip Stone": {
     "id": 1571
   },
-  {
-    "name": "LH Southeast Gossip Stone",
+  "LH Southeast Gossip Stone": {
     "id": 1572
   },
-  {
-    "name": "LH Southwest Gossip Stone",
+  "LH Southwest Gossip Stone": {
     "id": 1573
   },
-  {
-    "name": "GV Gossip Stone",
+  "GV Gossip Stone": {
     "id": 1574
   },
-  {
-    "name": "Colossus Gossip Stone",
+  "Colossus Gossip Stone": {
     "id": 1575
   },
-  {
-    "name": "Dodongos Cavern Gossip Stone",
+  "Dodongos Cavern Gossip Stone": {
     "id": 1576
   },
-  {
-    "name": "KF Storms Grotto Beehive Left",
+  "KF Storms Grotto Beehive Left": {
     "id": 1577
   },
-  {
-    "name": "KF Storms Grotto Beehive Right",
+  "KF Storms Grotto Beehive Right": {
     "id": 1578
   },
-  {
-    "name": "LW Tunnel Grotto Beehive Left",
+  "LW Tunnel Grotto Beehive Left": {
     "id": 1579
   },
-  {
-    "name": "LW Tunnel Grotto Beehive Right",
+  "LW Tunnel Grotto Beehive Right": {
     "id": 1580
   },
-  {
-    "name": "LW Deku Scrub Grotto Beehive",
+  "LW Deku Scrub Grotto Beehive": {
     "id": 1581
   },
-  {
-    "name": "SFM Deku Scrub Grotto Beehive",
+  "SFM Deku Scrub Grotto Beehive": {
     "id": 1582
   },
-  {
-    "name": "HF Near Market Grotto Beehive Left",
+  "HF Near Market Grotto Beehive Left": {
     "id": 1583
   },
-  {
-    "name": "HF Near Market Grotto Beehive Right",
+  "HF Near Market Grotto Beehive Right": {
     "id": 1584
   },
-  {
-    "name": "HF Open Grotto Beehive Left",
+  "HF Open Grotto Beehive Left": {
     "id": 1585
   },
-  {
-    "name": "HF Open Grotto Beehive Right",
+  "HF Open Grotto Beehive Right": {
     "id": 1586
   },
-  {
-    "name": "HF Southeast Grotto Beehive Left",
+  "HF Southeast Grotto Beehive Left": {
     "id": 1587
   },
-  {
-    "name": "HF Southeast Grotto Beehive Right",
+  "HF Southeast Grotto Beehive Right": {
     "id": 1588
   },
-  {
-    "name": "HF Deku Scrub Grotto Beehive",
+  "HF Deku Scrub Grotto Beehive": {
     "id": 1589
   },
-  {
-    "name": "LLR Deku Scrub Grotto Beehive",
+  "LLR Deku Scrub Grotto Beehive": {
     "id": 1590
   },
-  {
-    "name": "Kak Open Grotto Beehive Left",
+  "Kak Open Grotto Beehive Left": {
     "id": 1591
   },
-  {
-    "name": "Kak Open Grotto Beehive Right",
+  "Kak Open Grotto Beehive Right": {
     "id": 1592
   },
-  {
-    "name": "DMT Cow Grotto Beehive",
+  "DMT Cow Grotto Beehive": {
     "id": 1593
   },
-  {
-    "name": "DMT Storms Grotto Beehive Left",
+  "DMT Storms Grotto Beehive Left": {
     "id": 1594
   },
-  {
-    "name": "DMT Storms Grotto Beehive Right",
+  "DMT Storms Grotto Beehive Right": {
     "id": 1595
   },
-  {
-    "name": "GC Grotto Beehive",
+  "GC Grotto Beehive": {
     "id": 1596
   },
-  {
-    "name": "DMC Upper Grotto Beehive Left",
+  "DMC Upper Grotto Beehive Left": {
     "id": 1597
   },
-  {
-    "name": "DMC Upper Grotto Beehive Right",
+  "DMC Upper Grotto Beehive Right": {
     "id": 1598
   },
-  {
-    "name": "DMC Hammer Grotto Beehive",
+  "DMC Hammer Grotto Beehive": {
     "id": 1599
   },
-  {
-    "name": "ZR Open Grotto Beehive Left",
+  "ZR Open Grotto Beehive Left": {
     "id": 1600
   },
-  {
-    "name": "ZR Open Grotto Beehive Right",
+  "ZR Open Grotto Beehive Right": {
     "id": 1601
   },
-  {
-    "name": "ZR Storms Grotto Beehive",
+  "ZR Storms Grotto Beehive": {
     "id": 1602
   },
-  {
-    "name": "ZD In Front of King Zora Beehive Left",
+  "ZD In Front of King Zora Beehive Left": {
     "id": 1603
   },
-  {
-    "name": "ZD In Front of King Zora Beehive Right",
+  "ZD In Front of King Zora Beehive Right": {
     "id": 1604
   },
-  {
-    "name": "ZD Behind King Zora Beehive",
+  "ZD Behind King Zora Beehive": {
     "id": 1605
   },
-  {
-    "name": "LH Deku Scrub Grotto Beehive",
+  "LH Deku Scrub Grotto Beehive": {
     "id": 1606
   },
-  {
-    "name": "GV Deku Scrub Grotto Beehive",
+  "GV Deku Scrub Grotto Beehive": {
     "id": 1607
   },
-  {
-    "name": "Colossus Deku Scrub Grotto Beehive",
+  "Colossus Deku Scrub Grotto Beehive": {
     "id": 1608
   },
-  {
-    "name": "Ganon's Castle Ganondorf Hint",
+  "Ganon's Castle Ganondorf Hint": {
     "id": 1609
   },
-  {
-    "name": "Ganon's Castle Sheik Hint",
-    "id": 1610
-  },
-  {
-    "name": "Ganon's Castle Sheik Hint",
+  "Ganon's Castle Sheik Hint": {
     "id": 1611
   },
-  {
-    "name": "Completed Triforce",
+  "Completed Triforce": {
     "id": 1612
   },
-  {
-    "name": "Graveyard Diary Hint",
+  "Graveyard Diary Hint": {
     "id": 1613
   },
-  {
-    "name": "Market Greg Hint",
+  "Market Greg Hint": {
     "id": 1614
   },
-  {
-    "name": "Magic Hint Via Saria's Song",
+  "Magic Hint Via Saria's Song": {
     "id": 1615
   },
-  {
-    "name": "Market ToT Child Altar Hint",
+  "Market ToT Child Altar Hint": {
     "id": 1616
   },
-  {
-    "name": "Market ToT Adult Altar Hint",
+  "Market ToT Adult Altar Hint": {
     "id": 1617
   },
-  {
-    "name": "LH Fishing Pole Hint",
+  "LH Fishing Pole Hint": {
     "id": 1618
   },
-  {
-    "name": "Market Ocarina of Time Hint",
+  "Market Ocarina of Time Hint": {
     "id": 1619
   },
-  {
-    "name": "Market Mask Shop Hint",
+  "Market Mask Shop Hint": {
     "id": 1620
   }
-]
+}

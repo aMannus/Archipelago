@@ -1,1664 +1,1387 @@
-[
-  {
-    "name": "No Item",
+{
+  "No Item": {
     "id": 76,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Kokiri Sword",
+  "Kokiri Sword": {
     "id": 39,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Master Sword",
+  "Master Sword": {
     "id": 224,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Giant's Knife",
+  "Giant's Knife": {
     "id": 40,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Biggoron's Sword",
+  "Biggoron's Sword": {
     "id": 87,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Deku Shield",
+  "Deku Shield": {
     "id": 41,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Hylian Shield",
+  "Hylian Shield": {
     "id": 42,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Mirror Shield",
+  "Mirror Shield": {
     "id": 43,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Goron Tunic",
+  "Goron Tunic": {
     "id": 44,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Zora Tunic",
+  "Zora Tunic": {
     "id": 45,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Iron Boots",
+  "Iron Boots": {
     "id": 46,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Hover Boots",
+  "Hover Boots": {
     "id": 47,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Boomerang",
+  "Boomerang": {
     "id": 6,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Lens of Truth",
+  "Lens of Truth": {
     "id": 10,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Megaton Hammer",
+  "Megaton Hammer": {
     "id": 13,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Stone of Agony",
+  "Stone of Agony": {
     "id": 57,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Din's Fire",
+  "Din's Fire": {
     "id": 92,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Farore's Wind",
+  "Farore's Wind": {
     "id": 93,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Nayru's Love",
+  "Nayru's Love": {
     "id": 94,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fire Arrow",
+  "Fire Arrow": {
     "id": 88,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ice Arrow",
+  "Ice Arrow": {
     "id": 89,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Light Arrow",
+  "Light Arrow": {
     "id": 90,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Gerudo Membership Card",
+  "Gerudo Membership Card": {
     "id": 58,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Magic Bean",
+  "Magic Bean": {
     "id": 22,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Magic Bean Pack",
+  "Magic Bean Pack": {
     "id": 24,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Double Defense",
+  "Double Defense": {
     "id": 25,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Weird Egg",
+  "Weird Egg": {
     "id": 71,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Zelda's Letter",
+  "Zelda's Letter": {
     "id": 11,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Pocket Egg",
+  "Pocket Egg": {
     "id": 29,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Cojiro",
+  "Cojiro": {
     "id": 14,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Odd Mushroom",
+  "Odd Mushroom": {
     "id": 31,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Odd Potion",
+  "Odd Potion": {
     "id": 32,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Poacher's Saw",
+  "Poacher's Saw": {
     "id": 33,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Broken Goron's Sword",
+  "Broken Goron's Sword": {
     "id": 34,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Prescription",
+  "Prescription": {
     "id": 35,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Eyeball Frog",
+  "Eyeball Frog": {
     "id": 36,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "World's Finest Eyedrops",
+  "World's Finest Eyedrops": {
     "id": 37,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Claim Check",
+  "Claim Check": {
     "id": 38,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Gold Skulltula Token",
+  "Gold Skulltula Token": {
     "id": 91,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Progressive Hookshot",
+  "Progressive Hookshot": {
     "id": 128,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Strength Upgrade",
+  "Strength Upgrade": {
     "id": 129,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Bomb Bag",
+  "Progressive Bomb Bag": {
     "id": 130,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Bow",
+  "Progressive Bow": {
     "id": 131,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Slingshot",
+  "Progressive Slingshot": {
     "id": 132,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Wallet",
+  "Progressive Wallet": {
     "id": 133,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Scale",
+  "Progressive Scale": {
     "id": 134,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Nut Capacity",
+  "Progressive Nut Capacity": {
     "id": 135,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Stick Capacity",
+  "Progressive Stick Capacity": {
     "id": 136,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Bombchu",
+  "Progressive Bombchu": {
     "id": 137,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Magic Meter",
+  "Progressive Magic Meter": {
     "id": 138,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Magic Meter",
+  "Magic Meter": {
     "id": 138,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Enhanced Magic Meter",
+  "Enhanced Magic Meter": {
     "id": 138,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Ocarina",
+  "Progressive Ocarina": {
     "id": 139,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Progressive Goron Sword",
+  "Progressive Goron Sword": {
     "id": 212,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Empty Bottle",
+  "Empty Bottle": {
     "id": 15,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Milk",
+  "Bottle with Milk": {
     "id": 20,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Red Potion",
+  "Bottle with Red Potion": {
     "id": 140,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Green Potion",
+  "Bottle with Green Potion": {
     "id": 141,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Blue Potion",
+  "Bottle with Blue Potion": {
     "id": 142,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Fairy",
+  "Bottle with Fairy": {
     "id": 143,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Fish",
+  "Bottle with Fish": {
     "id": 144,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Blue Fire",
+  "Bottle with Blue Fire": {
     "id": 145,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Bugs",
+  "Bottle with Bugs": {
     "id": 146,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Poe",
+  "Bottle with Poe": {
     "id": 148,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Ruto's Letter",
+  "Bottle with Ruto's Letter": {
     "id": 21,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottle with Big Poe",
+  "Bottle with Big Poe": {
     "id": 147,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Zelda's Lullaby",
+  "Zelda's Lullaby": {
     "id": 193,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Epona's Song",
+  "Epona's Song": {
     "id": 194,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Saria's Song",
+  "Saria's Song": {
     "id": 195,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Sun's Song",
+  "Sun's Song": {
     "id": 196,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Song of Time",
+  "Song of Time": {
     "id": 197,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Song of Storms",
+  "Song of Storms": {
     "id": 198,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Minuet of Forest",
+  "Minuet of Forest": {
     "id": 187,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bolero of Fire",
+  "Bolero of Fire": {
     "id": 188,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Serenade of Water",
+  "Serenade of Water": {
     "id": 189,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Requiem of Spirit",
+  "Requiem of Spirit": {
     "id": 190,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Nocturne of Shadow",
+  "Nocturne of Shadow": {
     "id": 191,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Prelude of Light",
+  "Prelude of Light": {
     "id": 192,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Great Deku Tree Map",
+  "Great Deku Tree Map": {
     "id": 165,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Dodongo's Cavern Map",
+  "Dodongo's Cavern Map": {
     "id": 166,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Jabu-Jabu's Belly Map",
+  "Jabu-Jabu's Belly Map": {
     "id": 167,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Forest Temple Map",
+  "Forest Temple Map": {
     "id": 168,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Fire Temple Map",
+  "Fire Temple Map": {
     "id": 169,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Water Temple Map",
+  "Water Temple Map": {
     "id": 170,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Spirit Temple Map",
+  "Spirit Temple Map": {
     "id": 171,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Shadow Temple Map",
+  "Shadow Temple Map": {
     "id": 172,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Bottom of the Well Map",
+  "Bottom of the Well Map": {
     "id": 173,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Ice Cavern Map",
+  "Ice Cavern Map": {
     "id": 174,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Great Deku Tree Compass",
+  "Great Deku Tree Compass": {
     "id": 155,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Dodongo's Cavern Compass",
+  "Dodongo's Cavern Compass": {
     "id": 156,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Jabu-Jabu's Belly Compass",
+  "Jabu-Jabu's Belly Compass": {
     "id": 157,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Forest Temple Compass",
+  "Forest Temple Compass": {
     "id": 158,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Fire Temple Compass",
+  "Fire Temple Compass": {
     "id": 159,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Water Temple Compass",
+  "Water Temple Compass": {
     "id": 160,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Spirit Temple Compass",
+  "Spirit Temple Compass": {
     "id": 161,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Shadow Temple Compass",
+  "Shadow Temple Compass": {
     "id": 162,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Bottom of the Well Compass",
+  "Bottom of the Well Compass": {
     "id": 163,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Ice Cavern Compass",
+  "Ice Cavern Compass": {
     "id": 164,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Forest Temple Boss Key",
+  "Forest Temple Boss Key": {
     "id": 149,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fire Temple Boss Key",
+  "Fire Temple Boss Key": {
     "id": 150,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Water Temple Boss Key",
+  "Water Temple Boss Key": {
     "id": 151,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Spirit Temple Boss Key",
+  "Spirit Temple Boss Key": {
     "id": 152,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Shadow Temple Boss Key",
+  "Shadow Temple Boss Key": {
     "id": 153,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ganon's Castle Boss Key",
+  "Ganon's Castle Boss Key": {
     "id": 154,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Forest Temple Small Key",
+  "Forest Temple Small Key": {
     "id": 175,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fire Temple Small Key",
+  "Fire Temple Small Key": {
     "id": 176,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Water Temple Small Key",
+  "Water Temple Small Key": {
     "id": 177,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Spirit Temple Small Key",
+  "Spirit Temple Small Key": {
     "id": 178,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Shadow Temple Small Key",
+  "Shadow Temple Small Key": {
     "id": 179,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottom of the Well Small Key",
+  "Bottom of the Well Small Key": {
     "id": 180,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Training Ground Small Key",
+  "Training Ground Small Key": {
     "id": 181,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Gerudo Fortress Small Key",
+  "Gerudo Fortress Small Key": {
     "id": 182,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ganon's Castle Small Key",
+  "Ganon's Castle Small Key": {
     "id": 183,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Chest Game Small Key",
+  "Chest Game Small Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Forest Temple Key Ring",
+  "Forest Temple Key Ring": {
     "id": 213,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fire Temple Key Ring",
+  "Fire Temple Key Ring": {
     "id": 214,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Water Temple Key Ring",
+  "Water Temple Key Ring": {
     "id": 215,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Spirit Temple Key Ring",
+  "Spirit Temple Key Ring": {
     "id": 216,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Shadow Temple Key Ring",
+  "Shadow Temple Key Ring": {
     "id": 217,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bottom of the Well Key Ring",
+  "Bottom of the Well Key Ring": {
     "id": 218,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Training Ground Key Ring",
+  "Training Ground Key Ring": {
     "id": 219,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Gerudo Fortress Key Ring",
+  "Gerudo Fortress Key Ring": {
     "id": 220,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ganon's Castle Key Ring",
+  "Ganon's Castle Key Ring": {
     "id": 221,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Chest Game Key Ring",
+  "Chest Game Key Ring": {
     "id": 222,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Kokiri's Emerald",
+  "Kokiri's Emerald": {
     "id": 203,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Goron's Ruby",
+  "Goron's Ruby": {
     "id": 204,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Zora's Sapphire",
+  "Zora's Sapphire": {
     "id": 205,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Forest Medallion",
+  "Forest Medallion": {
     "id": 206,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fire Medallion",
+  "Fire Medallion": {
     "id": 207,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Water Medallion",
+  "Water Medallion": {
     "id": 208,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Spirit Medallion",
+  "Spirit Medallion": {
     "id": 209,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Shadow Medallion",
+  "Shadow Medallion": {
     "id": 210,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Light Medallion",
+  "Light Medallion": {
     "id": 211,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Recovery Heart",
+  "Recovery Heart": {
     "id": 72,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Green Rupee",
+  "Green Rupee": {
     "id": 76,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Greg the Green Rupee",
+  "Greg the Green Rupee": {
     "id": 76,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Blue Rupee",
+  "Blue Rupee": {
     "id": 77,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Red Rupee",
+  "Red Rupee": {
     "id": 78,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Purple Rupee",
+  "Purple Rupee": {
     "id": 85,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Huge Rupee",
+  "Huge Rupee": {
     "id": 86,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Piece of Heart",
+  "Piece of Heart": {
     "id": 62,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Heart Container",
+  "Heart Container": {
     "id": 79,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Ice Trap",
+  "Ice Trap": {
     "id": 142,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Milk",
+  "Milk": {
     "id": 80,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Fish",
+  "Fish": {
     "id": 108,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Bombs (5)",
+  "Bombs (5)": {
     "id": 1,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Bombs (10)",
+  "Bombs (10)": {
     "id": 102,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Bombs (20)",
+  "Bombs (20)": {
     "id": 103,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Bombchus (5)",
+  "Bombchus (5)": {
     "id": 106,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bombchus (10)",
+  "Bombchus (10)": {
     "id": 3,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bombchus (20)",
+  "Bombchus (20)": {
     "id": 107,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Arrows (5)",
+  "Arrows (5)": {
     "id": 73,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Arrows (10)",
+  "Arrows (10)": {
     "id": 74,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Arrows (30)",
+  "Arrows (30)": {
     "id": 75,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Deku Nuts (5)",
+  "Deku Nuts (5)": {
     "id": 2,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Deku Nuts (10)",
+  "Deku Nuts (10)": {
     "id": 100,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Deku Seeds (30)",
+  "Deku Seeds (30)": {
     "id": 105,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Deku Stick (1)",
+  "Deku Stick (1)": {
     "id": 7,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Red Potion Refill",
+  "Red Potion Refill": {
     "id": 16,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Green Potion Refill",
+  "Green Potion Refill": {
     "id": 17,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Blue Potion Refill",
+  "Blue Potion Refill": {
     "id": 18,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Piece of Heart (WINNER)",
+  "Piece of Heart (WINNER)": {
     "id": 118,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Green Rupee (LOSER)",
+  "Green Rupee (LOSER)": {
     "id": 114,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Deku Nut (5)",
+  "Buy Deku Nut (5)": {
     "id": 99,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Arrows (30)",
+  "Buy Arrows (30)": {
     "id": 74,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Arrows (50)",
+  "Buy Arrows (50)": {
     "id": 75,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Bombs (5) [25]",
+  "Buy Bombs (5) [25]": {
     "id": 1,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Deku Nut (10)",
+  "Buy Deku Nut (10)": {
     "id": 100,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Deku Stick (1)",
+  "Buy Deku Stick (1)": {
     "id": 7,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Bombs (10)",
+  "Buy Bombs (10)": {
     "id": 102,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Fish",
+  "Buy Fish": {
     "id": 108,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Red Potion [30]",
+  "Buy Red Potion [30]": {
     "id": 16,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Green Potion",
+  "Buy Green Potion": {
     "id": 17,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Blue Potion",
+  "Buy Blue Potion": {
     "id": 18,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Hylian Shield",
+  "Buy Hylian Shield": {
     "id": 42,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Deku Shield",
+  "Buy Deku Shield": {
     "id": 41,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Goron Tunic",
+  "Buy Goron Tunic": {
     "id": 44,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Zora Tunic",
+  "Buy Zora Tunic": {
     "id": 45,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Heart",
+  "Buy Heart": {
     "id": 72,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Bombchu (10)",
+  "Buy Bombchu (10)": {
     "id": 3,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Bombchu (20)",
+  "Buy Bombchu (20)": {
     "id": 107,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Deku Seeds (30)",
+  "Buy Deku Seeds (30)": {
     "id": 105,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Sold Out",
+  "Sold Out": {
     "id": 182,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Blue Fire",
+  "Buy Blue Fire": {
     "id": 110,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Bottle Bug",
+  "Buy Bottle Bug": {
     "id": 109,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Poe",
+  "Buy Poe": {
     "id": 185,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Fairy's Spirit",
+  "Buy Fairy's Spirit": {
     "id": 19,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Arrows (10)",
+  "Buy Arrows (10)": {
     "id": 73,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Bombs (20)",
+  "Buy Bombs (20)": {
     "id": 103,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Bombs (30)",
+  "Buy Bombs (30)": {
     "id": 104,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Bombs (5) [35]",
+  "Buy Bombs (5) [35]": {
     "id": 1,
     "progression": true,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Red Potion [40]",
+  "Buy Red Potion [40]": {
     "id": 16,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Buy Red Potion [50]",
+  "Buy Red Potion [50]": {
     "id": 16,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Triforce",
+  "Triforce": {
     "id": 193,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Triforce Piece",
+  "Triforce Piece": {
     "id": 223,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Gohma's Soul",
+  "Gohma's Soul": {
     "id": 224,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "King Dodongo's Soul",
+  "King Dodongo's Soul": {
     "id": 225,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Barinade's Soul",
+  "Barinade's Soul": {
     "id": 226,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Phantom Ganon's Soul",
+  "Phantom Ganon's Soul": {
     "id": 227,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Volvagia's Soul",
+  "Volvagia's Soul": {
     "id": 228,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Morpha's Soul",
+  "Morpha's Soul": {
     "id": 229,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bongo Bongo's Soul",
+  "Bongo Bongo's Soul": {
     "id": 230,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Twinrova's Soul",
+  "Twinrova's Soul": {
     "id": 231,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ganon's Soul",
+  "Ganon's Soul": {
     "id": 232,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ocarina A Button",
+  "Ocarina A Button": {
     "id": 65,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ocarina C Up Button",
+  "Ocarina C Up Button": {
     "id": 65,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ocarina C Down Button",
+  "Ocarina C Down Button": {
     "id": 65,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ocarina C Left Button",
+  "Ocarina C Left Button": {
     "id": 65,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ocarina C Right Button",
+  "Ocarina C Right Button": {
     "id": 65,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Skeleton Key",
+  "Skeleton Key": {
     "id": 57,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fishing Pole",
+  "Fishing Pole": {
     "id": 210,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Deku Stick Bag",
+  "Deku Stick Bag": {
     "id": 120,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Deku Nut Bag",
+  "Deku Nut Bag": {
     "id": 121,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Hint",
+  "Hint": {
     "id": 213,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Tycoon Wallet",
+  "Tycoon Wallet": {
     "id": 214,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bronze Scale",
+  "Bronze Scale": {
     "id": 55,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Child Wallet",
+  "Child Wallet": {
     "id": 216,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bombchu Bag",
+  "Bombchu Bag": {
     "id": 217,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Infinite Quiver",
+  "Infinite Quiver": {
     "id": 218,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Infinite Bomb Bag",
+  "Infinite Bomb Bag": {
     "id": 219,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Infinite Bullet Bag",
+  "Infinite Bullet Bag": {
     "id": 220,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Infinite Stick Capacity",
+  "Infinite Stick Capacity": {
     "id": 221,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Infinite Nut Capacity",
+  "Infinite Nut Capacity": {
     "id": 222,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Infinite Magic Meter",
+  "Infinite Magic Meter": {
     "id": 223,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Infinite Bombchus",
+  "Infinite Bombchus": {
     "id": 224,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Infinite Wallet",
+  "Infinite Wallet": {
     "id": 225,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fairy Ocarina",
+  "Fairy Ocarina": {
     "id": 59,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Ocarina of Time",
+  "Ocarina of Time": {
     "id": 12,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bomb Bag",
+  "Bomb Bag": {
     "id": 50,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Big Bomb Bag",
+  "Big Bomb Bag": {
     "id": 51,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Biggest Bomb Bag",
+  "Biggest Bomb Bag": {
     "id": 52,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fairy Bow",
+  "Fairy Bow": {
     "id": 4,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Big Quiver",
+  "Big Quiver": {
     "id": 48,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Biggest Quiver",
+  "Biggest Quiver": {
     "id": 49,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fairy Slingshot",
+  "Fairy Slingshot": {
     "id": 5,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Big Deku Seed Bullet Bag",
+  "Big Deku Seed Bullet Bag": {
     "id": 96,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Biggest Deku Seed Bullet Bag",
+  "Biggest Deku Seed Bullet Bag": {
     "id": 123,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Goron's Bracelet",
+  "Goron's Bracelet": {
     "id": 84,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Silver Gauntlets",
+  "Silver Gauntlets": {
     "id": 53,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Golden Gauntlets",
+  "Golden Gauntlets": {
     "id": 54,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Silver Scale",
+  "Silver Scale": {
     "id": 55,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Golden Scale",
+  "Golden Scale": {
     "id": 56,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Adult Wallet",
+  "Adult Wallet": {
     "id": 69,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Giant Wallet",
+  "Giant Wallet": {
     "id": 70,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Deku Nut Capacity (30)",
+  "Deku Nut Capacity (30)": {
     "id": 121,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Deku Nut Capacity (40)",
+  "Deku Nut Capacity (40)": {
     "id": 122,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Deku Stick Capacity (20)",
+  "Deku Stick Capacity (20)": {
     "id": 119,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Deku Stick Capacity (30)",
+  "Deku Stick Capacity (30)": {
     "id": 120,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Hookshot",
+  "Hookshot": {
     "id": 8,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Longshot",
+  "Longshot": {
     "id": 9,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Guard House Key",
+  "Guard House Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Market Bazaar Key",
+  "Market Bazaar Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Market Potion Shop Key",
+  "Market Potion Shop Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Mask Shop Key",
+  "Mask Shop Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Market Shooting Gallery Key",
+  "Market Shooting Gallery Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bombchu Bowling Alley Key",
+  "Bombchu Bowling Alley Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Treasure Chest Game Building Key",
+  "Treasure Chest Game Building Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Bombchu Shop Key",
+  "Bombchu Shop Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Richard's House Key",
+  "Richard's House Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Alley House Key",
+  "Alley House Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Kakariko Bazaar Key",
+  "Kakariko Bazaar Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Kakariko Potion Shop Key",
+  "Kakariko Potion Shop Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Boss's House Key",
+  "Boss's House Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Granny's Potion Shop Key",
+  "Granny's Potion Shop Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Skulltula House Key",
+  "Skulltula House Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Impa's House Key",
+  "Impa's House Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Windmill Key",
+  "Windmill Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Kakariko Shooting Gallery Key",
+  "Kakariko Shooting Gallery Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Dampe's Hut Key",
+  "Dampe's Hut Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Talon's House Key",
+  "Talon's House Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Stables Key",
+  "Stables Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Back Tower Key",
+  "Back Tower Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Hylia Laboratory Key",
+  "Hylia Laboratory Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Fishing Hole Key",
+  "Fishing Hole Key": {
     "id": 113,
     "progression": true,
     "isMajorItem": true
   },
-  {
-    "name": "Useful AP Item",
+  "Useful AP Item": {
     "id": 76,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Junk AP Item",
+  "Junk AP Item": {
     "id": 76,
     "progression": false,
     "isMajorItem": false
   },
-  {
-    "name": "Progressive AP Item",
+  "Progressive AP Item": {
     "id": 76,
     "progression": false,
     "isMajorItem": false
   }
-]
+}
