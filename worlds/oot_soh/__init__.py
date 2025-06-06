@@ -30,7 +30,6 @@ from .Options import SohOptions
 from .Regions import region_data_table
 from .Rules import get_soh_rule
 
-
 class SohWebWorld(WebWorld):
     theme = "ice"
     
@@ -159,7 +158,7 @@ class SohWorld(World):
         for i in range(35): item_pool.append(self.create_item("Piece of Heart"))
         item_pool.append(self.create_item("Piece of Heart (WINNER)"))
         for i in range(8): item_pool.append(self.create_item("Heart Container"))
-        for i in range(6): item_pool.append(self.create_item("Ice Trap"))
+        for i in range(6): item_pool.append(self.create_item("Ice Trap"))        
 
         # Add Ganon's Castle Boss Key when shuffled anywhere.
         if self.options.gcbk_setting == "anywhere":
@@ -206,6 +205,20 @@ class SohWorld(World):
         self.multiworld.itempool += item_pool
 
     def create_regions(self) -> None:
+
+        # Create a dictionary mapping blue warp rewards to their vanilla items
+        dungeon_reward_item_mapping = {
+            "Queen Gohma": "Kokiri's Emerald",
+            "King Dodongo": "Goron's Ruby",
+            "Barinade": "Zora's Sapphire",
+            "Phantom Ganon": "Forest Medallion",
+            "Volvagia": "Fire Medallion",
+            "Morpha": "Water Medallion",
+            "Bongo Bongo": "Spirit Medallion",
+            "Twinrova": "Shadow Medallion",
+            "Link's Pocket": "Light Medallion"
+        }
+
         # Create regions.
         for region_name in region_data_table.keys():
             region = Region(region_name, self.player, self.multiworld)
@@ -366,37 +379,18 @@ class SohWorld(World):
         self.get_location("HC Zeldas Letter").place_locked_item(self.create_item("Zelda's Letter"))
 
         # Preplace dungeon rewards in vanilla locations when not shuffled
-        if self.options.shuffle_dungeon_rewards == "off":
-            self.get_location("Queen Gohma").place_locked_item(self.create_item("Kokiri's Emerald"))
-            self.get_location("King Dodongo").place_locked_item(self.create_item("Goron's Ruby"))
-            self.get_location("Barinade").place_locked_item(self.create_item("Zora's Sapphire"))
-            self.get_location("Phantom Ganon").place_locked_item(self.create_item("Forest Medallion"))
-            self.get_location("Volvagia").place_locked_item(self.create_item("Fire Medallion"))
-            self.get_location("Morpha").place_locked_item(self.create_item("Water Medallion"))
-            self.get_location("Bongo Bongo").place_locked_item(self.create_item("Spirit Medallion"))
-            self.get_location("Twinrova").place_locked_item(self.create_item("Shadow Medallion"))
-            self.get_location("Link's Pocket").place_locked_item(self.create_item("Light Medallion"))
+        if self.options.shuffle_dungeon_rewards == "off":      
+            # Loop through dungeons rewards and set their items to the vanilla reward.      
+            for location_name, reward_name in zip(dungeon_reward_item_mapping.keys(), dungeon_reward_item_mapping.values()):
+                self.get_location(location_name).place_locked_item(self.create_item(reward_name))
 
-        if self.options.shuffle_dungeon_rewards == "dungeons":
-            # Create a dictionary mapping locations to their vanilla items
-            location_item_mapping = {
-                "Queen Gohma": "Kokiri's Emerald",
-                "King Dodongo": "Goron's Ruby",
-                "Barinade": "Zora's Sapphire",
-                "Phantom Ganon": "Forest Medallion",
-                "Volvagia": "Fire Medallion",
-                "Morpha": "Water Medallion",
-                "Bongo Bongo": "Spirit Medallion",
-                "Twinrova": "Shadow Medallion",
-                "Link's Pocket": "Light Medallion"
-            }
-
-            # Extract and shuffle just the item names
-            reward_names = list(location_item_mapping.values())
+        if self.options.shuffle_dungeon_rewards == "dungeons": 
+            # Extract and shuffle just the item names from location_item_mapping
+            reward_names = list(dungeon_reward_item_mapping.values())
             self.random.shuffle(reward_names)
             
             # Pair each location with a unique shuffled dungeon reward
-            for location_name, reward_name in zip(location_item_mapping.keys(), reward_names):
+            for location_name, reward_name in zip(dungeon_reward_item_mapping.keys(), reward_names):
                 self.get_location(location_name).place_locked_item(self.create_item(reward_name))
 
         # Place Ganons Boss Key to the Light Arrow Cutscene when set to needing specific requirements
