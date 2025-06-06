@@ -204,20 +204,7 @@ class SohWorld(World):
 
         self.multiworld.itempool += item_pool
 
-    def create_regions(self) -> None:
-
-        # Create a dictionary mapping blue warp rewards to their vanilla items
-        dungeon_reward_item_mapping = {
-            "Queen Gohma": "Kokiri's Emerald",
-            "King Dodongo": "Goron's Ruby",
-            "Barinade": "Zora's Sapphire",
-            "Phantom Ganon": "Forest Medallion",
-            "Volvagia": "Fire Medallion",
-            "Morpha": "Water Medallion",
-            "Bongo Bongo": "Spirit Medallion",
-            "Twinrova": "Shadow Medallion",
-            "Link's Pocket": "Light Medallion"
-        }
+    def create_regions(self) -> None: 
 
         # Create regions.
         for region_name in region_data_table.keys():
@@ -383,6 +370,19 @@ class SohWorld(World):
             # Loop through dungeons rewards and set their items to the vanilla reward.      
             for location_name, reward_name in zip(dungeon_reward_item_mapping.keys(), dungeon_reward_item_mapping.values()):
                 self.get_location(location_name).place_locked_item(self.create_item(reward_name))
+
+        # Create a dictionary mapping blue warp rewards to their vanilla items
+        dungeon_reward_item_mapping = {
+            "Queen Gohma": "Kokiri's Emerald",
+            "King Dodongo": "Goron's Ruby",
+            "Barinade": "Zora's Sapphire",
+            "Phantom Ganon": "Forest Medallion",
+            "Volvagia": "Fire Medallion",
+            "Morpha": "Water Medallion",
+            "Bongo Bongo": "Spirit Medallion",
+            "Twinrova": "Shadow Medallion",
+            "Link's Pocket": "Light Medallion"
+        }
 
         if self.options.shuffle_dungeon_rewards == "dungeons": 
             # Extract and shuffle just the item names from location_item_mapping
