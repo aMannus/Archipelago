@@ -365,12 +365,6 @@ class SohWorld(World):
         self.get_location("HC Malon Egg").place_locked_item(self.create_item("Weird Egg"))
         self.get_location("HC Zeldas Letter").place_locked_item(self.create_item("Zelda's Letter"))
 
-        # Preplace dungeon rewards in vanilla locations when not shuffled
-        if self.options.shuffle_dungeon_rewards == "off":      
-            # Loop through dungeons rewards and set their items to the vanilla reward.      
-            for location_name, reward_name in zip(dungeon_reward_item_mapping.keys(), dungeon_reward_item_mapping.values()):
-                self.get_location(location_name).place_locked_item(self.create_item(reward_name))
-
         # Create a dictionary mapping blue warp rewards to their vanilla items
         dungeon_reward_item_mapping = {
             "Queen Gohma": "Kokiri's Emerald",
@@ -383,6 +377,12 @@ class SohWorld(World):
             "Twinrova": "Shadow Medallion",
             "Link's Pocket": "Light Medallion"
         }
+
+        # Preplace dungeon rewards in vanilla locations when not shuffled
+        if self.options.shuffle_dungeon_rewards == "off":      
+            # Loop through dungeons rewards and set their items to the vanilla reward.      
+            for location_name, reward_name in zip(dungeon_reward_item_mapping.keys(), dungeon_reward_item_mapping.values()):
+                self.get_location(location_name).place_locked_item(self.create_item(reward_name))        
 
         if self.options.shuffle_dungeon_rewards == "dungeons": 
             # Extract and shuffle just the item names from location_item_mapping
