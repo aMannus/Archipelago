@@ -158,7 +158,7 @@ class SohWorld(World):
         for i in range(35): item_pool.append(self.create_item("Piece of Heart"))
         item_pool.append(self.create_item("Piece of Heart (WINNER)"))
         for i in range(8): item_pool.append(self.create_item("Heart Container"))
-        for i in range(6): item_pool.append(self.create_item("Ice Trap"))        
+        for i in range(6): item_pool.append(self.create_item("Ice Trap"))
 
         # Add Ganon's Castle Boss Key when shuffled anywhere.
         if self.options.gcbk_setting == "anywhere":
