@@ -4,7 +4,7 @@ from BaseClasses import Region
 from worlds.generic.Rules import set_rule
 
 from .Items import SohItem
-from .Locations import SohLocation, SohLocationData
+from .Locations import SohLocation, SohLocationData, base_location_table
 from .Rules import (can_break_mud_walls, is_adult, has_explosives, can_attack, take_damage, can_shield, can_kill_enemy,
                     has_fire_source_with_torch, can_use, can_do_trick, can_jump_slash)
 
@@ -16,7 +16,7 @@ if TYPE_CHECKING:
 dc_region_names: list[str] = [
     "Dodongos Cavern Beginning",
     "Dodongos Cavern Lobby",
-    "Dodongos Cavern Cavern Lobby Switch",
+    "Dodongos Cavern Lobby Switch",
     "Dodongos Cavern SE Corridor",
     "Dodongos Cavern SE Room",
     "Dodongos Cavern Near Lower Lizalfos",
@@ -36,6 +36,7 @@ dc_region_names: list[str] = [
     "Dodongos Cavern Far Bridge",
     "Dodongos Cavern Boss Region",
     "Dodongos Cavern Back Room",
+    "Dodongos Cavern Boss Entryway",
 ]
 
 
@@ -51,13 +52,17 @@ dc_events: dict[str, SohLocationData] = {
 
 def create_dc_regions_and_rules(world: "SohWorld") -> None:
     for region_name in dc_region_names:
-        world.multiworld.regions.append(Region(region_name, world.player, world.multiworld))
+        region = Region(region_name, world.player, world.multiworld)
+        world.multiworld.regions.append(region)
+        region.add_locations({loc_name: loc_data.address for loc_name, loc_data in base_location_table.items()
+                              if loc_data.region == region_name}, SohLocation)
 
     for event_name, data in dc_events.items():
         region = world.get_region(data.region)
         region.add_event(event_name, data.event_item, location_type=SohLocation, item_type=SohItem)
 
     set_region_rules_dc(world)
+    set_location_rules_dc(world)
 
 
 # I'm writing this with events in mind, even though the original for this dungeon doesn't use them
@@ -93,7 +98,7 @@ def set_region_rules_dc(world: "SohWorld") -> None:
         rule=lambda state: state.has("Dodongos Cavern Lobby Switch Activated", player))
 
     world.get_region("Dodongos Cavern Lobby").connect(
-        world.get_region("Dodongos Cavern Boss Area"),
+        world.get_region("Dodongos Cavern Boss Region"),
         rule=lambda state: state.has("Dodongos Cavern Far Bridge Switch Activated", player)
         and has_explosives(state, world))
 
@@ -191,7 +196,12 @@ def set_region_rules_dc(world: "SohWorld") -> None:
         or (can_do_trick("DC Scrub Room", state, world) and state.has("Strength Upgrade", player)))
 
     world.get_region("Dodongos Cavern Bomb Room Lower").connect(
-        world.get_region("Dodongos Cavern 2F Side Room"),
+        world.get_region("Dodongos Cavern First Slingshot Room"),
+        rule=lambda state: can_break_mud_walls(state, world)
+        or state.has("Strength Upgrade", player))
+
+    world.get_region("Dodongos Cavern Bomb Room Lower").connect(
+        world.get_region("Dodongos Cavern Bomb Room Upper"),
         rule=lambda state: (is_adult(state, world) and can_do_trick("DC Jump", state, world))
         or can_use("Hover Boots", state, world)
         or (is_adult(state, world) and can_use("Longshot", state, world))
@@ -212,10 +222,6 @@ def set_region_rules_dc(world: "SohWorld") -> None:
 
     world.get_region("Dodongos Cavern Upper Lizalfos").connect(
         world.get_region("Dodongos Cavern Lower Lizalfos"))
-
-    world.get_region("Dodongos Cavern Upper Lizalfos").connect(
-        world.get_region("Dodongos Cavern First Slingshot Room"),
-        rule=lambda state: state.has("Defeated Dodongos Cavern Lower Lizalfos", player))
 
     world.get_region("Dodongos Cavern Upper Lizalfos").connect(
         world.get_region("Dodongos Cavern First Slingshot Room"),

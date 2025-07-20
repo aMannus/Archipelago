@@ -409,8 +409,6 @@ class SohWorld(World):
         return self.random.choice(filler_items)
 
     def set_rules(self) -> None:
-        set_location_rules_dc(self)
-
         # Completion condition.
         self.multiworld.completion_condition[self.player] = lambda state: True
 
