@@ -64,3 +64,7 @@ def can_do_trick(trick: str, state: CollectionState, world: "SohWorld") -> bool:
     # todo: logic goes here
     return True
 
+
+def can_jump_slash(state: CollectionState, world: "SohWorld") -> bool:
+    # todo: logic goes here
+    return True
