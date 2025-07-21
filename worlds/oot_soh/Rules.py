@@ -11,9 +11,21 @@ def get_soh_rule(world: "SohWorld") -> Callable[[CollectionState], bool]:
     return lambda state: True
 
 
+def has_explosives(state: CollectionState, world: "SohWorld") -> bool:
+    return can_use("Bomb Bag", state, world) or can_use("Bombchus", state, world)
+
+
+def blast_or_smash(state: CollectionState, world: "SohWorld") -> bool:
+    return has_explosives(state, world) or can_use("Megaton Hammer", state, world)
+
+
+def blue_fire(state: CollectionState, world: "SohWorld") -> bool:
+    return can_use("Bottle with Blue Fire", state, world)  # or blue fire arrows
+
+
 def can_break_mud_walls(state: CollectionState, world: "SohWorld") -> bool:
     # todo: logic goes here
-    return True
+    return blast_or_smash(state, world) or (can_do_trick("Blue Fire Mud Walls", state, world) and blue_fire(state, world))
 
 
 def is_adult(state: CollectionState, world: "SohWorld") -> bool:
