@@ -33,7 +33,7 @@ def reset_age_access(start_as_adult: bool = False):
 reset_age_access()
 
 #Returns whether a change was made
-def update_age_access(world: SohWorld, state: CollectionState):
+def update_age_access(world: "SohWorld", state: CollectionState):
     #Spread from Menu
     #If ToT accessible, spread from ToT
     #Any access at our starting age that ToT access opens up would be covered in the ToT floodfill, since if it mattered, we wouldn't reach that point
