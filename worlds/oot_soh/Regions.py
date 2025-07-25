@@ -1,7 +1,10 @@
-from typing import Dict, List, NamedTuple, cast
+from typing import Dict, List, NamedTuple, cast, TYPE_CHECKING
 from BaseClasses import CollectionState, Entrance, Region
 from worlds.oot_soh import SohWorld
 from .Enums import Regions
+
+if TYPE_CHECKING:
+    from . import SohWorld
 
 class SohRegionData(NamedTuple):
     connecting_regions: List[str] = []
