@@ -11,7 +11,7 @@ class SohRegionData(NamedTuple):
 
 
 region_data_table: Dict[str, SohRegionData] = {
-    "Menu": SohRegionData(["Hyrule"]),
+    Regions.ROOT: SohRegionData(["Hyrule"]),
     "Hyrule": SohRegionData(),
 }
 
@@ -41,7 +41,7 @@ def update_age_access(world: "SohWorld", state: CollectionState):
     #If ToT accessible, spread from ToT
     #Any access at our starting age that ToT access opens up would be covered in the ToT floodfill, since if it mattered, we wouldn't reach that point
     just_found_tot = _spread_age_access(world, state, Regions.ROOT)
-    if just_found_tot:
+    if just_found_tot: #As said, if we just found ToT, we probably need to do a floodfill from there
         _spread_age_access(world, state, Regions.TEMPLE_OF_TIME)
 
 #Returns whether ToT was just found
@@ -52,8 +52,9 @@ def _spread_age_access(world: SohWorld, state: CollectionState, root: str) -> bo
         region = world.get_region(region_list.pop())
         if child_access_table[region.name]:
             for exit in region.exits:
-                #Breaks an infinite loop; this way, any cycle in the graph is broken as the boolean will have been made true
-                if exit.connected_region is None or not entrance_data_table[exit.connected_region.name].can_pass_as_child or child_access_table[exit.connected_region.name]:
+                #The last part breaks an infinite loop; this way, any cycle in the graph is broken as the boolean will have been made true
+                if exit.connected_region is None or (exit.name in entrance_data_table and not entrance_data_table[exit.name].can_pass_as_child) \
+                    or (exit.connected_region.name in child_access_table and child_access_table[exit.connected_region.name]):
                     continue
                 if state.can_reach_entrance(exit.name, world.player):
                     next_name = exit.connected_region.name
@@ -66,8 +67,9 @@ def _spread_age_access(world: SohWorld, state: CollectionState, root: str) -> bo
                         just_found_tot = True
         if adult_access_table[region.name]:
             for exit in region.exits:
-                #Breaks an infinite loop; this way, any cycle in the graph is broken as the boolean will have been made true
-                if exit.connected_region is None or not entrance_data_table[exit.connected_region.name].can_pass_as_adult or adult_access_table[exit.connected_region.name]:
+                #The last part breaks an infinite loop; this way, any cycle in the graph is broken as the boolean will have been made true
+                if exit.connected_region is None or (exit.name in entrance_data_table and not entrance_data_table[exit.name].can_pass_as_adult) \
+                    or (exit.connected_region.name in adult_access_table and adult_access_table[exit.connected_region.name]):
                     continue
                 if state.can_reach_entrance(exit.name, world.player):
                     next_name = exit.connected_region.name
@@ -84,20 +86,20 @@ def can_access_region_as_child(state: CollectionState, world: SohWorld, region: 
     if region is Region:
         region = cast(Region, region).name
     region = cast(str, region)
-    return child_access_table[region] and state.can_reach_region(region, world.player)
+    return region in child_access_table and child_access_table[region] and state.can_reach_region(region, world.player)
 
 def can_access_region_as_adult(state: CollectionState, world: SohWorld, region: Region | str) -> bool:
     if region is Region:
         region = cast(Region, region).name
     region = cast(str, region)
-    return adult_access_table[region] and state.can_reach_region(region, world.player)
+    return region in adult_access_table and adult_access_table[region] and state.can_reach_region(region, world.player)
 
 def can_access_entrance_as_child( state: CollectionState, world: SohWorld, entrance: Entrance | str) -> bool:
     if isinstance(entrance, Entrance):
         entrance = cast(Entrance, entrance)
         if entrance.parent_region is None:
             return False
-        return entrance_data_table[entrance.name].can_pass_as_child and state.can_reach_entrance(entrance.name, world.player)\
+        return entrance.name in entrance_data_table and entrance_data_table[entrance.name].can_pass_as_child and state.can_reach_entrance(entrance.name, world.player)\
               and can_access_region_as_child(state, world, entrance.parent_region)
     else:
         entrance = cast(str, entrance)
@@ -108,7 +110,7 @@ def can_access_entrance_as_adult(state: CollectionState, world: SohWorld, entran
         entrance = cast(Entrance, entrance)
         if entrance.parent_region is None:
             return False
-        return entrance_data_table[entrance.name].can_pass_as_adult and state.can_reach_entrance(entrance.name, world.player) \
+        return entrance.name in entrance_data_table and entrance_data_table[entrance.name].can_pass_as_adult and state.can_reach_entrance(entrance.name, world.player) \
               and can_access_region_as_adult(state, world, entrance.parent_region)
     else:
         entrance = cast(str, entrance)
