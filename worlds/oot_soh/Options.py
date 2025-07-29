@@ -195,8 +195,7 @@ class TriforceHuntExtraPiecesPercentage(Range):
 
 class ShuffleTokens(Choice):
     """
-    Shuffles Golden Skulltula Tokens into the item pool. This means 
-    Golden Skulltulas can contain other items as well.
+    Shuffles Golden Skulltula Tokens into the item pool. This means Golden Skulltulas can contain other items as well.
     Off - GS tokens will not be shuffled.
     Dungeons - Only shuffle GS tokens that are within dungeons.
     Overworld - Only shuffle GS tokens that are outside of dungeons.
