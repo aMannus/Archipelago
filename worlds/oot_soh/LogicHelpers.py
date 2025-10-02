@@ -341,6 +341,12 @@ def starting_age(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
     return (world.options.starting_age == 'child' and is_child(bundle)) or (world.options.starting_age == 'adult' and is_adult(bundle))
 
 
+def at_day(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
+    # For now, return True as a placeholder since time of day logic is complex and context-dependent
+    # TODO: Implement proper time checking based on world settings and progression
+    return True
+
+
 def can_damage(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
     """Check if Link can deal damage to enemies."""
     return (can_jump_slash(bundle) or
@@ -423,7 +429,7 @@ def has_fire_source_with_torch(bundle: tuple[CollectionState, Regions, "SohWorld
 
 def has_fire_source(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
     """Check if Link has any fire source."""
-    return (can_use(Items.DINS_FIRE, bundle) or 
+    return (can_use(Items.DINS_FIRE, bundle) or
             can_use(Items.FIRE_ARROW, bundle))
 
 def can_jump_slash_except_hammer(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
@@ -688,6 +694,13 @@ def can_open_underwater_chest(bundle: tuple[CollectionState, Regions, "SohWorld"
     return (can_do_trick("RT Open Underwater Chest", bundle) and 
             can_use(Items.IRON_BOOTS, bundle) and 
             can_use(Items.HOOKSHOT, bundle))
+
+def can_open_overworld_door(key: Items, bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
+    world = bundle[2]
+    if not world.options.lock_overworld_doors:
+        return True
+
+    return has_item(Items.SKELETON_KEY, bundle) or has_item(key, bundle)
 
 def small_keys(key: Items, requiredAmount: int, bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
     state = bundle[0]
