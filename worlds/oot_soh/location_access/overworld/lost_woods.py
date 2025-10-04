@@ -22,10 +22,16 @@ def set_region_rules(world: "SohWorld") -> None:
     # Lost Woods
     # Events
     add_events(Regions.LOST_WOODS, world, [
-        (EventLocations.LW_Gossip_Stone, Events.CAN_ACCESS_FAIRIES, lambda bundle: call_gossip_fairy_except_suns(bundle)),
-        (EventLocations.LW_BEAN_PLANT_FAIRY, Events.CAN_ACCESS_FAIRIES, lambda bundle: is_child(bundle) and can_use(Items.MAGIC_BEAN, bundle) and can_use(Items.SONG_OF_STORMS, bundle)),
+        (EventLocations.LW_Gossip_Stone, Events.CAN_ACCESS_FAIRIES,
+         lambda bundle: call_gossip_fairy_except_suns(bundle)),
+        (EventLocations.LW_BEAN_PLANT_FAIRY, Events.CAN_ACCESS_FAIRIES,
+         lambda bundle: is_child(bundle) and can_use(Items.MAGIC_BEAN, bundle) and can_use(Items.SONG_OF_STORMS,
+                                                                                           bundle)),
         (EventLocations.LW_BUG_SHRUB, Events.CAN_ACCESS_BUGS, lambda bundle: can_cut_shrubs(bundle)),
-        (EventLocations.LW_SKULL_KID_MASK_TRADE, Events.BORROW_SPOOKY_MASK, lambda bundle: is_child(bundle) and can_use(Items.SARIAS_SONG, bundle) and has_item(Events.BORROW_SKULL_MASK, bundle) and has_item(Items.CHILD_WALLET, bundle)),
+        (EventLocations.LW_SKULL_KID_MASK_TRADE, Events.BORROW_SPOOKY_MASK,
+         lambda bundle: is_child(bundle) and can_use(Items.SARIAS_SONG, bundle) and has_item(Events.BORROW_SKULL_MASK,
+                                                                                             bundle) and has_item(
+             Items.CHILD_WALLET, bundle)),
     ])
     # Locations
     add_locations(Regions.LOST_WOODS, world, [
@@ -72,9 +78,17 @@ def set_region_rules(world: "SohWorld") -> None:
     connect_regions(Regions.LOST_WOODS, world, [
         (Regions.LW_FOREST_EXIT, lambda bundle: True),
         (Regions.GC_WOODS_WARP, lambda bundle: True),
-        (Regions.LW_BRIDGE, lambda bundle: (is_adult(bundle) and (can_plant_bean(bundle) or can_do_trick(Tricks.LW_BRIDGE, bundle))) or can_use(Items.HOVER_BOOTS, bundle) or can_use(Items.LONGSHOT, bundle)),
-        (Regions.ZR_FROM_SHORTCUT, lambda bundle: has_item(Items.SILVER_SCALE, bundle) or can_use(Items.IRON_BOOTS, bundle) or can_do_trick(Tricks.LOST_WOOD_NAVI_DIVE, bundle) and is_child(bundle) and has_item(Items.BRONZE_SCALE, bundle) and can_jump_slash(bundle)),
-        (Regions.LW_BEYOND_MIDO, lambda bundle: is_child(bundle) or can_use(Items.SARIAS_SONG, bundle) or can_do_trick(Tricks.LW_MIDO_BACKFLIP, bundle)),
+        (Regions.LW_BRIDGE, lambda bundle: (is_adult(bundle) and (
+                    can_plant_bean(bundle) or can_do_trick(Tricks.LW_BRIDGE, bundle))) or can_use(Items.HOVER_BOOTS,
+                                                                                                  bundle) or can_use(
+            Items.LONGSHOT, bundle)),
+        (Regions.ZR_FROM_SHORTCUT,
+         lambda bundle: has_item(Items.SILVER_SCALE, bundle) or can_use(Items.IRON_BOOTS, bundle) or can_do_trick(
+             Tricks.LOST_WOOD_NAVI_DIVE, bundle) and is_child(bundle) and has_item(Items.BRONZE_SCALE,
+                                                                                   bundle) and can_jump_slash(bundle)),
+        (Regions.LW_BEYOND_MIDO,
+         lambda bundle: is_child(bundle) or can_use(Items.SARIAS_SONG, bundle) or can_do_trick(Tricks.LW_MIDO_BACKFLIP,
+                                                                                               bundle)),
         (Regions.LW_NEAR_SHORTCUTS_GROTTO, lambda bundle: blast_or_smash(bundle)),
     ])
 
@@ -87,8 +101,15 @@ def set_region_rules(world: "SohWorld") -> None:
     add_locations(Regions.LW_BEYOND_MIDO, world, [
         (Locations.LW_DEKU_SCRUB_NEAR_DEKU_THEATER_RIGHT, lambda bundle: is_child(bundle) and can_stun_deku(bundle)),
         (Locations.LW_DEKU_SCRUB_NEAR_DEKU_THEATER_LEFT, lambda bundle: is_child(bundle) and can_stun_deku(bundle)),
-        (Locations.LW_GS_ABOVE_THEATER, lambda bundle: is_adult(bundle) and ((can_plant_bean(bundle) and can_attack(bundle)) or (can_do_trick(Tricks.LW_GS_BEAN, bundle) and can_use(Items.LONGSHOT, bundle) or can_use(Items.FAIRY_BOW, bundle) or can_use(Items.FAIRY_SLINGSHOT, bundle) or can_use(Items.BOMBCHUS_5, bundle) or can_use(Items.DINS_FIRE, bundle))) and can_get_nighttime_gs(bundle)),
-        (Locations.LW_GS_BEAN_PATCH_NEAR_THEATER, lambda bundle: can_spawn_soil_skull(bundle) and can_attack(bundle) or ((not world.options.shuffle_scrubs) and can_reflect_nuts(bundle))),
+        (Locations.LW_GS_ABOVE_THEATER, lambda bundle: is_adult(bundle) and (
+                    (can_plant_bean(bundle) and can_attack(bundle)) or (
+                        can_do_trick(Tricks.LW_GS_BEAN, bundle) and can_use(Items.LONGSHOT, bundle) or can_use(
+                    Items.FAIRY_BOW, bundle) or can_use(Items.FAIRY_SLINGSHOT, bundle) or can_use(Items.BOMBCHUS_5,
+                                                                                                  bundle) or can_use(
+                    Items.DINS_FIRE, bundle))) and can_get_nighttime_gs(bundle)),
+        (Locations.LW_GS_BEAN_PATCH_NEAR_THEATER,
+         lambda bundle: can_spawn_soil_skull(bundle) and can_attack(bundle) or (
+                     (not world.options.shuffle_scrubs) and can_reflect_nuts(bundle))),
         (Locations.LW_BOULDER_RUPEE, lambda bundle: blast_or_smash(bundle)),
         (Locations.LW_BEAN_SPROUT_NEAR_THEATRE_FAIRY1,
          lambda bundle: is_child(bundle) and has_item(Items.MAGIC_BEAN, bundle) and can_use(Items.SONG_OF_STORMS,
@@ -137,8 +158,10 @@ def set_region_rules(world: "SohWorld") -> None:
     # Deku Theater
     # Locations
     add_locations(Regions.DEKU_THEATER, world, [
-        (Locations.LW_DEKU_THEATER_SKULL_MASK, lambda bundle: is_child(bundle) and has_item(Events.BORROW_SKULL_MASK, bundle)),
-        (Locations.LW_DEKU_THEATER_MASK_OF_TRUTH, lambda bundle: is_child(bundle) and has_item(Events.BORROW_RIGHT_MASK, bundle)),
+        (Locations.LW_DEKU_THEATER_SKULL_MASK,
+         lambda bundle: is_child(bundle) and has_item(Events.BORROW_SKULL_MASK, bundle)),
+        (Locations.LW_DEKU_THEATER_MASK_OF_TRUTH,
+         lambda bundle: is_child(bundle) and has_item(Events.BORROW_RIGHT_MASK, bundle)),
     ])
     # Connections
     connect_regions(Regions.DEKU_THEATER, world, [
@@ -174,4 +197,3 @@ def set_region_rules(world: "SohWorld") -> None:
         (Regions.HYRULE_FIELD, lambda bundle: True),
         (Regions.LOST_WOODS, lambda bundle: can_use(Items.LONGSHOT, bundle))
     ])
-    
