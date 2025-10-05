@@ -5,11 +5,15 @@ if TYPE_CHECKING:
 
 
 class EventLocations(str, Enum):
-    LW_Gossip_Stone = "LW Gossip Stone"
+    LW_GOSSIP_STONE = "LW Gossip Stone"
     LW_BEAN_PLANT_FAIRY = "LW Bean Plant Fairy"
     LW_BUG_SHRUB = "LW Bug Shrub"
     LW_SKULL_KID_MASK_TRADE = "LW Skull Kid Mask Trade"
     LW_BUTTERFLY_FAIRY = "LW Butterfly Fairy"
+    LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE = "LW Near Shortcuts Grotto Gossip Stone"
+    LW_NEAR_SHORTCUTS_GROTTO_BUTTERFLY_FAIRY = "LW Near Shortcuts Grotto Butterfly Fairy"
+    LW_NEAR_SHORTCUTS_GROTTO_BUGS_SHRUB = "LW Near Shortcuts Grotto Bugs Shrub"
+    LW_NEAR_SHORTCUTS_GROTTO_FISH = "LW Near Shortcuts Grotto Fish"
 
 
 def set_region_rules(world: "SohWorld") -> None:
@@ -22,14 +26,14 @@ def set_region_rules(world: "SohWorld") -> None:
     # Lost Woods
     # Events
     add_events(Regions.LOST_WOODS, world, [
-        (EventLocations.LW_Gossip_Stone, Events.CAN_ACCESS_FAIRIES,
+        (EventLocations.LW_GOSSIP_STONE, Events.CAN_ACCESS_FAIRIES,
          lambda bundle: call_gossip_fairy_except_suns(bundle)),
         (EventLocations.LW_BEAN_PLANT_FAIRY, Events.CAN_ACCESS_FAIRIES,
          lambda bundle: is_child(bundle) and can_use(Items.MAGIC_BEAN, bundle) and can_use(Items.SONG_OF_STORMS,
                                                                                            bundle)),
         (EventLocations.LW_BUG_SHRUB, Events.CAN_ACCESS_BUGS, lambda bundle: can_cut_shrubs(bundle)),
-        (EventLocations.LW_SKULL_KID_MASK_TRADE, Events.BORROW_SPOOKY_MASK,
-         lambda bundle: is_child(bundle) and can_use(Items.SARIAS_SONG, bundle) and has_item(Events.BORROW_SKULL_MASK,
+        (EventLocations.LW_SKULL_KID_MASK_TRADE, Events.CAN_BORROW_SPOOKY_MASK,
+         lambda bundle: is_child(bundle) and can_use(Items.SARIAS_SONG, bundle) and has_item(Events.CAN_BORROW_SKULL_MASK,
                                                                                              bundle) and has_item(
              Items.CHILD_WALLET, bundle)),
     ])
@@ -137,6 +141,13 @@ def set_region_rules(world: "SohWorld") -> None:
     ])
 
     # LW Near Shortcuts Grotto
+    # Events
+    add_events(Regions.LW_NEAR_SHORTCUTS_GROTTO, world, [
+        (EventLocations.LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE, Events.CAN_ACCESS_FAIRIES, lambda bundle: call_gossip_fairy(bundle)),
+        (EventLocations.LW_NEAR_SHORTCUTS_GROTTO_BUTTERFLY_FAIRY, Events.CAN_ACCESS_FAIRIES, lambda bundle: can_use(Items.STICKS, bundle)),
+        (EventLocations.LW_NEAR_SHORTCUTS_GROTTO_BUGS_SHRUB, Events.CAN_ACCESS_BUGS, lambda bundle: can_cut_shrubs(bundle)),
+        (EventLocations.LW_NEAR_SHORTCUTS_GROTTO_FISH, Events.CAN_ACCESS_FISH, lambda bundle: True),
+    ])
     # Locations
     add_locations(Regions.LW_NEAR_SHORTCUTS_GROTTO, world, [
         (Locations.LW_NEAR_SHORTCUTS_GROTTO_CHEST, lambda bundle: True),
@@ -159,9 +170,9 @@ def set_region_rules(world: "SohWorld") -> None:
     # Locations
     add_locations(Regions.DEKU_THEATER, world, [
         (Locations.LW_DEKU_THEATER_SKULL_MASK,
-         lambda bundle: is_child(bundle) and has_item(Events.BORROW_SKULL_MASK, bundle)),
+         lambda bundle: is_child(bundle) and has_item(Events.CAN_BORROW_SKULL_MASK, bundle)),
         (Locations.LW_DEKU_THEATER_MASK_OF_TRUTH,
-         lambda bundle: is_child(bundle) and has_item(Events.BORROW_RIGHT_MASK, bundle)),
+         lambda bundle: is_child(bundle) and has_item(Events.CAN_BORROW_RIGHT_MASKS, bundle)),
     ])
     # Connections
     connect_regions(Regions.DEKU_THEATER, world, [
