@@ -137,7 +137,7 @@ def set_region_rules(world: "SohWorld") -> None:
                                                                                                 bundle)),
         (Regions.GF_NEAR_CHEST, lambda bundle: can_use(Items.LONGSHOT, bundle)),
         (Regions.GF_BELOW_GS, lambda bundle: True),
-        (Regions.GF_GS_TOP_FLOOR,
+        (Regions.GF_GS_KILLZONE,
          lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
                                                                 EnemyDistance.BOMB_THROW) and can_get_nighttime_gs(
              bundle)),
@@ -145,7 +145,7 @@ def set_region_rules(world: "SohWorld") -> None:
 
     # GF GS Top Floor
     # Location
-    add_locations(Regions.GF_GS_TOP_FLOOR, world, [
+    add_locations(Regions.GF_GS_KILLZONE, world, [
         (Locations.GF_GS_TOP_FLOOR, lambda bundle: True),
     ])
 
@@ -179,7 +179,7 @@ def set_region_rules(world: "SohWorld") -> None:
                     is_adult(bundle) and can_use(Items.SCARECROW, bundle) and can_use(Items.HOOKSHOT,
                                                                                       bundle)) or can_use(
             Items.LONGSHOT, bundle)),
-        (Regions.GF_GS_TOP_FLOOR,
+        (Regions.GF_GS_KILLZONE,
          lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
                                                                 EnemyDistance.SHORT_JUMPSLASH) and can_get_nighttime_gs(
              bundle)),
@@ -194,7 +194,7 @@ def set_region_rules(world: "SohWorld") -> None:
     connect_regions(Regions.GF_NEAR_CHEST, world, [
         (Regions.GF_NEAR_GS, lambda bundle: True),
         (Regions.GF_LONG_ROOF, lambda bundle: True),
-        (Regions.GF_GS_TOP_FLOOR,
+        (Regions.GF_GS_KILLZONE,
          lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
                                                                 EnemyDistance.BOOMERANG) and can_get_nighttime_gs(
              bundle)),
@@ -217,7 +217,7 @@ def set_region_rules(world: "SohWorld") -> None:
     connect_regions(Regions.GF_BELOW_GS, world, [
         (Regions.THIEVES_HIDEOUT_DEAD_END_CELL, lambda bundle: True),
         (Regions.GF_BOTTOM_OF_LOWER_VINES, lambda bundle: True),
-        (Regions.GF_GS_TOP_FLOOR,
+        (Regions.GF_GS_KILLZONE,
          lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
                                                                 EnemyDistance.LONGSHOT) and can_get_nighttime_gs(
              bundle)),
