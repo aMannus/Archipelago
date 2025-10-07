@@ -126,13 +126,6 @@ def set_region_rules(world: "SohWorld") -> None:
     ])
 
     # GF Near GS
-    # Location
-    add_locations(Regions.GF_NEAR_GS, world, [
-        (Locations.GF_GS_TOP_FLOOR,
-         lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
-                                                                EnemyDistance.BOMB_THROW) and can_get_nighttime_gs(
-             bundle)),
-    ])
     # Connections
     connect_regions(Regions.GF_NEAR_GS, world, [
         (Regions.THIEVES_HIDEOUT_KITCHEN_TOP, lambda bundle: True),
@@ -144,6 +137,16 @@ def set_region_rules(world: "SohWorld") -> None:
                                                                                                 bundle)),
         (Regions.GF_NEAR_CHEST, lambda bundle: can_use(Items.LONGSHOT, bundle)),
         (Regions.GF_BELOW_GS, lambda bundle: True),
+        (Regions.GF_GS_TOP_FLOOR,
+         lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
+                                                                EnemyDistance.BOMB_THROW) and can_get_nighttime_gs(
+             bundle)),
+    ])
+
+    # GF GS Top Floor
+    # Location
+    add_locations(Regions.GF_GS_TOP_FLOOR, world, [
+        (Locations.GF_GS_TOP_FLOOR, lambda bundle: True),
     ])
 
     # GF Sloped Roof
@@ -167,13 +170,6 @@ def set_region_rules(world: "SohWorld") -> None:
     ])
 
     # GF Top of Upper Vines
-    # Locations
-    add_locations(Regions.GF_TOP_OF_UPPER_VINES, world, [
-        (Locations.GF_GS_TOP_FLOOR,
-         lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
-                                                                EnemyDistance.SHORT_JUMPSLASH) and can_get_nighttime_gs(
-             bundle)),
-    ])
     # Connections
     connect_regions(Regions.GF_TOP_OF_UPPER_VINES, world, [
         (Regions.GF_TOP_OF_LOWER_VINES, lambda bundle: True),
@@ -183,21 +179,25 @@ def set_region_rules(world: "SohWorld") -> None:
                     is_adult(bundle) and can_use(Items.SCARECROW, bundle) and can_use(Items.HOOKSHOT,
                                                                                       bundle)) or can_use(
             Items.LONGSHOT, bundle)),
+        (Regions.GF_GS_TOP_FLOOR,
+         lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
+                                                                EnemyDistance.SHORT_JUMPSLASH) and can_get_nighttime_gs(
+             bundle)),
     ])
 
     # GF Near Chest
     # Locations
     add_locations(Regions.GF_NEAR_CHEST, world, [
         (Locations.GF_CHEST, lambda bundle: True),
-        (Locations.GF_GS_TOP_FLOOR,
-         lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
-                                                                EnemyDistance.BOOMERANG) and can_get_nighttime_gs(
-             bundle)),
     ])
     # Connections
     connect_regions(Regions.GF_NEAR_CHEST, world, [
         (Regions.GF_NEAR_GS, lambda bundle: True),
         (Regions.GF_LONG_ROOF, lambda bundle: True),
+        (Regions.GF_GS_TOP_FLOOR,
+         lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
+                                                                EnemyDistance.BOOMERANG) and can_get_nighttime_gs(
+             bundle)),
     ])
 
     # GF Long Roof
@@ -213,17 +213,14 @@ def set_region_rules(world: "SohWorld") -> None:
     ])
 
     # GF Below GS
-    # Locations
-    add_locations(Regions.GF_BELOW_GS, world, [
-        (Locations.GF_GS_TOP_FLOOR,
-         lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
-                                                                EnemyDistance.LONGSHOT) and can_get_nighttime_gs(
-             bundle)),
-    ])
     # Connections
     connect_regions(Regions.GF_BELOW_GS, world, [
         (Regions.THIEVES_HIDEOUT_DEAD_END_CELL, lambda bundle: True),
         (Regions.GF_BOTTOM_OF_LOWER_VINES, lambda bundle: True),
+        (Regions.GF_GS_TOP_FLOOR,
+         lambda bundle: is_adult(bundle) and can_get_enemy_drop(bundle, Enemies.GOLD_SKULLTULA,
+                                                                EnemyDistance.LONGSHOT) and can_get_nighttime_gs(
+             bundle)),
     ])
 
     # GF Below Chest
