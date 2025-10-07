@@ -72,6 +72,7 @@ class Regions(str, Enum):
     GF_BOTTOM_OF_LOWER_VINES = "GF Bottom of Lower Vines"
     GF_TOP_OF_LOWER_VINES = "GF Top of Lower Vines"
     GF_NEAR_GS = "GF Near GS"
+    GF_GS_TOP_FLOOR = "GF GS Top Floor"
     GF_SLOPED_ROOF = "GF Sloped Roof"
     GF_BOTTOM_OF_UPPER_VINES = "GF Bottom of Upper Vines"
     GF_TOP_OF_UPPER_VINES = "GF Top of Upper Vines"
