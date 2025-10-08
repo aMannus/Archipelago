@@ -264,7 +264,7 @@ def can_play_song(song: Enum, bundle: tuple[CollectionState, Regions, "SohWorld"
 
 def has_explosives(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
     """Check if Link has access to explosives (bombs or bombchus)."""
-    return can_use_any([Items.BOMB_BAG, Items.PROGRESSIVE_BOMBCHU], bundle)
+    return can_use_any([Items.PROGRESSIVE_BOMB_BAG, Items.PROGRESSIVE_BOMBCHU], bundle)
 
 
 def blast_or_smash(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
