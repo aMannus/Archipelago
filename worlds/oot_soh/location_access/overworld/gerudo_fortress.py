@@ -6,7 +6,9 @@ if TYPE_CHECKING:
 
 class EventLocations(str, Enum):
     GF_GATE = "GF Gate"
+    GF_GATE_OUTSIDE = "GF Gate Outside"
     GTG_GATE = "GTG Gate"
+    GF_STORMS_GROTTO_FAIRY = "GF Storms Grotto Fairy"
 
 
 class LocalEvents(str, Enum):
@@ -86,7 +88,6 @@ def set_region_rules(world: "SohWorld") -> None:
     ])
 
     # GF Exiting GTG
-    # Split out to handle adult being immediately captured without card
     # Connections
     connect_regions(Regions.GF_EXITING_GTG, world, [
         (Regions.GF_OUTSIDE_GTG, lambda bundle: is_child(bundle) or has_item(Items.GERUDO_MEMBERSHIP_CARD, bundle)),
@@ -291,7 +292,7 @@ def set_region_rules(world: "SohWorld") -> None:
     # GF Outside Gate
     # Events
     add_events(Regions.GF_OUTSIDE_GATE, world, [
-        (EventLocations.GF_GATE, LocalEvents.GF_GATE_OPEN,
+        (EventLocations.GF_GATE_OUTSIDE, LocalEvents.GF_GATE_OPEN,
          lambda bundle: is_adult(bundle) and has_item(Items.GERUDO_MEMBERSHIP_CARD, bundle)),
     ])
     # Connections
@@ -301,6 +302,10 @@ def set_region_rules(world: "SohWorld") -> None:
     ])
 
     # GF Storms Grotto
+    # Events
+    add_events(Regions.GF_STORMS_GROTTO, world, [
+        (EventLocations.GF_STORMS_GROTTO_FAIRY, Events.CAN_ACCESS_FAIRIES, lambda bundle: True),
+    ])
     # Locations
     add_locations(Regions.GF_STORMS_GROTTO, world, [
         (Locations.GF_FAIRY_GROTTO_FAIRY1, lambda bundle: True),
