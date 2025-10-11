@@ -4,13 +4,13 @@ if TYPE_CHECKING:
     from ... import SohWorld
 
 class EventLocations(str, Enum):
-    DMT_BEAN_PLANT_FAIRY = "DMT Bean Plant Fairy"
-    DMT_GOSSIP_STONE_FAIRY = "DMT Gossip Stone Fairy"
-    DMT_BUG_ROCK = "DMT Bug Rock"
+    DMT_BEAN_PLANT_FAIRY = "DMT Bean Plant Caught Fairy"
+    DMT_GOSSIP_STONE_FAIRY = "DMT Gossip Stone Caught Fairy"
+    DMT_BUG_ROCK = "DMT Caught Rock Bug"
     DMT_STORMS_GROTTO_GOSSIP_STONE = "DMT Storms Grotto Gossip Stone"
-    DMT_STORMS_GROTTO_BUTTERFLY_FAIRY = "DMT Storms Grotto Butterfly Fairy"
-    DMT_STORMS_GROTTO_BUG_GRASS = "DMT Storms Grotto Bug Grass"
-    DMT_STORMS_GROTTO_FISH = "DMT Storms Grotto Fish"
+    DMT_STORMS_GROTTO_BUTTERFLY_FAIRY = "DMT Storms Grotto Butterfly Caught Fairy"
+    DMT_STORMS_GROTTO_BUG_GRASS = "DMT Storms Grotto Caught Grass Bug"
+    DMT_STORMS_GROTTO_FISH = "DMT Storms Grotto Caught Fish"
 
 def set_region_rules(world: "SohWorld") -> None:
     player = world.player
