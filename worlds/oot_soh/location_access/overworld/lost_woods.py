@@ -13,7 +13,7 @@ class EventLocations(str, Enum):
     LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE = "LW Near Shortcuts Grotto Gossip Stone"
     LW_NEAR_SHORTCUTS_GROTTO_BUTTERFLY_FAIRY = "LW Near Shortcuts Grotto Butterfly Fairy"
     LW_NEAR_SHORTCUTS_GROTTO_BUGS_SHRUB = "LW Near Shortcuts Grotto Bugs Shrub"
-    LW_NEAR_SHORTCUTS_GROTTO_FISH = "LW Near Shortcuts Grotto Fish"
+    LW_NEAR_SHORTCUTS_GROTTO_FISH = "LW Near Shortcuts Grotto Caught Fish"
 
 
 def set_region_rules(world: "SohWorld") -> None:
