@@ -83,10 +83,10 @@ def can_use(item: Enum, bundle: tuple[CollectionState, Regions, "SohWorld"]) -> 
     if data[item.value].item_type == ItemType.song:
         return can_play_song(item, bundle)
     
-    if item in (Items.FIRE_ARROW, Items.ICE_ARROW, Items.LIGHT_ARROW):
+    if item in {Items.FIRE_ARROW, Items.ICE_ARROW, Items.LIGHT_ARROW}:
         return can_use(Items.FAIRY_BOW, bundle)
     
-    if item in [Items.PROGRESSIVE_BOMBCHU,Items.BOMBCHUS_5,Items.BOMBCHUS_10,Items.BOMBCHUS_20]:
+    if item in {Items.PROGRESSIVE_BOMBCHU,Items.BOMBCHUS_5,Items.BOMBCHUS_10,Items.BOMBCHUS_20}:
         return bombchu_refill(bundle) and bombchus_enabled(bundle)
     
     if item == Items.SCARECROW:
