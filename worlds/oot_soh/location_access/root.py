@@ -9,6 +9,7 @@ class EventLocations(str, Enum):
     ROOT_TIME_TRAVEL = "Root Time Travel"
     ROOT_SHIELD = "Root Shield"
     TRIFORCE_HUNT_COMPLETION = "Triforce Hunt Completion"
+    ZELDAS_LETTER_FROM_SKIP_OPTION = "Zeldas Letter From Skip Option"
 
 
 def set_region_rules(world: "SohWorld") -> None:
@@ -24,6 +25,16 @@ def set_region_rules(world: "SohWorld") -> None:
          has_item(Items.TRIFORCE_PIECE, bundle, world.options.triforce_hunt_required_pieces.value)) or 
          has_item(Events.GAME_COMPLETED, bundle))
     ])
+
+    #Event and connection for Zeldas Letter/Impas Song
+    if(world.options.skip_child_zelda.value):
+        add_events(Regions.ROOT, world, [
+            (EventLocations.ZELDAS_LETTER_FROM_SKIP_OPTION, Items.ZELDAS_LETTER, lambda bundle: True)
+        ])
+
+        connect_regions(Regions.ROOT, world, [
+            (Regions.HC_GARDEN_SONG_FROM_IMPA, lambda bundle: True)
+        ])
 
     connect_regions(Regions.TEMPLE_OF_TIME, world, [
         (Regions.KOKIRI_FOREST, lambda bundle: True)
