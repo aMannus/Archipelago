@@ -11,9 +11,9 @@ class EventLocations(str, Enum):
     KAKARIKO_ADULT_TALON = "Kakariko Adult Talon"
     KAKARIKO_WINDMILL_PHONOGRAM_MAN = "Kakariko Windmill Phonogram Man"
     KAK_OPEN_GROTTO_GOSSIP_STONE = "Kak Open Grotto Gossip Stone"
-    KAK_OPEN_GROTTO_BUTTERFLY_FAIRY = "Kak Open Grotto Butterfly Fairy"
-    KAK_OPEN_GROTTO_BUG_GRASS = "Kak Open Grotto Bug Grass"
-    KAK_OPEN_GROTTO_FISH = "Kak Open Grotto Fish"
+    KAK_OPEN_GROTTO_BUTTERFLY_FAIRY = "Kak Open Grotto Butterfly Caught Fairy"
+    KAK_OPEN_GROTTO_BUG_GRASS = "Kak Open Grotto Grass Caught Bug"
+    KAK_OPEN_GROTTO_FISH = "Kak Open Grotto Caught Fish"
 
 
 class LocalEvents(str, Enum):

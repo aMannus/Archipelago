@@ -12,15 +12,15 @@ class EventLocations(str, Enum):
     HF_SOUTHEAST_GROTTO_GOSSIP_STONE = "HF Southeast Grotto Gossip Stone"
     HF_SOUTHEAST_GROTTO_BUTTERFLY_FAIRY = "HF Southeast Grotto Butterfly Fairy"
     HF_SOUTHEAST_GROTTO_BUG_GRASS = "HF Southeast Grotto Bugs"
-    HF_SOUTHEAST_GROTTO_FISH = "HF Southeast Grotto Fish"
+    HF_SOUTHEAST_GROTTO_FISH = "HF Southeast Grotto Caught Fish"
     HF_OPEN_GROTTO_GOSSIP_STONE = "HF Open Grotto Gossip Stone"
     HF_OPEN_GROTTO_BUTTERFLY_FAIRY = "HF Open Grotto Butterfly Fairy"
     HF_OPEN_GROTTO_BUG_GRASS = "HF Open Grotto Bugs"
-    HF_OPEN_GROTTO_FISH = "HF Open Grotto Fish"
+    HF_OPEN_GROTTO_FISH = "HF Open Grotto Caught Fish"
     HF_NEAR_MARKET_GROTTO_GOSSIP_STONE = "HF Near Market Grotto Gossip Stone"
     HF_NEAR_MARKET_GROTTO_BUTTERFLY_FAIRY = "HF Near Market Grotto Butterfly Fairy"
     HF_NEAR_MARKET_GROTTO_BUG_GRASS = "HF Near Market Grotto Bugs"
-    HF_NEAR_MARKET_GROTTO_FISH = "HF Near Market Grotto Fish"
+    HF_NEAR_MARKET_GROTTO_FISH = "HF Near Market Grotto Caught Fish"
 
 
 def set_region_rules(world: "SohWorld") -> None:
