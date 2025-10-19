@@ -16,6 +16,8 @@ from .LogicHelpers import increment_current_count
 from . import RegionAgeAccess
 from .ShopItems import fill_shop_items, generate_scrub_prices, set_price_rules, all_shop_locations
 from Fill import fill_restrictive
+from worlds.generic.Rules import set_rule
+from .LogicHelpers import rule_wrapper
 
 import logging
 logger = logging.getLogger("SOH_OOT")
@@ -88,6 +90,17 @@ class SohWorld(World):
             location.name = str(location.name)
         for region in self.get_regions():
             region.name = str(region.name)
+
+        # Sets all access rules to True for no logic
+        if self.options.no_logic_mode.value:
+            def no_logic_rule(bundle): return True
+            for region in self.get_regions():
+                for entrance in region.get_exits():
+                    set_rule(entrance, rule_wrapper.wrap(
+                        region, no_logic_rule, self))
+                for location in region.get_locations():
+                    set_rule(location, rule_wrapper.wrap(
+                        region, no_logic_rule, self))
 
     def create_items(self) -> None:
         # these are for making the progressive items collect/remove work properly
@@ -241,6 +254,7 @@ class SohWorld(World):
             "ice_trap_count": self.options.ice_trap_count.value,
             "ice_trap_filler_replacement": self.options.ice_trap_filler_replacement.value,
             "apworld_version": self.apworld_version,
+            "no_logic_mode": self.options.no_logic_mode.value
         }
 
     def collect(self, state: CollectionState, item: Item) -> bool:

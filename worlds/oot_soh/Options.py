@@ -827,6 +827,14 @@ class IceTrapFillerReplacement(Range):
     default = 0
 
 
+class NoLogic(Toggle):
+    """
+    Set all Locations and Entrances to be accessable immidiately in logic. WARNING THIS IS DANGEROUS!
+    """
+    display_name = "Enable No Logic Mode"
+    visibility = Visibility.none
+
+
 @dataclass
 class SohOptions(PerGameCommonOptions):
     closed_forest: ClosedForest
@@ -909,6 +917,7 @@ class SohOptions(PerGameCommonOptions):
     shuffle_100_gs_reward: Shuffle100GSReward
     ice_trap_count: IceTrapCount
     ice_trap_filler_replacement: IceTrapFillerReplacement
+    no_logic_mode: NoLogic
 
 
 soh_option_groups = [
