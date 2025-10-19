@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from Options import Choice, Toggle, DefaultOnToggle, Range, PerGameCommonOptions, StartInventoryPool, Visibility, OptionGroup
+from Options import Choice, Toggle, DefaultOnToggle, Range, PerGameCommonOptions, StartInventoryPool, Visibility, OptionGroup, OptionSet
+from .Enums import Tricks
 
 
 class ClosedForest(Choice):
@@ -827,6 +828,14 @@ class IceTrapFillerReplacement(Range):
     default = 0
 
 
+class TricksInLogic(OptionSet):
+    """
+    Define what tricks/glitches are considered in logic
+    """
+    display_name = "Tricks in Logic"
+    valid_keys = [trick.value for trick in Tricks]
+
+
 @dataclass
 class SohOptions(PerGameCommonOptions):
     closed_forest: ClosedForest
@@ -909,6 +918,7 @@ class SohOptions(PerGameCommonOptions):
     shuffle_100_gs_reward: Shuffle100GSReward
     ice_trap_count: IceTrapCount
     ice_trap_filler_replacement: IceTrapFillerReplacement
+    tricks_in_logic: TricksInLogic
 
 
 soh_option_groups = [
