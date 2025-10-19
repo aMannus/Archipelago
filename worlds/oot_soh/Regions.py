@@ -29,7 +29,9 @@ from .Locations import SohLocation, base_location_table, \
     fish_overworld_location_table, \
     child_zelda_location_table, \
     carpenters_location_table, \
-    hundred_skulls_location_table
+    hundred_skulls_location_table, \
+    no_logic_crates_location_table, \
+    no_logic_trees_location_table
 from .location_access import root
 from .location_access.overworld import \
     castle_grounds, \
@@ -67,6 +69,9 @@ from .location_access.dungeons import \
     shadow_temple, \
     spirit_temple, \
     water_temple
+from worlds.generic.Rules import set_rule
+from .LogicHelpers import rule_wrapper
+
 
 if TYPE_CHECKING:
     from . import SohWorld
@@ -234,6 +239,11 @@ def create_regions_and_locations(world: "SohWorld") -> None:
         if world.options.shuffle_100_gs_reward:
             world.included_locations.update(hundred_skulls_location_table)
 
+        # Add no logic specific locations
+        if world.options.no_logic_mode:
+            world.included_locations.update(no_logic_crates_location_table)
+            world.included_locations.update(no_logic_trees_location_table)
+
     # Set region rules and location rules after all locations are created
     all_regions = [root, castle_grounds, death_mountain_crater, death_mountain_trail, desert_colossus, gerudo_fortress,
                    gerudo_valley, goron_city, graveyard, haunted_wasteland, hyrule_field, kakariko, kokiri_forest,
@@ -307,3 +317,16 @@ def place_locked_items(world: "SohWorld") -> None:
         token_item = world.create_item(Items.GOLD_SKULLTULA_TOKEN)
         for location_name, address in gold_skulltula_dungeon_location_table.items():
             world.get_location(location_name).place_locked_item(token_item)
+
+
+def set_no_logic_rules(world: "SohWorld"):
+    def no_logic_rule(bundle): return True
+
+    # Set all access rules to True
+    for region in world.get_regions():
+        for entrance in region.get_exits():
+            set_rule(entrance, rule_wrapper.wrap(
+                region, no_logic_rule, world))
+        for location in region.get_locations():
+            set_rule(location, rule_wrapper.wrap(
+                region, no_logic_rule, world))

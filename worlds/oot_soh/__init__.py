@@ -9,15 +9,14 @@ from worlds.AutoWorld import WebWorld, World
 from .Items import SohItem, item_data_table, item_table, item_name_groups, progressive_items
 from .Locations import location_table
 from .Options import SohOptions, soh_option_groups
-from .Regions import create_regions_and_locations, place_locked_items, dungeon_reward_item_mapping
+from .Regions import create_regions_and_locations, place_locked_items, dungeon_reward_item_mapping, set_no_logic_rules
 from .Enums import *
 from .ItemPool import create_item_pool, create_filler_item_pool, create_triforce_pieces
 from .LogicHelpers import increment_current_count
 from . import RegionAgeAccess
 from .ShopItems import fill_shop_items, generate_scrub_prices, set_price_rules, all_shop_locations
 from Fill import fill_restrictive
-from worlds.generic.Rules import set_rule
-from .LogicHelpers import rule_wrapper
+
 
 import logging
 logger = logging.getLogger("SOH_OOT")
@@ -86,21 +85,15 @@ class SohWorld(World):
         create_regions_and_locations(self)
         place_locked_items(self)
         generate_scrub_prices(self)
+
+        # Sets all access rules to True for no logic
+        if self.options.no_logic_mode.value:
+            set_no_logic_rules(self)
+
         for location in self.get_locations():
             location.name = str(location.name)
         for region in self.get_regions():
             region.name = str(region.name)
-
-        # Sets all access rules to True for no logic
-        if self.options.no_logic_mode.value:
-            def no_logic_rule(bundle): return True
-            for region in self.get_regions():
-                for entrance in region.get_exits():
-                    set_rule(entrance, rule_wrapper.wrap(
-                        region, no_logic_rule, self))
-                for location in region.get_locations():
-                    set_rule(location, rule_wrapper.wrap(
-                        region, no_logic_rule, self))
 
     def create_items(self) -> None:
         # these are for making the progressive items collect/remove work properly
