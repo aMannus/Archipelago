@@ -932,6 +932,7 @@ soh_option_groups = [
         SleepingWaterfall,
         JabuJabu,
         LockOverworldDoors,
+        TricksInLogic
     ]),
     OptionGroup("World Settings", [
         StartingAge,
