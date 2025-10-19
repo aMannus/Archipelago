@@ -829,11 +829,13 @@ class IceTrapFillerReplacement(Range):
 
 
 class TricksInLogic(OptionSet):
-    """
-    Define what tricks/glitches are considered in logic
-    """
     display_name = "Tricks in Logic"
-    valid_keys = [trick.value for trick in Tricks]
+    valid_keys = [str(trick) for trick in Tricks]
+    __doc__ = ("Define what tricks/glitches are considered in logic. "
+               "For more information on what each trick does, check the Ship of Harkinian "
+               "Randomizer -> Seed Settings -> Tricks/Glitches settings.\n"
+               "Trick names: "
+               f"{", ".join(valid_keys)}")
 
 
 @dataclass
