@@ -832,7 +832,7 @@ class NoLogic(Toggle):
     Set all Locations and Entrances to be accessable immediately in logic. WARNING THIS IS DANGEROUS!
     """
     display_name = "Enable No Logic Mode"
-    visibility = Visibility.none
+    visibility = Visibility.template
 
 
 @dataclass
