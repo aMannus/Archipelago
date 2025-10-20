@@ -703,7 +703,7 @@ class SkipEponaRace(DefaultOnToggle):
     """
     Epona can be summoned with Epona's Song without needing to race Ingo.
     """
-    display_name = "Skip Epona Zelda"
+    display_name = "Skip Epona Race"
 
 
 class CompleteMaskQuest(DefaultOnToggle):
