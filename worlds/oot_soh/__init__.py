@@ -95,24 +95,25 @@ class SohWorld(World):
         for region in self.get_regions():
             region.name = str(region.name)
 
-    def create_item(self, name: str) -> SohItem:
+    def create_item(self, name: str, create_as_event: bool = False) -> SohItem:
         item_entry = Items(name)
-        return SohItem(name, item_data_table[item_entry].classification, item_data_table[item_entry].item_id, self.player)
+        return SohItem(name, item_data_table[item_entry].classification,
+                       None if create_as_event else item_data_table[item_entry].item_id, self.player)
 
     def create_items(self) -> None:
         # these are for making the progressive items collect/remove work properly
         # when adding another progressive item that is option-dependent like these,
         # be sure to also update LogicHelpers.increment_current_count with it too
         if not self.options.shuffle_swim:
-            self.push_precollected(self.create_item(Items.BRONZE_SCALE))
+            self.push_precollected(self.create_item(Items.BRONZE_SCALE, create_as_event=True))
         if not self.options.shuffle_deku_stick_bag:
-            self.push_precollected(self.create_item(Items.DEKU_STICK_BAG))
+            self.push_precollected(self.create_item(Items.DEKU_STICK_BAG, create_as_event=True))
         if not self.options.shuffle_deku_nut_bag:
-            self.push_precollected(self.create_item(Items.DEKU_NUT_BAG))
+            self.push_precollected(self.create_item(Items.DEKU_NUT_BAG, create_as_event=True))
         if not self.options.bombchu_bag:
-            self.push_precollected(self.create_item(Items.BOMBCHU_BAG))
+            self.push_precollected(self.create_item(Items.BOMBCHU_BAG, create_as_event=True))
         if not self.options.shuffle_childs_wallet:
-            self.push_precollected(self.create_item(Items.CHILD_WALLET))
+            self.push_precollected(self.create_item(Items.CHILD_WALLET, create_as_event=True))
 
         create_item_pool(self)
 
