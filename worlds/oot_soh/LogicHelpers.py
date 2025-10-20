@@ -406,7 +406,7 @@ def take_damage(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
 
 
 def can_do_trick(trick: Tricks, bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
-    return trick.value in bundle[2].options.tricks_in_logic.value
+    return (bundle[2].options.enable_all_tricks.value or trick.value in bundle[2].options.tricks_in_logic.value)
 
 
 def can_get_nighttime_gs(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:

@@ -241,6 +241,7 @@ class SohWorld(World):
             "ice_trap_count": self.options.ice_trap_count.value,
             "ice_trap_filler_replacement": self.options.ice_trap_filler_replacement.value,
             "apworld_version": self.apworld_version,
+            "enable_all_tricks": self.options.enable_all_tricks.value,
             "tricks_in_logic": self.options.tricks_in_logic.value
         }
 

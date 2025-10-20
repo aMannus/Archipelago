@@ -828,10 +828,17 @@ class IceTrapFillerReplacement(Range):
     default = 0
 
 
+class EnableAllTricks(Toggle):
+    """
+    Bypass the individual trick or glitch selections below and enable all of them.
+    """
+    display_name = "Enable All Tricks and Glitches"
+
+
 class TricksInLogic(OptionSet):
     display_name = "Tricks in Logic"
     valid_keys = [str(trick) for trick in Tricks]
-    __doc__ = ("Define what tricks/glitches are considered in logic. "
+    __doc__ = ("Define what tricks or glitches are considered in logic. "
                "For more information on what each trick does, check the Ship of Harkinian "
                "Randomizer -> Seed Settings -> Tricks/Glitches settings.\n"
                "Trick names: "
@@ -921,6 +928,7 @@ class SohOptions(PerGameCommonOptions):
     ice_trap_count: IceTrapCount
     ice_trap_filler_replacement: IceTrapFillerReplacement
     tricks_in_logic: TricksInLogic
+    enable_all_tricks: EnableAllTricks
 
 
 soh_option_groups = [
@@ -932,6 +940,7 @@ soh_option_groups = [
         SleepingWaterfall,
         JabuJabu,
         LockOverworldDoors,
+        EnableAllTricks,
         TricksInLogic
     ]),
     OptionGroup("World Settings", [
