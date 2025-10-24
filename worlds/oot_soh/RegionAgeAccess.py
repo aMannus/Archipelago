@@ -2,6 +2,7 @@ from collections import deque
 from BaseClasses import CollectionState, MultiWorld
 from worlds.AutoWorld import LogicMixin
 from .Enums import Regions, Ages
+from .Regions import regions_where_time_changes
 import copy
 
 
@@ -17,6 +18,7 @@ class SohAgeLogic(LogicMixin):
             player: set() for player in players}
         self._soh_child_blocked_regions = {player: set() for player in players}
         self._soh_adult_blocked_regions = {player: set() for player in players}
+        self._soh_can_pass_time = {player: False for player in players}
         self._soh_age = {player: Ages.null for player in players}
 
     def copy_mixin(self, ret) -> CollectionState:
@@ -30,6 +32,8 @@ class SohAgeLogic(LogicMixin):
             regions) for player, regions in self._soh_child_blocked_regions.items()}
         ret._soh_adult_blocked_regions = {player: copy.copy(
             regions) for player, regions in self._soh_adult_blocked_regions.items()}
+        ret._soh_can_pass_time = {
+            player: changeable for player, changeable in self._soh_can_pass_time.items()}
         ret._soh_age = {player: age for player, age in self._soh_age.items()}
         return ret
 
@@ -38,6 +42,7 @@ class SohAgeLogic(LogicMixin):
         self._soh_adult_reachable_regions[player] = set()
         self._soh_child_blocked_regions[player] = set()
         self._soh_adult_blocked_regions[player] = set()
+        self._soh_can_pass_time[player] = False
         self._soh_stale[player] = True
 
     def _soh_update_age_reachable_regions(self, player):
@@ -70,7 +75,11 @@ class SohAgeLogic(LogicMixin):
                     continue
                 if new_region in reachable:
                     blocked.remove(connection)
+                    if new_region.name in regions_where_time_changes:
+                        self._soh_can_pass_time[player] = True
                 elif connection.can_reach(self):
+                    if new_region.name in regions_where_time_changes:
+                        self._soh_can_pass_time[player] = True
                     reachable.add(new_region)
                     blocked.remove(connection)
                     blocked.update(new_region.exits)

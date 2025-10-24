@@ -338,15 +338,19 @@ def is_adult(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
 
 
 def at_day(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
-    # For now, return True as a placeholder since time of day logic is complex and context-dependent
-    # TODO: Implement proper time checking based on world settings and progression
-    return True
+    # at_day and at_night check for the same thing currently
+    state = bundle[0]
+    world = bundle[2]
+    return state._soh_can_pass_time[world.player]
+    # return True
 
 
 def at_night(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:
-    # For now, return True as a placeholder since time of day logic is complex and context-dependent
-    # TODO: Implement proper time checking based on world settings and progression
-    return True
+    # at_day and at_night check for the same thing currently
+    state = bundle[0]
+    world = bundle[2]
+    return state._soh_can_pass_time[world.player]
+    # return True
 
 
 def is_child(bundle: tuple[CollectionState, Regions, "SohWorld"]) -> bool:

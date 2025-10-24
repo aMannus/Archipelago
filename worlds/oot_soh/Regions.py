@@ -96,6 +96,10 @@ class SohRegion(Region):
             return self in state._soh_child_reachable_regions[self.player] or self in state._soh_adult_reachable_regions[self.player]
 
 
+regions_where_time_changes = (Regions.HYRULE_FIELD.value, Regions.HYRULE_CASTLE_GROUNDS.value, Regions.GERUDO_VALLEY.value,
+                              Regions.DEATH_MOUNTAIN_TRAIL.value, Regions.DEATH_MOUNTAIN_SUMMIT.value, Regions.LAKE_HYLIA.value, Regions.ZORA_RIVER.value, Regions.DESERT_COLOSSUS.value)
+
+
 def create_regions_and_locations(world: "SohWorld") -> None:
 
     # Fill region data table based on the regions enum list
