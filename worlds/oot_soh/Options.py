@@ -864,6 +864,14 @@ class ShuffleDungeonEntrances(Choice):
     default = 0
 
 
+class DecoupleEntrances(Toggle):
+    """
+    Decouple entrances when shuffling them. This means that you are no longer guaranteed to end up back where you came from when you go back through an entrance.
+    This also adds the one way entrance from Gerudo Valley to Lake Hylia in the pool of overworld entrances when they are shuffled.
+    """
+    display_name = "Decouple Entrances"
+
+
 @dataclass
 class SohOptions(PerGameCommonOptions):
     closed_forest: ClosedForest
@@ -949,6 +957,7 @@ class SohOptions(PerGameCommonOptions):
     shuffle_entrances: ShuffleEntrances
     shuffle_dungeon_entrances: ShuffleDungeonEntrances
     shuffle_boss_entrances: ShuffleDungeonBossEntrances
+    decouple_entrances: DecoupleEntrances
 
 
 soh_option_groups = [
@@ -979,14 +988,14 @@ soh_option_groups = [
     OptionGroup("Shuffle Entrances", [
         ShuffleEntrances,
         ShuffleDungeonEntrances,
-        ShuffleDungeonBossEntrances
+        ShuffleDungeonBossEntrances,
+        DecoupleEntrances
         # Overworld Entrances
         # Interior Entrances
         # Grotto Entrances
         # Owl Drops
         # Warp Songs
         # Overworld Spawns
-        # Decouple Entrances
     ]),
     OptionGroup("Shuffle Items", [
         # Shuffle Songs -- idk if this or the other ones here will be an actual option here, delete if not
