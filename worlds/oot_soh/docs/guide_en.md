@@ -30,8 +30,7 @@ Archipelago saves, including all the trackers, installed graphical mods and QoL 
 
 ### Updating Ship of Harkinian Archipelago
 
-If you have already played SoH AP with an older version and wish to update, take note of the version difference. Our versioning logic goes as follows: x.0.0 and 0.x.0 version
-differences mean you'll need to update your client as well as the APWorld. 0.0.x version differences are APWorld only updates, and most often you only need to update the .apworld and sometimes your yaml. 
+If you have already played SoH AP with an older version and wish to update, take note of the version difference. Our versioning logic goes as follows: x.0.0 and 0.x.0 version differences mean you'll need to update your client as well as the APWorld. 0.0.x version differences are APWorld only updates, and most often you only need to update the .apworld and sometimes your yaml. 
 
 Examples: When your client is version 1.1.0, and you want to update to 1.2.0, that means you'll need to update both your client and your APWorld. When your client version is 1.2.0, and you're updating to 1.2.1, you only need to update the APWorld.
 
