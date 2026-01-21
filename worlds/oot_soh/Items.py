@@ -95,7 +95,7 @@ item_data_table: dict[Items, SohItemData] = {
     Items.BOTTLE_WITH_POE: SohItemData(63, IC.progression | IC.useful, 0, item_groups=["Bottles", "Bottle"]),
     Items.BOTTLE_WITH_RUTOS_LETTER: SohItemData(64, IC.progression | IC.useful, 1, child_only=True, item_groups=["Bottles", "Bottle"]),
     Items.BOTTLE_WITH_BIG_POE: SohItemData(65, IC.progression | IC.useful, 1, item_groups=["Bottles", "Bottle"]),
-    Items.ZELDAS_LULLABY: SohItemData(66, IC.progression | IC.useful, 1, item_type=ItemType.song, item_groups=["Songs", "Song"]),
+    Items.ZELDAS_LULLABY: SohItemData(66, IC.progression | IC.useful, 0, item_type=ItemType.song, item_groups=["Songs", "Song"]),
     Items.EPONAS_SONG: SohItemData(67, IC.progression | IC.useful, 0, item_type=ItemType.song, item_groups=["Songs", "Song"]),
     Items.SARIAS_SONG: SohItemData(68, IC.progression | IC.useful, 0, item_type=ItemType.song, item_groups=["Songs", "Song"]),
     Items.SUNS_SONG: SohItemData(69, IC.progression | IC.useful, 0, item_type=ItemType.song, item_groups=["Songs", "Song"]),
