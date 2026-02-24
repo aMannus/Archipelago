@@ -54,7 +54,14 @@ class SohSettings(Group):
         Do not enable this if you don't trust the players using it to play responsibly.
         """
 
+    class DisableFillOverflow(Bool):
+        """
+        A debugging option for disabling our fill overflow for prefills. Typical users likely shouldn't enable this as it allows for generation failures.
+        By default when an item can't be placed in prefill it will be added to the item pool as a backup. This disables that behavoir.
+        """
+
     allow_true_no_logic: AllowTrueNoLogic | bool = False
+    disable_fill_overflow: DisableFillOverflow | bool = False
 
 
 class SohWorld(World):
@@ -341,7 +348,13 @@ class SohWorld(World):
         empty_locations = self.get_empty_locations_from_list_shuffled(locations)
         items = [self.create_item(str(item)) for item in item_pool]
 
-        fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True)
+
+        if self.settings.disable_fill_overflow:
+            fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True)
+        else:
+            # Add any unplaced items to the item pool
+            fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, allow_partial=True)
+            self.add_items_to_item_pool_list(items)
 
 
     def collect(self, state: CollectionState, item: Item) -> bool:
@@ -367,6 +380,11 @@ class SohWorld(World):
                 state.soh_heart_count[self.player] += 1  # type: ignore
 
         return changed
+    
+    def add_items_to_item_pool_list(self, items: list[SohItem]) -> None:
+        if len(items) > 0:
+            self.item_pool.extend(items)
+            self.multiworld.itempool.extend(items)
 
     def remove(self, state: CollectionState, item: Item) -> bool:
         changed = super().remove(state, item)
