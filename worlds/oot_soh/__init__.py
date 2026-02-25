@@ -12,7 +12,7 @@ from .Locations import location_table, location_name_groups, token_amounts, SohL
 from .Options import SohOptions, soh_option_groups
 from .Regions import create_regions_and_locations, place_locked_items
 from .Enums import *
-from .ItemPool import create_item_pool, create_filler_item_pool, create_triforce_pieces, get_filler_item
+from .ItemPool import create_item_pool, create_filler_item_pool, create_triforce_pieces, get_filler_item, give_starting_items
 from . import RegionAgeAccess
 from .DungeonRewardShuffle import pre_fill_dungeon_rewards, get_pre_fill_rewards
 from .KeyShuffle import pre_fill_own_dungeon_items, pre_fill_any_dungeon_keys, pre_fill_overworld_items, get_own_dungeon_prefill_items, get_dungeon_item_prefill_items
@@ -139,6 +139,15 @@ class SohWorld(World):
 
         if self.options.shuffle_merchants_minimum_price.value > self.options.shuffle_merchants_maximum_price.value:
             self.options.shuffle_merchants_maximum_price.value = self.options.shuffle_merchants_minimum_price.value
+
+        if self.options.shuffle_deku_stick_bag.value:
+            self.options.start_with_stick_ammo.value = 0
+
+        if self.options.shuffle_deku_nut_bag.value:
+            self.options.start_with_nut_ammo.value = 0
+
+        if self.options.shuffle_dungeon_rewards in ("off", "end_of_dungeons"):
+            self.options.start_with_links_pocket.value = 0
 
         # Figure out how many Skulltula tokens need to be progressive
         # Max amount from KAK turn ins
@@ -306,6 +315,8 @@ class SohWorld(World):
         if self.options.small_key_shuffle in ("vanilla", "own_dungeon"):
             self.multiworld.push_precollected(
                 self.create_item(str(Items.FIRE_TEMPLE_SMALL_KEY), True))
+            
+        give_starting_items(self)
 
         create_item_pool(self)
 
@@ -503,6 +514,26 @@ class SohWorld(World):
             "skip_epona_race": self.options.skip_epona_race.value,
             "complete_mask_quest": self.options.complete_mask_quest.value,
             "skip_scarecrows_song": self.options.skip_scarecrows_song.value,
+            "start_with_links_pocket": self.options.start_with_links_pocket.value,
+            "start_with_kokiri_sword": self.options.start_with_kokiri_sword.value,
+            "start_with_deku_shield": self.options.start_with_deku_shield.value,
+            "start_with_master_sword": self.options.start_with_master_sword.value,
+            "start_with_ocarina": self.options.start_with_ocarina.value,
+            "start_with_stick_ammo": self.options.start_with_stick_ammo.value,
+            "start_with_nut_ammo": self.options.start_with_nut_ammo.value,
+            "start_with_magic_beans": self.options.start_with_magic_beans.value,
+            "start_with_zeldas_lullaby": self.options.start_with_zeldas_lullaby.value,
+            "start_with_eponas_song": self.options.start_with_eponas_song.value,
+            "start_with_sarias_song": self.options.start_with_sarias_song.value,
+            "start_with_suns_song": self.options.start_with_suns_song.value,
+            "start_with_song_of_time": self.options.start_with_song_of_time.value,
+            "start_with_song_of_storms": self.options.start_with_song_of_storms.value,
+            "start_with_minuet": self.options.start_with_minuet.value,
+            "start_with_bolero": self.options.start_with_bolero.value,
+            "start_with_serenade": self.options.start_with_serenade.value,
+            "start_with_requiem": self.options.start_with_requiem.value,
+            "start_with_nocturne": self.options.start_with_nocturne.value,
+            "start_with_prelude": self.options.start_with_prelude.value,
             "full_wallets": self.options.full_wallets.value,
             "bombchu_bag": self.options.bombchu_bag.value,
             "bombchu_drops": self.options.bombchu_drops.value,
