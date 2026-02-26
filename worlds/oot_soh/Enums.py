@@ -3867,3 +3867,11 @@ class DungeonLocations(Enum):
     BOTTOM_OF_THE_WELL = auto()
     GERUDO_TRAINING_GROUNDS = auto()
     GANONS_CASTLE = auto()
+
+class GanonsTrials(StrEnum):
+    FOREST_TRIAL = "Forest Trial"
+    FIRE_TRIAL = "Fire Trial"
+    WATER_TRIAL = "Water Trial"
+    SHADOW_TRIAL = "Shadow Trial"
+    SPIRIT_TRIAL = "Spirit Trial"
+    LIGHT_TRIAL = "Light Trial"

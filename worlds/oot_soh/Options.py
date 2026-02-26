@@ -186,12 +186,27 @@ class RainbowBridgeSkullTokensRequired(Range):
     range_end = 100
     default = 50
 
-# TODO This isn't a toggle in ship. It lets them choose to do a specific/random amount of trials also. There is also a toggle for preventing trials from being done until the player has the matching medallion
-class SkipGanonsTrials(DefaultOnToggle):
+
+class GanonsTrials(Choice):
     """
-    Choose wether or not Ganon's Trials are completed from the start.
+    Sets the number of Ganon's Trials required to dispel the barrier.
+    Skip - No Trials are required and the barriar is already dispelled.
+    Set Number - Select a number of trials that will be required. It will be chosen randomly.
     """
-    display_name = "Skip Ganon's Trials"
+    display_name = "Ganon's Trials"
+    option_skip = 0
+    option_set_number = 1
+    default = 0
+
+
+class GanonsTrialsCount(Range):
+    """
+    How Many of Ganon's Trials are required to dispel the barrier
+    """
+    display_name = "Ganon's Trials Count"
+    range_start = 0
+    range_end = 6
+    default = 6
 
 
 class TriforceHunt(Toggle):
@@ -1270,7 +1285,8 @@ class SohOptions(PerGameCommonOptions):
     rainbow_bridge_dungeons_required: RainbowBridgeDungeonsRequired
     rainbow_bridge_skull_tokens_required: RainbowBridgeSkullTokensRequired
     rainbow_bridge_greg_modifier: RainbowBridgeGregModifier
-    skip_ganons_trials: SkipGanonsTrials
+    ganons_trials: GanonsTrials
+    ganons_trials_count: GanonsTrialsCount
     triforce_hunt: TriforceHunt
     triforce_hunt_pieces_total: TriforceHuntPiecesTotal
     triforce_hunt_pieces_required_percentage: TriforceHuntPiecesRequiredPercentage
@@ -1408,7 +1424,8 @@ soh_option_groups = [
         RainbowBridgeDungeonsRequired,
         RainbowBridgeSkullTokensRequired,
         RainbowBridgeGregModifier,
-        SkipGanonsTrials,
+        GanonsTrials,
+        GanonsTrialsCount,
         TriforceHunt,
         TriforceHuntPiecesTotal,
         TriforceHuntPiecesRequiredPercentage,

@@ -94,6 +94,7 @@ class SohWorld(World):
         self.triforce_pieces_required: int = 0
         self.vanilla_progressive_skulltula_count: int = 0
         self.randomized_progressive_skulltula_count: int = 0
+        self.ganons_trials = list[GanonsTrials]()
         self.pre_fill_pool = list[Items]()
         self.reserved_pre_fill_locations = list[Locations]()
 
@@ -221,6 +222,12 @@ class SohWorld(World):
             self.options.gerudo_training_ground_key_ring.value = self.passthrough[
                 "gerudo_training_ground_key_ring"]
             self.options.ganons_castle_key_ring.value = self.passthrough["ganons_castle_key_ring"]
+
+        if self.options.ganons_trials == "set_number" and self.options.ganons_trials_count.value > 0:
+            self.ganons_trials = [str(trial) for trial in GanonsTrials]
+            if self.options.ganons_trials_count.value < 6:
+                self.random.shuffle(self.ganons_trials)
+                self.ganons_trials = self.ganons_trials[:self.options.ganons_trials_count.value]
 
     def create_regions(self) -> None:
         create_regions_and_locations(self)
@@ -444,7 +451,9 @@ class SohWorld(World):
             "rainbow_bridge_dungeon_rewards_required": self.options.rainbow_bridge_dungeon_rewards_required.value,
             "rainbow_bridge_dungeons_required": self.options.rainbow_bridge_dungeons_required.value,
             "rainbow_bridge_skull_tokens_required": self.options.rainbow_bridge_skull_tokens_required.value,
-            "skip_ganons_trials": self.options.skip_ganons_trials.value,
+            "ganons_trials": self.options.ganons_trials.value,
+            "ganons_trials_count": self.options.ganons_trials_count.value,
+            "required_trials": self.ganons_trials,
             "triforce_hunt": self.options.triforce_hunt.value,
             "triforce_hunt_pieces_total": self.options.triforce_hunt_pieces_total.value,
             "triforce_hunt_pieces_required": self.triforce_pieces_required,
