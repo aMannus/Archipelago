@@ -147,6 +147,7 @@ def setup_options_from_slot_data(world: "SohWorld") -> None:
                 "tricks_in_logic", set())
             world.options.item_pool.value = world.passthrough.get(
                 "item_pool", 0)
+            world.options.medallion_locked_trials.value = world.passthrough.get("medallion_locked_trials", MedallionLockedTrials.default)
             world.options.starting_hearts.value = world.passthrough.get("starting_hearts", StartingHearts.default)
             # when adding new options to this, use .get, and set the default to whatever was before the option was made
             # this will make it back-compatible with seeds generated on earlier versions

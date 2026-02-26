@@ -1258,6 +1258,13 @@ class ItemPool(Choice):
     default = 0
 
 
+class MedallionLockedTrials(Toggle):
+    """
+    Doors to trials will be barred until their corresponding medallion is acquired.
+    """
+    display_name = "Medallion Locked Trials"
+    
+    
 class StartingHearts(Range):
     """
     Specify the number of starting hearts Link will have. Modifies how many Heart Containers and Heart Pieces are in the pool.
@@ -1266,7 +1273,6 @@ class StartingHearts(Range):
     range_start = 1
     range_end = 20
     default = 3
-
 
 @dataclass
 class SohOptions(PerGameCommonOptions):
@@ -1398,6 +1404,7 @@ class SohOptions(PerGameCommonOptions):
     tricks_in_logic: TricksInLogic
     enable_all_tricks: EnableAllTricks
     item_pool: ItemPool
+    medallion_locked_trials: MedallionLockedTrials
     starting_hearts: StartingHearts
 
 
@@ -1424,6 +1431,7 @@ soh_option_groups = [
         RainbowBridgeDungeonsRequired,
         RainbowBridgeSkullTokensRequired,
         RainbowBridgeGregModifier,
+        MedallionLockedTrials,
         GanonsTrials,
         GanonsTrialsCount,
         TriforceHunt,
