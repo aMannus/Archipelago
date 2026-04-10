@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from Options import Choice, Toggle, DefaultOnToggle, Range, PerGameCommonOptions, StartInventoryPool, Visibility, OptionGroup, OptionSet
-from .Enums import Tricks
-
+from .Enums import Tricks, Items
+from .LogicHelpers import wallet_capacities
 
 class ClosedForest(Choice):
     """
@@ -1083,6 +1083,180 @@ class IceTrapFillerReplacement(Range):
     range_end = 100
     default = 0
 
+class ToTAltarHint(Toggle):
+    """
+    Reading the Temple of Time altar as child will tell you the locations of the spiritual stones.
+    Reading the Temple of Time altar as adult will tell you the locations of the medallions,
+    as well as the conditions for building the Rainbow Bridge and getting the Boss Key for Gannon's Castle.
+    """
+    display_name = "ToT Altar Hint"
+
+class GanondorfHint(Toggle):
+    """
+    Talking to Ganondorf in his boss room will tell you the location of the Light Arrows and Master Swrod.
+    If this option is enabled and Ganondorf is reachable without these items,
+    Gossip stones will never hint the appropriate items.
+    """
+    display_name = "Ganondorf Hint"
+
+class SheikLightArrowHint(Toggle):
+    """
+    Talking to Sheik inside Ganon's Castle will tell you the location of the light arrows.
+    If this option is enabled and Sheik is reachable without Light Arrows,
+    Gossip Stones will never hint the Light Arrows.
+    """
+    display_name = "Sheik Light Arrow Hint"
+
+class BosskeyHint(Toggle):
+    """
+    Navi will tell where the boss key can be found when prompted at the boss door.
+    """
+    display_name = "Boss Key Hints"
+
+class DampeDiaryHint(Toggle):
+    """
+    Reading the diary of Dampé the gravekeeper as adult will tell you the location of one of the Hookshots.
+    """
+    display_name = "Dampe's Diary Hint"
+
+class GregHint(Toggle):
+    """
+    Talking to the chest game owner after buying a key will tell you the location of Greg the Green Rupee.
+    """
+    display_name = "Greg the Green Rupee Hint"
+
+#class HyruleLoachHint(Toggle):
+#    """
+#    Talking to the fishing pond owner and asking to talk about something will tell you what the reward for the Hyrule Loach is.
+#
+#    Loach hint is only avaliable with "Fishsanity" set to "Shuffle only Hyrule Loach"
+#    as that's the only setting where you present the loach to the fishing pond owner.
+#    """
+#    display_name = "Hyrule Loach Hint"
+
+class SariasHint(Toggle):
+    """
+    Talking to Saria either in person or through Saria's Song will tell you the location of a progressive magic meter.
+    """
+    display_name = "Saria's Hint"
+
+class MidosHint(Toggle):
+    """
+    Talking to Mido as child will tell you the location of the Kokiri Sword.
+    """
+    display_name = "Mido's Hint"
+
+class FrogOcarinaGameHint(Toggle):
+    """
+    Standing near the pedestal for the frogs in Zora's River will tell you the reward for the frogs' Ocarina game.
+    """
+    display_name = "Frog Ocarina Game Hint"
+
+class OcarinaOfTimeHint(Toggle):
+    """
+    Sheik in the Temple of Time will tell you the item and song on the Ocarina of Time.
+    """
+    display_name = "Ocarina of Time Hint"
+
+class BigGoronHint(Toggle):
+    """
+    Talking to Biggoron will tell you the item he will give you in exchange for the Claim Check.
+    """
+    display_name = "Biggoron's Hint"
+
+class BigPoeHint(Toggle):
+    """
+    Talking to the Poe Collector in the Market Guardhouse while adult will tell you what you recieve for handing in Big Poes.
+    """
+    display_name = "Big Poes Hint"
+
+class ChickenHint(Toggle):
+    """
+    Talking to Anju as child will tell you the item she will give you for delivering her cuccos to the pen.
+    """
+    display_name = "Chickens Hint"
+
+class MalonHint(Toggle):
+    """
+    Talking to Malon as adult will tell you the item on "Link's Cow",
+    the cow you win from beating her time on the Lon Lon Obstacle Course.
+    """
+    display_name = "Malon Hint"
+
+class HorsebackArcheryHint(Toggle):
+    """
+    Talking to the Horseback Archery gerudo in Gerudo Fortress, or the nearby sign,
+    will tell you what you win for scoring 1000 and 1500 points on Horseback Archery.
+    """
+    display_name = "Horseback Archery Hint"
+
+class FishingPoleHint(Toggle):
+    """
+    Talking to the fishing pond owner without the fishing pole will tell you its location.
+    """
+    display_name = "Fishing Pole Hint"
+
+class WarpSongHint(Toggle):
+    """
+    Playing a warp song will tell you where it leads.
+    (If warp song destinations are vanilla, this is always enabled)
+    """
+    display_name = "Warp Song Hints"
+
+class ScrubHintText(Toggle):
+    """
+    Business scrubs will reveal the identity of what they're selling.
+    """
+    display_name = "Scrub Hint Text"
+
+class MerchantHintText(Toggle):
+    """
+    Merchants will reveal the identity of what they're selling.
+    (Shops are not affected by this setting)
+    """
+    display_name = "Merchant Hint Text"
+
+class GS10Hint(Toggle):
+    """
+    Talking to the Cursed Resident in the Skulltula House who is saved after 10 tokens will tell you the reward.
+    """
+    display_name = "10 GS Hint"
+
+class GS20Hint(Toggle):
+    """
+    Talking to the Cursed Resident in the Skulltula House who is saved after 20 tokens will tell you the reward.
+    """
+    display_name = "20 GS Hint"
+
+class GS30Hint(Toggle):
+    """
+    Talking to the Cursed Resident in the Skulltula House who is saved after 30 tokens will tell you the reward.
+    """
+    display_name = "30 GS Hint"
+
+class GS40Hint(Toggle):
+    """
+    Talking to the Cursed Resident in the Skulltula House who is saved after 40 tokens will tell you the reward.
+    """
+    display_name = "40 GS Hint"
+
+class GS50Hint(Toggle):
+    """
+    Talking to the Cursed Resident in the Skulltula House who is saved after 50 tokens will tell you the reward.
+    """
+    display_name = "50 GS Hint"
+
+class GS100Hint(Toggle):
+    """
+    Talking to the Cursed Resident in the Skulltula House who is saved after 100 tokens will tell you the reward.
+    """
+    display_name = "100 GS Hint"
+
+class MaskShopHint(Toggle):
+    """
+    Reading the mask shop sign will tell you rewards from showing masks at the Deku Theatre.
+    """
+    display_name = "Mask Shop Hint"
 
 class TrueNoLogic(Toggle):
     """
@@ -1437,30 +1611,107 @@ class SohOptions(PerGameCommonOptions):
     shop_affordable_prices: ShopAffordablePrices
     scrub_affordable_prices: ScrubAffordablePrices
     merchant_affordable_prices: MerchantAffordablePrices
+    tot_altar_hint: ToTAltarHint
+    ganondorf_hint: GanondorfHint
+    sheik_la_hint: SheikLightArrowHint
+    boss_key_hint: BosskeyHint
+    dampe_diary_hint: DampeDiaryHint
+    greg_hint: GregHint
+    #hyrule_loach_hint: HyruleLoachHint
+    saria_hint: SariasHint
+    mido_hint: MidosHint
+    frog_game_hint: FrogOcarinaGameHint
+    ocarina_of_time_hint: OcarinaOfTimeHint
+    big_goron_hint: BigGoronHint
+    big_poe_hint: BigPoeHint
+    chicken_hint: ChickenHint
+    malon_hint: MalonHint
+    horseback_archery_hint: HorsebackArcheryHint
+    fishing_pole_hint: FishingPoleHint
+    warp_song_hint: WarpSongHint
+    scrub_hints: ScrubHintText
+    merchant_hints: MerchantHintText
+    gs_10_hint: GS10Hint
+    gs_20_hint: GS20Hint
+    gs_30_hint: GS30Hint
+    gs_40_hint: GS40Hint
+    gs_50_hint: GS50Hint
+    gs_100_hint: GS100Hint
+    mask_shop_hint: MaskShopHint
 
     def apply_any_required_option_adjustments(self):
         self.adjust_for_forced_child_starts()
+        self.adjust_prices()
+        self.adjust_starting_items()
+        self.adjust_irrelevant_hints()
+
 
     def adjust_for_forced_child_starts(self):
         # We don't care about any of this if no logic is enabled
         if self.true_no_logic:
-            return False
+            return
 
         # If door of time is set to closed and dungeon rewards aren't shuffled or ocarinas aren't shuffled, force child spawn
         if self.door_of_time == DoorOfTime.option_closed and (
             any([self.shuffle_dungeon_rewards == ShuffleDungeonRewards.option_off,
                     self.shuffle_ocarinas == ShuffleOcarinas,
                     self.shuffle_songs == ShuffleSongs.option_off])):
-            return True
+            self.starting_age.value = StartingAge.option_child
+            return
 
         # If door of time is set to song only and songs aren't shuffled, force child spawn
         if all([self.door_of_time == DoorOfTime.option_song_only, self.shuffle_songs == ShuffleSongs.option_off]):
-            return True
+            self.starting_age.value = StartingAge.option_child
+            return
         
         # If closed forest is on, force child spawn. Will need additional logic when entrance shuffle is added in future.
         if self.closed_forest == ClosedForest.option_on:
-            return True
-        return False
+            self.starting_age.value = StartingAge.option_child
+            return
+        
+
+    def adjust_starting_items(self):
+        if self.shuffle_deku_stick_bag == ShuffleDekuStickBag.option_false:
+            self.start_with_stick_ammo.value = StartWithStickAmmo.option_false
+
+        if self.shuffle_deku_nut_bag == ShuffleDekuNutBag.option_false:
+            self.start_with_nut_ammo.value = StartWithNutAmmo.option_false
+
+        if any([self.shuffle_dungeon_rewards == ShuffleDungeonRewards.option_off,
+                self.shuffle_dungeon_rewards == ShuffleDungeonRewards.option_end_of_dungeons]):
+            self.start_with_links_pocket.value = StartWithLinksPocket.option_dungeon_reward
+
+
+    def adjust_prices(self):
+        # Check if Tycoon Wallet is shuffled and if price settings are above what Giants Wallet can hold. Max/Min Prices need to be adjusted to fit in Giants Wallet.
+        if self.shuffle_tycoon_wallet == ShuffleTycoonWallet.option_false:
+            for option in (self.shuffle_shops_minimum_price, self.shuffle_shops_maximum_price, self.shuffle_scrubs_minimum_price, self.shuffle_scrubs_maximum_price, self.shuffle_merchants_minimum_price, self.shuffle_merchants_maximum_price):
+                if option.value > wallet_capacities[Items.GIANT_WALLET]:
+                    option.value = wallet_capacities[Items.GIANT_WALLET]
+
+        # If maximum price is below minimum, set max to minimum.
+        if self.shuffle_shops_minimum_price.value > self.shuffle_shops_maximum_price.value:
+            self.shuffle_shops_maximum_price.value = self.shuffle_shops_minimum_price.value
+
+        if self.shuffle_scrubs_minimum_price.value > self.shuffle_scrubs_maximum_price.value:
+            self.shuffle_scrubs_maximum_price.value = self.shuffle_scrubs_minimum_price.value
+
+        if self.shuffle_merchants_minimum_price.value > self.shuffle_merchants_maximum_price.value:
+            self.shuffle_merchants_maximum_price.value = self.shuffle_merchants_minimum_price.value
+    
+
+    def adjust_irrelevant_hints(self):
+        # disable hints for items we don't have shuffled
+        #hyrule_loach_hint
+        # todo turn loach off if fishsanity not set to loach only
+        if self.shuffle_cows == ShuffleCows.option_false:
+            self.malon_hint.value = MalonHint.option_false
+
+        if self.shuffle_fishing_pole == ShuffleFish.option_off:
+            self.fishing_pole_hint.value = FishingPoleHint.option_false
+
+        if self.shuffle_100_gs_reward == Shuffle100GSReward.option_false:
+            self.gs_100_hint.value = GS100Hint.option_false
 
 
 soh_option_groups = [
@@ -1587,10 +1838,41 @@ soh_option_groups = [
         CompleteMaskQuest,
         SkipScarecrowsSong,
     ]),
-    OptionGroup("Item Pool & Hints", [
+    OptionGroup("Item Pool & Traps", [
         ItemPool,
         IceTrapCount,
         IceTrapFillerReplacement
+    ]),
+    OptionGroup("Hints", [
+        #GossipStoneHints
+        #HintDistribution
+        ToTAltarHint,
+        GanondorfHint,
+        SheikLightArrowHint,
+        BosskeyHint,
+        DampeDiaryHint,
+        GregHint,
+        #HyruleLoachHint,
+        SariasHint,
+        MidosHint,
+        FrogOcarinaGameHint,
+        OcarinaOfTimeHint,
+        BigGoronHint,
+        BigPoeHint,
+        ChickenHint,
+        MalonHint,
+        HorsebackArcheryHint,
+        FishingPoleHint,
+        WarpSongHint,
+        ScrubHintText,
+        MerchantHintText,
+        GS10Hint,
+        GS20Hint,
+        GS30Hint,
+        GS40Hint,
+        GS50Hint,
+        GS100Hint,
+        MaskShopHint
     ]),
     OptionGroup("Starting Items", [
         StartWithLinksPocket,

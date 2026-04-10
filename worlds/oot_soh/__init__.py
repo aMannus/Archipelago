@@ -23,6 +23,7 @@ from .UniversalTracker import setup_options_from_slot_data
 from settings import Group, Bool
 from Options import OptionError
 from .LogicHelpers import wallet_capacities
+from .Hints import CreateNonlocalHints, StaticHint
 from worlds.LauncherComponents import Component, components, Type, launch as launch_component
 
 import logging
@@ -93,6 +94,7 @@ class SohWorld(World):
     def __init__(self, multiworld, player):
         super().__init__(multiworld, player)
         self.item_pool = list[SohItem]()
+        self.preplaced_items = list[SohItem]()
         self.included_locations = dict[str, SohLocData]()
         self.shop_prices = dict[Locations, int]()
         self.shop_vanilla_items = dict[str, str]()
@@ -101,6 +103,7 @@ class SohWorld(World):
         self.ganons_trials = list[GanonsTrials]()
         self.pre_fill_pool = list[Items]()
         self.reserved_pre_fill_locations = list[Locations]()
+        self.static_hints = dict[str, list[list[int, int]]]()
 
         apworld_manifest = orjson.loads(pkgutil.get_data(
             __name__, "archipelago.json").decode("utf-8"))
@@ -118,31 +121,6 @@ class SohWorld(World):
                               "your host.yaml settings.")
 
         self.options.apply_any_required_option_adjustments()
-
-        # Check if Tycoon Wallet is shuffled and if price settings are above what Giants Wallet can hold. Max/Min Prices need to be adjusted to fit in Giants Wallet.
-        if not self.options.shuffle_tycoon_wallet.value:
-            for option in (self.options.shuffle_shops_minimum_price, self.options.shuffle_shops_maximum_price, self.options.shuffle_scrubs_minimum_price, self.options.shuffle_scrubs_maximum_price, self.options.shuffle_merchants_minimum_price, self.options.shuffle_merchants_maximum_price):
-                if option.value > wallet_capacities[Items.GIANT_WALLET]:
-                    option.value = wallet_capacities[Items.GIANT_WALLET]
-
-        # If maximum price is below minimum, set max to minimum.
-        if self.options.shuffle_shops_minimum_price.value > self.options.shuffle_shops_maximum_price.value:
-            self.options.shuffle_shops_maximum_price.value = self.options.shuffle_shops_minimum_price.value
-
-        if self.options.shuffle_scrubs_minimum_price.value > self.options.shuffle_scrubs_maximum_price.value:
-            self.options.shuffle_scrubs_maximum_price.value = self.options.shuffle_scrubs_minimum_price.value
-
-        if self.options.shuffle_merchants_minimum_price.value > self.options.shuffle_merchants_maximum_price.value:
-            self.options.shuffle_merchants_maximum_price.value = self.options.shuffle_merchants_minimum_price.value
-
-        if self.options.shuffle_deku_stick_bag.value:
-            self.options.start_with_stick_ammo.value = 0
-
-        if self.options.shuffle_deku_nut_bag.value:
-            self.options.start_with_nut_ammo.value = 0
-
-        if self.options.shuffle_dungeon_rewards in ("off", "end_of_dungeons"):
-            self.options.start_with_links_pocket.value = 0
 
         # Figure out how many Skulltula tokens need to be progressive
         # Max amount from KAK turn ins
@@ -220,6 +198,7 @@ class SohWorld(World):
             self.options.bottom_of_the_well_key_ring.value = self.passthrough.get("bottom_of_the_well_key_ring", False)
             self.options.gerudo_training_ground_key_ring.value = self.passthrough.get("gerudo_training_ground_key_ring", False)
             self.options.ganons_castle_key_ring.value = self.passthrough.get("ganons_castle_key_ring", False)
+       
 
     def create_regions(self) -> None:
         create_regions_and_locations(self)
@@ -336,6 +315,11 @@ class SohWorld(World):
 
         self.multiworld.completion_condition[self.player] = original_completion_goal
 
+    def post_fill(self) -> None:
+        hints = CreateNonlocalHints(self)
+        for hint in hints:
+            self.static_hints.update(hint.serialize())
+            
     def run_prefill(self, item_pool: list[Items], locations: list[Locations], prefill_state: CollectionState | None = None, goal: Callable[[CollectionState], bool] | None = None):
         # check if we're using specific collectionstate
         if prefill_state is None:
@@ -355,7 +339,7 @@ class SohWorld(World):
         # get empty, non reserved locations
         empty_locations = self.get_empty_locations_from_list_shuffled(locations)
         items = [self.create_item(str(item)) for item in item_pool]
-
+        self.preplaced_items.extend(items)
 
         if self.settings.disable_fill_overflow:
             fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True)
@@ -363,6 +347,9 @@ class SohWorld(World):
             # Add any unplaced items to the item pool
             fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, allow_partial=True)
             self.add_items_to_item_pool_list(items)
+        
+        for item in items:
+            self.preplaced_items.remove(item)
 
 
     def collect(self, state: CollectionState, item: Item) -> bool:
@@ -549,6 +536,36 @@ class SohWorld(World):
             "enable_all_tricks": self.options.enable_all_tricks.value,
             "tricks_in_logic": self.options.tricks_in_logic.value,
             "medallion_locked_trials": self.options.medallion_locked_trials.value,
+            "starting_hearts": self.options.starting_hearts.value,
+            "tot_altar_hint": self.options.tot_altar_hint.value,
+            "ganondorf_hint": self.options.ganondorf_hint.value,
+            "sheik_la_hint": self.options.sheik_la_hint.value,
+            "boss_key_hint": self.options.boss_key_hint.value,
+            "dampe_diary_hint": self.options.dampe_diary_hint.value,
+            "greg_hint": self.options.greg_hint.value,
+            #"hyrule_loach_hint": self.options.hyrule_loach_hint.value,
+            "saria_hint": self.options.saria_hint.value,
+            "mido_hint": self.options.mido_hint.value,
+            "frog_game_hint": self.options.frog_game_hint.value,
+            "ocarina_of_time_hint": self.options.ocarina_of_time_hint.value,
+            "big_goron_hint": self.options.big_goron_hint.value,
+            "big_poe_hint": self.options.big_poe_hint.value,
+            "chicken_hint": self.options.chicken_hint.value,
+            "malon_hint": self.options.malon_hint.value,
+            "horseback_archery_hint": self.options.horseback_archery_hint.value,
+            "fishing_pole_hint": self.options.fishing_pole_hint.value,
+            "warp_song_hint": self.options.warp_song_hint.value,
+            "scrub_hints": self.options.scrub_hints.value,
+            "merchant_hints": self.options.merchant_hints.value,
+            "gs_10_hint": self.options.gs_10_hint.value,
+            "gs_20_hint": self.options.gs_20_hint.value,
+            "gs_30_hint": self.options.gs_30_hint.value,
+            "gs_40_hint": self.options.gs_40_hint.value,
+            "gs_50_hint": self.options.gs_50_hint.value,
+            "gs_100_hint": self.options.gs_100_hint.value,
+            "mask_shop_hint": self.options.mask_shop_hint.value,
+            "static_hints": self.static_hints,
+            "hintable_items": {item.code for item in self.item_pool + self.preplaced_items if item.code is not None},
             "starting_hearts": self.options.starting_hearts.value,
             "archipelago_seed": self.random.randint(0, 4294967295) #This is a uint32_t in ship
         }
