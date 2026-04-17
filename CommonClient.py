@@ -221,6 +221,12 @@ class ClientCommandProcessor(CommandProcessor):
         async_start(self.ctx.send_msgs([{"cmd": "StatusUpdate", "status": state}]), name="send StatusUpdate")
         return True
 
+    def _cmd_goal(self) -> bool:
+        """Send goaled status to server."""
+        async_start(self.ctx.send_msgs([{"cmd": "StatusUpdate", "status": ClientStatus.CLIENT_GOAL}]))
+        self.output("Sending goaled status...")
+        return True
+
     def default(self, raw: str):
         """The default message parser to be used when parsing any messages that do not match a command"""
         raw = self.ctx.on_user_say(raw)
@@ -510,6 +516,11 @@ class CommonContext:
             if not self.auth:
                 logger.info('Enter slot name:')
                 self.auth = await self.console_input()
+
+    async def get_game_name(self):
+        logger.info('Enter game name:')
+        self.game_name = await self.console_input()
+        return self.game_name
 
     async def send_connect(self, **kwargs: typing.Any) -> None:
         """
@@ -1179,7 +1190,7 @@ def handle_url_arg(args: "argparse.Namespace",
 def run_as_textclient(*args):
     class TextContext(CommonContext):
         # Text Mode to use !hint and such with games that have no text entry
-        tags = CommonContext.tags | {"TextOnly"}
+        tags = CommonContext.tags
         game = ""  # empty matches any game since 0.3.2
         items_handling = 0b111  # receive all items for /received
         want_slot_data = False  # Can't use game specific slot_data
@@ -1188,7 +1199,8 @@ def run_as_textclient(*args):
             if password_requested and not self.password:
                 await super(TextContext, self).server_auth(password_requested)
             await self.get_username()
-            await self.send_connect(game="")
+            await self.get_game_name()
+            await self.send_connect(game=self.game_name)
 
         def on_package(self, cmd: str, args: dict):
             if cmd == "Connected":
