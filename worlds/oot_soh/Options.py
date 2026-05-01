@@ -1,7 +1,13 @@
 from dataclasses import dataclass
 from Options import Choice, Toggle, DefaultOnToggle, Range, PerGameCommonOptions, StartInventoryPool, Visibility, OptionGroup, OptionSet
 from .Enums import Tricks, Items
-from .LogicHelpers import wallet_capacities
+
+wallet_capacities: dict[Items, int] = {
+    Items.CHILD_WALLET: 99,
+    Items.ADULT_WALLET: 200,
+    Items.GIANT_WALLET: 500,
+    Items.TYCOON_WALLET: 999
+}
 
 class ClosedForest(Choice):
     """
