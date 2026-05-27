@@ -372,7 +372,6 @@ class SohWorld(CachedRuleBuilderWorld):
         changed = super().collect(state, item)
         state._soh_stale[self.player] = True  # type: ignore
 
-
         if item.name == Items.HEART_CONTAINER:
             state.soh_heart_count[self.player] += 1  # type: ignore
 
@@ -394,12 +393,6 @@ class SohWorld(CachedRuleBuilderWorld):
         changed = super().remove(state, item)
         if changed:
             state._soh_invalidate(self.player)  # type: ignore
-
-        if item.name in progressive_items:
-            current_count = state.prog_items[self.player][item.name]
-            for i, non_prog_version in enumerate(progressive_items[item.name]):
-                if i + 1 > current_count:
-                    state.prog_items[self.player][non_prog_version] = 0
 
         if item.name == Items.HEART_CONTAINER:
             state.soh_heart_count[self.player] -= 1  # type: ignore
