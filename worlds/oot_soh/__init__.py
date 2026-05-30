@@ -367,9 +367,11 @@ class SohWorld(CachedRuleBuilderWorld):
         
         if original_goal is None:
             self.set_completion_rule(create_new_goal(empty_locations))
+        else:
+            self.set_completion_rule(original_goal)
 
         # Determines if a partial or full fill is occuring
-        fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, allow_partial=(not self.settings.disable_fill_overflow))
+        fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, allow_partial=(not self.settings.disable_fill_overflow), name="SOH_Prefill_Initial")
 
         # Check if any items and locations are left. If so try again once more with the rest of the locations
         if len(items) > 0 and chunk != count_empty_locations_all:
@@ -378,12 +380,7 @@ class SohWorld(CachedRuleBuilderWorld):
             if original_goal is None:
                 self.set_completion_rule(create_new_goal(empty_locations))
 
-        if self.settings.disable_fill_overflow:
-            fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, name="SoH_Prefill_No_Partial")
-        else:
-            # Add any unplaced items to the item pool
-            fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, allow_partial=True, name="SoH_Prefill_Partial")
-            self.add_items_to_item_pool_list(items)
+            fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, allow_partial=True, name="SOH_Prefill_Secondary")
         
         # Add any unplaced items to the item pool
         self.add_items_to_item_pool_list(items)
