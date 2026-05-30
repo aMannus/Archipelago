@@ -378,7 +378,7 @@ class SohWorld(CachedRuleBuilderWorld):
             empty_locations = empty_locations_all[chunk:]
 
             if original_goal is None:
-                self.multiworld.completion_condition[self.player] = create_new_goal(empty_locations) 
+                self.set_completion_rule(goal) = create_new_goal(empty_locations) 
 
         if self.settings.disable_fill_overflow:
             fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, name="SoH_Prefill_No_Partial")
