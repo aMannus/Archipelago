@@ -1,7 +1,13 @@
 from dataclasses import dataclass
 from Options import Choice, Toggle, DefaultOnToggle, Range, PerGameCommonOptions, StartInventoryPool, Visibility, OptionGroup, OptionSet
 from .Enums import Tricks, Items
-from .LogicHelpers import wallet_capacities
+
+wallet_capacities: dict[Items, int] = {
+    Items.CHILD_WALLET: 99,
+    Items.ADULT_WALLET: 200,
+    Items.GIANT_WALLET: 500,
+    Items.TYCOON_WALLET: 999
+}
 
 class ClosedForest(Choice):
     """
@@ -1055,7 +1061,7 @@ class StartingAge(Choice):
     Decide whether to start as child Link or adult Link.
     Child Link starts in Link's House in Kokiri Forest.
     Adult Link starts in the Temple of Time.
-    CAUTION: When Door of Time is set to closed, and Shuffle Dungeon Rewards set to off, this option will be forced to child.
+    CAUTION: When Door of Time is set to closed and either Shuffle Dungeon Rewards set to off or Ocarinas aren't shuffled, this option will be forced to child.
     """
     display_name = "Starting Age"
     option_child = 0
@@ -1110,6 +1116,27 @@ class HintClarity(Choice):
     option_ambiguous = 1
     option_clear = 2
     default = 2
+
+class GossipStoneHints(Choice):
+    """
+    Choose wether gossip stones should give hints and what is required to read them. Currently
+    the stones can only give out location hints and junk hints. Way of the hero and barren hints
+    are not yet implemented.
+
+    None: Gossip stones do not give out hints.
+
+    Need nothing: Gossip stones give out hints and you don't need anything to read them.
+
+    Need truth: Gossip stones give out hints but you need Mask of Truth to read them.
+
+    Need stone: Gossip stones give out hints but you need Stone of Agony to read them.
+    """
+    display_name = "Gossip Stone Hints"
+    option_none = 0
+    option_need_nothing = 1
+    option_need_truth = 2
+    option_need_stone = 3
+    default = 1
 
 class ToTAltarHint(Toggle):
     """
@@ -1224,12 +1251,12 @@ class FishingPoleHint(Toggle):
     """
     display_name = "Fishing Pole Hint"
 
-class WarpSongHint(Toggle):
-    """
-    Playing a warp song will tell you where it leads.
-    (If warp song destinations are vanilla, this is always enabled)
-    """
-    display_name = "Warp Song Hints"
+#class WarpSongHint(Toggle):
+#    """
+#    Playing a warp song will tell you where it leads.
+#    (If warp song destinations are vanilla, this is always enabled)
+#    """
+#    display_name = "Warp Song Hints"
 
 class ScrubHintText(Toggle):
     """
@@ -1639,6 +1666,7 @@ class SohOptions(PerGameCommonOptions):
     scrub_affordable_prices: ScrubAffordablePrices
     merchant_affordable_prices: MerchantAffordablePrices
     hint_clarity: HintClarity
+    gossip_stone_hints: GossipStoneHints
     tot_altar_hint: ToTAltarHint
     ganondorf_hint: GanondorfHint
     sheik_la_hint: SheikLightArrowHint
@@ -1656,7 +1684,7 @@ class SohOptions(PerGameCommonOptions):
     malon_hint: MalonHint
     horseback_archery_hint: HorsebackArcheryHint
     fishing_pole_hint: FishingPoleHint
-    warp_song_hint: WarpSongHint
+    #warp_song_hint: WarpSongHint   # Not required until they can be randomized
     scrub_hints: ScrubHintText
     merchant_hints: MerchantHintText
     gs_10_hint: GS10Hint
@@ -1909,9 +1937,9 @@ soh_option_groups = [
         IceTrapFillerReplacement
     ]),
     OptionGroup("Hints", [
-        #GossipStoneHints
         HintClarity,
         #HintDistribution
+        GossipStoneHints,
         ToTAltarHint,
         GanondorfHint,
         SheikLightArrowHint,
@@ -1929,7 +1957,7 @@ soh_option_groups = [
         MalonHint,
         HorsebackArcheryHint,
         FishingPoleHint,
-        WarpSongHint,
+        #WarpSongHint,
         ScrubHintText,
         MerchantHintText,
         GS10Hint,

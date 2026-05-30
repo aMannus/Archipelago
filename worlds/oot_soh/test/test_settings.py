@@ -15,15 +15,15 @@ class LACSBase(SohTestBase):
         # and report as Success if any subtest succeeds
         # (https://github.com/microsoft/vscode-python/issues/25824)
         self.sweep()
-        self.assertFalse(can_trigger_lacs(self.get_bundle()), f"Could trigger LACS but shouldn't have been able to.")
+        self.assertFalse(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger LACS but shouldn't have been able to.")
         required_items = list(map(lambda i: self.create_item(i), items))
         for size in range(1, len(required_items)):
             for invalid_combo in combinations(required_items, size):
                 self.collect(invalid_combo)
-                self.assertFalse(can_trigger_lacs(self.get_bundle()), f"Should not be able to trigger LACS with only {invalid_combo}")
+                self.assertFalse(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Should not be able to trigger LACS with only {invalid_combo}")
                 self.remove(invalid_combo)
         self.collect(required_items)
-        self.assertTrue(can_trigger_lacs(self.get_bundle()), f"Wasn't able to trigger LACS, but should have been able to.")
+        self.assertTrue(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to trigger LACS, but should have been able to.")
         
         
     def require_some_lacs(self, items: list[Items | Events], required_amount: int) -> None:
@@ -31,19 +31,19 @@ class LACSBase(SohTestBase):
         # and report as Success if any subtest succeeds
         # (https://github.com/microsoft/vscode-python/issues/25824)
         self.sweep()
-        self.assertFalse(can_trigger_lacs(self.get_bundle()), f"Could trigger LACS but shouldn't have been able to.")
+        self.assertFalse(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger LACS but shouldn't have been able to.")
         required_items = list(map(lambda i: self.create_item(i), items))
         for size in range(1, len(required_items)):
             for invalid_combo in combinations(required_items, size):
                 self.collect(invalid_combo)
                 if required_amount <= len(invalid_combo) and not (Items.GREG_THE_GREEN_RUPEE in invalid_combo and self.options["ganons_castle_boss_key_greg_modifier"] != GanonsCastleBossKeyGregModifier.option_reward):
-                    self.assertTrue(can_trigger_lacs(self.get_bundle()), f"Wasn't able to trigger LACS, but should have been able to with count {required_amount}, {invalid_combo}")
+                    self.assertTrue(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to trigger LACS, but should have been able to with count {required_amount}, {invalid_combo}")
                 else:
-                    self.assertFalse(can_trigger_lacs(self.get_bundle()), f"Should not be able to trigger LACS with only {invalid_combo}. Required amount:{required_amount}")
+                    self.assertFalse(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Should not be able to trigger LACS with only {invalid_combo}. Required amount:{required_amount}")
 
                 self.remove(invalid_combo)
         self.collect(required_items)
-        self.assertTrue(can_trigger_lacs(self.get_bundle()), f"Wasn't able to trigger LACS, but should have been able to.")
+        self.assertTrue(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to trigger LACS, but should have been able to.")
 
 # Greg Specific
 class TestCanTriggerLacsTestGregSoloReward(LACSBase):
@@ -66,9 +66,9 @@ class TestCanTriggerLacsGregSoloNonReward(LACSBase):
                "ganons_castle_boss_key_greg_modifier": GanonsCastleBossKeyGregModifier.option_off}
 
     def test_stones_greg_solo_nonreward(self):
-        self.assertFalse(can_trigger_lacs(self.get_bundle()), f"Could trigger LACS but shouldn't have been able to.")
+        self.assertFalse(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger LACS but shouldn't have been able to.")
         self.collect(self.create_item(Items.GREG_THE_GREEN_RUPEE))
-        self.assertFalse(can_trigger_lacs(self.get_bundle()), f"Could trigger LACS but shouldn't have been able to.")
+        self.assertFalse(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger LACS but shouldn't have been able to.")
 
 
 # Vanilla
@@ -312,11 +312,11 @@ class TestCanTriggerLacsTokensAll(LACSBase):
                "ganons_castle_boss_key_skull_tokens_required": 100}
 
     def test_tokens_all(self):
-        self.assertFalse(can_trigger_lacs(self.get_bundle()), f"Could trigger LACS but shouldn't have been able to.")
+        self.assertFalse(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger LACS but shouldn't have been able to.")
         self.collect(self.create_item(Items.GOLD_SKULLTULA_TOKEN) for _ in range(99))
-        self.assertFalse(can_trigger_lacs(self.get_bundle()), f"Could trigger LACS but shouldn't have been able to.")
+        self.assertFalse(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger LACS but shouldn't have been able to.")
         self.collect(self.create_item(Items.GOLD_SKULLTULA_TOKEN))
-        self.assertTrue(can_trigger_lacs(self.get_bundle()), f"Couldn't trigger LACS but should have been able to.")
+        self.assertTrue(can_trigger_lacs(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Couldn't trigger LACS but should have been able to.")
 
 # Rainbow Bridge
 class RainbowBase(SohTestBase):
@@ -327,15 +327,15 @@ class RainbowBase(SohTestBase):
         # and report as Success if any subtest succeeds
         # (https://github.com/microsoft/vscode-python/issues/25824)
         self.sweep()
-        self.assertFalse(can_build_rainbow_bridge(self.get_bundle()), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
+        self.assertFalse(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
         required_items = list(map(lambda i: self.create_item(i), items))
         for size in range(1, len(required_items)):
             for invalid_combo in combinations(required_items, size):
                 self.collect(invalid_combo)
-                self.assertFalse(can_build_rainbow_bridge(self.get_bundle()), f"Should not be able to trigger Rainbow Bridge with only {invalid_combo}")
+                self.assertFalse(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Should not be able to trigger Rainbow Bridge with only {invalid_combo}")
                 self.remove(invalid_combo)
         self.collect(required_items)
-        self.assertTrue(can_build_rainbow_bridge(self.get_bundle()), f"Wasn't able to trigger Rainbow Bridge, but should have been able to.")
+        self.assertTrue(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to trigger Rainbow Bridge, but should have been able to.")
         
         
     def require_some_rainbow(self, items: list[Items | Events], required_amount: int) -> None:
@@ -343,19 +343,19 @@ class RainbowBase(SohTestBase):
         # and report as Success if any subtest succeeds
         # (https://github.com/microsoft/vscode-python/issues/25824)
         self.sweep()
-        self.assertFalse(can_build_rainbow_bridge(self.get_bundle()), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
+        self.assertFalse(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
         required_items = list(map(lambda i: self.create_item(i), items))
         for size in range(1, len(required_items)):
             for invalid_combo in combinations(required_items, size):
                 self.collect(invalid_combo)
                 if required_amount <= len(invalid_combo) and not (Items.GREG_THE_GREEN_RUPEE in invalid_combo and self.options["rainbow_bridge_greg_modifier"] != RainbowBridgeGregModifier.option_reward):
-                    self.assertTrue(can_build_rainbow_bridge(self.get_bundle()), f"Wasn't able to trigger Rainbow Bridge, but should have been able to with count {required_amount}, {invalid_combo}")
+                    self.assertTrue(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to trigger Rainbow Bridge, but should have been able to with count {required_amount}, {invalid_combo}")
                 else:
-                    self.assertFalse(can_build_rainbow_bridge(self.get_bundle()), f"Should not be able to trigger Rainbow Bridge with only {invalid_combo}. Required amount:{required_amount}")
+                    self.assertFalse(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Should not be able to trigger Rainbow Bridge with only {invalid_combo}. Required amount:{required_amount}")
 
                 self.remove(invalid_combo)
         self.collect(required_items)
-        self.assertTrue(can_build_rainbow_bridge(self.get_bundle()), f"Wasn't able to trigger Rainbow Bridge, but should have been able to.")
+        self.assertTrue(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to trigger Rainbow Bridge, but should have been able to.")
 
 # Greg Specific
 class TestCanTriggerRainbowTestGreg(RainbowBase):
@@ -387,9 +387,9 @@ class TestCanTriggerRwinbowGregSoloNonReward(RainbowBase):
                "rainbow_bridge_greg_modifier": RainbowBridgeGregModifier.option_off}
 
     def test_stones_greg_solo_nonreward(self):
-        self.assertFalse(can_build_rainbow_bridge(self.get_bundle()), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
+        self.assertFalse(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
         self.collect(self.create_item(Items.GREG_THE_GREEN_RUPEE))
-        self.assertFalse(can_build_rainbow_bridge(self.get_bundle()), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
+        self.assertFalse(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
 
 
 # Vanilla
@@ -416,7 +416,7 @@ class TestCanTriggerRainbowAlwaysOpen(RainbowBase):
                "shuffle_dungeon_rewards": ShuffleDungeonRewards.option_anywhere,}
 
     def test_always_setting(self):
-        self.assertTrue(can_build_rainbow_bridge(self.get_bundle()), f"Wasn't able to trigger Rainbow Bridge, but should have been able to.")
+        self.assertTrue(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to trigger Rainbow Bridge, but should have been able to.")
 
 # Stones
 class TestCanTriggerRainbowStonesAll(RainbowBase):
@@ -622,11 +622,11 @@ class TestCanTriggerRainbowTokensAll(RainbowBase):
                "rainbow_bridge_skull_tokens_required": 100}
 
     def test_tokens_all(self):
-        self.assertFalse(can_build_rainbow_bridge(self.get_bundle()), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
+        self.assertFalse(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
         self.collect(self.create_item(Items.GOLD_SKULLTULA_TOKEN) for _ in range(99))
-        self.assertFalse(can_build_rainbow_bridge(self.get_bundle()), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
+        self.assertFalse(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could trigger Rainbow Bridge but shouldn't have been able to.")
         self.collect(self.create_item(Items.GOLD_SKULLTULA_TOKEN))
-        self.assertTrue(can_build_rainbow_bridge(self.get_bundle()), f"Couldn't trigger Rainbow Bridge but should have been able to.")
+        self.assertTrue(can_build_rainbow_bridge(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Couldn't trigger Rainbow Bridge but should have been able to.")
 
 
 # Scarecrow Song
@@ -638,33 +638,33 @@ class ScarecrowBase(SohTestBase):
         # and report as Success if any subtest succeeds
         # (https://github.com/microsoft/vscode-python/issues/25824)
         self.sweep()
-        self.assertFalse(scarecrows_song(self.get_bundle()), f"Could use Scarecrows Song but shouldn't have been able to.")
+        self.assertFalse(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could use Scarecrows Song but shouldn't have been able to.")
         required_items = list(map(lambda i: self.create_item(i), items))
         for size in range(1, len(required_items)):
             for invalid_combo in combinations(required_items, size):
                 self.collect(invalid_combo)
-                self.assertFalse(scarecrows_song(self.get_bundle()), f"Should not be able to use Scarecrows Song with only {invalid_combo}")
+                self.assertFalse(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Should not be able to use Scarecrows Song with only {invalid_combo}")
                 self.remove(invalid_combo)
         self.collect(required_items)
-        self.assertTrue(scarecrows_song(self.get_bundle()), f"Wasn't able to use Scarecrows Song, but should have been able to.")
+        self.assertTrue(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to use Scarecrows Song, but should have been able to.")
 
     def scarecrow_button_check(self, items: list[Items | Events]) -> None:
         # ideally we run these as subtests, but those are currently broken 
         # and report as Success if any subtest succeeds
         # (https://github.com/microsoft/vscode-python/issues/25824)
         self.sweep()
-        self.assertFalse(scarecrows_song(self.get_bundle()), f"Could use Scarecrows Song but shouldn't have been able to.")
+        self.assertFalse(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could use Scarecrows Song but shouldn't have been able to.")
         required_items = list(map(lambda i: self.create_item(i), items))
         for size in range(1, len(required_items)):
             for invalid_combo in combinations(required_items, size):
                 self.collect(invalid_combo)
                 if len(invalid_combo) < 2:
-                    self.assertFalse(scarecrows_song(self.get_bundle()), f"Should not be able to use Scarecrows Song with only {invalid_combo}")
+                    self.assertFalse(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Should not be able to use Scarecrows Song with only {invalid_combo}")
                 else:
-                    self.assertTrue(scarecrows_song(self.get_bundle()), f"Wasn't able to use Scarecrows Song, but should have been able to.")
+                    self.assertTrue(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to use Scarecrows Song, but should have been able to.")
                 self.remove(invalid_combo)
         self.collect(required_items)
-        self.assertTrue(scarecrows_song(self.get_bundle()), f"Wasn't able to use Scarecrows Song, but should have been able to.")
+        self.assertTrue(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't able to use Scarecrows Song, but should have been able to.")
 
 class TestScarecrowsSongNoSkip(ScarecrowBase):
     """
@@ -680,11 +680,11 @@ class TestScarecrowsSongSkip(ScarecrowBase):
     """
     options = {"skip_scarecrows_song": True, "shuffle_ocarinas": True, "shuffle_ocarina_buttons": True}
     def test_scarecrows_song_skip(self):
-        self.assertFalse(scarecrows_song(self.get_bundle()), f"Could use Scarecrows Song but shouldn't have been able to with nothing.")
+        self.assertFalse(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could use Scarecrows Song but shouldn't have been able to with nothing.")
 
         self.collect(self.create_item(Items.PROGRESSIVE_OCARINA))
 
-        self.assertFalse(scarecrows_song(self.get_bundle()), f"Could use Scarecrows Song but shouldn't have been able to with just ocarina.")
+        self.assertFalse(scarecrows_song(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Could use Scarecrows Song but shouldn't have been able to with just ocarina.")
 
         self.scarecrow_button_check([Items.OCARINA_A_BUTTON, Items.OCARINA_CDOWN_BUTTON, Items.OCARINA_CLEFT_BUTTON, Items.OCARINA_CRIGHT_BUTTON, Items.OCARINA_CUP_BUTTON])
 
@@ -697,15 +697,15 @@ class BombchuBase(SohTestBase):
         # and report as Success if any subtest succeeds
         # (https://github.com/microsoft/vscode-python/issues/25824)
         self.sweep()
-        self.assertFalse(bombchu_refill(self.get_bundle()), f"Had bombchu drops but shouldn't have.")
+        self.assertFalse(bombchu_refill(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Had bombchu drops but shouldn't have.")
         required_items = list(map(lambda i: self.create_item(i), items))
         for size in range(1, len(required_items)):
             for invalid_combo in combinations(required_items, size):
                 self.collect(invalid_combo)
-                self.assertTrue(bombchu_refill(self.get_bundle()), f"Didn't have bombchu drops, but should have with {required_amount}, {invalid_combo}")
+                self.assertTrue(bombchu_refill(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Didn't have bombchu drops, but should have with {required_amount}, {invalid_combo}")
                 self.remove(invalid_combo)
         self.collect(required_items)
-        self.assertTrue(bombchu_refill(self.get_bundle()), f"Didn't have bombchu drops, but should have.")
+        self.assertTrue(bombchu_refill(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Didn't have bombchu drops, but should have.")
 
 class TestBombchuNoDrops(BombchuBase):
     """
@@ -721,7 +721,7 @@ class TestBombchuDropsOn(BombchuBase):
     """
     options = {"bombchu_drops": True, "shuffle_childs_wallet": True}
     def test_bombchu_drops_on(self):
-        self.assertTrue(bombchu_refill(self.get_bundle()), f"Had bombchu drops setting enabled, but didn't have drops.")
+        self.assertTrue(bombchu_refill(self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Had bombchu drops setting enabled, but didn't have drops.")
 
 # Trade Quest Step
 class TestTradeQuestStepShuffleDisabled(SohTestBase):
@@ -731,57 +731,57 @@ class TestTradeQuestStepShuffleDisabled(SohTestBase):
     options = {"shuffle_adult_trade_items": False}
     
     def test_trade_quest_step_pocket_egg(self):
-        self.assertFalse(trade_quest_step(Items.POCKET_EGG, self.get_bundle()), f"Was at pocket egg step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.POCKET_EGG, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at pocket egg step, but shouldn't have been.")
         self.collect(self.create_item(Items.POCKET_EGG))
-        self.assertFalse(trade_quest_step(Items.POCKET_EGG, self.get_bundle()), f"Was at pocket egg step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.POCKET_EGG, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at pocket egg step, but shouldn't have been.")
 
     def test_trade_quest_step_one_ahead(self):
-        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle()), f"Was at cojiro step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at cojiro step, but shouldn't have been.")
         self.collect(self.create_item(Items.ODD_MUSHROOM))
-        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle()), f"Was at cojiro step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at cojiro step, but shouldn't have been.")
 
     def test_trade_quest_step_cojiro(self):
-        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle()), f"Was at cojiro step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at cojiro step, but shouldn't have been.")
         self.collect(self.create_item(Items.COJIRO))
-        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle()), f"Was at cojiro step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at cojiro step, but shouldn't have been.")
 
     def test_trade_quest_step_odd_mushroom(self):
-        self.assertFalse(trade_quest_step(Items.ODD_MUSHROOM, self.get_bundle()), f"Was at odd mushroom step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.ODD_MUSHROOM, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at odd mushroom step, but shouldn't have been.")
         self.collect(self.create_item(Items.ODD_MUSHROOM))
-        self.assertFalse(trade_quest_step(Items.ODD_MUSHROOM, self.get_bundle()), f"Was at odd mushroom step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.ODD_MUSHROOM, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at odd mushroom step, but shouldn't have been.")
 
     def test_trade_quest_step_odd_potion(self):
-        self.assertFalse(trade_quest_step(Items.ODD_POTION, self.get_bundle()), f"Was at odd potion step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.ODD_POTION, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at odd potion step, but shouldn't have been.")
         self.collect(self.create_item(Items.ODD_POTION))
-        self.assertFalse(trade_quest_step(Items.ODD_POTION, self.get_bundle()), f"Was at odd potion step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.ODD_POTION, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at odd potion step, but shouldn't have been.")
 
     def test_trade_quest_step_poachers_saw(self):
-        self.assertFalse(trade_quest_step(Items.POACHERS_SAW, self.get_bundle()), f"Was at poachers saw step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.POACHERS_SAW, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at poachers saw step, but shouldn't have been.")
         self.collect(self.create_item(Items.POACHERS_SAW))
-        self.assertFalse(trade_quest_step(Items.POACHERS_SAW, self.get_bundle()), f"Was at poachers saw step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.POACHERS_SAW, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at poachers saw step, but shouldn't have been.")
 
     def test_trade_quest_step_broken_goron_sword(self):
-        self.assertFalse(trade_quest_step(Items.BROKEN_GORONS_SWORD, self.get_bundle()), f"Was at broken goron sword step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.BROKEN_GORONS_SWORD, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at broken goron sword step, but shouldn't have been.")
         self.collect(self.create_item(Items.BROKEN_GORONS_SWORD))
-        self.assertFalse(trade_quest_step(Items.BROKEN_GORONS_SWORD, self.get_bundle()), f"Was at broken goron sword step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.BROKEN_GORONS_SWORD, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at broken goron sword step, but shouldn't have been.")
 
     def test_trade_quest_step_prescription(self):
-        self.assertFalse(trade_quest_step(Items.PRESCRIPTION, self.get_bundle()), f"Was at prescription step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.PRESCRIPTION, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at prescription step, but shouldn't have been.")
         self.collect(self.create_item(Items.PRESCRIPTION))
-        self.assertFalse(trade_quest_step(Items.PRESCRIPTION, self.get_bundle()), f"Was at prescription step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.PRESCRIPTION, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at prescription step, but shouldn't have been.")
     
     def test_trade_quest_step_eyedrops(self):
-        self.assertFalse(trade_quest_step(Items.WORLDS_FINEST_EYEDROPS, self.get_bundle()), f"Was at worlds finest eyedrops step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.WORLDS_FINEST_EYEDROPS, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at worlds finest eyedrops step, but shouldn't have been.")
         self.collect(self.create_item(Items.WORLDS_FINEST_EYEDROPS))
-        self.assertFalse(trade_quest_step(Items.WORLDS_FINEST_EYEDROPS, self.get_bundle()), f"Was at worlds finest eyedrops step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.WORLDS_FINEST_EYEDROPS, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at worlds finest eyedrops step, but shouldn't have been.")
 
     def test_trade_quest_step_claim_check(self):
-        self.assertFalse(trade_quest_step(Items.CLAIM_CHECK, self.get_bundle()), f"Was at claim check step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.CLAIM_CHECK, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at claim check step, but shouldn't have been.")
         self.collect(self.create_item(Items.CLAIM_CHECK))
-        self.assertTrue(trade_quest_step(Items.CLAIM_CHECK, self.get_bundle()), f"Should have been at claim check step, but wasn't.")
+        self.assertTrue(trade_quest_step(Items.CLAIM_CHECK, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Should have been at claim check step, but wasn't.")
 
     def test_trade_quest_step_other(self):
-        self.assertFalse(trade_quest_step(Items.TRIFORCE_PIECE, self.get_bundle()), f"An item that wasn't supposed to be checked was and returned true.")
+        self.assertFalse(trade_quest_step(Items.TRIFORCE_PIECE, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"An item that wasn't supposed to be checked was and returned true.")
     
 class TestTradeQuestStepShuffleEnabled(SohTestBase):
     """
@@ -794,24 +794,24 @@ class TestTradeQuestStepShuffleEnabled(SohTestBase):
         # and report as Success if any subtest succeeds
         # (https://github.com/microsoft/vscode-python/issues/25824)
         self.sweep()
-        self.assertFalse(trade_quest_step(step, self.get_bundle()), f"Was at a trade quests step when it shouldn't have been with nothing.")
+        self.assertFalse(trade_quest_step(step, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at a trade quests step when it shouldn't have been with nothing.")
         required_items = list(map(lambda i: self.create_item(i), items))
         for size in range(1, len(required_items)):
             for invalid_combo in combinations(required_items, size):
                 self.collect(invalid_combo)
-                self.assertTrue(trade_quest_step(step, self.get_bundle()), f"Wasn't at the step with {required_amount}, {invalid_combo}")
+                self.assertTrue(trade_quest_step(step, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't at the step with {required_amount}, {invalid_combo}")
                 self.remove(invalid_combo)
         self.collect(required_items)
-        self.assertTrue(trade_quest_step(step, self.get_bundle()), f"Wasn't at the step but it should have been.")
+        self.assertTrue(trade_quest_step(step, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Wasn't at the step but it should have been.")
 
     def test_trade_quest_step_pocket_egg(self):
         self.require_some_trade_step(Items.POCKET_EGG, [Items.POCKET_EGG, Items.COJIRO, Items.ODD_MUSHROOM, Items.ODD_POTION, Items.POACHERS_SAW, 
                                                         Items.BROKEN_GORONS_SWORD, Items.PRESCRIPTION, Items.WORLDS_FINEST_EYEDROPS, Items.CLAIM_CHECK], 1)
 
     def test_trade_quest_step_one_behind(self):
-        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle()), f"Was at cojiro step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at cojiro step, but shouldn't have been.")
         self.collect(self.create_item(Items.POCKET_EGG))
-        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle()), f"Was at cojiro step, but shouldn't have been.")
+        self.assertFalse(trade_quest_step(Items.COJIRO, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"Was at cojiro step, but shouldn't have been.")
 
     def test_trade_quest_step_cojiro(self):
         self.require_some_trade_step(Items.COJIRO, [Items.COJIRO, Items.ODD_MUSHROOM, Items.ODD_POTION, Items.POACHERS_SAW, 
@@ -841,4 +841,4 @@ class TestTradeQuestStepShuffleEnabled(SohTestBase):
         self.require_some_trade_step(Items.CLAIM_CHECK, [Items.CLAIM_CHECK], 1)
 
     def test_trade_quest_step_other(self):
-        self.assertFalse(trade_quest_step(Items.TRIFORCE_PIECE, self.get_bundle()), f"An item that wasn't supposed to be checked was and returned true.")
+        self.assertFalse(trade_quest_step(Items.TRIFORCE_PIECE, self.get_bundle())._instantiate(self.world)._evaluate(self.multiworld.state), f"An item that wasn't supposed to be checked was and returned true.")

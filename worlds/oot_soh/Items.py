@@ -229,7 +229,7 @@ item_data_table: dict[Items, SohItemData] = {
     Items.PURPLE_RUPEE: SohItemData(138, IC.filler, 0, tags=GroupTag.Money),
     Items.HUGE_RUPEE: SohItemData(139, IC.filler, 0, tags=GroupTag.Money),
     # 35
-    Items.PIECE_OF_HEART: SohItemData(140, IC.useful | IC.skip_balancing, 0, tags=GroupTag.Health_Upgrade),
+    Items.PIECE_OF_HEART: SohItemData(140, IC.progression_skip_balancing, 0, tags=GroupTag.Health_Upgrade),
     # 8
     Items.HEART_CONTAINER: SohItemData(141, IC.progression_skip_balancing, 0, tags=GroupTag.Health_Upgrade),
     Items.ICE_TRAP: SohItemData(142, IC.trap, 0, tags=GroupTag.Trap),
@@ -252,7 +252,7 @@ item_data_table: dict[Items, SohItemData] = {
     # Items.GREEN_POTION_REFILL: SohItemData( 159, IC.filler, 0 ),
     # Items.BLUE_POTION_REFILL: SohItemData( 160, IC.filler, 0 ),
     # 1
-    Items.PIECE_OF_HEART_WINNER: SohItemData(161, IC.useful | IC.skip_balancing, 0, tags=GroupTag.Health_Upgrade),
+    Items.PIECE_OF_HEART_WINNER: SohItemData(161, IC.progression_skip_balancing, 0, tags=GroupTag.Health_Upgrade),
     # Items.TREASURE_GAME_GREEN_RUPEE: SohItemData( 162, IC.filler, 0 ),
     Items.BUY_DEKU_NUTS5: SohItemData(None, IC.progression, 0, tags=GroupTag.Purchasable_Item),
     Items.BUY_ARROWS30: SohItemData(None, IC.progression, 0, tags=GroupTag.Purchasable_Item),
@@ -406,16 +406,7 @@ no_rules_bottles = [
     Items.BOTTLE_WITH_FISH,
     Items.BOTTLE_WITH_BLUE_FIRE,
     Items.BOTTLE_WITH_BUGS,
-]
-
-filler_bottles = [
-    *no_rules_bottles,
-    Items.BOTTLE_WITH_POE,
-]
-
-all_bottles: list[Items] = [
-    *filler_bottles,
-    Items.BOTTLE_WITH_RUTOS_LETTER,
+    Items.BOTTLE_WITH_POE
 ]
 
 progressive_items: dict[str, tuple[str, ...]] = {
@@ -429,5 +420,6 @@ progressive_items: dict[str, tuple[str, ...]] = {
     Items.PROGRESSIVE_BOMB_BAG: (Items.BOMB_BAG,),
     Items.PROGRESSIVE_STICK_CAPACITY: (Items.DEKU_STICK_BAG,),
     Items.PROGRESSIVE_NUT_CAPACITY: (Items.DEKU_NUT_BAG,),
+    Items.PROGRESSIVE_MAGIC_METER: (Items.MAGIC_SINGLE, Items.MAGIC_DOUBLE)
 }
 
