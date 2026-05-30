@@ -366,9 +366,7 @@ class SohWorld(CachedRuleBuilderWorld):
         self.preplaced_items.extend(items)
         
         if original_goal is None:
-            goal = create_new_goal(empty_locations)
-
-        self.set_completion_rule(goal)
+            self.set_completion_rule(create_new_goal(empty_locations))
 
         # Determines if a partial or full fill is occuring
         fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, allow_partial=(not self.settings.disable_fill_overflow))
@@ -378,7 +376,7 @@ class SohWorld(CachedRuleBuilderWorld):
             empty_locations = empty_locations_all[chunk:]
 
             if original_goal is None:
-                self.set_completion_rule(goal) = create_new_goal(empty_locations) 
+                self.set_completion_rule(create_new_goal(empty_locations))
 
         if self.settings.disable_fill_overflow:
             fill_restrictive(self.multiworld, prefill_state, empty_locations, items, single_player_placement=True, lock=True, name="SoH_Prefill_No_Partial")
