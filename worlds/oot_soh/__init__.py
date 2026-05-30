@@ -337,7 +337,10 @@ class SohWorld(CachedRuleBuilderWorld):
             
     def run_prefill(self, item_pool: list[Items], locations: list[Locations], prefill_state: CollectionState | None = None, original_goal: Callable[[CollectionState], bool] | None = None):
         def create_new_goal(empty_locations: list[Location]):
-            goal = lambda state: all([state.can_reach(loc) for loc in empty_locations])
+            goal = True_()
+            # set region accessability of locations as the goal
+            for reg in empty_locations:
+                goal &= CanReachLocation(str(reg.name))
             return goal
         
         # check if we're using specific collectionstate
@@ -362,11 +365,8 @@ class SohWorld(CachedRuleBuilderWorld):
         items = [self.create_item(str(item)) for item in item_pool]
         self.preplaced_items.extend(items)
         
-        if goal is None:
-            goal = True_()
-            # set region accessability of locations as the goal
-            for reg in locations:
-                goal &= CanReachLocation(str(reg))
+        if original_goal is None:
+            goal = create_new_goal(empty_locations)
 
         self.set_completion_rule(goal)
 
