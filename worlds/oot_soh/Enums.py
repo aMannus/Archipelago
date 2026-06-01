@@ -3850,7 +3850,7 @@ class Tricks(StrEnum):
 class TokenCounts(IntEnum):
     DUNGEON = 44
     OVERWORLD = 56
-    TOTAL = DUNGEON + OVERWORLD
+    TOTAL = 100
 
 
 class DungeonLocations(Enum):
