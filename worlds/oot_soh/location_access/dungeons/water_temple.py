@@ -78,7 +78,7 @@ def set_region_rules(world: "SohWorld") -> None:
                                                             has_item(LocalEvents.WATER_LEVEL_MIDDLE, bundle) |
                                                             (can_use(Items.IRON_BOOTS, bundle) &
                                                              water_timer_at_least(bundle, 16))) &
-                                                           can_use(Items.LONGSHOT, bundle))),
+                                                           can_use(Items.HOOKSHOT, bundle))),
         (Regions.WATER_TEMPLE_WEST_MIDDLE, lambda bundle: (
             has_item(LocalEvents.WATER_LEVEL_MIDDLE, bundle))),
         (Regions.WATER_TEMPLE_HIGH_WATER, lambda bundle: (is_adult(bundle) &
