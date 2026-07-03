@@ -76,11 +76,3 @@ def add_events(parent_region: Regions, world: "LighthouseWorld", events: list[tu
         eventRule = event[2]((parent_region, world)) if callable(event[2]) else event[2]
         # test_for_age_check(eventRule, parent_region, world)
         parentRegion.add_event(eventName, eventItemName, eventRule, LighthouseLocation, LighthouseItem)
-
-  
-def get_group_name(item_group: GroupTag) -> str:
-    return item_group.name.replace('_', " ")
-
-
-def item_group_count_enough(item_group: str, count: int):
-    return HasGroupUnique(item_group, count)

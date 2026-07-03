@@ -127,6 +127,11 @@ class LighthouseWorld(CachedRuleBuilderWorld):
 
     def fill_slot_data(self) -> dict[str, Any]:
         return {
-            "closed_forest": self.options.closed_forest.value,
+            "shuffle_honey_combs": self.options.shuffle_honey_combs.value,
+            "shuffle_jiggies": self.options.shuffle_jiggies.value,
+            "shuffle_jinjos": self.options.shuffle_jinjos.value,
+            "shuffle_molehills": self.options.shuffle_molehills.value,
+            "shuffle_mumbo_tokens": self.options.shuffle_mumbo_tokens.value,
+            "shuffle_notes": self.options.shuffle_notes.value,
             "archipelago_seed": self.random.randint(0, 4294967295)
         }

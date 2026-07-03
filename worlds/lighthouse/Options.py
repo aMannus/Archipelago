@@ -3,27 +3,66 @@ from Options import Choice, Toggle, DefaultOnToggle, Range, PerGameCommonOptions
 from .Enums import Items
 
 
-class ClosedForest(Choice):
+class ShuffleHoneyCombs(DefaultOnToggle):
     """
-    On - Kokiri Sword & Deku Shield are required to access the Deku Tree, and completing the Deku Tree is required to access the Lost Woods Bridge Exit.
-    Deku Only - Kokiri boy no longer blocks the path to the Bridge but Mido still requires the Kokiri Sword and Deku Shield to access the tree.
-    Off - Mido no longer blocks the path to the Deku Tree. Kokiri boy no longer blocks the path out of the forest.
+    Shuffles empty honey comb locations and shuffles them into the item pool.
     """
-    display_name = "Closed Forest"
-    option_on = 0
-    option_deku_only = 1
-    option_off = 2
-    default = 2
+    display_name = "Shuffle Honey Combs"
+
+
+class ShuffleJiggies(DefaultOnToggle):
+    """
+    Shuffles jiggy locations and shuffles them into the item pool.
+    """
+    display_name = "Shuffle Jiggies"
+
+
+class ShuffleJinjos(DefaultOnToggle):
+    """
+    Shuffles all coloured jinjo locations and shuffles them into the item pool.
+    """
+    display_name = "Shuffle Jinjos"
+
+
+class ShuffleMolehills(Toggle):
+    """
+    Shuffles molehills amongst each other, so all molehills will teach a random ability.
+    """
+    display_name = "Shuffle Molehills"
+
+
+class ShuffleMumboTokens(Toggle):
+    """
+    Shuffles mumbo locations and shuffles them into the item pool.
+    """
+    display_name = "Shuffle Mumbo Tokens"
+
+
+class ShuffleNotes(Toggle):
+    """
+    Shuffles all note locations and shuffles them into the item pool.
+    """
+    display_name = "Shuffle Notes"
 
 
 @dataclass
 class LighthouseOptions(PerGameCommonOptions):
-    closed_forest: ClosedForest
+    shuffle_honey_combs: ShuffleHoneyCombs
+    shuffle_jiggies: ShuffleJiggies
+    shuffle_jinjos: ShuffleJinjos
+    shuffle_molehills: ShuffleMolehills
+    shuffle_mumbo_tokens: ShuffleMumboTokens
+    shuffle_notes: ShuffleNotes
     start_inventory_from_pool: StartInventoryPool
 
 
 lighthouse_option_groups = [
-    OptionGroup("Options", [
-        ClosedForest,
+    OptionGroup("Shuffle Options", [
+        ShuffleHoneyCombs,
+        ShuffleJiggies,
+        ShuffleJinjos,
+        ShuffleMolehills,
+        ShuffleMumboTokens,
+        ShuffleNotes,
     ])
 ]
