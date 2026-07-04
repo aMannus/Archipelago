@@ -35,11 +35,14 @@ def create_item_pool(world: "LighthouseWorld") -> None:
     if world.options.shuffle_mumbo_tokens:
         for location_name, loc_data in mumbo_tokens_location_table.items():
             items_to_create[loc_data.vanilla_item] += 1
-
+    
     if world.options.shuffle_notes:
+        shuffled_notes = []
         for location_name, loc_data in notes_location_table.items():
             items_to_create[loc_data.vanilla_item] += 1
-
+            shuffled_notes.append(loc_data.vanilla_item)
+        world.random.shuffle(shuffled_notes)
+        # add changing notes that aren't neccesary to useful in items_to_create
 
     items: list[LighthouseItem] = list()
     # Add regular item pool
