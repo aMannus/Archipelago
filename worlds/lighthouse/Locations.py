@@ -1252,15 +1252,22 @@ stop_n_swop_eggs_location_table: dict[str, LighthouseLocData] = {
 }
 
 
-location_data_table: dict[str, LighthouseLocData] = {
-    **empty_honeycombs_location_table,
-    **jiggies_location_table,
-    **jinjos_location_table,
-    **molehills_location_table,
-    **mumbo_tokens_location_table,
-    **notes_location_table,
-    **stop_n_swop_eggs_location_table,
+# The option that shuffles a category -> that category's locations. Keys are option
+# attribute names, so location creation, preplacement, the item pool, slot data and UT can
+# all drive off this one map instead of keeping a parallel if-ladder each.
+category_location_tables: dict[str, dict[str, LighthouseLocData]] = {
+    "shuffle_honey_combs": empty_honeycombs_location_table,
+    "shuffle_jiggies": jiggies_location_table,
+    "shuffle_jinjos": jinjos_location_table,
+    "shuffle_molehills": molehills_location_table,
+    "shuffle_mumbo_tokens": mumbo_tokens_location_table,
+    "shuffle_notes": notes_location_table,
 }
+
+
+location_data_table: dict[str, LighthouseLocData] = {
+    name: data for table in category_location_tables.values() for name, data in table.items()
+} | stop_n_swop_eggs_location_table  # has no shuffle option of its own yet
 
 
 location_table = {str(name): locdata.loc_id for name,

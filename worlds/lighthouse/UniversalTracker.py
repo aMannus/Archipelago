@@ -10,14 +10,10 @@ def setup_options_from_slot_data(world: "LighthouseWorld") -> None:
         if "Banjo-Kazooie Lighthouse" in world.multiworld.re_gen_passthrough:
             world.using_ut = True
             world.passthrough = world.multiworld.re_gen_passthrough["Lighthouse"]
-            world.options.shuffle_honey_combs.value = world.passthrough["shuffle_honey_combs"]
-            world.options.shuffle_jiggies.value = world.passthrough["shuffle_jiggies"]
-            world.options.shuffle_jinjos.value = world.passthrough["shuffle_jinjos"]
-            world.options.shuffle_molehills.value = world.passthrough["shuffle_molehills"]
-            world.options.shuffle_mumbo_tokens.value = world.passthrough["shuffle_mumbo_tokens"]
-            world.options.shuffle_notes.value = world.passthrough["shuffle_notes"]
-            # when adding new options to this, use .get, and set the default to whatever was before the option was made
-            # this will make it back-compatible with seeds generated on earlier versions
+            # A seed generated before an option existed didn't shuffle that category, so
+            # missing keys default to off and stay back-compatible.
+            for option_name in SHUFFLE_OPTIONS:
+                getattr(world.options, option_name).value = world.passthrough.get(option_name, 0)
             # the below do not need to be handled in UT at all, since they do not affect logic
             # apworld_version
         else:
