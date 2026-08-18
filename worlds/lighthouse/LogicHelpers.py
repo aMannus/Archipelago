@@ -1,13 +1,9 @@
-from collections import Counter
-import math
-from typing import TYPE_CHECKING, Callable
-from collections import Counter
+from typing import TYPE_CHECKING
 
-from BaseClasses import CollectionState, ItemClassification as IC, MultiWorld, Location, Region
+from BaseClasses import Location, Region
 from .Locations import LighthouseLocation
-from worlds.AutoWorld import LogicMixin, World
 from .Enums import *
-from .Items import LighthouseItem, GroupTag
+from .Items import LighthouseItem
 from rule_builder.rules import *
 from rule_builder.field_resolvers import *
 from .Options import *
@@ -18,25 +14,8 @@ if TYPE_CHECKING:
 import logging
 logger = logging.getLogger("LIGHTHOUSE.Logic")
 
-
-class rule_wrapper:
-    def __init__(self, parent_region: Regions, rule: Callable[[tuple[Regions, "LighthouseWorld"]], Rule], world: "LighthouseWorld"):
-        self.parent_region = parent_region
-        self.world = world
-        self.rule = rule
-
-    @staticmethod
-    def wrap(parent_region: Regions, rule: Callable[[tuple[Regions, "LighthouseWorld"]], Rule], world: "LighthouseWorld") -> Rule:
-        wrapper = rule_wrapper(parent_region, rule, world)
-        return wrapper.evaluate()
-
-    def evaluate(self) -> Rule:
-        rule = self.rule((self.parent_region, self.world))
-        return rule 
-
-
-def add_locations(parent_region: Regions, world: "LighthouseWorld", locations: list[tuple[Locations, Rule | Callable[[tuple[Regions, "LighthouseWorld"]], Rule]]]) -> None:
-    mLocations : list[tuple[str, int | None, Rule | Callable[[CollectionState], bool]]] = list()
+def add_locations(parent_region: Regions, world: "LighthouseWorld", locations: list[tuple[Locations, Rule]]) -> None:
+    mLocations : list[tuple[str, int, Rule]] = list()
     for loc in locations:
         locationName = str(loc[0])
         if locationName in world.included_locations:
@@ -56,7 +35,7 @@ def add_locations(parent_region: Regions, world: "LighthouseWorld", locations: l
             world.set_rule(location, locationRule)
 
 
-def connect_regions(parent_region: Regions, world: "LighthouseWorld", child_regions: list[tuple[Regions, Rule | Callable[[tuple[Regions, "LighthouseWorld"]], Rule]]]) -> None:
+def connect_regions(parent_region: Regions, world: "LighthouseWorld", child_regions: list[tuple[Regions, Rule]]) -> None:
     parentRegion: Region = world.get_region(str(parent_region))
 
     for region in child_regions:
@@ -67,7 +46,7 @@ def connect_regions(parent_region: Regions, world: "LighthouseWorld", child_regi
         world.create_entrance(parentRegion, childRegion, regionRule)
 
 
-def add_events(parent_region: Regions, world: "LighthouseWorld", events: list[tuple[StrEnum, Events | StrEnum, Rule | Callable[[tuple[Regions, "LighthouseWorld"]], Rule]]]) -> None:
+def add_events(parent_region: Regions, world: "LighthouseWorld", events: list[tuple[StrEnum, Events | StrEnum, Rule]]) -> None:
     parentRegion: Region = world.get_region(str(parent_region))
 
     for event in events:
