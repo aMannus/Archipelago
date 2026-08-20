@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, fields
 from Options import Choice, Toggle, DefaultOnToggle, Range, PerGameCommonOptions, StartInventoryPool, Visibility, OptionGroup, OptionSet, Accessibility
 from .Enums import Items
 
@@ -54,6 +54,11 @@ class LighthouseOptions(PerGameCommonOptions):
     shuffle_mumbo_tokens: ShuffleMumboTokens
     shuffle_notes: ShuffleNotes
     start_inventory_from_pool: StartInventoryPool
+
+
+# One per shuffled check category. Everything that gates a category off an option (which
+# locations exist, which items enter the pool, slot data, UT) iterates this.
+SHUFFLE_OPTIONS = tuple(f.name for f in fields(LighthouseOptions) if f.name.startswith("shuffle_"))
 
 
 lighthouse_option_groups = [

@@ -9,7 +9,7 @@ from rule_builder.rules import Has
 from worlds.AutoWorld import WebWorld
 from .Items import LighthouseItem, item_data_table, item_table, LighthouseItemData
 from .Locations import location_table, LighthouseLocData, location_data_table
-from .Options import LighthouseOptions, lighthouse_option_groups
+from .Options import LighthouseOptions, lighthouse_option_groups, SHUFFLE_OPTIONS
 from .Regions import create_regions_and_locations, place_locked_items
 from .Enums import *
 from .ItemPool import create_item_pool
@@ -128,11 +128,6 @@ class LighthouseWorld(CachedRuleBuilderWorld):
     def fill_slot_data(self) -> dict[str, Any]:
         return {
             "apworld_version": self.apworld_version,
-            "shuffle_honey_combs": self.options.shuffle_honey_combs.value,
-            "shuffle_jiggies": self.options.shuffle_jiggies.value,
-            "shuffle_jinjos": self.options.shuffle_jinjos.value,
-            "shuffle_molehills": self.options.shuffle_molehills.value,
-            "shuffle_mumbo_tokens": self.options.shuffle_mumbo_tokens.value,
-            "shuffle_notes": self.options.shuffle_notes.value,
+            **{name: getattr(self.options, name).value for name in SHUFFLE_OPTIONS},
             "archipelago_seed": self.random.randint(0, 4294967295)
         }

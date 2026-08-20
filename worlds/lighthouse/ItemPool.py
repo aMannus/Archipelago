@@ -3,10 +3,7 @@ from typing import TYPE_CHECKING
 from .Enums import *
 from .Items import item_data_table, LighthouseItem, GroupTag
 from BaseClasses import ItemClassification
-from .Locations import empty_honeycombs_location_table, \
-    jiggies_location_table, jinjos_location_table, \
-    molehills_location_table, mumbo_tokens_location_table, \
-    notes_location_table, stop_n_swop_eggs_location_table
+from .Locations import category_location_tables
 
 if TYPE_CHECKING:
     from . import LighthouseWorld
@@ -16,33 +13,13 @@ def create_item_pool(world: "LighthouseWorld") -> None:
     items_to_create: dict[str, int] = {
         item: data.quantity_in_item_pool for item, data in item_data_table.items()}
     
-    if world.options.shuffle_honey_combs:
-        for location_name, loc_data in empty_honeycombs_location_table.items():
-            items_to_create[loc_data.vanilla_item] += 1
-
-    if world.options.shuffle_jiggies:
-        for location_name, loc_data in jiggies_location_table.items():
-            items_to_create[loc_data.vanilla_item] += 1
-
-    if world.options.shuffle_jinjos:
-        for location_name, loc_data in jinjos_location_table.items():
-            items_to_create[loc_data.vanilla_item] += 1
-
-    if world.options.shuffle_molehills:
-        for location_name, loc_data in molehills_location_table.items():
-            items_to_create[loc_data.vanilla_item] += 1
-
-    if world.options.shuffle_mumbo_tokens:
-        for location_name, loc_data in mumbo_tokens_location_table.items():
-            items_to_create[loc_data.vanilla_item] += 1
-    
-    if world.options.shuffle_notes:
-        shuffled_notes = []
-        for location_name, loc_data in notes_location_table.items():
-            items_to_create[loc_data.vanilla_item] += 1
-            shuffled_notes.append(loc_data.vanilla_item)
-        world.random.shuffle(shuffled_notes)
-        # add changing notes that aren't neccesary to useful in items_to_create
+    # A shuffled category's vanilla items all go into the pool; the rest stay preplaced.
+    for option_name, table in category_location_tables.items():
+        if getattr(world.options, option_name):
+            for location_name, loc_data in table.items():
+                if location_name not in world.included_locations:  # skip the uncreated ones
+                    items_to_create[loc_data.vanilla_item] += 1
+    # TODO: make the notes that aren't needed for a note door useful rather than progression
 
     items: list[LighthouseItem] = list()
     # Add regular item pool
