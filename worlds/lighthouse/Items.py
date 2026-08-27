@@ -1,5 +1,4 @@
 from typing import NamedTuple
-from enum import IntEnum, IntFlag
 from BaseClasses import Item, ItemClassification as IC
 from .Enums import *
 
@@ -9,7 +8,10 @@ class LighthouseItem(Item):
 
 
 class GroupTag(IntFlag):
+    BlueEgg = auto()
     EmptyHoneyComb = auto()
+    ExtraLife = auto()
+    Honeycomb = auto()
     Jiggy = auto()
     Jinjo = auto()
     Molehill = auto()
@@ -27,19 +29,19 @@ class LighthouseItemData(NamedTuple):
 
 item_data_table: dict[Items, LighthouseItemData] = {
     # Items commented out that can never appear in the item pool and are only used on Ship internally
-
-    Items.UNKNOWN: LighthouseItemData(None),
+    Items.BLUE_EGG: LighthouseItemData(140, IC.filler, 0, tags=GroupTag.BlueEgg),
     Items.EMPTY_HONEYCOMB_BUBBLEGLOOP_SWAMP: LighthouseItemData(1, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_CLANKERS_CAVERN: LighthouseItemData(2, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_CLICK_CLOCK_WOOD: LighthouseItemData(3, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_FREEZEEZY_PEAK: LighthouseItemData(4, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_GOBIS_VALLEY: LighthouseItemData(5, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
-    Items.EMPTY_HONEYCOMB_GRUNTILDAS_LAIR: LighthouseItemData(6, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_MAD_MONSTER_MANSION: LighthouseItemData(7, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_MUMBOS_MOUNTAIN: LighthouseItemData(8, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_RUSTY_BUCKET_BAY: LighthouseItemData(9, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_SPIRAL_MOUNTAIN: LighthouseItemData(10, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
     Items.EMPTY_HONEYCOMB_TREASURE_TROVE_COVE: LighthouseItemData(11, IC.useful, 0, tags=GroupTag.EmptyHoneyComb),
+    Items.EXTRA_LIFE: LighthouseItemData(141, IC.filler, 0, tags=GroupTag.ExtraLife),
+    Items.HONEYCOMB: LighthouseItemData(142, IC.filler, 0, tags=GroupTag.Honeycomb),
     Items.JIGGY_BUBBLEGLOOP_SWAMP: LighthouseItemData(12, IC.progression, 0, tags=GroupTag.Jiggy),
     Items.JIGGY_CLANKERS_CAVERN: LighthouseItemData(13, IC.progression, 0, tags=GroupTag.Jiggy),
     Items.JIGGY_CLICK_CLOCK_WOOD: LighthouseItemData(14, IC.progression, 0, tags=GroupTag.Jiggy),
@@ -110,25 +112,16 @@ item_data_table: dict[Items, LighthouseItemData] = {
     Items.MOLEHILL_TURBO_TALON: LighthouseItemData(79, IC.progression, 0, tags=GroupTag.Molehill),
     Items.MOLEHILL_WADING_BOOTS: LighthouseItemData(80, IC.progression, 0, tags=GroupTag.Molehill),
     Items.MOLEHILL_WONDERWING: LighthouseItemData(81, IC.progression, 0, tags=GroupTag.Molehill),
-    Items.MUMBO_TOKEN_BUBBLEGLOOP_SWAMP: LighthouseItemData(82, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_CLANKERS_CAVERN: LighthouseItemData(83, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_CLICK_CLOCK_WOOD: LighthouseItemData(84, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_FREEZEEZY_PEAK: LighthouseItemData(85, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_GOBIS_VALLEY: LighthouseItemData(86, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_GRUNTILDAS_LAIR: LighthouseItemData(87, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_MAD_MONSTER_MANSION: LighthouseItemData(88, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_MUMBOS_MOUNTAIN: LighthouseItemData(89, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_RUSTY_BUCKET_BAY: LighthouseItemData(90, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.MUMBO_TOKEN_TREASURE_TROVE_COVE: LighthouseItemData(91, IC.progression, 0, tags=GroupTag.MumboToken),
-    Items.NOTE_BUBBLEGLOOP_SWAMP: LighthouseItemData(92, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
-    Items.NOTE_CLANKERS_CAVERN: LighthouseItemData(93, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
-    Items.NOTE_CLICK_CLOCK_WOOD: LighthouseItemData(94, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
-    Items.NOTE_FREEZEEZY_PEAK: LighthouseItemData(95, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
-    Items.NOTE_GOBIS_VALLEY: LighthouseItemData(96, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
-    Items.NOTE_MAD_MONSTER_MANSION: LighthouseItemData(97, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
-    Items.NOTE_MUMBOS_MOUNTAIN: LighthouseItemData(98, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
-    Items.NOTE_RUSTY_BUCKET_BAY: LighthouseItemData(99, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
-    Items.NOTE_TREASURE_TROVE_COVE: LighthouseItemData(100, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUMBO_TOKEN: LighthouseItemData(143, IC.progression, 0, tags=GroupTag.MumboToken),
+    Items.MUSIC_NOTE_BUBBLEGLOOP_SWAMP: LighthouseItemData(92, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUSIC_NOTE_CLANKERS_CAVERN: LighthouseItemData(93, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUSIC_NOTE_CLICK_CLOCK_WOOD: LighthouseItemData(94, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUSIC_NOTE_FREEZEEZY_PEAK: LighthouseItemData(95, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUSIC_NOTE_GOBIS_VALLEY: LighthouseItemData(96, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUSIC_NOTE_MAD_MONSTER_MANSION: LighthouseItemData(97, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUSIC_NOTE_MUMBOS_MOUNTAIN: LighthouseItemData(98, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUSIC_NOTE_RUSTY_BUCKET_BAY: LighthouseItemData(99, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
+    Items.MUSIC_NOTE_TREASURE_TROVE_COVE: LighthouseItemData(100, IC.progression_deprioritized_skip_balancing, 0, tags=GroupTag.Note),
     Items.STOP_N_SWOP_EGG_BLUE: LighthouseItemData(101, IC.progression, 0, tags=GroupTag.StopNSwap),
     Items.STOP_N_SWOP_EGG_CYAN: LighthouseItemData(102, IC.progression, 0, tags=GroupTag.StopNSwap),
     Items.STOP_N_SWOP_EGG_GREEN: LighthouseItemData(103, IC.progression, 0, tags=GroupTag.StopNSwap),
@@ -136,7 +129,6 @@ item_data_table: dict[Items, LighthouseItemData] = {
     Items.STOP_N_SWOP_EGG_RED: LighthouseItemData(105, IC.progression, 0, tags=GroupTag.StopNSwap),
     Items.STOP_N_SWOP_EGG_YELLOW: LighthouseItemData(106, IC.progression, 0, tags=GroupTag.StopNSwap),
     Items.STOP_N_SWOP_ICE_KEY: LighthouseItemData(107, IC.progression, 0, tags=GroupTag.StopNSwap),
-    Items.MAX: LighthouseItemData(None),
     # Intentionally place the glitched item without a value. Everything else should be above this.
     Items.GLITCHED: LighthouseItemData(None),
 }

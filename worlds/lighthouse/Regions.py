@@ -2,7 +2,7 @@ import logging
 from typing import NamedTuple, TYPE_CHECKING
 from BaseClasses import MultiWorld, Region, LocationProgressType
 from .Enums import *
-from .Locations import category_location_tables, stop_n_swop_eggs_location_table
+from .Locations import category_location_tables
 from .location_access import root
 
 if TYPE_CHECKING:
@@ -38,16 +38,14 @@ def create_regions_and_locations(world: "LighthouseWorld") -> None:
     # Create locations
     for table in category_location_tables.values():
         world.included_locations.update(table)
-    world.included_locations.update(stop_n_swop_eggs_location_table)
 
     # Set region rules and location rules after all locations are created
-    all_regions = [root]
     for region in all_regions:
         region.set_region_rules(world)
 
     # add_locations pops what it creates, so whatever is left in included_locations is a
-    # check the rando lists but that no region places. It stays there as this world's skip
-    # list -- place_locked_items and the item pool both leave those alone.
+    # check the rando lists but never places in a region. It stays there as this world's
+    # skip list -- place_locked_items and the item pool both leave those alone.
     for location_name in world.included_locations:
         logger.warning("%s is in Locations.py but no region places it; skipping", location_name)
 
