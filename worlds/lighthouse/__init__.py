@@ -105,7 +105,7 @@ class LighthouseWorld(CachedRuleBuilderWorld):
     def set_completion_rule(self, goal: Rule = None) -> None:
         # Actual completion condition.
         if goal == None:
-            super().set_completion_rule(Has(str(Events.GAME_COMPLETED)))
+            super().set_completion_rule(Has(str(Events.GAME_COMPLETE)))
         else:
             super().set_completion_rule(goal)
     

@@ -3,11 +3,32 @@ from Options import Choice, Toggle, DefaultOnToggle, Range, PerGameCommonOptions
 from .Enums import Items
 
 
-class ShuffleHoneyCombs(DefaultOnToggle):
+class ShuffleBeehiveHoneycombs(Toggle):
+    """
+    Shuffles the honeycomb pieces hidden in beehives and shuffles them into the item pool.
+    """
+    display_name = "Shuffle Beehive Honeycombs"
+
+
+class ShuffleBlueEggs(Toggle):
+    """
+    Shuffles blue egg pickups and shuffles them into the item pool.
+    """
+    display_name = "Shuffle Blue Eggs"
+
+
+class ShuffleEmptyHoneycombs(DefaultOnToggle):
     """
     Shuffles empty honey comb locations and shuffles them into the item pool.
     """
-    display_name = "Shuffle Honey Combs"
+    display_name = "Shuffle Empty Honeycombs"
+
+
+class ShuffleExtraLives(Toggle):
+    """
+    Shuffles extra life pickups and shuffles them into the item pool.
+    """
+    display_name = "Shuffle Extra Lives"
 
 
 class ShuffleJiggies(DefaultOnToggle):
@@ -38,36 +59,51 @@ class ShuffleMumboTokens(Toggle):
     display_name = "Shuffle Mumbo Tokens"
 
 
-class ShuffleNotes(Toggle):
+class ShuffleMusicNotes(Toggle):
     """
     Shuffles all note locations and shuffles them into the item pool.
     """
-    display_name = "Shuffle Notes"
+    display_name = "Shuffle Music Notes"
+
+
+class ShuffleStopNSwop(Toggle):
+    """
+    Shuffles the Stop 'N' Swop eggs and the Ice Key and shuffles them into the item pool.
+    """
+    display_name = "Shuffle Stop 'N' Swop"
 
 
 @dataclass
 class LighthouseOptions(PerGameCommonOptions):
-    shuffle_honey_combs: ShuffleHoneyCombs
+    shuffle_beehive_honeycombs: ShuffleBeehiveHoneycombs
+    shuffle_blue_eggs: ShuffleBlueEggs
+    shuffle_empty_honeycombs: ShuffleEmptyHoneycombs
+    shuffle_extra_lives: ShuffleExtraLives
     shuffle_jiggies: ShuffleJiggies
     shuffle_jinjos: ShuffleJinjos
     shuffle_molehills: ShuffleMolehills
     shuffle_mumbo_tokens: ShuffleMumboTokens
-    shuffle_notes: ShuffleNotes
+    shuffle_music_notes: ShuffleMusicNotes
+    shuffle_stop_n_swop: ShuffleStopNSwop
     start_inventory_from_pool: StartInventoryPool
 
 
-# One per shuffled check category. Everything that gates a category off an option (which
-# locations exist, which items enter the pool, slot data, UT) iterates this.
+# One per upstream RO_SHUFFLE_* option. Everything that gates a check category off these
+# (which locations exist, which items enter the pool, slot data, UT) iterates this.
 SHUFFLE_OPTIONS = tuple(f.name for f in fields(LighthouseOptions) if f.name.startswith("shuffle_"))
 
 
 lighthouse_option_groups = [
     OptionGroup("Shuffle Options", [
-        ShuffleHoneyCombs,
+        ShuffleBeehiveHoneycombs,
+        ShuffleBlueEggs,
+        ShuffleEmptyHoneycombs,
+        ShuffleExtraLives,
         ShuffleJiggies,
         ShuffleJinjos,
         ShuffleMolehills,
         ShuffleMumboTokens,
-        ShuffleNotes,
+        ShuffleMusicNotes,
+        ShuffleStopNSwop,
     ])
 ]
