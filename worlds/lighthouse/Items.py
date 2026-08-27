@@ -1,5 +1,4 @@
 from typing import NamedTuple
-from enum import IntEnum, IntFlag
 from BaseClasses import Item, ItemClassification as IC
 from .Enums import *
 
